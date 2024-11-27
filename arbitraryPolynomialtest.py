@@ -1,9 +1,8 @@
 import numpy as np
 from scipy.integrate import quad
 from sklearn.model_selection import train_test_split
-import torch
-import torch.nn as nn
-import torch.optim as optim
+import tensorflow as tf
+from tensorflow.keras import layers, models, optimizers # type: ignore
 
 # Generate training data
 N = 100000  # Number of training samples
@@ -24,48 +23,37 @@ features = np.hstack((L.reshape(-1, 1), coeffs))
 # Split data into training and validation sets
 X_train, X_val, y_train, y_val = train_test_split(features, exact_integrals, test_size=0.2, random_state=42)
 
-# Convert data to PyTorch tensors
-X_train_tensor = torch.tensor(X_train, dtype=torch.float32)
-y_train_tensor = torch.tensor(y_train, dtype=torch.float32).view(-1, 1)
-X_val_tensor = torch.tensor(X_val, dtype=torch.float32)
-y_val_tensor = torch.tensor(y_val, dtype=torch.float32).view(-1, 1)
-
-# Define the neural network
-class PolynomialIntegrationNet(nn.Module):
-    def __init__(self):
-        super(PolynomialIntegrationNet, self).__init__()
-        self.layers = nn.Sequential(
-            nn.Linear(max_degree + 2, 10),  # Input size: max_degree + 2 (L + coefficients)
-            nn.ReLU(),
-            *[layer for _ in range(9) for layer in (nn.Linear(10, 10), nn.ReLU())],
-            nn.Linear(10, 1)  # Output size: 1 (integral value)
-        )
-    
-    def forward(self, x):
-        return self.layers(x)
-
+# Define the neural network using TensorFlow
+def build_model(input_dim):
+    model = models.Sequential([
+        layers.Input(shape=(input_dim,)),
+        layers.Dense(10, activation='relu'),
+        # Add 9 Dense layers with ReLU activation
+        *[layers.Dense(10, activation='relu') for _ in range(9)],
+        layers.Dense(1)  # Output layer
+    ])
+    return model
 # Initialize the model, loss function, and optimizer
-model = PolynomialIntegrationNet()
-criterion = nn.MSELoss()
-optimizer = optim.Adam(model.parameters(), lr=0.001)
+input_dim = max_degree + 2  # Input size: max_degree + 2 (L + coefficients)
+model = build_model(input_dim)
+model.compile(optimizer=optimizers.Adam(learning_rate=0.001), loss='mse', metrics=['mse'])
+
+# Convert data to TensorFlow tensors
+X_train_tensor = tf.convert_to_tensor(X_train, dtype=tf.float32)
+y_train_tensor = tf.convert_to_tensor(y_train, dtype=tf.float32)
+X_val_tensor = tf.convert_to_tensor(X_val, dtype=tf.float32)
+y_val_tensor = tf.convert_to_tensor(y_val, dtype=tf.float32)
 
 # Train the neural network
 epochs = 100
-for epoch in range(epochs):
-    model.train()
-    optimizer.zero_grad()
-    predictions = model(X_train_tensor)
-    loss = criterion(predictions, y_train_tensor)
-    loss.backward()
-    optimizer.step()
-
-    if (epoch + 1) % 10 == 0:
-        print(f"Epoch {epoch + 1}/{epochs}, Loss: {loss.item()}")
+history = model.fit(
+    X_train_tensor, y_train_tensor,
+    validation_data=(X_val_tensor, y_val_tensor),
+    epochs=epochs,
+    batch_size=32,
+    verbose=1
+)
 
 # Validate the model
-model.eval()
-with torch.no_grad():
-    y_pred_tensor = model(X_val_tensor)
-    mse_val = criterion(y_pred_tensor, y_val_tensor).item()
-
+mse_val = model.evaluate(X_val_tensor, y_val_tensor, verbose=0)[1]
 print(f"Validation MSE: {mse_val}")
