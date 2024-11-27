@@ -45,7 +45,7 @@ X_val_tensor = tf.convert_to_tensor(X_val, dtype=tf.float32)
 y_val_tensor = tf.convert_to_tensor(y_val, dtype=tf.float32)
 
 # Train the neural network
-epochs = 100
+epochs = 20
 history = model.fit(
     X_train_tensor, y_train_tensor,
     validation_data=(X_val_tensor, y_val_tensor),
