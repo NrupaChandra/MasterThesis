@@ -1,40 +1,50 @@
 import tensorflow as tf
 import numpy as np
 
-# Step 1: Define a custom Lambda Layer
-class LambdaFilterLayer(tf.keras.layers.Layer):
-    def call(self, inputs):
-        coeffs, x0 = inputs
-        return x0  # Pass through X0 as-is for now
-
-# Step 2: Build the Neural Network
+# Step 1: Build the Neural Network
 def build_model():
     # Input layers
     coeff_input = tf.keras.Input(shape=(3,), name="coefficients")  # a, b, c
-    x0_input = tf.keras.Input(shape=(1,), name="x0")  # X0 (upper integration limit)
+    x0_input = tf.keras.Input(shape=(1,), name="x0")  # X0
     
-    # Lambda filter layer
-    x0 = LambdaFilterLayer()([coeff_input, x0_input])
+    # Process coefficients
+    #Rectified Linear Unit (ReLU) f(x) = max (0,x), makes it positive
+    #This processes the coefficients and produces a 8-dimensional output.
+    coeff_dense = tf.keras.layers.Dense(8, activation="relu")(coeff_input) 
+
+    # Process x0
+    # This processes the x0 and produces a 8-dimensional output.
+    x0_dense = tf.keras.layers.Dense(8, activation="relu")(x0_input)
     
-    # Reshape X0 for CNN
-    x0_reshaped = tf.keras.layers.Reshape((1, 1, 1))(x0)
+    # Combine coefficients and x0
+    #Creates a single tensor combining the processed coefficients x0
+    combined = tf.keras.layers.Concatenate()([coeff_dense, x0_dense])
     
-    # Convolutional layers to generate weights and nodes
-    conv1 = tf.keras.layers.Conv2D(16, (1, 1), activation="relu")(x0_reshaped)
-    conv2 = tf.keras.layers.Conv2D(32, (1, 1), activation="relu")(conv1)
-    conv3 = tf.keras.layers.Conv2D(1, (1, 1), activation="linear")(conv2)  # Final output
     
-    # Flatten to produce weights and nodes
-    output = tf.keras.layers.Flatten()(conv3)
-    
+    # Add convolutional layers to process the combined input
+    cnn_input = tf.keras.layers.Reshape((1, -1, 1))(combined)  # Reshape for CNN compatibility
+    conv1 = tf.keras.layers.Conv2D(32, (1, 3), activation="relu", padding="same")(cnn_input)
+    conv2 = tf.keras.layers.Conv2D(64, (1, 3), activation="relu", padding="same")(conv1)
+    conv3 = tf.keras.layers.Conv2D(128, (1, 3), activation="relu", padding="same")(conv2)
+    flattened = tf.keras.layers.Flatten()(conv3)
+
+    # Dense layers for prediction
+    dense1 = tf.keras.layers.Dense(128, activation="relu")(flattened)
+    dense2 = tf.keras.layers.Dense(128, activation="relu")(dense1)
+    dense3 = tf.keras.layers.Dense(64, activation="relu")(dense2)
+    output = tf.keras.layers.Dense(1, activation="linear")(dense3)
+
     # Model definition
     model = tf.keras.Model(inputs=[coeff_input, x0_input], outputs=output, name="QuadratureNet")
     return model
 
-# Step 3: Generate Data for Training
+# Step 2: Generate Data for Training
 def generate_data(num_samples=10000):
-    coeffs = np.random.uniform(-1, 1, size=(num_samples, 3))  # Random a, b, c
-    x0 = np.random.uniform(-1, 1, size=(num_samples, 1))  # Random X0 in range [-1, 1]
+    # Generate random coefficients (a, b, c) and x0
+    coeffs = np.random.uniform(-1, 1, size=(num_samples, 3)).astype(np.float64)  # a, b, c
+    x0 = np.random.uniform(-1, 1, size=(num_samples, 1)).astype(np.float64)  # X0
+    
+    # Calculate analytical integrals
     integrals = []
     for i in range(num_samples):
         a, b, c = coeffs[i]
@@ -43,12 +53,19 @@ def generate_data(num_samples=10000):
             a * (x0_i**3 / 3 - (-1)**3 / 3) +
             b * (x0_i**2 / 2 - (-1)**2 / 2) +
             c * (x0_i - (-1))
-        )  # Analytical integration
+        )
         integrals.append(integral)
-    integrals = np.array(integrals).reshape(-1, 1)
+    
+    integrals = np.array(integrals, dtype=np.float64).reshape(-1, 1)
+    
+    # Normalize inputs
+    # Ensures the inputs are centered around 0 with a standard deviation of 1, which improves training stability.
+    coeffs = (coeffs - np.mean(coeffs, axis=0)) / np.std(coeffs, axis=0)
+    x0 = (x0 - np.mean(x0, axis=0)) / np.std(x0, axis=0)
+    
     return coeffs, x0, integrals
 
-# Step 4: Train the Model
+# Step 3: Train the Model
 def train_model():
     # Build the model
     model = build_model()
@@ -59,10 +76,14 @@ def train_model():
     # Generate data
     coeffs, x0, integrals = generate_data()
     
+    # Learning rate scheduler
+    lr_schedule = tf.keras.callbacks.LearningRateScheduler(lambda epoch: 1e-3 * 0.95**epoch)
+    
     # Train the model
-    model.fit([coeffs, x0], integrals, epochs=50, batch_size=32)
+    model.fit([coeffs, x0], integrals, epochs=50, batch_size=32, callbacks=[lr_schedule])
     
     return model
 
-# Step 5: Evaluate the Model
-model = train_model()
+# Step 4: Evaluate the Model
+if __name__ == "__main__":
+    model = train_model()
