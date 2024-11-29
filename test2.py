@@ -10,11 +10,11 @@ def build_model():
     # Process coefficients
     #Rectified Linear Unit (ReLU) f(x) = max (0,x), makes it positive
     #This processes the coefficients and produces a 8-dimensional output.
-    coeff_dense = tf.keras.layers.Dense(8, activation="relu")(coeff_input) 
+    coeff_dense = tf.keras.layers.Dense(16, activation="relu")(coeff_input) 
 
     # Process x0
     # This processes the x0 and produces a 8-dimensional output.
-    x0_dense = tf.keras.layers.Dense(8, activation="relu")(x0_input)
+    x0_dense = tf.keras.layers.Dense(16, activation="relu")(x0_input)
     
     # Combine coefficients and x0
     #Creates a single tensor combining the processed coefficients x0
@@ -29,9 +29,11 @@ def build_model():
     flattened = tf.keras.layers.Flatten()(conv3)
 
     # Dense layers for prediction
-    dense1 = tf.keras.layers.Dense(128, activation="relu")(flattened)
-    dense2 = tf.keras.layers.Dense(128, activation="relu")(dense1)
-    dense3 = tf.keras.layers.Dense(64, activation="relu")(dense2)
+    dense1 = tf.keras.layers.Dense(512, activation="relu")(flattened)
+    dense2 = tf.keras.layers.Dense(256, activation="relu")(dense1)
+    dense3 = tf.keras.layers.Dense(128, activation="relu")(dense2)
+    dense4 = tf.keras.layers.Dense(64, activation="relu")(dense3)
+    dense5 = tf.keras.layers.Dense(32, activation="relu")(dense3)
     output = tf.keras.layers.Dense(1, activation="linear")(dense3)
 
     # Model definition
@@ -42,7 +44,7 @@ def build_model():
 def generate_data(num_samples=10000):
     # Generate random coefficients (a, b, c) and x0
     coeffs = np.random.uniform(-1, 1, size=(num_samples, 3)).astype(np.float64)  # a, b, c
-    x0 = np.random.uniform(-1, 1, size=(num_samples, 1)).astype(np.float64)  # X0
+    x0 = np.random.uniform(0, 1, size=(num_samples, 1)).astype(np.float64)  # X0
     
     # Calculate analytical integrals
     integrals = []
@@ -50,9 +52,9 @@ def generate_data(num_samples=10000):
         a, b, c = coeffs[i]
         x0_i = x0[i, 0]
         integral = (
-            a * (x0_i**3 / 3 - (-1)**3 / 3) +
-            b * (x0_i**2 / 2 - (-1)**2 / 2) +
-            c * (x0_i - (-1))
+            a * (x0_i**3 / 3 - (0)**3 / 3) +
+            b * (x0_i**2 / 2 - (0)**2 / 2) +
+            c * (x0_i - 0)
         )
         integrals.append(integral)
     
