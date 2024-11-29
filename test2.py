@@ -33,7 +33,6 @@ def build_model():
     dense2 = tf.keras.layers.Dense(256, activation="relu")(dense1)
     dense3 = tf.keras.layers.Dense(128, activation="relu")(dense2)
     dense4 = tf.keras.layers.Dense(64, activation="relu")(dense3)
-    dense5 = tf.keras.layers.Dense(32, activation="relu")(dense3)
     output = tf.keras.layers.Dense(1, activation="linear")(dense3)
 
     # Model definition
