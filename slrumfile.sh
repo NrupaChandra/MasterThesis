@@ -27,10 +27,10 @@ export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
 nvidia-smi 1>&2
 
 # Activate your Python environment:
-source ~/miniconda3/bin/activate env     # Replace `my_env` with your Conda environment name
+source ~/miniconda3/bin/activate env     
 
 # Run your Python script:
-python Helloworld.py                      # Replace `your_script.py` with your script name
+python Helloworld.py                     
 EXITCODE=$?
 
 # Job script exits with the program's exit code:
