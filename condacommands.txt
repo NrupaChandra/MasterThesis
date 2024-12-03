@@ -1,0 +1,18 @@
+
+#Conda commands
+
+conda --version #Check conda version
+conda update conda #update conda itself
+
+conda create --name <env_name> python=<version> # Create new environment 
+conda activate <env_name> #activate an environment
+conda deactivate #deactivate an environment 
+conda env list #List all environment
+conda remove --name <env_name> --all #Remove an environment 
+----------------------------------------------------------------
+
+#
+
+
+
+
