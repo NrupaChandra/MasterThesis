@@ -1,32 +1,23 @@
 import numpy as np
 import tensorflow as tf
 from tensorflow.keras import layers, models
+from sklearn.model_selection import train_test_split
 
-# Function to calculate the integral using actual Gaussian quadrature nodes and weights
-def gaussian_quadrature_integration(a, b, c, x0, nodes, weights):
-    # Evaluate the function at the transformed nodes
-    f_values = a * nodes**2 + b * nodes + c
-    # Compute the integral using the Gaussian quadrature rule
-    integral_approx = np.sum(weights * f_values)
-    return integral_approx
-
-# Function to calculate the exact integral of a quadratic function from 0 to x0
+# Exact integral of the quadratic function ax^2 + bx + c from 0 to x0
 def exact_integral(a, b, c, x0):
-    return (a * x0**3 / 3) + (b * x0**2 / 2) + (c * x0)
+    return (a * (x0**3) / 3) + (b * (x0**2) / 2) + (c * x0)
 
-# Neural Network model to predict 2 nodes and 2 weights for Gaussian quadrature
-def build_nn():
-    model = models.Sequential()
-    model.add(layers.Dense(64, input_dim=3, activation='relu'))
-    model.add(layers.Dense(64, activation='relu'))
-    model.add(layers.Dense(4))  # 2 nodes and 2 weights (output layer)
-    model.compile(optimizer='adam', loss='mse')
-    return model
+# Gaussian quadrature for n=2
+def gaussian_quadrature_integration(a, b, c, x0, nodes, weights):
+    # Calculate the function values at the nodes
+    f_values = a * nodes**2 + b * nodes + c
+    # Compute the approximate integral
+    return np.sum(weights * f_values)
 
-# Training data generation (coefficients of quadratic function and actual nodes/weights)
-def generate_data(num_samples=1000):
-    coeffs = np.random.uniform(-1, 1, size=(num_samples, 3))  # Random coefficients a, b, c
-    x0 = np.random.uniform(0, 1, size=(num_samples, 1))  # Random x0 values
+# Generate the data (coefficients and nodes/weights)
+def generate_data(num_samples=10000):
+    coeffs = np.random.uniform(-1, 1, size=(num_samples, 3))
+    x0 = np.random.uniform(0, 1, size=(num_samples, 1))
 
     nodes_weights = []
     integrals = []
@@ -34,75 +25,80 @@ def generate_data(num_samples=1000):
     for i in range(num_samples):
         a, b, c = coeffs[i]
         x0_i = x0[i, 0]
+        
+        # Exact integral calculation
+        exact = exact_integral(a, b, c, x0_i)
+        integrals.append(exact)
 
-        # Exact integral of ax^2 + bx + c from 0 to x0
-        exact_integral_val = exact_integral(a, b, c, x0_i)
-        integrals.append(exact_integral_val)
-
-        # Gaussian quadrature: n = 2 (nodes and weights)
-        t1, t2 = -1 / np.sqrt(3), 1 / np.sqrt(3)
-        w1, w2 = 1, 1
-
-        x1 = (x0_i / 2) * (1 + t1)
-        x2 = (x0_i / 2) * (1 + t2)
+        # Gaussian quadrature nodes and weights for n=2
+        t1 = -np.sqrt(1 / 3)
+        t2 = np.sqrt(1 / 3)
+        
+        x1 = (x0_i / 2) * (t1 + 1)
+        x2 = (x0_i / 2) * (t2 + 1)
+        
+        w1 = w2 = x0_i / 2
+        
         nodes_weights.append([x1, x2, w1, w2])
 
-    nodes_weights = np.array(nodes_weights)
-    integrals = np.array(integrals).reshape(-1, 1)
-
+    integrals = np.array(integrals, dtype=np.float64).reshape(-1, 1)
+    nodes_weights = np.array(nodes_weights, dtype=np.float64)
+    
     return coeffs, x0, nodes_weights, integrals
 
-# Training the neural network
-def train_nn():
-    model = build_nn()
+# Define the Neural Network to predict nodes and weights
+def build_nn_model():
+    model = models.Sequential()
+    model.add(layers.InputLayer(input_shape=(4,)))  # 4 input values (a, b, c, x0)
+    model.add(layers.Dense(64, activation='relu'))
+    model.add(layers.Dense(64, activation='relu'))
+    model.add(layers.Dense(4))  # Output 4 values (2 nodes, 2 weights)
+    
+    model.compile(optimizer='adam', loss='mse')
+    return model
 
-    # Generate training data
-    coeffs, x0, nodes_weights, integrals = generate_data()
+# Main script to train and evaluate the model
+def train_and_evaluate():
+    # Generate data
+    coeffs, x0, nodes_weights, integrals = generate_data(num_samples=10000)
+    
+    # Prepare the input and output for the model
+    inputs = np.hstack([coeffs, x0])  # Shape: (num_samples, 4) (a, b, c, x0)
+    outputs = nodes_weights  # Shape: (num_samples, 4) (x1, x2, w1, w2)
 
-    # Prepare training inputs and outputs for NN
-    X_train = coeffs
-    y_train = nodes_weights
+    # Split the data into training and validation sets
+    X_train, X_val, y_train, y_val = train_test_split(inputs, outputs, test_size=0.2, random_state=42)
+    
+    # Build and train the model
+    model = build_nn_model()
+    model.fit(X_train, y_train, epochs=50, batch_size=32, validation_data=(X_val, y_val))
 
-    # Train the neural network
-    model.fit(X_train, y_train, epochs=50, batch_size=32)
-
-    return model, coeffs, x0, nodes_weights, integrals
-
-# Evaluate the model and compare integrals
-def evaluate_nn(model, coeffs, x0, nodes_weights, integrals):
-    # Use the trained NN to predict nodes and weights
-    predictions = model.predict(coeffs)
-
-    # Calculate integrals for the exact, actual nodes/weights, and predicted nodes/weights
-    exact_integrals = []
-    actual_integrals = []
-    predicted_integrals = []
-
-    for i in range(len(coeffs)):
+    # Evaluate the model
+    for i in range(5):
         a, b, c = coeffs[i]
         x0_i = x0[i, 0]
+        nodes, weights = nodes_weights[i, :2], nodes_weights[i, 2:]
 
         # Exact integral
-        exact_integrals.append(exact_integral(a, b, c, x0_i))
-
-        # Actual integral using Gaussian quadrature nodes and weights
-        nodes_actual, weights_actual = nodes_weights[i, :2], nodes_weights[i, 2:]
-        actual_integrals.append(gaussian_quadrature_integration(a, b, c, x0_i, nodes_actual, weights_actual))
-
-        # Predicted integral using NN predicted nodes and weights
-        nodes_predicted, weights_predicted = predictions[i, :2], predictions[i, 2:]
-        predicted_integrals.append(gaussian_quadrature_integration(a, b, c, x0_i, nodes_predicted, weights_predicted))
-
-    # Print out the results for comparison
-    for i in range(5):
+        exact = integrals[i][0]
+        
+        # Approximate integral using Gaussian quadrature (actual nodes/weights)
+        approx_integral_actual = gaussian_quadrature_integration(a, b, c, x0_i, nodes, weights)
+        
+        # Predict nodes and weights using the trained NN model
+        predicted_nodes_weights = model.predict(np.array([[a, b, c, x0_i]]))[0]
+        predicted_nodes = predicted_nodes_weights[:2]
+        predicted_weights = predicted_nodes_weights[2:]
+        
+        # Approximate integral using predicted nodes/weights
+        approx_integral_predicted = gaussian_quadrature_integration(a, b, c, x0_i, predicted_nodes, predicted_weights)
+        
         print(f"Sample {i+1}:")
-        print(f"  Exact Integral: {exact_integrals[i]:.4f}")
-        print(f"  Integral from Actual Nodes/Weights: {actual_integrals[i]:.4f}")
-        print(f"  Integral from Predicted Nodes/Weights: {predicted_integrals[i]:.4f}")
+        print(f"  Exact Integral: {exact:.4f}")
+        print(f"  Computed Integral (from actual nodes/weights): {approx_integral_actual:.4f}")
+        print(f"  Computed Integral (from predicted nodes/weights): {approx_integral_predicted:.4f}")
         print("--------------------------------------------------")
 
-# Main execution
+# Run the training and evaluation
 if __name__ == "__main__":
-    # Train the neural network and evaluate the results
-    model, coeffs, x0, nodes_weights, integrals = train_nn()
-    evaluate_nn(model, coeffs, x0, nodes_weights, integrals)
+    train_and_evaluate()
