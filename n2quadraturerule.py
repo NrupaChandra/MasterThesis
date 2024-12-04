@@ -24,10 +24,10 @@ def exact_integral(a, b, c, x0):
     return (a * x0**3 / 3) + (b * x0**2 / 2) + (c * x0)
 
 # Example: Define the quadratic function parameters (a, b, c)
-a = 2.0
-b = 1.0
-c = 0.5
-x0 = 0.8  # Upper limit of integration
+a = 0
+b = 0
+c = 1
+x0 = 1  # Upper limit of integration
 
 # Calculate the exact integral
 exact_val = exact_integral(a, b, c, x0)
