@@ -13,6 +13,9 @@ def prepare_feature_matrix(data):
     return np.array(feature_matrix)
 
 # Function to prepare the target matrix
+'''Padding: The function now calculates the max_length of the lists (nodes_x, nodes_y, and weights) across all entries
+   in the dataset. If a list is shorter than max_length, it is padded with zeros.Consistent Shape: All lists are padded 
+   to ensure they have the same length, avoiding the "inhomogeneous shape" error.'''
 def prepare_target_matrix(data):
     target_matrix = []
     max_length = max([len(entry['nodes_x']) for entry in data] +
