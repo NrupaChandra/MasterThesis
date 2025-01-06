@@ -90,5 +90,5 @@ merged_data_1st_order = merge_data(data_1st_order, nodes_weights_1D)
 merged_data_2nd_order = merge_data(data_2nd_order, nodes_weights_2D)
 
 # Check if the merge is successful
-print("1st Order Merged Data Sample:", merged_data_1st_order[:1])  # Show first two entries for preview
+#print("1st Order Merged Data Sample:", merged_data_1st_order[:1])  # Show first two entries for preview
 #print("2nd Order Merged Data Sample:", merged_data_2nd_order[:2])  # Show first two entries for preview
