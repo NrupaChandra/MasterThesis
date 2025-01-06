@@ -1,57 +1,96 @@
-# main_script.py
 import numpy as np
-from reader import merged_data_1st_order  , merged_data_2nd_order 
+from reader import merged_data_1st_order, merged_data_2nd_order
+from sklearn.linear_model import LinearRegression
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import mean_squared_error
 
 # Function to prepare the feature matrix
 def prepare_feature_matrix(data):
     feature_matrix = []
     for entry in data:
-        # Combine exp_x, exp_y, and coeff into a single feature vector
         feature_vector = entry['exp_x'] + entry['exp_y'] + entry['coeff']
         feature_matrix.append(feature_vector)
-    
     return np.array(feature_matrix)
 
 # Function to prepare the target matrix
 def prepare_target_matrix(data):
     target_matrix = []
-    
-    # Determine the maximum length for nodes_x, nodes_y, and weights
     max_length = max([len(entry['nodes_x']) for entry in data] +
                      [len(entry['nodes_y']) for entry in data] +
                      [len(entry['weights']) for entry in data])
     
     for entry in data:
-        # Pad the lists to ensure they are all the same length
-
-        '''Padding: The function now calculates the max_length of the lists (nodes_x, nodes_y, and weights)
-           across all entries in the dataset. If a list is shorter than max_length, it is padded with zeros.
-           Consistent Shape: All lists are padded to ensure they have the same length, avoiding the 
-           inhomogeneous shape error.'''
-        
         padded_nodes_x = entry['nodes_x'] + [0] * (max_length - len(entry['nodes_x']))
         padded_nodes_y = entry['nodes_y'] + [0] * (max_length - len(entry['nodes_y']))
         padded_weights = entry['weights'] + [0] * (max_length - len(entry['weights']))
-        
-        # Combine the padded lists into a single target vector
         target_vector = padded_nodes_x + padded_nodes_y + padded_weights
         target_matrix.append(target_vector)
-    
     return np.array(target_matrix)
 
-
-# Prepare feature matrix 
+# Prepare feature and target matrices for 1st order data
 feature_matrix_1st_order = prepare_feature_matrix(merged_data_1st_order)
-feature_matrix_2nd_order = prepare_feature_matrix(merged_data_2nd_order)
-
-# Prepare target matrix 
 target_matrix_1st_order = prepare_target_matrix(merged_data_1st_order)
+
+# Prepare feature and target matrices for 2nd order data
+feature_matrix_2nd_order = prepare_feature_matrix(merged_data_2nd_order)
 target_matrix_2nd_order = prepare_target_matrix(merged_data_2nd_order)
 
-# Print feature matrix 
-print("1st Order Merged Data Sample:", feature_matrix_1st_order[:1])  # Show first two entries for preview
-print("2nd Order Merged Data Sample:", feature_matrix_2nd_order[:1])  # Show first two entries for preview
+# Split data into training and testing sets (80% for training, 20% for testing)
+X_train_1st, X_test_1st, y_train_1st, y_test_1st = train_test_split(feature_matrix_1st_order, target_matrix_1st_order, test_size=0.2, random_state=42)
+X_train_2nd, X_test_2nd, y_train_2nd, y_test_2nd = train_test_split(feature_matrix_2nd_order, target_matrix_2nd_order, test_size=0.2, random_state=42)
 
-# Print target matrix 
-print("1st Order Merged Data Sample:", target_matrix_1st_order[:2])  # Show first two entries for preview
-print("2nd Order Merged Data Sample:", target_matrix_2nd_order[:2])  # Show first two entries for preview
+# Initialize a simple linear regression model
+model = LinearRegression()
+
+# Train the model on the 1st order data
+model.fit(X_train_1st, y_train_1st)
+
+# Predict on the test data for 1st order
+y_pred_1st = model.predict(X_test_1st)
+
+# Evaluate the model performance using Mean Squared Error (MSE) for 1st order data
+mse_1st = mean_squared_error(y_test_1st, y_pred_1st)
+print("Mean Squared Error on 1st Order Test Data:", mse_1st)
+
+# Train the model on the 2nd order data
+model.fit(X_train_2nd, y_train_2nd)
+
+# Predict on the test data for 2nd order
+y_pred_2nd = model.predict(X_test_2nd)
+
+# Evaluate the model performance using Mean Squared Error (MSE) for 2nd order data
+mse_2nd = mean_squared_error(y_test_2nd, y_pred_2nd)
+print("Mean Squared Error on 2nd Order Test Data:", mse_2nd)
+
+# Function to save predictions to a text file in the desired format
+def save_predictions_to_text_file(predictions, data, file_path):
+    with open(file_path, 'w') as file:
+        # Write the header
+        file.write("number;id;nodes_x;nodes_y;weights\n")
+        
+        # Write the predictions and corresponding ids
+        for idx, (entry, prediction) in enumerate(zip(data, predictions)):
+            # Get the id
+            entry_id = entry['id']
+            
+            # Get the predicted nodes_x, nodes_y, and weights
+            predicted_nodes_x = prediction[:len(entry['nodes_x'])]  # Extract corresponding nodes_x
+            predicted_nodes_y = prediction[len(entry['nodes_x']):len(entry['nodes_x']) + len(entry['nodes_y'])]  # Extract corresponding nodes_y
+            predicted_weights = prediction[len(entry['nodes_x']) + len(entry['nodes_y']):]  # Extract corresponding weights
+            
+            # Format the data for this entry
+            formatted_data = f"{idx};{entry_id};" + \
+                             ";".join(map(str, predicted_nodes_x)) + ";" + \
+                             ";".join(map(str, predicted_nodes_y)) + ";" + \
+                             ";".join(map(str, predicted_weights)) + "\n"
+            
+            # Write to file
+            file.write(formatted_data)
+
+    print(f"Predictions saved to {file_path}")
+
+# Save predictions for 1st order data to a text file
+save_predictions_to_text_file(y_pred_1st, merged_data_1st_order, "predictions_1st_order.txt")
+
+# Save predictions for 2nd order data to a text file
+save_predictions_to_text_file(y_pred_2nd, merged_data_2nd_order, "predictions_2nd_order.txt")
