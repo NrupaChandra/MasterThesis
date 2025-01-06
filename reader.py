@@ -31,32 +31,41 @@ def read_nodes_weights_file(file_path):
     with open(file_path, 'r') as file:
         # Skip the header line
         next(file)
-        for line in file:
+        for line_number, line in enumerate(file, 2):  # Starting from line 2 to track line numbers
             # Skip empty lines
             if not line.strip():
                 continue
             # Split the line into components by the semicolon delimiter
             parts = line.strip().split(';')
             if len(parts) == 5:  # Ensure there are nodes_x, nodes_y, and weights
-                number = int(parts[0])  # Parse the number
-                id_ = parts[1]          # Unique ID
-                nodes_x = list(map(float, parts[2].split(',')))  # Nodes in x
-                nodes_y = list(map(float, parts[3].split(',')))  # Nodes in y
-                weights = list(map(float, parts[4].split(',')))  # Weights
-                # Store nodes and weights data by 'number' for later merging
-                data[number] = {
-                    'id': id_,
-                    'nodes_x': nodes_x,
-                    'nodes_y': nodes_y,
-                    'weights': weights
-                }
+                try:
+                    # Check and convert nodes_x, nodes_y, and weights to lists of floats
+                    nodes_x = list(map(float, parts[2].split(','))) if parts[2].strip() else []
+                    nodes_y = list(map(float, parts[3].split(','))) if parts[3].strip() else []
+                    weights = list(map(float, parts[4].split(','))) if parts[4].strip() else []
+                    
+                    # Parse the number and id
+                    number = int(parts[0])  # Parse the number
+                    id_ = parts[1]          # Unique ID
+                    
+                    # Store nodes and weights data by 'number' for later merging
+                    data[number] = {
+                        'id': id_,
+                        'nodes_x': nodes_x,
+                        'nodes_y': nodes_y,
+                        'weights': weights
+                    }
+                except ValueError:
+                    print(f"Error processing line {line_number}: {line}")
+                    continue  # Skip this line if there's an error
     return data
+
 
 # Correct file paths
 file_1st_order = r'C:\Git\QuadRuleGeneration\Bernstein_p1_data.txt'
 file_2nd_order = r'C:\Git\QuadRuleGeneration\Bernstein_p2_data.txt'
 file_nodes_weights_1D = r'C:\Git\QuadRuleGeneration\Bernstein_p1_output.txt'
-file_nodes_weights_2D = r'C:\Git\QuadRuleGeneration\Bernstein_p1_output.txt'
+file_nodes_weights_2D = r'C:\Git\QuadRuleGeneration\Bernstein_p2_output.txt'
 
 # Read data from level set and node/weight files
 data_1st_order = read_level_set_file(file_1st_order)
