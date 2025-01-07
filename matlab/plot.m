@@ -12,6 +12,12 @@ y = linspace(-1, 1, 100);  % 100 points from -1 to 1
 numPlots = 5;
 randomIndices = randperm(numel(levelSet), numPlots);
 
+% Define folder to save plots
+outputFolder = 'C:\Git\MasterThesis\matlab\plots';  % Change this to your desired folder path
+if ~exist(outputFolder, 'dir')
+    mkdir(outputFolder);  % Create folder if it doesn't exist
+end
+
 % Loop over the randomly selected level set expressions
 for i = 1:numPlots
     % Get the randomly selected level set expression
@@ -43,4 +49,8 @@ for i = 1:numPlots
     xlim([-1 1]);
     ylim([-1 1]);
     grid on;
+    
+    % Save the plot as a PNG file
+    plotFileName = fullfile(outputFolder, ['levelSet_plot_' num2str(randomIndices(i)) '.png']);
+    saveas(gcf, plotFileName);
 end
