@@ -1,0 +1,36 @@
+% Define folder to save plots
+outputFolder = 'C:\Git\MasterThesis\matlab';  % Change this to your desired folder path
+if ~exist(outputFolder, 'dir')
+    mkdir(outputFolder);  % Create folder if it doesn't exist
+end
+
+% Read the level set function data
+levelSetFile = 'C:\Git\MasterThesis\matlab\Bernstein_p1_data.txt';  
+levelSetData = readtable(levelSetFile, 'Delimiter', ';');
+
+% Read the nodes and weights data
+nodesWeightsFile = 'C:\Git\MasterThesis\matlab\Bernstein_p1_output.txt';  
+nodesWeightsData = readtable(nodesWeightsFile, 'Delimiter', ';');
+
+% Extract relevant columns from the table
+exp_x = levelSetData.exp_x;   % x-expressions
+exp_y = levelSetData.exp_y;   % y-expressions
+coeff = levelSetData.coeff;   % coefficients
+
+[X, Y] = meshgrid(-1, 1);
+
+% Initialize the level set function
+phi = zeros(size(X));
+
+% Construct the level set function by summing the terms
+for i = 1:height(levelSetData)
+    % Evaluate each term using the corresponding exp_x, exp_y, and coeff
+    phi = phi + coeff(i) * (exp_x(i) * X + exp_y(i) * Y);  % Modify this depending on the actual form of exp_x and exp_y
+end
+
+% Plot the level set function
+figure;
+contour(X, Y, phi, 50);  % Contour plot of the level set function
+title('Level Set Function');
+xlabel('X');
+ylabel('Y');
