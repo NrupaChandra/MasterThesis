@@ -12,10 +12,7 @@ def prepare_feature_matrix(data):
         feature_matrix.append(feature_vector)
     return np.array(feature_matrix)
 
-# Function to prepare the target matrix
-'''Padding: The function now calculates the max_length of the lists (nodes_x, nodes_y, and weights) across all entries
-   in the dataset. If a list is shorter than max_length, it is padded with zeros.Consistent Shape: All lists are padded 
-   to ensure they have the same length, avoiding the "inhomogeneous shape" error.'''
+# Function to prepare the target matrix with padding
 def prepare_target_matrix(data):
     target_matrix = []
     max_length = max([len(entry['nodes_x']) for entry in data] +
@@ -28,6 +25,7 @@ def prepare_target_matrix(data):
         padded_weights = entry['weights'] + [0] * (max_length - len(entry['weights']))
         target_vector = padded_nodes_x + padded_nodes_y + padded_weights
         target_matrix.append(target_vector)
+    
     return np.array(target_matrix)
 
 # Prepare feature and target matrices for 1st order data
@@ -65,7 +63,7 @@ y_pred_2nd = model.predict(X_test_2nd)
 mse_2nd = mean_squared_error(y_test_2nd, y_pred_2nd)
 print("Mean Squared Error on 2nd Order Test Data:", mse_2nd)
 
-# Function to save predictions to a text file in the desired format
+# Function to save predictions to a text file in the specified format
 def save_predictions_to_text_file(predictions, data, file_path):
     with open(file_path, 'w') as file:
         # Write the header
@@ -76,16 +74,23 @@ def save_predictions_to_text_file(predictions, data, file_path):
             # Get the id
             entry_id = entry['id']
             
-            # Get the predicted nodes_x, nodes_y, and weights
-            predicted_nodes_x = prediction[:len(entry['nodes_x'])]  # Extract corresponding nodes_x
-            predicted_nodes_y = prediction[len(entry['nodes_x']):len(entry['nodes_x']) + len(entry['nodes_y'])]  # Extract corresponding nodes_y
-            predicted_weights = prediction[len(entry['nodes_x']) + len(entry['nodes_y']):]  # Extract corresponding weights
+            # Get the original number of nodes_x, nodes_y, and weights for this entry
+            num_nodes_x = len(entry['nodes_x'])  # Original number of nodes_x
+            num_nodes_y = len(entry['nodes_y'])  # Original number of nodes_y
+            num_weights = len(entry['weights'])  # Original number of weights
             
-            # Format the data for this entry
-            formatted_data = f"{idx};{entry_id};" + \
-                             ";".join(map(str, predicted_nodes_x)) + ";" + \
-                             ";".join(map(str, predicted_nodes_y)) + ";" + \
-                             ";".join(map(str, predicted_weights)) + "\n"
+            # Extract the predicted nodes_x, nodes_y, and weights
+            predicted_nodes_x = prediction[:num_nodes_x]  # Extract corresponding nodes_x
+            predicted_nodes_y = prediction[num_nodes_x:num_nodes_x + num_nodes_y]  # Extract corresponding nodes_y
+            predicted_weights = prediction[num_nodes_x + num_nodes_y:num_nodes_x + num_nodes_y + num_weights]  # Extract corresponding weights
+            
+            # Format the data as comma-separated values
+            nodes_x_str = ",".join(map(str, predicted_nodes_x))
+            nodes_y_str = ",".join(map(str, predicted_nodes_y))
+            weights_str = ",".join(map(str, predicted_weights))
+            
+            # Format the entire row
+            formatted_data = f"{idx};{entry_id};{nodes_x_str};{nodes_y_str};{weights_str}\n"
             
             # Write to file
             file.write(formatted_data)
@@ -93,7 +98,7 @@ def save_predictions_to_text_file(predictions, data, file_path):
     print(f"Predictions saved to {file_path}")
 
 # Save predictions for 1st order data to a text file
-save_predictions_to_text_file(y_pred_1st, merged_data_1st_order, "predictions_1st_order.txt")
+save_predictions_to_text_file(y_pred_1st, merged_data_1st_order, "predictions_p1_output.txt")
 
 # Save predictions for 2nd order data to a text file
-save_predictions_to_text_file(y_pred_2nd, merged_data_2nd_order, "predictions_2nd_order.txt")
+save_predictions_to_text_file(y_pred_2nd, merged_data_2nd_order, "predictions_p2_output.txt")

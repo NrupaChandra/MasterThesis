@@ -1,56 +1,83 @@
-% Load the levelSet data
+% Load the required data
+load('C:\Git\MasterThesis\matlab\nodes_x_with_id.mat', 'nodes_x_with_id');
+load('C:\Git\MasterThesis\matlab\nodes_y_with_id.mat', 'nodes_y_with_id');
+load('C:\Git\MasterThesis\matlab\weights_with_id.mat', 'weights_with_id');
 load('C:\Git\MasterThesis\matlab\levelSet.mat', 'levelSet');
 
-% Define the range of x and y
-x = linspace(-1, 1, 100);  % 100 points from -1 to 1
-y = linspace(-1, 1, 100);  % 100 points from -1 to 1
+% Ensure data consistency
+if ~isequal(length(nodes_x_with_id), length(nodes_y_with_id), length(weights_with_id))
+    error('Mismatch in the number of entries between nodes_x_with_id, nodes_y_with_id, and weights_with_id.');
+end
 
-% Create a meshgrid for plotting
-[X, Y] = meshgrid(x, y);
-
-% Randomly select 5 indices from the levelSet matrix
+% Number of plots
 numPlots = 5;
-randomIndices = randperm(numel(levelSet), numPlots);
+
+% Seed the random number generator
+rng(1);  % Replace 42 with any fixed integer for a different sequence
+
+% Extract IDs from nodes_x_with_id
+allIDs = cellfun(@(x) x{1}, nodes_x_with_id, 'UniformOutput', false);  % Extract IDs from the first element
+
+% Randomly select 5 unique IDs
+randomIndices = randperm(length(allIDs), numPlots);
 
 % Define folder to save plots
-outputFolder = 'C:\Git\MasterThesis\matlab\plots';  % Change this to your desired folder path
+outputFolder = 'C:\Git\MasterThesis\matlab\plots';  % Updated folder path
 if ~exist(outputFolder, 'dir')
     mkdir(outputFolder);  % Create folder if it doesn't exist
 end
 
-% Loop over the randomly selected level set expressions
+% Define the range of x and y for the level set function
+x = linspace(-1, 1, 100);  % 100 points from -1 to 1
+y = linspace(-1, 1, 100);  % 100 points from -1 to 1
+[X, Y] = meshgrid(x, y);
+
+% Loop through the selected IDs and create plots
 for i = 1:numPlots
-    % Get the randomly selected level set expression
-    expr = levelSet{randomIndices(i)};
+    % Get the current random index and ID
+    currentIndex = randomIndices(i);
+    currentID = allIDs{currentIndex};
     
-    % Evaluate the expression for each point on the grid
-    Z = zeros(size(X));  % Initialize the Z matrix (value of expression)
+    % Extract corresponding data for nodes and weights
+    currentNodesX = nodes_x_with_id{currentIndex}{2};  % Second element contains x-coordinates
+    currentNodesY = nodes_y_with_id{currentIndex}{2};  % Second element contains y-coordinates
+    currentWeights = weights_with_id{currentIndex}{2}; % Second element contains weights
     
-    for row = 1:numel(X)
-        % Extract x and y values from the grid
-        xi = X(row);
-        yi = Y(row);
-        
-        % Calculate the value of the expression at this (xi, yi)
-        Z(row) = double(subs(expr, {'x', 'y'}, {xi, yi}));  % Evaluate symbolically
+    % Extract corresponding level set function by matching IDs
+    levelSetStruct = levelSet{cellfun(@(x) strcmp(x.ID, currentID), levelSet)};
+    expr = levelSetStruct.Expression;  % Symbolic level set function
+
+    % Evaluate the level set function
+    Z = zeros(size(X));  % Initialize Z matrix for level set function
+    for row = 1:size(X, 1)
+        for col = 1:size(X, 2)
+            Z(row, col) = double(subs(expr, {'x', 'y'}, {X(row, col), Y(row, col)}));
+        end
     end
     
-    % Create a new figure for each plot
+    % Create the combined plot
     figure;
     
-    % Plot the level set expression (contour plot)
-    contour(X, Y, Z, [0, 0], 'LineWidth', 2);  % Plot the 0-level curve (interphase)
+    % Plot the level set function's 0-level contour
+    contour(X, Y, Z, [0, 0], 'LineWidth', 2, 'LineColor', 'b');  % Plot the 0-level curve (interface)
+    hold on;
+    
+    % Plot the scatter of nodes with weights
+    scatter(currentNodesX, currentNodesY, 20, currentWeights, 'filled', 'MarkerEdgeColor', 'k');
+    colorbar;
+    colormap(jet);
     
     % Customize the plot
-    title(['Level Set Expression ' num2str(randomIndices(i))]);
+    title(['actual plot for ID: ' currentID]);
     xlabel('x');
     ylabel('y');
     axis equal;
-    xlim([-1 1]);
-    ylim([-1 1]);
+    xlim([-1, 1]);
+    ylim([-1, 1]);
     grid on;
+    legend({'Level Set Contour', 'Nodes (weights as color)'}, 'Location', 'best');
     
-    % Save the plot as a PNG file
-    plotFileName = fullfile(outputFolder, ['levelSet_plot_' num2str(randomIndices(i)) '.png']);
+    % Save the combined plot
+    plotFileName = fullfile(outputFolder, ['combined_levelset_nodes_ID_' currentID '.png']);
     saveas(gcf, plotFileName);
 end
