@@ -109,6 +109,6 @@ for i = 1:numPlots
     legend({'Level Set Contour', 'Actual Nodes (weights as color)', 'ML Nodes (weights as color)'}, 'Location', 'best');
     
     % Save the combined plot
-    plotFileName = fullfile(outputFolder, ['combined_levelset_nodes_ID_' currentID '.png']);
+    plotFileName = fullfile(outputFolder, ['combined_levelset_nodes_ID_cnn' currentID '.png']);
     saveas(gcf, plotFileName);
 end
