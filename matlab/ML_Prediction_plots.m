@@ -5,8 +5,8 @@ load('C:\Git\MasterThesis\matlab\weights_with_id_ML.mat', 'weights_with_id_ML');
 load('C:\Git\MasterThesis\matlab\levelSet.mat', 'levelSet');
 
 % Ensure data consistency
-if ~isequal(length(nodes_x_with_id), length(nodes_y_with_id), length(weights_with_id))
-    error('Mismatch in the number of entries between nodes_x_with_id, nodes_y_with_id, and weights_with_id.');
+if ~isequal(length(nodes_x_with_id_ML), length(nodes_y_with_id_ML), length(weights_with_id_ML))
+    error('Mismatch in the number of entries between nodes_x_with_id_ML, nodes_y_with_id_ML, and weights_with_id_ML.');
 end
 
 % Number of plots
@@ -15,8 +15,8 @@ numPlots = 5;
 % Seed the random number generator
 rng(1);  % Replace 42 with any fixed integer for a different sequence
 
-% Extract IDs from nodes_x_with_id
-allIDs = cellfun(@(x) x{1}, nodes_x_with_id, 'UniformOutput', false);  % Extract IDs from the first element
+% Extract IDs from nodes_x_with_id_ML
+allIDs = cellfun(@(x) x{1}, nodes_x_with_id_ML, 'UniformOutput', false);  % Extract IDs from the first element
 
 % Randomly select 5 unique IDs
 randomIndices = randperm(length(allIDs), numPlots);
@@ -39,9 +39,9 @@ for i = 1:numPlots
     currentID = allIDs{currentIndex};
     
     % Extract corresponding data for nodes and weights
-    currentNodesX = nodes_x_with_id{currentIndex}{2};  % Second element contains x-coordinates
-    currentNodesY = nodes_y_with_id{currentIndex}{2};  % Second element contains y-coordinates
-    currentWeights = weights_with_id{currentIndex}{2}; % Second element contains weights
+    currentNodesX = nodes_x_with_id_ML{currentIndex}{2};  % Second element contains x-coordinates
+    currentNodesY = nodes_y_with_id_ML{currentIndex}{2};  % Second element contains y-coordinates
+    currentWeights = weights_with_id_ML{currentIndex}{2}; % Second element contains weights
     
     % Extract corresponding level set function by matching IDs
     levelSetStruct = levelSet{cellfun(@(x) strcmp(x.ID, currentID), levelSet)};
