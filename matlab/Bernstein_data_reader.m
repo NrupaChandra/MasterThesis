@@ -13,7 +13,7 @@ nodesWeightsFile = 'C:\Git\MasterThesis\matlab\Bernstein_p1_output.txt';
 nodesWeightsData = readtable(nodesWeightsFile, 'Delimiter', ';');
 
 % Read the nodes and weights data from ML
-nodesWeightsFile_ML = 'C:\Git\MasterThesis\matlab\dnn_predictions_p1_output.txt';  
+nodesWeightsFile_ML = 'C:\Git\MasterThesis\matlab\improved_spread_predictions_output.txt';  
 nodesWeightsData_ML = readtable(nodesWeightsFile_ML, 'Delimiter', ';');
 
 % Initialize the levelSet matrix (n x 1 cell array to store expressions)
