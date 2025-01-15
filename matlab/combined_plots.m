@@ -21,7 +21,7 @@ end
 numPlots = 5;
 
 % Seed the random number generator
-rng(1);  % Replace 1 with any fixed integer for a different sequence
+rng(7);  % Replace 1 with any fixed integer for a different sequence
 
 % Extract IDs from nodes_x_with_id and nodes_x_with_id_ML
 allIDs = cellfun(@(x) x{1}, nodes_x_with_id, 'UniformOutput', false);  % Extract IDs from the first element
