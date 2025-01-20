@@ -73,7 +73,8 @@ print("Mean Squared Error for Weights:", mse_weights)
 
 # Function to save predictions to a text file in the specified format
 def save_predictions_to_text_file(pred_x, pred_y, pred_weights, test_data, file_path, max_len_x, max_len_y, max_len_weights):
-    with open(file_path, 'w') as file:
+    output_path = r"C:\Git\MasterThesis\outputs\cnn_predictions_p1_output.txt"  # Updated path
+    with open(output_path, 'w') as file:
         # Write the header
         file.write("number;id;nodes_x;nodes_y;weights\n")
 
@@ -99,8 +100,8 @@ def save_predictions_to_text_file(pred_x, pred_y, pred_weights, test_data, file_
             # Write the formatted line
             file.write(f"{idx};{entry_id};{nodes_x_str};{nodes_y_str};{weights_str}\n")
 
-    print(f"Predictions saved to {file_path}")
+    print(f"Predictions saved to {output_path}")
 
-# Save predictions to a text file
+# Save predictions to the specified path
 save_predictions_to_text_file(y_pred_x, y_pred_y, y_pred_weights, merged_data_1st_order,
                               "cnn_predictions_p1_output.txt", max_length_x, max_length_y, max_length_weights)
