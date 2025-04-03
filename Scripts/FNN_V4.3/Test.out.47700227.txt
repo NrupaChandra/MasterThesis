@@ -1,0 +1,3308 @@
+
+Using device: cuda, GPU Name: NVIDIA H100 80GB HBM3
+Loaded 8732 samples from 1 chunks.
+Dataset length: 8732
+No checkpoint found. Starting training from epoch 1.
+
+Epoch 1/1500: Training Loss: 1372.677591, Validation Loss: 276.566154, Time: 3.23 sec
+
+Epoch 2/1500: Training Loss: 1247.160050, Validation Loss: 268.306686, Time: 2.36 sec
+
+Epoch 3/1500: Training Loss: 1199.648515, Validation Loss: 259.274284, Time: 2.43 sec
+
+Epoch 4/1500: Training Loss: 1167.451502, Validation Loss: 254.099045, Time: 2.40 sec
+
+Epoch 5/1500: Training Loss: 1112.701312, Validation Loss: 248.345581, Time: 2.35 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 6/1500: Training Loss: 1078.135662, Validation Loss: 240.811569, Time: 2.40 sec
+
+Epoch 7/1500: Training Loss: 1102.423500, Validation Loss: 232.168518, Time: 2.43 sec
+
+Epoch 8/1500: Training Loss: 1035.906969, Validation Loss: 222.720566, Time: 2.39 sec
+
+Epoch 9/1500: Training Loss: 894.800916, Validation Loss: 212.832314, Time: 2.29 sec
+
+Epoch 10/1500: Training Loss: 913.940707, Validation Loss: 202.499535, Time: 2.47 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 11/1500: Training Loss: 806.223187, Validation Loss: 192.479019, Time: 2.31 sec
+
+Epoch 12/1500: Training Loss: 724.898543, Validation Loss: 182.958786, Time: 2.32 sec
+
+Epoch 13/1500: Training Loss: 690.630042, Validation Loss: 173.243141, Time: 2.48 sec
+
+Epoch 14/1500: Training Loss: 629.531873, Validation Loss: 163.513504, Time: 2.36 sec
+
+Epoch 15/1500: Training Loss: 573.009531, Validation Loss: 153.030914, Time: 2.24 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 16/1500: Training Loss: 543.257977, Validation Loss: 139.369270, Time: 2.38 sec
+
+Epoch 17/1500: Training Loss: 465.190184, Validation Loss: 130.828487, Time: 2.30 sec
+
+Epoch 18/1500: Training Loss: 412.221504, Validation Loss: 126.602688, Time: 2.37 sec
+
+Epoch 19/1500: Training Loss: 373.376834, Validation Loss: 118.727158, Time: 2.27 sec
+
+Epoch 20/1500: Training Loss: 324.211793, Validation Loss: 110.820805, Time: 2.39 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 21/1500: Training Loss: 266.387349, Validation Loss: 103.048771, Time: 2.45 sec
+
+Epoch 22/1500: Training Loss: 240.151687, Validation Loss: 94.951809, Time: 2.28 sec
+
+Epoch 23/1500: Training Loss: 202.770687, Validation Loss: 88.016319, Time: 2.22 sec
+
+Epoch 24/1500: Training Loss: 178.928535, Validation Loss: 80.650692, Time: 2.26 sec
+
+Epoch 25/1500: Training Loss: 141.342517, Validation Loss: 73.468323, Time: 2.28 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 26/1500: Training Loss: 106.871476, Validation Loss: 65.525959, Time: 2.39 sec
+
+Epoch 27/1500: Training Loss: 90.165458, Validation Loss: 60.739799, Time: 2.30 sec
+
+Epoch 28/1500: Training Loss: 75.336888, Validation Loss: 53.640713, Time: 2.29 sec
+
+Epoch 29/1500: Training Loss: 59.334959, Validation Loss: 50.727118, Time: 2.28 sec
+
+Epoch 30/1500: Training Loss: 51.050527, Validation Loss: 46.239069, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 31/1500: Training Loss: 46.385327, Validation Loss: 42.471779, Time: 2.29 sec
+
+Epoch 32/1500: Training Loss: 39.896878, Validation Loss: 40.613749, Time: 2.27 sec
+
+Epoch 33/1500: Training Loss: 35.809428, Validation Loss: 34.973641, Time: 2.27 sec
+
+Epoch 34/1500: Training Loss: 31.754629, Validation Loss: 30.982837, Time: 2.26 sec
+
+Epoch 35/1500: Training Loss: 30.166423, Validation Loss: 28.206694, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 36/1500: Training Loss: 25.663447, Validation Loss: 25.497318, Time: 2.27 sec
+
+Epoch 37/1500: Training Loss: 23.214585, Validation Loss: 24.180573, Time: 2.28 sec
+
+Epoch 38/1500: Training Loss: 22.276786, Validation Loss: 20.119687, Time: 2.30 sec
+
+Epoch 39/1500: Training Loss: 19.435453, Validation Loss: 18.565160, Time: 2.26 sec
+
+Epoch 40/1500: Training Loss: 17.242908, Validation Loss: 16.593359, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 41/1500: Training Loss: 15.621093, Validation Loss: 14.731666, Time: 2.24 sec
+
+Epoch 42/1500: Training Loss: 13.367401, Validation Loss: 13.802264, Time: 2.43 sec
+
+Epoch 43/1500: Training Loss: 12.247562, Validation Loss: 12.550519, Time: 2.28 sec
+
+Epoch 44/1500: Training Loss: 11.760700, Validation Loss: 11.884363, Time: 2.24 sec
+
+Epoch 45/1500: Training Loss: 11.008764, Validation Loss: 11.397644, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 46/1500: Training Loss: 10.755186, Validation Loss: 11.064931, Time: 2.29 sec
+
+Epoch 47/1500: Training Loss: 10.545415, Validation Loss: 10.821150, Time: 2.24 sec
+
+Epoch 48/1500: Training Loss: 10.347032, Validation Loss: 10.625522, Time: 2.24 sec
+
+Epoch 49/1500: Training Loss: 10.177931, Validation Loss: 10.452377, Time: 2.25 sec
+
+Epoch 50/1500: Training Loss: 10.015159, Validation Loss: 10.297337, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 51/1500: Training Loss: 9.853394, Validation Loss: 10.158497, Time: 2.28 sec
+
+Epoch 52/1500: Training Loss: 9.724104, Validation Loss: 10.020364, Time: 2.25 sec
+
+Epoch 53/1500: Training Loss: 9.589061, Validation Loss: 9.896955, Time: 2.24 sec
+
+Epoch 54/1500: Training Loss: 9.473500, Validation Loss: 9.781065, Time: 2.27 sec
+
+Epoch 55/1500: Training Loss: 9.361138, Validation Loss: 9.672710, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 56/1500: Training Loss: 9.253363, Validation Loss: 9.555945, Time: 2.22 sec
+
+Epoch 57/1500: Training Loss: 9.148655, Validation Loss: 9.439537, Time: 2.29 sec
+
+Epoch 58/1500: Training Loss: 9.038617, Validation Loss: 9.342213, Time: 2.42 sec
+
+Epoch 59/1500: Training Loss: 8.943533, Validation Loss: 9.232641, Time: 2.25 sec
+
+Epoch 60/1500: Training Loss: 8.838399, Validation Loss: 9.145050, Time: 2.23 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 61/1500: Training Loss: 8.749508, Validation Loss: 9.051821, Time: 2.25 sec
+
+Epoch 62/1500: Training Loss: 8.653576, Validation Loss: 8.952117, Time: 2.25 sec
+
+Epoch 63/1500: Training Loss: 8.568934, Validation Loss: 8.861385, Time: 2.25 sec
+
+Epoch 64/1500: Training Loss: 8.473872, Validation Loss: 8.773708, Time: 2.26 sec
+
+Epoch 65/1500: Training Loss: 8.391983, Validation Loss: 8.676983, Time: 2.28 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 66/1500: Training Loss: 8.313067, Validation Loss: 8.590439, Time: 2.25 sec
+
+Epoch 67/1500: Training Loss: 8.222612, Validation Loss: 8.511797, Time: 2.29 sec
+
+Epoch 68/1500: Training Loss: 8.140509, Validation Loss: 8.427676, Time: 2.25 sec
+
+Epoch 69/1500: Training Loss: 8.061780, Validation Loss: 8.345768, Time: 2.25 sec
+
+Epoch 70/1500: Training Loss: 7.994619, Validation Loss: 8.267179, Time: 2.29 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 71/1500: Training Loss: 7.921518, Validation Loss: 8.188912, Time: 2.43 sec
+
+Epoch 72/1500: Training Loss: 7.834366, Validation Loss: 8.118432, Time: 2.24 sec
+
+Epoch 73/1500: Training Loss: 7.767956, Validation Loss: 8.051466, Time: 2.56 sec
+
+Epoch 74/1500: Training Loss: 7.689760, Validation Loss: 7.960819, Time: 2.27 sec
+
+Epoch 75/1500: Training Loss: 7.618722, Validation Loss: 7.889166, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 76/1500: Training Loss: 7.538194, Validation Loss: 7.815780, Time: 2.26 sec
+
+Epoch 77/1500: Training Loss: 7.476655, Validation Loss: 7.743755, Time: 2.26 sec
+
+Epoch 78/1500: Training Loss: 7.402665, Validation Loss: 7.675330, Time: 2.26 sec
+
+Epoch 79/1500: Training Loss: 7.341845, Validation Loss: 7.608518, Time: 2.28 sec
+
+Epoch 80/1500: Training Loss: 7.268458, Validation Loss: 7.551823, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 81/1500: Training Loss: 7.207619, Validation Loss: 7.489684, Time: 2.24 sec
+
+Epoch 82/1500: Training Loss: 7.134615, Validation Loss: 7.424178, Time: 2.25 sec
+
+Epoch 83/1500: Training Loss: 7.063679, Validation Loss: 7.344398, Time: 2.29 sec
+
+Epoch 84/1500: Training Loss: 6.993967, Validation Loss: 7.292230, Time: 2.23 sec
+
+Epoch 85/1500: Training Loss: 6.936410, Validation Loss: 7.201627, Time: 2.32 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 86/1500: Training Loss: 6.865505, Validation Loss: 7.160721, Time: 2.23 sec
+
+Epoch 87/1500: Training Loss: 6.803882, Validation Loss: 7.115636, Time: 2.25 sec
+
+Epoch 88/1500: Training Loss: 6.737687, Validation Loss: 7.025544, Time: 2.22 sec
+
+Epoch 89/1500: Training Loss: 6.676016, Validation Loss: 6.956531, Time: 2.81 sec
+
+Epoch 90/1500: Training Loss: 6.614809, Validation Loss: 6.906139, Time: 2.59 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 91/1500: Training Loss: 6.551373, Validation Loss: 6.821016, Time: 2.26 sec
+
+Epoch 92/1500: Training Loss: 6.491196, Validation Loss: 6.790179, Time: 2.25 sec
+
+Epoch 93/1500: Training Loss: 6.428394, Validation Loss: 6.712325, Time: 2.27 sec
+
+Epoch 94/1500: Training Loss: 6.364463, Validation Loss: 6.627919, Time: 2.26 sec
+
+Epoch 95/1500: Training Loss: 6.304506, Validation Loss: 6.603675, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 96/1500: Training Loss: 6.256385, Validation Loss: 6.557978, Time: 2.26 sec
+
+Epoch 97/1500: Training Loss: 6.187353, Validation Loss: 6.476015, Time: 2.24 sec
+
+Epoch 98/1500: Training Loss: 6.133670, Validation Loss: 6.406875, Time: 2.23 sec
+
+Epoch 99/1500: Training Loss: 6.066302, Validation Loss: 6.331629, Time: 2.24 sec
+
+Epoch 100/1500: Training Loss: 6.022242, Validation Loss: 6.276243, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 101/1500: Training Loss: 5.954696, Validation Loss: 6.217567, Time: 2.25 sec
+
+Epoch 102/1500: Training Loss: 5.904084, Validation Loss: 6.157827, Time: 2.24 sec
+
+Epoch 103/1500: Training Loss: 5.849566, Validation Loss: 6.122839, Time: 2.24 sec
+
+Epoch 104/1500: Training Loss: 5.793467, Validation Loss: 6.066241, Time: 2.23 sec
+
+Epoch 105/1500: Training Loss: 5.740397, Validation Loss: 6.010753, Time: 2.24 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 106/1500: Training Loss: 5.686975, Validation Loss: 5.925641, Time: 2.42 sec
+
+Epoch 107/1500: Training Loss: 5.635747, Validation Loss: 5.862033, Time: 2.23 sec
+
+Epoch 108/1500: Training Loss: 5.581876, Validation Loss: 5.823405, Time: 2.25 sec
+
+Epoch 109/1500: Training Loss: 5.524260, Validation Loss: 5.754428, Time: 2.25 sec
+
+Epoch 110/1500: Training Loss: 5.474463, Validation Loss: 5.723109, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 111/1500: Training Loss: 5.419508, Validation Loss: 5.670408, Time: 2.28 sec
+
+Epoch 112/1500: Training Loss: 5.371851, Validation Loss: 5.596713, Time: 2.25 sec
+
+Epoch 113/1500: Training Loss: 5.334628, Validation Loss: 5.590027, Time: 2.26 sec
+
+Epoch 114/1500: Training Loss: 5.265633, Validation Loss: 5.498178, Time: 2.24 sec
+
+Epoch 115/1500: Training Loss: 5.219163, Validation Loss: 5.485368, Time: 2.30 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 116/1500: Training Loss: 5.158156, Validation Loss: 5.420395, Time: 2.26 sec
+
+Epoch 117/1500: Training Loss: 5.109595, Validation Loss: 5.378443, Time: 2.29 sec
+
+Epoch 118/1500: Training Loss: 5.056570, Validation Loss: 5.278605, Time: 2.27 sec
+
+Epoch 119/1500: Training Loss: 5.006280, Validation Loss: 5.255846, Time: 2.29 sec
+
+Epoch 120/1500: Training Loss: 4.984223, Validation Loss: 5.196894, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 121/1500: Training Loss: 4.922888, Validation Loss: 5.131313, Time: 2.26 sec
+
+Epoch 122/1500: Training Loss: 4.872977, Validation Loss: 5.142546, Time: 2.41 sec
+
+Epoch 123/1500: Training Loss: 4.821489, Validation Loss: 5.104870, Time: 2.27 sec
+
+Epoch 124/1500: Training Loss: 4.773355, Validation Loss: 5.024805, Time: 2.24 sec
+
+Epoch 125/1500: Training Loss: 4.728917, Validation Loss: 4.978306, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 126/1500: Training Loss: 4.673523, Validation Loss: 4.960316, Time: 2.27 sec
+
+Epoch 127/1500: Training Loss: 4.627656, Validation Loss: 4.897310, Time: 2.26 sec
+
+Epoch 128/1500: Training Loss: 4.671527, Validation Loss: 4.839269, Time: 2.26 sec
+
+Epoch 129/1500: Training Loss: 4.538035, Validation Loss: 4.809933, Time: 2.25 sec
+
+Epoch 130/1500: Training Loss: 4.492017, Validation Loss: 4.732074, Time: 2.28 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 131/1500: Training Loss: 4.451469, Validation Loss: 4.671135, Time: 2.26 sec
+
+Epoch 132/1500: Training Loss: 4.403522, Validation Loss: 4.639882, Time: 2.25 sec
+
+Epoch 133/1500: Training Loss: 4.360828, Validation Loss: 4.585040, Time: 2.24 sec
+
+Epoch 134/1500: Training Loss: 4.362771, Validation Loss: 4.531363, Time: 2.27 sec
+
+Epoch 135/1500: Training Loss: 4.273755, Validation Loss: 4.497426, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 136/1500: Training Loss: 4.244368, Validation Loss: 4.493703, Time: 2.27 sec
+
+Epoch 137/1500: Training Loss: 4.197215, Validation Loss: 4.406274, Time: 2.28 sec
+
+Epoch 138/1500: Training Loss: 4.153613, Validation Loss: 4.414381, Time: 2.45 sec
+
+Epoch 139/1500: Training Loss: 4.112779, Validation Loss: 4.352483, Time: 2.26 sec
+
+Epoch 140/1500: Training Loss: 4.076493, Validation Loss: 4.287896, Time: 2.24 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 141/1500: Training Loss: 4.033523, Validation Loss: 4.266952, Time: 2.24 sec
+
+Epoch 142/1500: Training Loss: 4.129026, Validation Loss: 4.193205, Time: 2.26 sec
+
+Epoch 143/1500: Training Loss: 3.948373, Validation Loss: 4.180044, Time: 2.24 sec
+
+Epoch 144/1500: Training Loss: 3.904136, Validation Loss: 4.124669, Time: 2.25 sec
+
+Epoch 145/1500: Training Loss: 3.864722, Validation Loss: 4.087292, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 146/1500: Training Loss: 3.826668, Validation Loss: 4.033392, Time: 2.24 sec
+
+Epoch 147/1500: Training Loss: 3.878069, Validation Loss: 3.979042, Time: 2.25 sec
+
+Epoch 148/1500: Training Loss: 3.743608, Validation Loss: 3.978767, Time: 2.25 sec
+
+Epoch 149/1500: Training Loss: 3.704147, Validation Loss: 3.901062, Time: 2.25 sec
+
+Epoch 150/1500: Training Loss: 3.681025, Validation Loss: 3.877401, Time: 2.23 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 151/1500: Training Loss: 3.624409, Validation Loss: 3.844139, Time: 2.25 sec
+
+Epoch 152/1500: Training Loss: 3.644201, Validation Loss: 3.790918, Time: 2.23 sec
+
+Epoch 153/1500: Training Loss: 3.556740, Validation Loss: 3.809444, Time: 2.27 sec
+
+Epoch 154/1500: Training Loss: 3.568013, Validation Loss: 3.749993, Time: 2.43 sec
+
+Epoch 155/1500: Training Loss: 3.484043, Validation Loss: 3.713581, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 156/1500: Training Loss: 3.478800, Validation Loss: 3.676673, Time: 2.25 sec
+
+Epoch 157/1500: Training Loss: 3.413656, Validation Loss: 3.617729, Time: 2.26 sec
+
+Epoch 158/1500: Training Loss: 3.372534, Validation Loss: 3.604788, Time: 2.27 sec
+
+Epoch 159/1500: Training Loss: 3.332375, Validation Loss: 3.551774, Time: 2.26 sec
+
+Epoch 160/1500: Training Loss: 3.352898, Validation Loss: 3.493862, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 161/1500: Training Loss: 3.267830, Validation Loss: 3.489786, Time: 2.25 sec
+
+Epoch 162/1500: Training Loss: 3.238704, Validation Loss: 3.464048, Time: 2.29 sec
+
+Epoch 163/1500: Training Loss: 3.209241, Validation Loss: 3.432169, Time: 2.33 sec
+
+Epoch 164/1500: Training Loss: 3.172396, Validation Loss: 3.446493, Time: 2.28 sec
+
+Epoch 165/1500: Training Loss: 3.137817, Validation Loss: 3.329745, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 166/1500: Training Loss: 3.181344, Validation Loss: 3.423565, Time: 2.24 sec
+
+Epoch 167/1500: Training Loss: 3.094722, Validation Loss: 3.286494, Time: 2.22 sec
+
+Epoch 168/1500: Training Loss: 3.129787, Validation Loss: 3.250097, Time: 2.28 sec
+
+Epoch 169/1500: Training Loss: 3.044114, Validation Loss: 3.221960, Time: 2.27 sec
+
+Epoch 170/1500: Training Loss: 3.128265, Validation Loss: 3.195316, Time: 2.41 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 171/1500: Training Loss: 2.974316, Validation Loss: 3.189552, Time: 2.23 sec
+
+Epoch 172/1500: Training Loss: 2.958190, Validation Loss: 3.143306, Time: 2.27 sec
+
+Epoch 173/1500: Training Loss: 2.918982, Validation Loss: 3.206274, Time: 2.25 sec
+
+Epoch 174/1500: Training Loss: 2.884364, Validation Loss: 3.071491, Time: 2.24 sec
+
+Epoch 175/1500: Training Loss: 2.858924, Validation Loss: 3.149201, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 176/1500: Training Loss: 2.875171, Validation Loss: 3.069987, Time: 2.26 sec
+
+Epoch 177/1500: Training Loss: 2.815619, Validation Loss: 3.019407, Time: 2.27 sec
+
+Epoch 178/1500: Training Loss: 2.789551, Validation Loss: 2.999760, Time: 2.27 sec
+
+Epoch 179/1500: Training Loss: 2.811974, Validation Loss: 3.072955, Time: 2.27 sec
+
+Epoch 180/1500: Training Loss: 2.980789, Validation Loss: 2.944081, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 181/1500: Training Loss: 2.729972, Validation Loss: 3.037501, Time: 2.24 sec
+
+Epoch 182/1500: Training Loss: 2.693388, Validation Loss: 2.866108, Time: 2.28 sec
+
+Epoch 183/1500: Training Loss: 2.672922, Validation Loss: 2.925634, Time: 2.26 sec
+
+Epoch 184/1500: Training Loss: 2.678955, Validation Loss: 2.828644, Time: 2.25 sec
+
+Epoch 185/1500: Training Loss: 2.633037, Validation Loss: 2.862815, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 186/1500: Training Loss: 2.602582, Validation Loss: 2.785572, Time: 2.39 sec
+
+Epoch 187/1500: Training Loss: 2.582307, Validation Loss: 2.856378, Time: 2.26 sec
+
+Epoch 188/1500: Training Loss: 2.570563, Validation Loss: 2.829298, Time: 2.26 sec
+
+Epoch 189/1500: Training Loss: 2.535589, Validation Loss: 2.785529, Time: 2.26 sec
+
+Epoch 190/1500: Training Loss: 2.532791, Validation Loss: 2.756054, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 191/1500: Training Loss: 2.535922, Validation Loss: 2.991597, Time: 2.26 sec
+
+Epoch 192/1500: Training Loss: 2.513620, Validation Loss: 2.722035, Time: 2.26 sec
+
+Epoch 193/1500: Training Loss: 2.461134, Validation Loss: 2.698341, Time: 2.25 sec
+
+Epoch 194/1500: Training Loss: 2.439801, Validation Loss: 2.662953, Time: 2.28 sec
+
+Epoch 195/1500: Training Loss: 2.418444, Validation Loss: 2.632272, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 196/1500: Training Loss: 2.442067, Validation Loss: 2.635638, Time: 2.24 sec
+
+Epoch 197/1500: Training Loss: 2.408362, Validation Loss: 2.769150, Time: 2.27 sec
+
+Epoch 198/1500: Training Loss: 2.357193, Validation Loss: 2.599457, Time: 2.26 sec
+
+Epoch 199/1500: Training Loss: 2.344527, Validation Loss: 2.524878, Time: 2.26 sec
+
+Epoch 200/1500: Training Loss: 2.354440, Validation Loss: 2.545609, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 201/1500: Training Loss: 2.315528, Validation Loss: 2.547660, Time: 2.25 sec
+
+Epoch 202/1500: Training Loss: 2.436103, Validation Loss: 2.479053, Time: 2.43 sec
+
+Epoch 203/1500: Training Loss: 2.463613, Validation Loss: 2.480024, Time: 2.27 sec
+
+Epoch 204/1500: Training Loss: 2.267477, Validation Loss: 2.420770, Time: 2.27 sec
+
+Epoch 205/1500: Training Loss: 2.254868, Validation Loss: 2.486307, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 206/1500: Training Loss: 2.340577, Validation Loss: 2.399949, Time: 2.26 sec
+
+Epoch 207/1500: Training Loss: 2.203237, Validation Loss: 2.436533, Time: 2.27 sec
+
+Epoch 208/1500: Training Loss: 2.187515, Validation Loss: 2.442754, Time: 2.29 sec
+
+Epoch 209/1500: Training Loss: 2.197484, Validation Loss: 2.498401, Time: 2.27 sec
+
+Epoch 210/1500: Training Loss: 2.171214, Validation Loss: 2.447548, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 211/1500: Training Loss: 2.141440, Validation Loss: 2.353358, Time: 2.27 sec
+
+Epoch 212/1500: Training Loss: 2.175016, Validation Loss: 2.475243, Time: 2.25 sec
+
+Epoch 213/1500: Training Loss: 2.131935, Validation Loss: 2.447312, Time: 2.24 sec
+
+Epoch 214/1500: Training Loss: 2.139777, Validation Loss: 2.330362, Time: 2.25 sec
+
+Epoch 215/1500: Training Loss: 2.177743, Validation Loss: 2.457966, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 216/1500: Training Loss: 2.077081, Validation Loss: 2.391927, Time: 2.26 sec
+
+Epoch 217/1500: Training Loss: 2.113998, Validation Loss: 2.330316, Time: 2.31 sec
+
+Epoch 218/1500: Training Loss: 2.056133, Validation Loss: 2.353773, Time: 2.44 sec
+
+Epoch 219/1500: Training Loss: 2.024497, Validation Loss: 2.259444, Time: 2.26 sec
+
+Epoch 220/1500: Training Loss: 2.028926, Validation Loss: 2.313350, Time: 2.24 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 221/1500: Training Loss: 2.017164, Validation Loss: 2.306764, Time: 2.25 sec
+
+Epoch 222/1500: Training Loss: 1.997220, Validation Loss: 2.311803, Time: 2.29 sec
+
+Epoch 223/1500: Training Loss: 1.996170, Validation Loss: 2.238285, Time: 2.26 sec
+
+Epoch 224/1500: Training Loss: 1.973728, Validation Loss: 2.268016, Time: 2.29 sec
+
+Epoch 225/1500: Training Loss: 1.967107, Validation Loss: 2.344180, Time: 2.28 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 226/1500: Training Loss: 1.969538, Validation Loss: 2.151641, Time: 2.28 sec
+
+Epoch 227/1500: Training Loss: 1.927432, Validation Loss: 2.201056, Time: 2.25 sec
+
+Epoch 228/1500: Training Loss: 2.077224, Validation Loss: 2.148205, Time: 2.28 sec
+
+Epoch 229/1500: Training Loss: 1.903305, Validation Loss: 2.289417, Time: 2.24 sec
+
+Epoch 230/1500: Training Loss: 1.890498, Validation Loss: 2.253639, Time: 2.24 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 231/1500: Training Loss: 2.188853, Validation Loss: 2.234887, Time: 2.24 sec
+
+Epoch 232/1500: Training Loss: 1.943179, Validation Loss: 2.226349, Time: 2.25 sec
+
+Epoch 233/1500: Training Loss: 1.913685, Validation Loss: 2.139372, Time: 2.28 sec
+
+Epoch 234/1500: Training Loss: 1.871656, Validation Loss: 2.157054, Time: 2.41 sec
+
+Epoch 235/1500: Training Loss: 1.835753, Validation Loss: 2.109385, Time: 2.28 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 236/1500: Training Loss: 1.903762, Validation Loss: 2.080360, Time: 2.26 sec
+
+Epoch 237/1500: Training Loss: 1.829521, Validation Loss: 2.176107, Time: 2.28 sec
+
+Epoch 238/1500: Training Loss: 1.807322, Validation Loss: 2.070545, Time: 2.27 sec
+
+Epoch 239/1500: Training Loss: 1.797328, Validation Loss: 2.138020, Time: 2.25 sec
+
+Epoch 240/1500: Training Loss: 1.819674, Validation Loss: 2.482339, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 241/1500: Training Loss: 1.798203, Validation Loss: 2.021180, Time: 2.25 sec
+
+Epoch 242/1500: Training Loss: 1.777655, Validation Loss: 2.143772, Time: 2.30 sec
+
+Epoch 243/1500: Training Loss: 1.793189, Validation Loss: 2.230834, Time: 2.25 sec
+
+Epoch 244/1500: Training Loss: 1.741025, Validation Loss: 2.136931, Time: 2.30 sec
+
+Epoch 245/1500: Training Loss: 1.744616, Validation Loss: 2.101214, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 246/1500: Training Loss: 1.723525, Validation Loss: 2.009115, Time: 2.26 sec
+
+Epoch 247/1500: Training Loss: 1.748901, Validation Loss: 2.057023, Time: 2.27 sec
+
+Epoch 248/1500: Training Loss: 1.723414, Validation Loss: 2.029263, Time: 2.26 sec
+
+Epoch 249/1500: Training Loss: 1.694796, Validation Loss: 1.935040, Time: 2.26 sec
+
+Epoch 250/1500: Training Loss: 1.686057, Validation Loss: 2.125056, Time: 2.39 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 251/1500: Training Loss: 1.743311, Validation Loss: 2.239522, Time: 2.26 sec
+
+Epoch 252/1500: Training Loss: 1.668157, Validation Loss: 1.931643, Time: 2.27 sec
+
+Epoch 253/1500: Training Loss: 1.657447, Validation Loss: 1.925274, Time: 2.26 sec
+
+Epoch 254/1500: Training Loss: 1.661554, Validation Loss: 1.864833, Time: 2.29 sec
+
+Epoch 255/1500: Training Loss: 1.711982, Validation Loss: 1.979561, Time: 2.30 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 256/1500: Training Loss: 1.638808, Validation Loss: 1.861893, Time: 2.26 sec
+
+Epoch 257/1500: Training Loss: 2.160458, Validation Loss: 2.257730, Time: 2.26 sec
+
+Epoch 258/1500: Training Loss: 1.642381, Validation Loss: 2.012285, Time: 2.25 sec
+
+Epoch 259/1500: Training Loss: 1.604823, Validation Loss: 1.963671, Time: 2.28 sec
+
+Epoch 260/1500: Training Loss: 1.614671, Validation Loss: 1.995019, Time: 2.24 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 261/1500: Training Loss: 1.597059, Validation Loss: 1.992327, Time: 2.26 sec
+
+Epoch 262/1500: Training Loss: 1.650850, Validation Loss: 1.952887, Time: 2.26 sec
+
+Epoch 263/1500: Training Loss: 1.573035, Validation Loss: 1.870539, Time: 2.26 sec
+
+Epoch 264/1500: Training Loss: 1.645900, Validation Loss: 2.186108, Time: 2.25 sec
+
+Epoch 265/1500: Training Loss: 1.560731, Validation Loss: 1.785868, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 266/1500: Training Loss: 1.550806, Validation Loss: 1.829001, Time: 2.41 sec
+
+Epoch 267/1500: Training Loss: 1.545566, Validation Loss: 2.070228, Time: 2.27 sec
+
+Epoch 268/1500: Training Loss: 1.545262, Validation Loss: 1.782929, Time: 2.26 sec
+
+Epoch 269/1500: Training Loss: 1.530819, Validation Loss: 1.863829, Time: 2.32 sec
+
+Epoch 270/1500: Training Loss: 1.598833, Validation Loss: 1.754325, Time: 2.32 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 271/1500: Training Loss: 1.578890, Validation Loss: 1.857824, Time: 2.29 sec
+
+Epoch 272/1500: Training Loss: 1.570297, Validation Loss: 2.158400, Time: 2.30 sec
+
+Epoch 273/1500: Training Loss: 1.515036, Validation Loss: 1.921535, Time: 2.26 sec
+
+Epoch 274/1500: Training Loss: 1.497352, Validation Loss: 1.900683, Time: 2.25 sec
+
+Epoch 275/1500: Training Loss: 1.664435, Validation Loss: 1.721134, Time: 2.28 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 276/1500: Training Loss: 1.478204, Validation Loss: 1.865604, Time: 2.29 sec
+
+Epoch 277/1500: Training Loss: 1.500451, Validation Loss: 1.721141, Time: 2.26 sec
+
+Epoch 278/1500: Training Loss: 1.462007, Validation Loss: 1.807847, Time: 2.28 sec
+
+Epoch 279/1500: Training Loss: 1.533969, Validation Loss: 1.695538, Time: 2.29 sec
+
+Epoch 280/1500: Training Loss: 1.481836, Validation Loss: 1.789594, Time: 2.28 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 281/1500: Training Loss: 1.439754, Validation Loss: 1.779171, Time: 2.28 sec
+
+Epoch 282/1500: Training Loss: 1.451992, Validation Loss: 1.697754, Time: 2.42 sec
+
+Epoch 283/1500: Training Loss: 1.422363, Validation Loss: 1.632814, Time: 2.26 sec
+
+Epoch 284/1500: Training Loss: 1.434637, Validation Loss: 1.638569, Time: 2.34 sec
+
+Epoch 285/1500: Training Loss: 1.412056, Validation Loss: 1.715303, Time: 2.30 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 286/1500: Training Loss: 1.461332, Validation Loss: 1.608919, Time: 2.27 sec
+
+Epoch 287/1500: Training Loss: 1.436545, Validation Loss: 1.690600, Time: 2.32 sec
+
+Epoch 288/1500: Training Loss: 1.391979, Validation Loss: 1.814925, Time: 2.27 sec
+
+Epoch 289/1500: Training Loss: 1.421715, Validation Loss: 1.608976, Time: 2.31 sec
+
+Epoch 290/1500: Training Loss: 1.381421, Validation Loss: 1.606374, Time: 2.74 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 291/1500: Training Loss: 1.430031, Validation Loss: 1.633897, Time: 2.32 sec
+
+Epoch 292/1500: Training Loss: 1.421892, Validation Loss: 1.576810, Time: 2.31 sec
+
+Epoch 293/1500: Training Loss: 1.366839, Validation Loss: 1.587056, Time: 2.29 sec
+
+Epoch 294/1500: Training Loss: 1.374141, Validation Loss: 1.699978, Time: 2.31 sec
+
+Epoch 295/1500: Training Loss: 1.348866, Validation Loss: 1.648712, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 296/1500: Training Loss: 1.445112, Validation Loss: 1.662385, Time: 2.24 sec
+
+Epoch 297/1500: Training Loss: 1.361427, Validation Loss: 1.611615, Time: 2.60 sec
+
+Epoch 298/1500: Training Loss: 1.343057, Validation Loss: 1.638192, Time: 2.25 sec
+
+Epoch 299/1500: Training Loss: 1.347263, Validation Loss: 1.581082, Time: 2.25 sec
+
+Epoch 300/1500: Training Loss: 1.322065, Validation Loss: 1.571773, Time: 2.24 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 301/1500: Training Loss: 1.313467, Validation Loss: 1.597494, Time: 2.26 sec
+
+Epoch 302/1500: Training Loss: 1.496366, Validation Loss: 1.477696, Time: 2.25 sec
+
+Epoch 303/1500: Training Loss: 1.305436, Validation Loss: 1.651978, Time: 2.26 sec
+
+Epoch 304/1500: Training Loss: 1.294839, Validation Loss: 1.491515, Time: 2.28 sec
+
+Epoch 305/1500: Training Loss: 1.291593, Validation Loss: 1.642535, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 306/1500: Training Loss: 1.285474, Validation Loss: 1.596528, Time: 2.26 sec
+
+Epoch 307/1500: Training Loss: 1.309545, Validation Loss: 1.470400, Time: 2.26 sec
+
+Epoch 308/1500: Training Loss: 1.325818, Validation Loss: 1.597102, Time: 2.25 sec
+
+Epoch 309/1500: Training Loss: 1.299219, Validation Loss: 1.561766, Time: 2.24 sec
+
+Epoch 310/1500: Training Loss: 1.261218, Validation Loss: 1.591657, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 311/1500: Training Loss: 1.295296, Validation Loss: 1.492227, Time: 2.25 sec
+
+Epoch 312/1500: Training Loss: 1.267516, Validation Loss: 1.678412, Time: 2.25 sec
+
+Epoch 313/1500: Training Loss: 1.251150, Validation Loss: 1.426672, Time: 2.41 sec
+
+Epoch 314/1500: Training Loss: 1.291400, Validation Loss: 1.550641, Time: 2.29 sec
+
+Epoch 315/1500: Training Loss: 1.241991, Validation Loss: 1.586605, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 316/1500: Training Loss: 1.249217, Validation Loss: 1.398061, Time: 2.23 sec
+
+Epoch 317/1500: Training Loss: 1.286772, Validation Loss: 1.596489, Time: 2.22 sec
+
+Epoch 318/1500: Training Loss: 1.228227, Validation Loss: 1.484685, Time: 2.26 sec
+
+Epoch 319/1500: Training Loss: 1.223596, Validation Loss: 1.645631, Time: 2.30 sec
+
+Epoch 320/1500: Training Loss: 1.217812, Validation Loss: 1.441840, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 321/1500: Training Loss: 1.213433, Validation Loss: 1.418667, Time: 2.26 sec
+
+Epoch 322/1500: Training Loss: 1.383207, Validation Loss: 1.506152, Time: 2.26 sec
+
+Epoch 323/1500: Training Loss: 1.219703, Validation Loss: 1.420840, Time: 2.27 sec
+
+Epoch 324/1500: Training Loss: 1.235175, Validation Loss: 1.461067, Time: 2.29 sec
+
+Epoch 325/1500: Training Loss: 1.191736, Validation Loss: 1.422990, Time: 2.28 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 326/1500: Training Loss: 1.253476, Validation Loss: 1.350787, Time: 2.25 sec
+
+Epoch 327/1500: Training Loss: 1.209068, Validation Loss: 1.424743, Time: 2.27 sec
+
+Epoch 328/1500: Training Loss: 1.182441, Validation Loss: 1.404224, Time: 2.24 sec
+
+Epoch 329/1500: Training Loss: 1.241937, Validation Loss: 1.368658, Time: 2.29 sec
+
+Epoch 330/1500: Training Loss: 1.210595, Validation Loss: 1.433395, Time: 2.59 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 331/1500: Training Loss: 1.170007, Validation Loss: 1.351917, Time: 2.27 sec
+
+Epoch 332/1500: Training Loss: 1.246020, Validation Loss: 1.328259, Time: 2.24 sec
+
+Epoch 333/1500: Training Loss: 1.159701, Validation Loss: 1.378282, Time: 2.24 sec
+
+Epoch 334/1500: Training Loss: 1.197971, Validation Loss: 1.342719, Time: 2.25 sec
+
+Epoch 335/1500: Training Loss: 1.153916, Validation Loss: 1.338514, Time: 2.24 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 336/1500: Training Loss: 1.155144, Validation Loss: 1.354106, Time: 2.24 sec
+
+Epoch 337/1500: Training Loss: 1.139195, Validation Loss: 1.366704, Time: 2.25 sec
+
+Epoch 338/1500: Training Loss: 1.143211, Validation Loss: 1.386023, Time: 2.26 sec
+
+Epoch 339/1500: Training Loss: 1.204145, Validation Loss: 1.439107, Time: 2.25 sec
+
+Epoch 340/1500: Training Loss: 1.175324, Validation Loss: 1.388422, Time: 2.24 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 341/1500: Training Loss: 1.125684, Validation Loss: 1.353842, Time: 2.24 sec
+
+Epoch 342/1500: Training Loss: 1.123638, Validation Loss: 1.379125, Time: 2.25 sec
+
+Epoch 343/1500: Training Loss: 1.211230, Validation Loss: 1.344089, Time: 2.25 sec
+
+Epoch 344/1500: Training Loss: 1.125378, Validation Loss: 1.462336, Time: 2.27 sec
+
+Epoch 345/1500: Training Loss: 1.128226, Validation Loss: 1.255214, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 346/1500: Training Loss: 1.144517, Validation Loss: 1.319014, Time: 2.39 sec
+
+Epoch 347/1500: Training Loss: 1.122762, Validation Loss: 1.399266, Time: 2.25 sec
+
+Epoch 348/1500: Training Loss: 1.102193, Validation Loss: 1.406949, Time: 2.28 sec
+
+Epoch 349/1500: Training Loss: 1.096610, Validation Loss: 1.313310, Time: 2.26 sec
+
+Epoch 350/1500: Training Loss: 1.131718, Validation Loss: 1.332137, Time: 2.28 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 351/1500: Training Loss: 1.091815, Validation Loss: 1.319690, Time: 2.26 sec
+
+Epoch 352/1500: Training Loss: 1.086714, Validation Loss: 1.308413, Time: 2.25 sec
+
+Epoch 353/1500: Training Loss: 1.348658, Validation Loss: 1.426474, Time: 2.25 sec
+
+Epoch 354/1500: Training Loss: 1.085063, Validation Loss: 1.248123, Time: 2.25 sec
+
+Epoch 355/1500: Training Loss: 1.106356, Validation Loss: 1.238268, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 356/1500: Training Loss: 1.071246, Validation Loss: 1.304372, Time: 2.27 sec
+
+Epoch 357/1500: Training Loss: 1.152507, Validation Loss: 1.368185, Time: 2.26 sec
+
+Epoch 358/1500: Training Loss: 1.069441, Validation Loss: 1.313601, Time: 2.25 sec
+
+Epoch 359/1500: Training Loss: 1.363341, Validation Loss: 1.311320, Time: 2.28 sec
+
+Epoch 360/1500: Training Loss: 1.123526, Validation Loss: 1.206330, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 361/1500: Training Loss: 1.059644, Validation Loss: 1.328740, Time: 2.26 sec
+
+Epoch 362/1500: Training Loss: 1.062991, Validation Loss: 1.263715, Time: 2.40 sec
+
+Epoch 363/1500: Training Loss: 1.067229, Validation Loss: 1.294973, Time: 2.24 sec
+
+Epoch 364/1500: Training Loss: 1.045415, Validation Loss: 1.256257, Time: 2.26 sec
+
+Epoch 365/1500: Training Loss: 1.045783, Validation Loss: 1.340430, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 366/1500: Training Loss: 1.067118, Validation Loss: 1.290782, Time: 2.26 sec
+
+Epoch 367/1500: Training Loss: 1.038328, Validation Loss: 1.284743, Time: 2.22 sec
+
+Epoch 368/1500: Training Loss: 1.034395, Validation Loss: 1.229728, Time: 2.25 sec
+
+Epoch 369/1500: Training Loss: 1.034170, Validation Loss: 1.238236, Time: 2.28 sec
+
+Epoch 370/1500: Training Loss: 1.030189, Validation Loss: 1.283723, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 371/1500: Training Loss: 1.030671, Validation Loss: 1.151285, Time: 2.24 sec
+
+Epoch 372/1500: Training Loss: 1.034257, Validation Loss: 1.159764, Time: 2.26 sec
+
+Epoch 373/1500: Training Loss: 1.041204, Validation Loss: 1.218413, Time: 2.26 sec
+
+Epoch 374/1500: Training Loss: 1.019228, Validation Loss: 1.413496, Time: 2.25 sec
+
+Epoch 375/1500: Training Loss: 1.019096, Validation Loss: 1.310687, Time: 2.28 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 376/1500: Training Loss: 1.014575, Validation Loss: 1.243389, Time: 2.27 sec
+
+Epoch 377/1500: Training Loss: 1.009834, Validation Loss: 1.252092, Time: 2.24 sec
+
+Epoch 378/1500: Training Loss: 1.029644, Validation Loss: 1.292350, Time: 2.42 sec
+
+Epoch 379/1500: Training Loss: 1.002057, Validation Loss: 1.304597, Time: 2.28 sec
+
+Epoch 380/1500: Training Loss: 1.036971, Validation Loss: 1.283615, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 381/1500: Training Loss: 1.006860, Validation Loss: 1.263099, Time: 2.28 sec
+
+Epoch 382/1500: Training Loss: 1.037835, Validation Loss: 1.389836, Time: 2.25 sec
+
+Epoch 383/1500: Training Loss: 0.994731, Validation Loss: 1.212949, Time: 2.24 sec
+
+Epoch 384/1500: Training Loss: 1.041401, Validation Loss: 1.209611, Time: 2.23 sec
+
+Epoch 385/1500: Training Loss: 1.056472, Validation Loss: 1.255208, Time: 2.23 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 386/1500: Training Loss: 0.990346, Validation Loss: 1.225303, Time: 2.25 sec
+
+Epoch 387/1500: Training Loss: 0.987459, Validation Loss: 1.217698, Time: 2.23 sec
+
+Epoch 388/1500: Training Loss: 1.084534, Validation Loss: 1.207855, Time: 2.25 sec
+
+Epoch 389/1500: Training Loss: 0.978437, Validation Loss: 1.232716, Time: 2.26 sec
+
+Epoch 390/1500: Training Loss: 0.975722, Validation Loss: 1.167155, Time: 2.24 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 391/1500: Training Loss: 1.102950, Validation Loss: 1.198469, Time: 2.25 sec
+
+Epoch 392/1500: Training Loss: 0.970351, Validation Loss: 1.217078, Time: 2.24 sec
+
+Epoch 393/1500: Training Loss: 1.006850, Validation Loss: 1.207597, Time: 2.25 sec
+
+Epoch 394/1500: Training Loss: 0.965429, Validation Loss: 1.270913, Time: 2.39 sec
+
+Epoch 395/1500: Training Loss: 0.991015, Validation Loss: 1.230372, Time: 2.29 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 396/1500: Training Loss: 0.960247, Validation Loss: 1.190159, Time: 2.29 sec
+
+Epoch 397/1500: Training Loss: 0.956313, Validation Loss: 1.177824, Time: 2.23 sec
+
+Epoch 398/1500: Training Loss: 1.025115, Validation Loss: 1.149311, Time: 2.23 sec
+
+Epoch 399/1500: Training Loss: 1.037668, Validation Loss: 1.259904, Time: 2.26 sec
+
+Epoch 400/1500: Training Loss: 0.951782, Validation Loss: 1.159120, Time: 2.28 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 401/1500: Training Loss: 0.960195, Validation Loss: 1.198683, Time: 2.27 sec
+
+Epoch 402/1500: Training Loss: 1.036098, Validation Loss: 1.180330, Time: 2.27 sec
+
+Epoch 403/1500: Training Loss: 0.948302, Validation Loss: 1.176523, Time: 2.24 sec
+
+Epoch 404/1500: Training Loss: 0.952444, Validation Loss: 1.134335, Time: 2.24 sec
+
+Epoch 405/1500: Training Loss: 0.941890, Validation Loss: 1.161187, Time: 2.30 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 406/1500: Training Loss: 0.937630, Validation Loss: 1.128147, Time: 2.29 sec
+
+Epoch 407/1500: Training Loss: 0.957385, Validation Loss: 1.203783, Time: 2.27 sec
+
+Epoch 408/1500: Training Loss: 0.934283, Validation Loss: 1.211225, Time: 2.25 sec
+
+Epoch 409/1500: Training Loss: 0.931163, Validation Loss: 1.108220, Time: 2.42 sec
+
+Epoch 410/1500: Training Loss: 0.945699, Validation Loss: 1.125214, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 411/1500: Training Loss: 0.927687, Validation Loss: 1.249799, Time: 2.26 sec
+
+Epoch 412/1500: Training Loss: 0.921993, Validation Loss: 1.118165, Time: 2.24 sec
+
+Epoch 413/1500: Training Loss: 0.999406, Validation Loss: 1.122626, Time: 2.25 sec
+
+Epoch 414/1500: Training Loss: 0.942029, Validation Loss: 1.145365, Time: 2.24 sec
+
+Epoch 415/1500: Training Loss: 0.966780, Validation Loss: 1.092957, Time: 2.24 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 416/1500: Training Loss: 0.919165, Validation Loss: 1.127384, Time: 2.24 sec
+
+Epoch 417/1500: Training Loss: 0.914921, Validation Loss: 1.146038, Time: 2.24 sec
+
+Epoch 418/1500: Training Loss: 0.955912, Validation Loss: 1.187604, Time: 2.26 sec
+
+Epoch 419/1500: Training Loss: 0.932718, Validation Loss: 1.106447, Time: 2.25 sec
+
+Epoch 420/1500: Training Loss: 0.919593, Validation Loss: 1.126412, Time: 2.23 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 421/1500: Training Loss: 0.903959, Validation Loss: 1.138435, Time: 2.23 sec
+
+Epoch 422/1500: Training Loss: 0.905194, Validation Loss: 1.071234, Time: 2.24 sec
+
+Epoch 423/1500: Training Loss: 0.926818, Validation Loss: 1.156617, Time: 2.27 sec
+
+Epoch 424/1500: Training Loss: 0.901025, Validation Loss: 1.133622, Time: 2.25 sec
+
+Epoch 425/1500: Training Loss: 0.969573, Validation Loss: 1.106822, Time: 2.41 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 426/1500: Training Loss: 0.897874, Validation Loss: 1.119616, Time: 2.24 sec
+
+Epoch 427/1500: Training Loss: 0.932402, Validation Loss: 1.138567, Time: 2.27 sec
+
+Epoch 428/1500: Training Loss: 0.895962, Validation Loss: 1.132322, Time: 2.27 sec
+
+Epoch 429/1500: Training Loss: 0.892888, Validation Loss: 1.176957, Time: 2.26 sec
+
+Epoch 430/1500: Training Loss: 0.910028, Validation Loss: 1.118640, Time: 2.33 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 431/1500: Training Loss: 1.003281, Validation Loss: 1.091810, Time: 2.25 sec
+
+Epoch 432/1500: Training Loss: 0.884944, Validation Loss: 1.138529, Time: 2.26 sec
+
+Epoch 433/1500: Training Loss: 0.924507, Validation Loss: 1.182606, Time: 2.28 sec
+
+Epoch 434/1500: Training Loss: 0.883803, Validation Loss: 1.092849, Time: 2.25 sec
+
+Epoch 435/1500: Training Loss: 0.881440, Validation Loss: 1.110521, Time: 2.29 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 436/1500: Training Loss: 0.898643, Validation Loss: 1.201666, Time: 2.25 sec
+
+Epoch 437/1500: Training Loss: 0.996328, Validation Loss: 1.128374, Time: 2.25 sec
+
+Epoch 438/1500: Training Loss: 0.885353, Validation Loss: 1.149032, Time: 2.23 sec
+
+Epoch 439/1500: Training Loss: 0.876645, Validation Loss: 1.123449, Time: 2.24 sec
+
+Epoch 440/1500: Training Loss: 0.927730, Validation Loss: 1.078288, Time: 2.24 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 441/1500: Training Loss: 0.886575, Validation Loss: 1.142400, Time: 2.44 sec
+
+Epoch 442/1500: Training Loss: 1.118012, Validation Loss: 1.331229, Time: 2.26 sec
+
+Epoch 443/1500: Training Loss: 0.869616, Validation Loss: 1.070467, Time: 2.24 sec
+
+Epoch 444/1500: Training Loss: 0.868625, Validation Loss: 1.030636, Time: 2.26 sec
+
+Epoch 445/1500: Training Loss: 0.992639, Validation Loss: 1.099026, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 446/1500: Training Loss: 0.912093, Validation Loss: 1.081211, Time: 2.21 sec
+
+Epoch 447/1500: Training Loss: 1.458653, Validation Loss: 1.072133, Time: 2.27 sec
+
+Epoch 448/1500: Training Loss: 0.865772, Validation Loss: 1.050164, Time: 2.25 sec
+
+Epoch 449/1500: Training Loss: 0.857547, Validation Loss: 1.148426, Time: 2.30 sec
+
+Epoch 450/1500: Training Loss: 0.870313, Validation Loss: 1.180555, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 451/1500: Training Loss: 0.854527, Validation Loss: 1.067211, Time: 2.28 sec
+
+Epoch 452/1500: Training Loss: 1.157262, Validation Loss: 1.148305, Time: 2.25 sec
+
+Epoch 453/1500: Training Loss: 0.850549, Validation Loss: 1.154046, Time: 2.27 sec
+
+Epoch 454/1500: Training Loss: 0.850382, Validation Loss: 1.048825, Time: 2.25 sec
+
+Epoch 455/1500: Training Loss: 0.850453, Validation Loss: 1.069131, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 456/1500: Training Loss: 1.160449, Validation Loss: 1.119509, Time: 2.28 sec
+
+Epoch 457/1500: Training Loss: 0.848204, Validation Loss: 1.101396, Time: 2.40 sec
+
+Epoch 458/1500: Training Loss: 0.847075, Validation Loss: 1.109913, Time: 2.25 sec
+
+Epoch 459/1500: Training Loss: 0.844535, Validation Loss: 1.120842, Time: 2.26 sec
+
+Epoch 460/1500: Training Loss: 0.852904, Validation Loss: 1.195707, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 461/1500: Training Loss: 0.990742, Validation Loss: 1.108549, Time: 2.27 sec
+
+Epoch 462/1500: Training Loss: 0.863260, Validation Loss: 1.095796, Time: 2.27 sec
+
+Epoch 463/1500: Training Loss: 0.837123, Validation Loss: 1.077207, Time: 2.24 sec
+
+Epoch 464/1500: Training Loss: 0.835568, Validation Loss: 1.049949, Time: 2.25 sec
+
+Epoch 465/1500: Training Loss: 1.087968, Validation Loss: 1.153466, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 466/1500: Training Loss: 0.848127, Validation Loss: 1.130120, Time: 2.26 sec
+
+Epoch 467/1500: Training Loss: 0.829260, Validation Loss: 1.047996, Time: 2.25 sec
+
+Epoch 468/1500: Training Loss: 1.019242, Validation Loss: 1.019327, Time: 2.25 sec
+
+Epoch 469/1500: Training Loss: 0.833051, Validation Loss: 1.239694, Time: 2.26 sec
+
+Epoch 470/1500: Training Loss: 0.828907, Validation Loss: 1.039834, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 471/1500: Training Loss: 0.824045, Validation Loss: 1.028199, Time: 2.22 sec
+
+Epoch 472/1500: Training Loss: 0.847266, Validation Loss: 1.088755, Time: 2.26 sec
+
+Epoch 473/1500: Training Loss: 1.173365, Validation Loss: 1.134792, Time: 2.41 sec
+
+Epoch 474/1500: Training Loss: 0.852463, Validation Loss: 1.027274, Time: 2.26 sec
+
+Epoch 475/1500: Training Loss: 0.821504, Validation Loss: 1.031437, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 476/1500: Training Loss: 0.825028, Validation Loss: 1.030746, Time: 2.25 sec
+
+Epoch 477/1500: Training Loss: 0.819389, Validation Loss: 1.018189, Time: 2.29 sec
+
+Epoch 478/1500: Training Loss: 0.830528, Validation Loss: 1.063265, Time: 2.26 sec
+
+Epoch 479/1500: Training Loss: 0.815046, Validation Loss: 1.076446, Time: 2.24 sec
+
+Epoch 480/1500: Training Loss: 0.861769, Validation Loss: 1.148891, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 481/1500: Training Loss: 0.812483, Validation Loss: 1.142605, Time: 2.25 sec
+
+Epoch 482/1500: Training Loss: 0.822077, Validation Loss: 1.008568, Time: 2.28 sec
+
+Epoch 483/1500: Training Loss: 0.810079, Validation Loss: 1.040873, Time: 2.27 sec
+
+Epoch 484/1500: Training Loss: 0.807926, Validation Loss: 1.113163, Time: 2.24 sec
+
+Epoch 485/1500: Training Loss: 0.915903, Validation Loss: 0.993755, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 486/1500: Training Loss: 0.807683, Validation Loss: 1.029126, Time: 2.28 sec
+
+Epoch 487/1500: Training Loss: 0.816185, Validation Loss: 1.019244, Time: 2.23 sec
+
+Epoch 488/1500: Training Loss: 0.804825, Validation Loss: 1.023845, Time: 2.41 sec
+
+Epoch 489/1500: Training Loss: 0.959070, Validation Loss: 1.022336, Time: 2.29 sec
+
+Epoch 490/1500: Training Loss: 0.830015, Validation Loss: 1.036556, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 491/1500: Training Loss: 0.806822, Validation Loss: 1.009792, Time: 2.25 sec
+
+Epoch 492/1500: Training Loss: 0.800417, Validation Loss: 1.033545, Time: 2.27 sec
+
+Epoch 493/1500: Training Loss: 1.120404, Validation Loss: 1.109459, Time: 2.24 sec
+
+Epoch 494/1500: Training Loss: 0.909850, Validation Loss: 1.007224, Time: 2.25 sec
+
+Epoch 495/1500: Training Loss: 0.886370, Validation Loss: 1.124777, Time: 2.29 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 496/1500: Training Loss: 0.799852, Validation Loss: 0.978619, Time: 2.26 sec
+
+Epoch 497/1500: Training Loss: 0.795802, Validation Loss: 1.019811, Time: 2.25 sec
+
+Epoch 498/1500: Training Loss: 0.792225, Validation Loss: 1.054134, Time: 2.29 sec
+
+Epoch 499/1500: Training Loss: 0.809585, Validation Loss: 1.067271, Time: 2.24 sec
+
+Epoch 500/1500: Training Loss: 0.791753, Validation Loss: 1.078719, Time: 2.23 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 501/1500: Training Loss: 1.315805, Validation Loss: 1.074083, Time: 2.25 sec
+
+Epoch 502/1500: Training Loss: 0.813103, Validation Loss: 1.070808, Time: 2.29 sec
+
+Epoch 503/1500: Training Loss: 0.803619, Validation Loss: 1.053593, Time: 2.28 sec
+
+Epoch 504/1500: Training Loss: 0.787665, Validation Loss: 0.997357, Time: 2.41 sec
+
+Epoch 505/1500: Training Loss: 0.797854, Validation Loss: 1.047978, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 506/1500: Training Loss: 0.786869, Validation Loss: 1.065084, Time: 2.22 sec
+
+Epoch 507/1500: Training Loss: 0.784367, Validation Loss: 0.956489, Time: 2.27 sec
+
+Epoch 508/1500: Training Loss: 0.804096, Validation Loss: 0.973137, Time: 2.25 sec
+
+Epoch 509/1500: Training Loss: 0.780941, Validation Loss: 1.022586, Time: 2.26 sec
+
+Epoch 510/1500: Training Loss: 0.851015, Validation Loss: 1.062416, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 511/1500: Training Loss: 0.779013, Validation Loss: 1.044770, Time: 2.29 sec
+
+Epoch 512/1500: Training Loss: 0.781394, Validation Loss: 0.944534, Time: 2.24 sec
+
+Epoch 513/1500: Training Loss: 0.781723, Validation Loss: 1.052261, Time: 2.27 sec
+
+Epoch 514/1500: Training Loss: 0.885685, Validation Loss: 1.012262, Time: 2.31 sec
+
+Epoch 515/1500: Training Loss: 0.779053, Validation Loss: 1.022166, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 516/1500: Training Loss: 0.782140, Validation Loss: 1.014087, Time: 2.24 sec
+
+Epoch 517/1500: Training Loss: 0.775513, Validation Loss: 0.981403, Time: 2.25 sec
+
+Epoch 518/1500: Training Loss: 0.785277, Validation Loss: 0.997503, Time: 2.27 sec
+
+Epoch 519/1500: Training Loss: 0.797503, Validation Loss: 1.025546, Time: 2.26 sec
+
+Epoch 520/1500: Training Loss: 0.777213, Validation Loss: 1.124354, Time: 2.39 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 521/1500: Training Loss: 0.771526, Validation Loss: 0.969773, Time: 2.26 sec
+
+Epoch 522/1500: Training Loss: 0.771398, Validation Loss: 1.080261, Time: 2.29 sec
+
+Epoch 523/1500: Training Loss: 0.767534, Validation Loss: 0.924226, Time: 2.29 sec
+
+Epoch 524/1500: Training Loss: 0.995983, Validation Loss: 1.045253, Time: 2.26 sec
+
+Epoch 525/1500: Training Loss: 0.777229, Validation Loss: 1.018709, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 526/1500: Training Loss: 0.776452, Validation Loss: 1.008642, Time: 2.26 sec
+
+Epoch 527/1500: Training Loss: 0.765369, Validation Loss: 1.010162, Time: 2.25 sec
+
+Epoch 528/1500: Training Loss: 0.763802, Validation Loss: 1.098405, Time: 2.28 sec
+
+Epoch 529/1500: Training Loss: 0.764394, Validation Loss: 1.006396, Time: 2.25 sec
+
+Epoch 530/1500: Training Loss: 0.770351, Validation Loss: 1.009050, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 531/1500: Training Loss: 0.813786, Validation Loss: 1.026630, Time: 2.24 sec
+
+Epoch 532/1500: Training Loss: 0.777644, Validation Loss: 1.077846, Time: 2.25 sec
+
+Epoch 533/1500: Training Loss: 0.768294, Validation Loss: 1.009153, Time: 2.24 sec
+
+Epoch 534/1500: Training Loss: 0.866886, Validation Loss: 0.990643, Time: 2.25 sec
+
+Epoch 535/1500: Training Loss: 0.758311, Validation Loss: 1.036182, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 536/1500: Training Loss: 0.773744, Validation Loss: 0.948564, Time: 2.45 sec
+
+Epoch 537/1500: Training Loss: 0.755359, Validation Loss: 0.991779, Time: 2.21 sec
+
+Epoch 538/1500: Training Loss: 0.755185, Validation Loss: 1.061625, Time: 2.23 sec
+
+Epoch 539/1500: Training Loss: 0.757829, Validation Loss: 1.039235, Time: 2.28 sec
+
+Epoch 540/1500: Training Loss: 0.755047, Validation Loss: 1.046871, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 541/1500: Training Loss: 0.884575, Validation Loss: 0.915795, Time: 2.30 sec
+
+Epoch 542/1500: Training Loss: 0.768502, Validation Loss: 0.967574, Time: 2.24 sec
+
+Epoch 543/1500: Training Loss: 0.750929, Validation Loss: 1.012772, Time: 2.27 sec
+
+Epoch 544/1500: Training Loss: 0.783461, Validation Loss: 1.020126, Time: 2.26 sec
+
+Epoch 545/1500: Training Loss: 0.751964, Validation Loss: 0.954858, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 546/1500: Training Loss: 0.752709, Validation Loss: 1.004471, Time: 2.23 sec
+
+Epoch 547/1500: Training Loss: 0.747226, Validation Loss: 0.951073, Time: 2.26 sec
+
+Epoch 548/1500: Training Loss: 0.785119, Validation Loss: 0.988099, Time: 2.27 sec
+
+Epoch 549/1500: Training Loss: 0.789667, Validation Loss: 0.964962, Time: 2.26 sec
+
+Epoch 550/1500: Training Loss: 0.811083, Validation Loss: 0.986437, Time: 2.23 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 551/1500: Training Loss: 0.838613, Validation Loss: 1.012358, Time: 2.57 sec
+
+Epoch 552/1500: Training Loss: 0.747255, Validation Loss: 1.130540, Time: 2.24 sec
+
+Epoch 553/1500: Training Loss: 0.743302, Validation Loss: 0.941424, Time: 2.26 sec
+
+Epoch 554/1500: Training Loss: 0.782310, Validation Loss: 1.089031, Time: 2.29 sec
+
+Epoch 555/1500: Training Loss: 0.748660, Validation Loss: 1.101932, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 556/1500: Training Loss: 0.740754, Validation Loss: 0.952697, Time: 2.24 sec
+
+Epoch 557/1500: Training Loss: 0.747795, Validation Loss: 1.005465, Time: 2.23 sec
+
+Epoch 558/1500: Training Loss: 0.740656, Validation Loss: 1.085315, Time: 2.26 sec
+
+Epoch 559/1500: Training Loss: 0.739043, Validation Loss: 0.953108, Time: 2.26 sec
+
+Epoch 560/1500: Training Loss: 0.816443, Validation Loss: 0.951102, Time: 2.28 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 561/1500: Training Loss: 0.742378, Validation Loss: 1.105897, Time: 2.23 sec
+
+Epoch 562/1500: Training Loss: 0.738174, Validation Loss: 1.101032, Time: 2.22 sec
+
+Epoch 563/1500: Training Loss: 0.756880, Validation Loss: 0.908523, Time: 2.29 sec
+
+Epoch 564/1500: Training Loss: 0.737436, Validation Loss: 1.055104, Time: 2.29 sec
+
+Epoch 565/1500: Training Loss: 0.733997, Validation Loss: 0.962894, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 566/1500: Training Loss: 0.911208, Validation Loss: 1.049141, Time: 2.23 sec
+
+Epoch 567/1500: Training Loss: 0.822182, Validation Loss: 1.017970, Time: 2.25 sec
+
+Epoch 568/1500: Training Loss: 0.755887, Validation Loss: 0.993421, Time: 2.60 sec
+
+Epoch 569/1500: Training Loss: 0.731759, Validation Loss: 0.980439, Time: 2.29 sec
+
+Epoch 570/1500: Training Loss: 0.740106, Validation Loss: 0.918041, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 571/1500: Training Loss: 0.730428, Validation Loss: 0.981655, Time: 2.25 sec
+
+Epoch 572/1500: Training Loss: 0.728896, Validation Loss: 0.959325, Time: 2.25 sec
+
+Epoch 573/1500: Training Loss: 0.764096, Validation Loss: 1.030069, Time: 2.24 sec
+
+Epoch 574/1500: Training Loss: 0.735171, Validation Loss: 0.917067, Time: 2.29 sec
+
+Epoch 575/1500: Training Loss: 0.729283, Validation Loss: 0.982740, Time: 2.24 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 576/1500: Training Loss: 0.729406, Validation Loss: 0.969208, Time: 2.23 sec
+
+Epoch 577/1500: Training Loss: 0.730755, Validation Loss: 0.903832, Time: 2.29 sec
+
+Epoch 578/1500: Training Loss: 0.726317, Validation Loss: 1.001630, Time: 2.26 sec
+
+Epoch 579/1500: Training Loss: 0.776372, Validation Loss: 0.938575, Time: 2.26 sec
+
+Epoch 580/1500: Training Loss: 0.725425, Validation Loss: 1.067616, Time: 2.23 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 581/1500: Training Loss: 0.724703, Validation Loss: 1.072113, Time: 2.29 sec
+
+Epoch 582/1500: Training Loss: 0.724337, Validation Loss: 1.016623, Time: 2.24 sec
+
+Epoch 583/1500: Training Loss: 0.724757, Validation Loss: 0.906107, Time: 2.28 sec
+
+Epoch 584/1500: Training Loss: 0.762589, Validation Loss: 0.932053, Time: 2.40 sec
+
+Epoch 585/1500: Training Loss: 0.720214, Validation Loss: 1.035957, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 586/1500: Training Loss: 1.208988, Validation Loss: 0.960589, Time: 2.27 sec
+
+Epoch 587/1500: Training Loss: 0.735787, Validation Loss: 0.921465, Time: 2.24 sec
+
+Epoch 588/1500: Training Loss: 0.720693, Validation Loss: 1.023652, Time: 2.25 sec
+
+Epoch 589/1500: Training Loss: 0.718300, Validation Loss: 0.963360, Time: 2.26 sec
+
+Epoch 590/1500: Training Loss: 0.827251, Validation Loss: 0.953945, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 591/1500: Training Loss: 0.714965, Validation Loss: 1.056899, Time: 2.23 sec
+
+Epoch 592/1500: Training Loss: 0.720294, Validation Loss: 0.966393, Time: 2.31 sec
+
+Epoch 593/1500: Training Loss: 0.934296, Validation Loss: 1.023324, Time: 2.26 sec
+
+Epoch 594/1500: Training Loss: 0.738668, Validation Loss: 1.001446, Time: 2.45 sec
+
+Epoch 595/1500: Training Loss: 0.738363, Validation Loss: 0.924823, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 596/1500: Training Loss: 0.715543, Validation Loss: 0.961231, Time: 2.28 sec
+
+Epoch 597/1500: Training Loss: 0.720606, Validation Loss: 0.964375, Time: 2.29 sec
+
+Epoch 598/1500: Training Loss: 0.715035, Validation Loss: 0.969552, Time: 2.26 sec
+
+Epoch 599/1500: Training Loss: 0.714066, Validation Loss: 0.988702, Time: 2.29 sec
+
+Epoch 600/1500: Training Loss: 0.721834, Validation Loss: 0.902331, Time: 2.41 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 601/1500: Training Loss: 0.711616, Validation Loss: 0.928777, Time: 2.26 sec
+
+Epoch 602/1500: Training Loss: 0.709692, Validation Loss: 1.030376, Time: 2.25 sec
+
+Epoch 603/1500: Training Loss: 0.820359, Validation Loss: 0.977476, Time: 2.29 sec
+
+Epoch 604/1500: Training Loss: 0.708924, Validation Loss: 0.974026, Time: 2.25 sec
+
+Epoch 605/1500: Training Loss: 0.710806, Validation Loss: 0.936667, Time: 2.22 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 606/1500: Training Loss: 0.758763, Validation Loss: 0.915785, Time: 2.28 sec
+
+Epoch 607/1500: Training Loss: 0.707478, Validation Loss: 0.970251, Time: 2.29 sec
+
+Epoch 608/1500: Training Loss: 0.708368, Validation Loss: 1.045007, Time: 2.23 sec
+
+Epoch 609/1500: Training Loss: 0.714509, Validation Loss: 0.912715, Time: 2.24 sec
+
+Epoch 610/1500: Training Loss: 0.708304, Validation Loss: 1.053174, Time: 2.24 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 611/1500: Training Loss: 0.867061, Validation Loss: 1.007483, Time: 2.23 sec
+
+Epoch 612/1500: Training Loss: 0.711394, Validation Loss: 0.848808, Time: 2.26 sec
+
+Epoch 613/1500: Training Loss: 0.709226, Validation Loss: 0.893872, Time: 2.24 sec
+
+Epoch 614/1500: Training Loss: 0.723148, Validation Loss: 0.997093, Time: 2.25 sec
+
+Epoch 615/1500: Training Loss: 0.703839, Validation Loss: 0.959814, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 616/1500: Training Loss: 0.716112, Validation Loss: 1.004507, Time: 2.41 sec
+
+Epoch 617/1500: Training Loss: 0.704057, Validation Loss: 0.935486, Time: 2.24 sec
+
+Epoch 618/1500: Training Loss: 0.722410, Validation Loss: 0.992887, Time: 2.25 sec
+
+Epoch 619/1500: Training Loss: 0.702337, Validation Loss: 0.997324, Time: 2.27 sec
+
+Epoch 620/1500: Training Loss: 0.734451, Validation Loss: 0.886136, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 621/1500: Training Loss: 0.721269, Validation Loss: 0.924226, Time: 2.24 sec
+
+Epoch 622/1500: Training Loss: 0.699799, Validation Loss: 1.038314, Time: 2.24 sec
+
+Epoch 623/1500: Training Loss: 0.744926, Validation Loss: 1.001255, Time: 2.28 sec
+
+Epoch 624/1500: Training Loss: 0.792686, Validation Loss: 1.043776, Time: 2.27 sec
+
+Epoch 625/1500: Training Loss: 0.701487, Validation Loss: 0.993936, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 626/1500: Training Loss: 0.699121, Validation Loss: 0.907798, Time: 2.25 sec
+
+Epoch 627/1500: Training Loss: 0.704256, Validation Loss: 1.037583, Time: 2.25 sec
+
+Epoch 628/1500: Training Loss: 0.699516, Validation Loss: 1.065289, Time: 2.28 sec
+
+Epoch 629/1500: Training Loss: 0.698902, Validation Loss: 0.880661, Time: 2.26 sec
+
+Epoch 630/1500: Training Loss: 0.702963, Validation Loss: 0.908179, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 631/1500: Training Loss: 0.696274, Validation Loss: 0.969846, Time: 2.26 sec
+
+Epoch 632/1500: Training Loss: 0.742652, Validation Loss: 0.926518, Time: 2.45 sec
+
+Epoch 633/1500: Training Loss: 0.697435, Validation Loss: 0.981476, Time: 2.25 sec
+
+Epoch 634/1500: Training Loss: 0.697766, Validation Loss: 0.898301, Time: 2.27 sec
+
+Epoch 635/1500: Training Loss: 0.704274, Validation Loss: 0.913553, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 636/1500: Training Loss: 0.704709, Validation Loss: 0.961779, Time: 2.25 sec
+
+Epoch 637/1500: Training Loss: 0.693526, Validation Loss: 0.937316, Time: 2.25 sec
+
+Epoch 638/1500: Training Loss: 0.695265, Validation Loss: 0.959298, Time: 2.23 sec
+
+Epoch 639/1500: Training Loss: 0.762844, Validation Loss: 0.887549, Time: 2.24 sec
+
+Epoch 640/1500: Training Loss: 0.704268, Validation Loss: 0.982244, Time: 2.24 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 641/1500: Training Loss: 0.697447, Validation Loss: 0.969172, Time: 2.28 sec
+
+Epoch 642/1500: Training Loss: 0.726244, Validation Loss: 0.918492, Time: 2.28 sec
+
+Epoch 643/1500: Training Loss: 0.689815, Validation Loss: 0.948994, Time: 2.24 sec
+
+Epoch 644/1500: Training Loss: 0.697141, Validation Loss: 0.876256, Time: 2.26 sec
+
+Epoch 645/1500: Training Loss: 0.704982, Validation Loss: 0.931340, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 646/1500: Training Loss: 0.690183, Validation Loss: 0.950775, Time: 2.23 sec
+
+Epoch 647/1500: Training Loss: 0.688360, Validation Loss: 0.935138, Time: 2.23 sec
+
+Epoch 648/1500: Training Loss: 0.751115, Validation Loss: 0.981315, Time: 2.40 sec
+
+Epoch 649/1500: Training Loss: 0.702905, Validation Loss: 1.012701, Time: 2.25 sec
+
+Epoch 650/1500: Training Loss: 0.697066, Validation Loss: 0.828078, Time: 2.23 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 651/1500: Training Loss: 0.687529, Validation Loss: 0.865327, Time: 2.25 sec
+
+Epoch 652/1500: Training Loss: 0.686587, Validation Loss: 1.020766, Time: 2.26 sec
+
+Epoch 653/1500: Training Loss: 0.686513, Validation Loss: 0.905606, Time: 2.23 sec
+
+Epoch 654/1500: Training Loss: 0.695008, Validation Loss: 0.855059, Time: 2.23 sec
+
+Epoch 655/1500: Training Loss: 0.689304, Validation Loss: 0.937973, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 656/1500: Training Loss: 0.685496, Validation Loss: 0.967956, Time: 2.23 sec
+
+Epoch 657/1500: Training Loss: 0.684842, Validation Loss: 0.957403, Time: 2.25 sec
+
+Epoch 658/1500: Training Loss: 0.727684, Validation Loss: 0.918928, Time: 2.24 sec
+
+Epoch 659/1500: Training Loss: 0.709983, Validation Loss: 0.906847, Time: 2.28 sec
+
+Epoch 660/1500: Training Loss: 0.696668, Validation Loss: 1.000279, Time: 2.24 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 661/1500: Training Loss: 0.683956, Validation Loss: 0.981211, Time: 2.22 sec
+
+Epoch 662/1500: Training Loss: 0.685881, Validation Loss: 0.984538, Time: 2.26 sec
+
+Epoch 663/1500: Training Loss: 0.692715, Validation Loss: 0.893033, Time: 2.26 sec
+
+Epoch 664/1500: Training Loss: 0.684757, Validation Loss: 0.926251, Time: 2.75 sec
+
+Epoch 665/1500: Training Loss: 0.685240, Validation Loss: 1.029068, Time: 2.30 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 666/1500: Training Loss: 0.680685, Validation Loss: 0.865998, Time: 2.26 sec
+
+Epoch 667/1500: Training Loss: 0.711749, Validation Loss: 0.927493, Time: 2.29 sec
+
+Epoch 668/1500: Training Loss: 0.678915, Validation Loss: 0.982294, Time: 2.26 sec
+
+Epoch 669/1500: Training Loss: 0.791622, Validation Loss: 0.951898, Time: 2.31 sec
+
+Epoch 670/1500: Training Loss: 0.678975, Validation Loss: 0.903826, Time: 2.29 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 671/1500: Training Loss: 0.691942, Validation Loss: 0.977287, Time: 2.27 sec
+
+Epoch 672/1500: Training Loss: 0.679699, Validation Loss: 0.919825, Time: 2.27 sec
+
+Epoch 673/1500: Training Loss: 0.690784, Validation Loss: 0.905954, Time: 2.28 sec
+
+Epoch 674/1500: Training Loss: 0.681854, Validation Loss: 1.059826, Time: 2.24 sec
+
+Epoch 675/1500: Training Loss: 0.678571, Validation Loss: 0.957959, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 676/1500: Training Loss: 0.687719, Validation Loss: 0.922723, Time: 2.27 sec
+
+Epoch 677/1500: Training Loss: 0.677660, Validation Loss: 0.926869, Time: 2.27 sec
+
+Epoch 678/1500: Training Loss: 0.675378, Validation Loss: 0.976687, Time: 2.24 sec
+
+Epoch 679/1500: Training Loss: 0.675653, Validation Loss: 1.025020, Time: 2.25 sec
+
+Epoch 680/1500: Training Loss: 0.683091, Validation Loss: 0.887580, Time: 2.40 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 681/1500: Training Loss: 0.682160, Validation Loss: 0.905505, Time: 2.29 sec
+
+Epoch 682/1500: Training Loss: 0.679225, Validation Loss: 0.978568, Time: 2.28 sec
+
+Epoch 683/1500: Training Loss: 0.675756, Validation Loss: 1.035305, Time: 2.25 sec
+
+Epoch 684/1500: Training Loss: 0.676049, Validation Loss: 0.990927, Time: 2.28 sec
+
+Epoch 685/1500: Training Loss: 0.680453, Validation Loss: 0.981329, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 686/1500: Training Loss: 0.674672, Validation Loss: 0.924241, Time: 2.26 sec
+
+Epoch 687/1500: Training Loss: 0.676565, Validation Loss: 0.937532, Time: 2.27 sec
+
+Epoch 688/1500: Training Loss: 0.675424, Validation Loss: 1.105313, Time: 2.28 sec
+
+Epoch 689/1500: Training Loss: 0.704530, Validation Loss: 0.875554, Time: 2.25 sec
+
+Epoch 690/1500: Training Loss: 0.671857, Validation Loss: 0.900707, Time: 2.28 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 691/1500: Training Loss: 0.671289, Validation Loss: 1.021962, Time: 2.26 sec
+
+Epoch 692/1500: Training Loss: 0.697368, Validation Loss: 0.844214, Time: 2.26 sec
+
+Epoch 693/1500: Training Loss: 0.726174, Validation Loss: 0.851430, Time: 2.24 sec
+
+Epoch 694/1500: Training Loss: 0.673263, Validation Loss: 0.945570, Time: 2.28 sec
+
+Epoch 695/1500: Training Loss: 0.671521, Validation Loss: 0.946411, Time: 2.31 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 696/1500: Training Loss: 0.690116, Validation Loss: 0.908953, Time: 2.42 sec
+
+Epoch 697/1500: Training Loss: 0.686526, Validation Loss: 0.987982, Time: 2.24 sec
+
+Epoch 698/1500: Training Loss: 0.672695, Validation Loss: 0.970501, Time: 2.29 sec
+
+Epoch 699/1500: Training Loss: 0.669919, Validation Loss: 0.860644, Time: 2.27 sec
+
+Epoch 700/1500: Training Loss: 0.670318, Validation Loss: 0.922131, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 701/1500: Training Loss: 0.668193, Validation Loss: 0.931871, Time: 2.25 sec
+
+Epoch 702/1500: Training Loss: 0.725475, Validation Loss: 0.912324, Time: 2.27 sec
+
+Epoch 703/1500: Training Loss: 0.670768, Validation Loss: 0.964508, Time: 2.24 sec
+
+Epoch 704/1500: Training Loss: 0.669016, Validation Loss: 0.890371, Time: 2.24 sec
+
+Epoch 705/1500: Training Loss: 0.674058, Validation Loss: 0.885349, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 706/1500: Training Loss: 0.687354, Validation Loss: 0.901181, Time: 2.27 sec
+
+Epoch 707/1500: Training Loss: 0.667836, Validation Loss: 0.896307, Time: 2.29 sec
+
+Epoch 708/1500: Training Loss: 0.670555, Validation Loss: 0.954992, Time: 2.30 sec
+
+Epoch 709/1500: Training Loss: 0.739546, Validation Loss: 0.900019, Time: 2.28 sec
+
+Epoch 710/1500: Training Loss: 0.665585, Validation Loss: 0.972354, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 711/1500: Training Loss: 0.667218, Validation Loss: 0.911098, Time: 2.24 sec
+
+Epoch 712/1500: Training Loss: 0.665887, Validation Loss: 0.933540, Time: 2.43 sec
+
+Epoch 713/1500: Training Loss: 0.666904, Validation Loss: 0.900568, Time: 2.27 sec
+
+Epoch 714/1500: Training Loss: 0.665534, Validation Loss: 0.899269, Time: 2.26 sec
+
+Epoch 715/1500: Training Loss: 0.664514, Validation Loss: 0.928899, Time: 2.28 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 716/1500: Training Loss: 0.668450, Validation Loss: 0.884005, Time: 2.27 sec
+
+Epoch 717/1500: Training Loss: 0.664428, Validation Loss: 0.972075, Time: 2.25 sec
+
+Epoch 718/1500: Training Loss: 0.686263, Validation Loss: 0.876304, Time: 2.25 sec
+
+Epoch 719/1500: Training Loss: 0.662675, Validation Loss: 0.971948, Time: 2.26 sec
+
+Epoch 720/1500: Training Loss: 0.662591, Validation Loss: 0.864863, Time: 2.29 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 721/1500: Training Loss: 0.727307, Validation Loss: 0.925273, Time: 2.27 sec
+
+Epoch 722/1500: Training Loss: 0.686737, Validation Loss: 0.928268, Time: 2.27 sec
+
+Epoch 723/1500: Training Loss: 0.696368, Validation Loss: 0.862451, Time: 2.27 sec
+
+Epoch 724/1500: Training Loss: 0.664210, Validation Loss: 0.932618, Time: 2.29 sec
+
+Epoch 725/1500: Training Loss: 0.665819, Validation Loss: 0.966409, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 726/1500: Training Loss: 0.662905, Validation Loss: 0.954081, Time: 2.22 sec
+
+Epoch 727/1500: Training Loss: 0.662799, Validation Loss: 0.901796, Time: 2.25 sec
+
+Epoch 728/1500: Training Loss: 0.666542, Validation Loss: 0.971820, Time: 2.45 sec
+
+Epoch 729/1500: Training Loss: 0.660368, Validation Loss: 0.901803, Time: 2.24 sec
+
+Epoch 730/1500: Training Loss: 0.663930, Validation Loss: 0.878321, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 731/1500: Training Loss: 0.659822, Validation Loss: 0.925299, Time: 2.25 sec
+
+Epoch 732/1500: Training Loss: 0.660309, Validation Loss: 0.904227, Time: 2.26 sec
+
+Epoch 733/1500: Training Loss: 0.659616, Validation Loss: 0.821298, Time: 2.30 sec
+
+Epoch 734/1500: Training Loss: 0.659519, Validation Loss: 0.890550, Time: 2.27 sec
+
+Epoch 735/1500: Training Loss: 0.678441, Validation Loss: 0.954072, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 736/1500: Training Loss: 0.659268, Validation Loss: 0.932820, Time: 2.24 sec
+
+Epoch 737/1500: Training Loss: 0.660293, Validation Loss: 0.910816, Time: 2.26 sec
+
+Epoch 738/1500: Training Loss: 0.659534, Validation Loss: 0.868344, Time: 2.25 sec
+
+Epoch 739/1500: Training Loss: 0.665672, Validation Loss: 0.911991, Time: 2.26 sec
+
+Epoch 740/1500: Training Loss: 0.756243, Validation Loss: 1.022539, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 741/1500: Training Loss: 0.665485, Validation Loss: 0.920230, Time: 2.24 sec
+
+Epoch 742/1500: Training Loss: 0.657909, Validation Loss: 0.876812, Time: 2.29 sec
+
+Epoch 743/1500: Training Loss: 0.656326, Validation Loss: 0.923589, Time: 2.26 sec
+
+Epoch 744/1500: Training Loss: 0.661049, Validation Loss: 0.934482, Time: 2.44 sec
+
+Epoch 745/1500: Training Loss: 0.678498, Validation Loss: 0.970279, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 746/1500: Training Loss: 0.668219, Validation Loss: 0.840337, Time: 2.25 sec
+
+Epoch 747/1500: Training Loss: 0.659090, Validation Loss: 0.868029, Time: 2.24 sec
+
+Epoch 748/1500: Training Loss: 0.657685, Validation Loss: 0.970971, Time: 2.26 sec
+
+Epoch 749/1500: Training Loss: 0.688992, Validation Loss: 0.937503, Time: 2.25 sec
+
+Epoch 750/1500: Training Loss: 0.663766, Validation Loss: 0.926027, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 751/1500: Training Loss: 0.656969, Validation Loss: 0.961791, Time: 2.30 sec
+
+Epoch 752/1500: Training Loss: 0.661280, Validation Loss: 0.941983, Time: 2.31 sec
+
+Epoch 753/1500: Training Loss: 0.659639, Validation Loss: 0.896693, Time: 2.25 sec
+
+Epoch 754/1500: Training Loss: 0.653871, Validation Loss: 0.923043, Time: 2.26 sec
+
+Epoch 755/1500: Training Loss: 0.659314, Validation Loss: 0.917269, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 756/1500: Training Loss: 0.656846, Validation Loss: 0.833199, Time: 2.26 sec
+
+Epoch 757/1500: Training Loss: 0.654814, Validation Loss: 0.883316, Time: 2.26 sec
+
+Epoch 758/1500: Training Loss: 0.712900, Validation Loss: 0.919916, Time: 2.27 sec
+
+Epoch 759/1500: Training Loss: 0.651536, Validation Loss: 0.867208, Time: 2.28 sec
+
+Epoch 760/1500: Training Loss: 0.654830, Validation Loss: 0.998776, Time: 2.42 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 761/1500: Training Loss: 0.655702, Validation Loss: 0.891984, Time: 2.25 sec
+
+Epoch 762/1500: Training Loss: 0.652227, Validation Loss: 0.871877, Time: 2.27 sec
+
+Epoch 763/1500: Training Loss: 0.655072, Validation Loss: 0.936006, Time: 2.27 sec
+
+Epoch 764/1500: Training Loss: 0.693620, Validation Loss: 0.947426, Time: 2.28 sec
+
+Epoch 765/1500: Training Loss: 0.651308, Validation Loss: 0.989694, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 766/1500: Training Loss: 0.651989, Validation Loss: 0.901460, Time: 2.26 sec
+
+Epoch 767/1500: Training Loss: 0.737557, Validation Loss: 0.932989, Time: 2.26 sec
+
+Epoch 768/1500: Training Loss: 0.652916, Validation Loss: 0.938619, Time: 2.25 sec
+
+Epoch 769/1500: Training Loss: 0.649867, Validation Loss: 0.889066, Time: 2.26 sec
+
+Epoch 770/1500: Training Loss: 0.648906, Validation Loss: 0.915479, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 771/1500: Training Loss: 0.652708, Validation Loss: 0.882113, Time: 2.26 sec
+
+Epoch 772/1500: Training Loss: 0.649385, Validation Loss: 0.869268, Time: 2.30 sec
+
+Epoch 773/1500: Training Loss: 0.649025, Validation Loss: 0.874479, Time: 2.26 sec
+
+Epoch 774/1500: Training Loss: 0.654554, Validation Loss: 0.918946, Time: 2.25 sec
+
+Epoch 775/1500: Training Loss: 0.648572, Validation Loss: 0.921299, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 776/1500: Training Loss: 0.650459, Validation Loss: 0.872270, Time: 2.40 sec
+
+Epoch 777/1500: Training Loss: 0.647478, Validation Loss: 0.961704, Time: 2.25 sec
+
+Epoch 778/1500: Training Loss: 0.687604, Validation Loss: 0.956256, Time: 2.28 sec
+
+Epoch 779/1500: Training Loss: 0.648182, Validation Loss: 0.905633, Time: 2.25 sec
+
+Epoch 780/1500: Training Loss: 0.648344, Validation Loss: 0.899229, Time: 2.29 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 781/1500: Training Loss: 0.651006, Validation Loss: 0.893167, Time: 2.28 sec
+
+Epoch 782/1500: Training Loss: 0.646964, Validation Loss: 0.981481, Time: 2.26 sec
+
+Epoch 783/1500: Training Loss: 0.646134, Validation Loss: 0.954260, Time: 2.27 sec
+
+Epoch 784/1500: Training Loss: 0.647413, Validation Loss: 0.878719, Time: 2.28 sec
+
+Epoch 785/1500: Training Loss: 0.645871, Validation Loss: 0.878966, Time: 2.28 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 786/1500: Training Loss: 0.691833, Validation Loss: 0.901688, Time: 2.25 sec
+
+Epoch 787/1500: Training Loss: 0.650448, Validation Loss: 0.969180, Time: 2.28 sec
+
+Epoch 788/1500: Training Loss: 0.644812, Validation Loss: 0.884840, Time: 2.26 sec
+
+Epoch 789/1500: Training Loss: 0.652765, Validation Loss: 0.892446, Time: 2.26 sec
+
+Epoch 790/1500: Training Loss: 0.644455, Validation Loss: 0.901125, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 791/1500: Training Loss: 0.648447, Validation Loss: 0.957817, Time: 2.28 sec
+
+Epoch 792/1500: Training Loss: 0.662449, Validation Loss: 0.941207, Time: 2.40 sec
+
+Epoch 793/1500: Training Loss: 0.644756, Validation Loss: 0.918158, Time: 2.24 sec
+
+Epoch 794/1500: Training Loss: 0.647135, Validation Loss: 0.902319, Time: 2.26 sec
+
+Epoch 795/1500: Training Loss: 0.649601, Validation Loss: 0.923502, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 796/1500: Training Loss: 0.659185, Validation Loss: 0.943658, Time: 2.29 sec
+
+Epoch 797/1500: Training Loss: 0.644279, Validation Loss: 0.966431, Time: 2.25 sec
+
+Epoch 798/1500: Training Loss: 0.643097, Validation Loss: 0.971213, Time: 2.25 sec
+
+Epoch 799/1500: Training Loss: 0.644295, Validation Loss: 0.913419, Time: 2.25 sec
+
+Epoch 800/1500: Training Loss: 0.655003, Validation Loss: 0.942867, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 801/1500: Training Loss: 0.652401, Validation Loss: 0.909196, Time: 2.25 sec
+
+Epoch 802/1500: Training Loss: 0.642321, Validation Loss: 0.985579, Time: 2.26 sec
+
+Epoch 803/1500: Training Loss: 0.646303, Validation Loss: 0.896365, Time: 2.26 sec
+
+Epoch 804/1500: Training Loss: 0.641969, Validation Loss: 0.902541, Time: 2.28 sec
+
+Epoch 805/1500: Training Loss: 0.656492, Validation Loss: 0.945074, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 806/1500: Training Loss: 0.640808, Validation Loss: 0.920853, Time: 2.25 sec
+
+Epoch 807/1500: Training Loss: 0.641785, Validation Loss: 0.946697, Time: 2.24 sec
+
+Epoch 808/1500: Training Loss: 0.640888, Validation Loss: 0.901984, Time: 2.39 sec
+
+Epoch 809/1500: Training Loss: 0.641047, Validation Loss: 0.884694, Time: 2.25 sec
+
+Epoch 810/1500: Training Loss: 0.640699, Validation Loss: 0.992862, Time: 2.24 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 811/1500: Training Loss: 0.642405, Validation Loss: 1.005674, Time: 2.26 sec
+
+Epoch 812/1500: Training Loss: 0.641507, Validation Loss: 1.022177, Time: 2.28 sec
+
+Epoch 813/1500: Training Loss: 0.647412, Validation Loss: 0.757490, Time: 2.28 sec
+
+Epoch 814/1500: Training Loss: 0.643493, Validation Loss: 0.810971, Time: 2.26 sec
+
+Epoch 815/1500: Training Loss: 0.641980, Validation Loss: 0.834341, Time: 2.28 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 816/1500: Training Loss: 0.641196, Validation Loss: 0.907174, Time: 2.26 sec
+
+Epoch 817/1500: Training Loss: 0.649769, Validation Loss: 0.938204, Time: 2.25 sec
+
+Epoch 818/1500: Training Loss: 0.639983, Validation Loss: 0.964619, Time: 2.26 sec
+
+Epoch 819/1500: Training Loss: 0.640315, Validation Loss: 0.857407, Time: 2.25 sec
+
+Epoch 820/1500: Training Loss: 0.749479, Validation Loss: 0.840726, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 821/1500: Training Loss: 0.643478, Validation Loss: 0.991633, Time: 2.28 sec
+
+Epoch 822/1500: Training Loss: 0.644470, Validation Loss: 0.992524, Time: 2.26 sec
+
+Epoch 823/1500: Training Loss: 0.639429, Validation Loss: 0.907159, Time: 2.29 sec
+
+Epoch 824/1500: Training Loss: 0.641229, Validation Loss: 0.942082, Time: 2.43 sec
+
+Epoch 825/1500: Training Loss: 0.638820, Validation Loss: 0.984308, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 826/1500: Training Loss: 0.637780, Validation Loss: 0.942528, Time: 2.26 sec
+
+Epoch 827/1500: Training Loss: 0.638843, Validation Loss: 0.853244, Time: 2.27 sec
+
+Epoch 828/1500: Training Loss: 0.638217, Validation Loss: 0.928346, Time: 2.26 sec
+
+Epoch 829/1500: Training Loss: 0.637476, Validation Loss: 0.912048, Time: 2.25 sec
+
+Epoch 830/1500: Training Loss: 0.637823, Validation Loss: 0.973647, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 831/1500: Training Loss: 0.640544, Validation Loss: 1.040416, Time: 2.29 sec
+
+Epoch 832/1500: Training Loss: 0.639512, Validation Loss: 0.916360, Time: 2.25 sec
+
+Epoch 833/1500: Training Loss: 0.637802, Validation Loss: 0.894566, Time: 2.28 sec
+
+Epoch 834/1500: Training Loss: 0.664426, Validation Loss: 1.009189, Time: 2.29 sec
+
+Epoch 835/1500: Training Loss: 0.636813, Validation Loss: 0.890322, Time: 2.28 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 836/1500: Training Loss: 0.697481, Validation Loss: 0.882199, Time: 2.28 sec
+
+Epoch 837/1500: Training Loss: 0.637315, Validation Loss: 0.941905, Time: 2.26 sec
+
+Epoch 838/1500: Training Loss: 0.637905, Validation Loss: 0.984458, Time: 2.25 sec
+
+Epoch 839/1500: Training Loss: 0.656766, Validation Loss: 0.901550, Time: 2.24 sec
+
+Epoch 840/1500: Training Loss: 0.636361, Validation Loss: 0.928752, Time: 2.42 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 841/1500: Training Loss: 0.636868, Validation Loss: 0.965294, Time: 2.27 sec
+
+Epoch 842/1500: Training Loss: 0.635249, Validation Loss: 0.899836, Time: 2.25 sec
+
+Epoch 843/1500: Training Loss: 0.636617, Validation Loss: 0.891007, Time: 2.27 sec
+
+Epoch 844/1500: Training Loss: 0.658127, Validation Loss: 0.928144, Time: 2.27 sec
+
+Epoch 845/1500: Training Loss: 0.634176, Validation Loss: 0.913191, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 846/1500: Training Loss: 0.633999, Validation Loss: 0.928551, Time: 2.24 sec
+
+Epoch 847/1500: Training Loss: 0.634049, Validation Loss: 0.893759, Time: 2.27 sec
+
+Epoch 848/1500: Training Loss: 0.632823, Validation Loss: 0.888000, Time: 2.29 sec
+
+Epoch 849/1500: Training Loss: 0.639937, Validation Loss: 0.978350, Time: 2.29 sec
+
+Epoch 850/1500: Training Loss: 0.636541, Validation Loss: 0.940851, Time: 2.29 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 851/1500: Training Loss: 0.632748, Validation Loss: 0.900087, Time: 2.25 sec
+
+Epoch 852/1500: Training Loss: 0.634276, Validation Loss: 0.875022, Time: 2.27 sec
+
+Epoch 853/1500: Training Loss: 0.638668, Validation Loss: 0.918425, Time: 2.27 sec
+
+Epoch 854/1500: Training Loss: 0.632879, Validation Loss: 0.962318, Time: 2.25 sec
+
+Epoch 855/1500: Training Loss: 0.655819, Validation Loss: 0.912350, Time: 2.28 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 856/1500: Training Loss: 0.633530, Validation Loss: 0.926373, Time: 2.41 sec
+
+Epoch 857/1500: Training Loss: 0.632925, Validation Loss: 0.942315, Time: 2.26 sec
+
+Epoch 858/1500: Training Loss: 0.635768, Validation Loss: 1.104925, Time: 2.27 sec
+
+Epoch 859/1500: Training Loss: 0.633036, Validation Loss: 0.864152, Time: 2.28 sec
+
+Epoch 860/1500: Training Loss: 0.635030, Validation Loss: 0.826000, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 861/1500: Training Loss: 0.634266, Validation Loss: 0.923352, Time: 2.27 sec
+
+Epoch 862/1500: Training Loss: 0.632331, Validation Loss: 0.991940, Time: 2.24 sec
+
+Epoch 863/1500: Training Loss: 0.669564, Validation Loss: 0.967003, Time: 2.24 sec
+
+Epoch 864/1500: Training Loss: 0.639784, Validation Loss: 0.922322, Time: 2.26 sec
+
+Epoch 865/1500: Training Loss: 0.636400, Validation Loss: 0.915158, Time: 2.28 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 866/1500: Training Loss: 0.633108, Validation Loss: 0.933368, Time: 2.29 sec
+
+Epoch 867/1500: Training Loss: 0.630905, Validation Loss: 0.918693, Time: 2.29 sec
+
+Epoch 868/1500: Training Loss: 0.630290, Validation Loss: 0.927762, Time: 2.27 sec
+
+Epoch 869/1500: Training Loss: 0.639834, Validation Loss: 0.872259, Time: 2.26 sec
+
+Epoch 870/1500: Training Loss: 0.631130, Validation Loss: 1.005427, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 871/1500: Training Loss: 0.630669, Validation Loss: 0.995012, Time: 2.25 sec
+
+Epoch 872/1500: Training Loss: 0.635687, Validation Loss: 0.923709, Time: 2.41 sec
+
+Epoch 873/1500: Training Loss: 0.630634, Validation Loss: 0.877530, Time: 2.25 sec
+
+Epoch 874/1500: Training Loss: 0.630407, Validation Loss: 0.960998, Time: 2.28 sec
+
+Epoch 875/1500: Training Loss: 0.644020, Validation Loss: 0.997621, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 876/1500: Training Loss: 0.632739, Validation Loss: 0.919546, Time: 2.24 sec
+
+Epoch 877/1500: Training Loss: 0.635762, Validation Loss: 0.874815, Time: 2.26 sec
+
+Epoch 878/1500: Training Loss: 0.630292, Validation Loss: 0.920064, Time: 2.26 sec
+
+Epoch 879/1500: Training Loss: 0.652664, Validation Loss: 0.888378, Time: 2.26 sec
+
+Epoch 880/1500: Training Loss: 0.629792, Validation Loss: 0.940315, Time: 2.28 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 881/1500: Training Loss: 0.628823, Validation Loss: 0.939427, Time: 2.26 sec
+
+Epoch 882/1500: Training Loss: 0.629634, Validation Loss: 0.961681, Time: 2.28 sec
+
+Epoch 883/1500: Training Loss: 0.628062, Validation Loss: 0.943469, Time: 2.28 sec
+
+Epoch 884/1500: Training Loss: 0.652734, Validation Loss: 0.915240, Time: 2.26 sec
+
+Epoch 885/1500: Training Loss: 0.634255, Validation Loss: 0.923548, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 886/1500: Training Loss: 0.628952, Validation Loss: 0.971675, Time: 2.29 sec
+
+Epoch 887/1500: Training Loss: 0.629124, Validation Loss: 0.908205, Time: 2.25 sec
+
+Epoch 888/1500: Training Loss: 0.628358, Validation Loss: 0.891149, Time: 2.42 sec
+
+Epoch 889/1500: Training Loss: 0.628961, Validation Loss: 0.976395, Time: 2.25 sec
+
+Epoch 890/1500: Training Loss: 0.626973, Validation Loss: 0.879625, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 891/1500: Training Loss: 0.676589, Validation Loss: 0.902309, Time: 2.24 sec
+
+Epoch 892/1500: Training Loss: 0.629155, Validation Loss: 0.888610, Time: 2.26 sec
+
+Epoch 893/1500: Training Loss: 0.628895, Validation Loss: 0.869927, Time: 2.25 sec
+
+Epoch 894/1500: Training Loss: 0.639991, Validation Loss: 0.914814, Time: 2.29 sec
+
+Epoch 895/1500: Training Loss: 0.628781, Validation Loss: 0.878189, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 896/1500: Training Loss: 0.647501, Validation Loss: 0.859307, Time: 2.29 sec
+
+Epoch 897/1500: Training Loss: 0.634329, Validation Loss: 0.946614, Time: 2.30 sec
+
+Epoch 898/1500: Training Loss: 0.630860, Validation Loss: 0.941309, Time: 2.23 sec
+
+Epoch 899/1500: Training Loss: 0.630722, Validation Loss: 0.882579, Time: 2.27 sec
+
+Epoch 900/1500: Training Loss: 0.627362, Validation Loss: 0.851081, Time: 2.24 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 901/1500: Training Loss: 0.627575, Validation Loss: 0.882880, Time: 2.25 sec
+
+Epoch 902/1500: Training Loss: 0.628635, Validation Loss: 0.989167, Time: 2.32 sec
+
+Epoch 903/1500: Training Loss: 0.630383, Validation Loss: 0.937396, Time: 2.27 sec
+
+Epoch 904/1500: Training Loss: 0.626540, Validation Loss: 0.903480, Time: 2.40 sec
+
+Epoch 905/1500: Training Loss: 0.640141, Validation Loss: 0.904698, Time: 2.28 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 906/1500: Training Loss: 0.630302, Validation Loss: 0.849531, Time: 2.28 sec
+
+Epoch 907/1500: Training Loss: 0.628597, Validation Loss: 0.861191, Time: 2.26 sec
+
+Epoch 908/1500: Training Loss: 0.625907, Validation Loss: 0.940173, Time: 2.26 sec
+
+Epoch 909/1500: Training Loss: 0.626105, Validation Loss: 0.926806, Time: 2.31 sec
+
+Epoch 910/1500: Training Loss: 0.643611, Validation Loss: 0.805205, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 911/1500: Training Loss: 0.624689, Validation Loss: 0.895856, Time: 2.22 sec
+
+Epoch 912/1500: Training Loss: 0.651261, Validation Loss: 0.948246, Time: 2.28 sec
+
+Epoch 913/1500: Training Loss: 0.628808, Validation Loss: 0.858196, Time: 2.26 sec
+
+Epoch 914/1500: Training Loss: 0.624583, Validation Loss: 0.819742, Time: 2.26 sec
+
+Epoch 915/1500: Training Loss: 0.624563, Validation Loss: 0.914654, Time: 2.30 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 916/1500: Training Loss: 0.631096, Validation Loss: 0.939552, Time: 2.26 sec
+
+Epoch 917/1500: Training Loss: 0.624468, Validation Loss: 0.890924, Time: 2.29 sec
+
+Epoch 918/1500: Training Loss: 0.622958, Validation Loss: 0.859253, Time: 2.25 sec
+
+Epoch 919/1500: Training Loss: 0.623531, Validation Loss: 0.903245, Time: 2.27 sec
+
+Epoch 920/1500: Training Loss: 0.641552, Validation Loss: 0.869900, Time: 2.42 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 921/1500: Training Loss: 0.623105, Validation Loss: 0.899974, Time: 2.26 sec
+
+Epoch 922/1500: Training Loss: 0.625285, Validation Loss: 0.908850, Time: 2.24 sec
+
+Epoch 923/1500: Training Loss: 0.634934, Validation Loss: 0.940398, Time: 2.32 sec
+
+Epoch 924/1500: Training Loss: 0.624888, Validation Loss: 0.915771, Time: 2.27 sec
+
+Epoch 925/1500: Training Loss: 0.623168, Validation Loss: 0.892099, Time: 2.24 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 926/1500: Training Loss: 0.628897, Validation Loss: 0.856721, Time: 2.25 sec
+
+Epoch 927/1500: Training Loss: 0.625067, Validation Loss: 0.818528, Time: 2.27 sec
+
+Epoch 928/1500: Training Loss: 0.623334, Validation Loss: 0.845427, Time: 2.27 sec
+
+Epoch 929/1500: Training Loss: 0.623832, Validation Loss: 0.872815, Time: 2.27 sec
+
+Epoch 930/1500: Training Loss: 0.624648, Validation Loss: 0.954566, Time: 2.28 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 931/1500: Training Loss: 0.625681, Validation Loss: 0.896497, Time: 2.27 sec
+
+Epoch 932/1500: Training Loss: 0.622941, Validation Loss: 0.945245, Time: 2.26 sec
+
+Epoch 933/1500: Training Loss: 0.622183, Validation Loss: 0.939527, Time: 2.26 sec
+
+Epoch 934/1500: Training Loss: 0.622037, Validation Loss: 0.876332, Time: 2.25 sec
+
+Epoch 935/1500: Training Loss: 0.623707, Validation Loss: 0.877912, Time: 2.30 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 936/1500: Training Loss: 0.626250, Validation Loss: 0.868289, Time: 2.43 sec
+
+Epoch 937/1500: Training Loss: 0.621386, Validation Loss: 0.943825, Time: 2.28 sec
+
+Epoch 938/1500: Training Loss: 0.626895, Validation Loss: 0.884474, Time: 2.29 sec
+
+Epoch 939/1500: Training Loss: 0.620896, Validation Loss: 0.873533, Time: 2.26 sec
+
+Epoch 940/1500: Training Loss: 0.620669, Validation Loss: 0.909985, Time: 2.28 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 941/1500: Training Loss: 0.716693, Validation Loss: 0.837186, Time: 2.28 sec
+
+Epoch 942/1500: Training Loss: 0.624650, Validation Loss: 0.948333, Time: 2.29 sec
+
+Epoch 943/1500: Training Loss: 0.620583, Validation Loss: 0.981043, Time: 2.29 sec
+
+Epoch 944/1500: Training Loss: 0.619721, Validation Loss: 0.901562, Time: 2.25 sec
+
+Epoch 945/1500: Training Loss: 0.633343, Validation Loss: 0.951463, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 946/1500: Training Loss: 0.623389, Validation Loss: 0.959532, Time: 2.24 sec
+
+Epoch 947/1500: Training Loss: 0.619969, Validation Loss: 0.918795, Time: 2.26 sec
+
+Epoch 948/1500: Training Loss: 0.621941, Validation Loss: 0.945270, Time: 2.25 sec
+
+Epoch 949/1500: Training Loss: 0.621381, Validation Loss: 0.910660, Time: 2.28 sec
+
+Epoch 950/1500: Training Loss: 0.620223, Validation Loss: 0.938669, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 951/1500: Training Loss: 0.620431, Validation Loss: 1.008315, Time: 2.25 sec
+
+Epoch 952/1500: Training Loss: 0.619085, Validation Loss: 0.995121, Time: 2.46 sec
+
+Epoch 953/1500: Training Loss: 0.632324, Validation Loss: 0.939407, Time: 2.25 sec
+
+Epoch 954/1500: Training Loss: 0.629230, Validation Loss: 0.963258, Time: 2.27 sec
+
+Epoch 955/1500: Training Loss: 0.619119, Validation Loss: 0.991375, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 956/1500: Training Loss: 0.630169, Validation Loss: 0.888819, Time: 2.27 sec
+
+Epoch 957/1500: Training Loss: 0.620089, Validation Loss: 0.895410, Time: 2.27 sec
+
+Epoch 958/1500: Training Loss: 0.619935, Validation Loss: 0.980975, Time: 2.26 sec
+
+Epoch 959/1500: Training Loss: 0.626110, Validation Loss: 0.968629, Time: 2.25 sec
+
+Epoch 960/1500: Training Loss: 0.620348, Validation Loss: 0.871771, Time: 2.30 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 961/1500: Training Loss: 0.617564, Validation Loss: 0.868886, Time: 2.30 sec
+
+Epoch 962/1500: Training Loss: 0.617846, Validation Loss: 0.923175, Time: 2.26 sec
+
+Epoch 963/1500: Training Loss: 0.617888, Validation Loss: 0.912262, Time: 2.26 sec
+
+Epoch 964/1500: Training Loss: 0.617119, Validation Loss: 0.896084, Time: 2.27 sec
+
+Epoch 965/1500: Training Loss: 0.617474, Validation Loss: 0.903939, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 966/1500: Training Loss: 0.618639, Validation Loss: 0.904753, Time: 2.28 sec
+
+Epoch 967/1500: Training Loss: 0.617157, Validation Loss: 0.946244, Time: 2.28 sec
+
+Epoch 968/1500: Training Loss: 0.619472, Validation Loss: 0.899251, Time: 2.45 sec
+
+Epoch 969/1500: Training Loss: 0.619160, Validation Loss: 0.919301, Time: 2.28 sec
+
+Epoch 970/1500: Training Loss: 0.615757, Validation Loss: 0.937536, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 971/1500: Training Loss: 0.618302, Validation Loss: 0.901127, Time: 2.23 sec
+
+Epoch 972/1500: Training Loss: 0.617060, Validation Loss: 0.991711, Time: 2.26 sec
+
+Epoch 973/1500: Training Loss: 0.620410, Validation Loss: 0.984816, Time: 2.28 sec
+
+Epoch 974/1500: Training Loss: 0.616507, Validation Loss: 0.863367, Time: 2.29 sec
+
+Epoch 975/1500: Training Loss: 0.616232, Validation Loss: 0.869021, Time: 2.33 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 976/1500: Training Loss: 0.625377, Validation Loss: 0.913285, Time: 2.26 sec
+
+Epoch 977/1500: Training Loss: 0.615875, Validation Loss: 0.935909, Time: 2.25 sec
+
+Epoch 978/1500: Training Loss: 0.618862, Validation Loss: 0.940846, Time: 2.25 sec
+
+Epoch 979/1500: Training Loss: 0.619528, Validation Loss: 0.985768, Time: 2.26 sec
+
+Epoch 980/1500: Training Loss: 0.616903, Validation Loss: 0.940436, Time: 2.28 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 981/1500: Training Loss: 0.615925, Validation Loss: 0.929176, Time: 2.26 sec
+
+Epoch 982/1500: Training Loss: 0.617398, Validation Loss: 0.974149, Time: 2.25 sec
+
+Epoch 983/1500: Training Loss: 0.616438, Validation Loss: 0.996641, Time: 2.26 sec
+
+Epoch 984/1500: Training Loss: 0.616874, Validation Loss: 0.937313, Time: 2.40 sec
+
+Epoch 985/1500: Training Loss: 0.615673, Validation Loss: 0.955659, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 986/1500: Training Loss: 0.617545, Validation Loss: 0.932255, Time: 2.29 sec
+
+Epoch 987/1500: Training Loss: 0.616160, Validation Loss: 0.903203, Time: 2.25 sec
+
+Epoch 988/1500: Training Loss: 0.621659, Validation Loss: 1.072753, Time: 2.27 sec
+
+Epoch 989/1500: Training Loss: 0.616819, Validation Loss: 0.988993, Time: 2.24 sec
+
+Epoch 990/1500: Training Loss: 0.615409, Validation Loss: 0.875568, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 991/1500: Training Loss: 0.630262, Validation Loss: 0.867413, Time: 2.25 sec
+
+Epoch 992/1500: Training Loss: 0.615353, Validation Loss: 0.913564, Time: 2.24 sec
+
+Epoch 993/1500: Training Loss: 0.613455, Validation Loss: 0.955813, Time: 2.23 sec
+
+Epoch 994/1500: Training Loss: 0.614282, Validation Loss: 0.885294, Time: 2.23 sec
+
+Epoch 995/1500: Training Loss: 0.613900, Validation Loss: 0.904220, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 996/1500: Training Loss: 0.636523, Validation Loss: 0.931828, Time: 2.25 sec
+
+Epoch 997/1500: Training Loss: 0.615901, Validation Loss: 0.907760, Time: 2.29 sec
+
+Epoch 998/1500: Training Loss: 0.613946, Validation Loss: 0.956060, Time: 2.24 sec
+
+Epoch 999/1500: Training Loss: 0.613388, Validation Loss: 0.954988, Time: 2.26 sec
+
+Epoch 1000/1500: Training Loss: 0.618059, Validation Loss: 0.928462, Time: 2.41 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1001/1500: Training Loss: 0.618192, Validation Loss: 0.940174, Time: 2.25 sec
+
+Epoch 1002/1500: Training Loss: 0.619056, Validation Loss: 0.886023, Time: 2.27 sec
+
+Epoch 1003/1500: Training Loss: 0.613598, Validation Loss: 0.949210, Time: 2.25 sec
+
+Epoch 1004/1500: Training Loss: 0.612691, Validation Loss: 1.008145, Time: 2.25 sec
+
+Epoch 1005/1500: Training Loss: 0.630145, Validation Loss: 0.890939, Time: 2.32 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1006/1500: Training Loss: 0.612298, Validation Loss: 0.922085, Time: 2.26 sec
+
+Epoch 1007/1500: Training Loss: 0.612565, Validation Loss: 0.960190, Time: 2.25 sec
+
+Epoch 1008/1500: Training Loss: 0.612264, Validation Loss: 1.011961, Time: 2.27 sec
+
+Epoch 1009/1500: Training Loss: 0.631200, Validation Loss: 0.968334, Time: 2.31 sec
+
+Epoch 1010/1500: Training Loss: 0.612968, Validation Loss: 0.944018, Time: 2.31 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1011/1500: Training Loss: 0.613504, Validation Loss: 0.967127, Time: 2.27 sec
+
+Epoch 1012/1500: Training Loss: 0.611885, Validation Loss: 0.999932, Time: 2.30 sec
+
+Epoch 1013/1500: Training Loss: 0.611287, Validation Loss: 0.935860, Time: 2.24 sec
+
+Epoch 1014/1500: Training Loss: 0.620012, Validation Loss: 0.858036, Time: 2.26 sec
+
+Epoch 1015/1500: Training Loss: 0.613144, Validation Loss: 0.922688, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1016/1500: Training Loss: 0.610937, Validation Loss: 0.998336, Time: 2.41 sec
+
+Epoch 1017/1500: Training Loss: 0.611840, Validation Loss: 0.955877, Time: 2.26 sec
+
+Epoch 1018/1500: Training Loss: 0.615423, Validation Loss: 0.903300, Time: 2.26 sec
+
+Epoch 1019/1500: Training Loss: 0.610874, Validation Loss: 0.948667, Time: 2.28 sec
+
+Epoch 1020/1500: Training Loss: 0.636150, Validation Loss: 0.935304, Time: 2.24 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1021/1500: Training Loss: 0.625463, Validation Loss: 1.033418, Time: 2.27 sec
+
+Epoch 1022/1500: Training Loss: 0.611420, Validation Loss: 0.985416, Time: 2.27 sec
+
+Epoch 1023/1500: Training Loss: 0.610101, Validation Loss: 0.958319, Time: 2.27 sec
+
+Epoch 1024/1500: Training Loss: 0.620289, Validation Loss: 0.920800, Time: 2.28 sec
+
+Epoch 1025/1500: Training Loss: 0.611615, Validation Loss: 0.898782, Time: 2.30 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1026/1500: Training Loss: 0.609651, Validation Loss: 0.953505, Time: 2.23 sec
+
+Epoch 1027/1500: Training Loss: 0.611461, Validation Loss: 0.853848, Time: 2.27 sec
+
+Epoch 1028/1500: Training Loss: 0.609371, Validation Loss: 0.889496, Time: 2.28 sec
+
+Epoch 1029/1500: Training Loss: 0.633008, Validation Loss: 0.921435, Time: 2.24 sec
+
+Epoch 1030/1500: Training Loss: 0.610495, Validation Loss: 0.940351, Time: 2.33 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1031/1500: Training Loss: 0.611162, Validation Loss: 0.913242, Time: 2.30 sec
+
+Epoch 1032/1500: Training Loss: 0.610596, Validation Loss: 0.945480, Time: 2.43 sec
+
+Epoch 1033/1500: Training Loss: 0.610989, Validation Loss: 0.905047, Time: 2.25 sec
+
+Epoch 1034/1500: Training Loss: 0.609976, Validation Loss: 0.906517, Time: 2.26 sec
+
+Epoch 1035/1500: Training Loss: 0.609634, Validation Loss: 0.957933, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1036/1500: Training Loss: 0.608753, Validation Loss: 0.953865, Time: 2.25 sec
+
+Epoch 1037/1500: Training Loss: 0.611612, Validation Loss: 0.907363, Time: 2.24 sec
+
+Epoch 1038/1500: Training Loss: 0.608286, Validation Loss: 0.937856, Time: 2.26 sec
+
+Epoch 1039/1500: Training Loss: 0.643539, Validation Loss: 0.868538, Time: 2.26 sec
+
+Epoch 1040/1500: Training Loss: 0.620800, Validation Loss: 0.903876, Time: 2.24 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1041/1500: Training Loss: 0.609897, Validation Loss: 0.935900, Time: 2.28 sec
+
+Epoch 1042/1500: Training Loss: 0.608622, Validation Loss: 0.972406, Time: 2.28 sec
+
+Epoch 1043/1500: Training Loss: 0.609120, Validation Loss: 0.893472, Time: 2.28 sec
+
+Epoch 1044/1500: Training Loss: 0.608513, Validation Loss: 0.902145, Time: 2.27 sec
+
+Epoch 1045/1500: Training Loss: 0.609000, Validation Loss: 0.899099, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1046/1500: Training Loss: 0.608524, Validation Loss: 0.912666, Time: 2.28 sec
+
+Epoch 1047/1500: Training Loss: 0.610346, Validation Loss: 0.917854, Time: 2.26 sec
+
+Epoch 1048/1500: Training Loss: 0.609568, Validation Loss: 0.874640, Time: 2.43 sec
+
+Epoch 1049/1500: Training Loss: 0.606849, Validation Loss: 0.885187, Time: 2.30 sec
+
+Epoch 1050/1500: Training Loss: 0.606711, Validation Loss: 0.966374, Time: 2.24 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1051/1500: Training Loss: 0.607419, Validation Loss: 0.959460, Time: 2.25 sec
+
+Epoch 1052/1500: Training Loss: 0.606517, Validation Loss: 0.945882, Time: 2.25 sec
+
+Epoch 1053/1500: Training Loss: 0.608159, Validation Loss: 0.933568, Time: 2.32 sec
+
+Epoch 1054/1500: Training Loss: 0.606974, Validation Loss: 0.925934, Time: 2.28 sec
+
+Epoch 1055/1500: Training Loss: 0.624486, Validation Loss: 0.919940, Time: 2.28 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1056/1500: Training Loss: 0.606382, Validation Loss: 0.892336, Time: 2.27 sec
+
+Epoch 1057/1500: Training Loss: 0.609435, Validation Loss: 0.929423, Time: 2.31 sec
+
+Epoch 1058/1500: Training Loss: 0.607160, Validation Loss: 0.918336, Time: 2.23 sec
+
+Epoch 1059/1500: Training Loss: 0.635107, Validation Loss: 0.917644, Time: 2.27 sec
+
+Epoch 1060/1500: Training Loss: 0.605936, Validation Loss: 0.952528, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1061/1500: Training Loss: 0.609467, Validation Loss: 0.946965, Time: 2.29 sec
+
+Epoch 1062/1500: Training Loss: 0.607047, Validation Loss: 0.936950, Time: 2.25 sec
+
+Epoch 1063/1500: Training Loss: 0.607609, Validation Loss: 0.923881, Time: 2.27 sec
+
+Epoch 1064/1500: Training Loss: 0.605382, Validation Loss: 0.938898, Time: 2.41 sec
+
+Epoch 1065/1500: Training Loss: 0.607014, Validation Loss: 0.912743, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1066/1500: Training Loss: 0.604796, Validation Loss: 0.941607, Time: 2.26 sec
+
+Epoch 1067/1500: Training Loss: 0.605112, Validation Loss: 0.967149, Time: 2.28 sec
+
+Epoch 1068/1500: Training Loss: 0.606255, Validation Loss: 0.884443, Time: 2.27 sec
+
+Epoch 1069/1500: Training Loss: 0.603811, Validation Loss: 0.907616, Time: 2.26 sec
+
+Epoch 1070/1500: Training Loss: 0.606207, Validation Loss: 0.908456, Time: 2.28 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1071/1500: Training Loss: 0.610705, Validation Loss: 0.906991, Time: 2.26 sec
+
+Epoch 1072/1500: Training Loss: 0.604644, Validation Loss: 0.937104, Time: 2.25 sec
+
+Epoch 1073/1500: Training Loss: 0.604088, Validation Loss: 0.910115, Time: 2.32 sec
+
+Epoch 1074/1500: Training Loss: 0.606579, Validation Loss: 0.953922, Time: 2.29 sec
+
+Epoch 1075/1500: Training Loss: 0.604314, Validation Loss: 0.991187, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1076/1500: Training Loss: 0.604859, Validation Loss: 0.962499, Time: 2.26 sec
+
+Epoch 1077/1500: Training Loss: 0.609778, Validation Loss: 0.905897, Time: 2.25 sec
+
+Epoch 1078/1500: Training Loss: 0.603284, Validation Loss: 0.914373, Time: 2.28 sec
+
+Epoch 1079/1500: Training Loss: 0.603923, Validation Loss: 0.992854, Time: 2.26 sec
+
+Epoch 1080/1500: Training Loss: 0.602943, Validation Loss: 1.038450, Time: 2.39 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1081/1500: Training Loss: 0.604554, Validation Loss: 0.983901, Time: 2.29 sec
+
+Epoch 1082/1500: Training Loss: 0.610062, Validation Loss: 0.985958, Time: 2.22 sec
+
+Epoch 1083/1500: Training Loss: 0.601921, Validation Loss: 0.974772, Time: 2.26 sec
+
+Epoch 1084/1500: Training Loss: 0.615386, Validation Loss: 1.012472, Time: 2.29 sec
+
+Epoch 1085/1500: Training Loss: 0.603381, Validation Loss: 1.024659, Time: 2.28 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1086/1500: Training Loss: 0.603153, Validation Loss: 0.965567, Time: 2.29 sec
+
+Epoch 1087/1500: Training Loss: 0.602898, Validation Loss: 0.963162, Time: 2.27 sec
+
+Epoch 1088/1500: Training Loss: 0.603681, Validation Loss: 0.966928, Time: 2.32 sec
+
+Epoch 1089/1500: Training Loss: 0.601268, Validation Loss: 1.007949, Time: 2.29 sec
+
+Epoch 1090/1500: Training Loss: 0.602245, Validation Loss: 1.008340, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1091/1500: Training Loss: 0.601963, Validation Loss: 1.026172, Time: 2.28 sec
+
+Epoch 1092/1500: Training Loss: 0.603196, Validation Loss: 1.000381, Time: 2.30 sec
+
+Epoch 1093/1500: Training Loss: 0.601815, Validation Loss: 0.953299, Time: 2.26 sec
+
+Epoch 1094/1500: Training Loss: 0.624830, Validation Loss: 0.989648, Time: 2.26 sec
+
+Epoch 1095/1500: Training Loss: 0.601403, Validation Loss: 1.005851, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1096/1500: Training Loss: 0.601112, Validation Loss: 0.984621, Time: 2.44 sec
+
+Epoch 1097/1500: Training Loss: 0.603820, Validation Loss: 1.077097, Time: 2.26 sec
+
+Epoch 1098/1500: Training Loss: 0.624785, Validation Loss: 1.081221, Time: 2.27 sec
+
+Epoch 1099/1500: Training Loss: 0.600001, Validation Loss: 0.996230, Time: 2.27 sec
+
+Epoch 1100/1500: Training Loss: 0.600729, Validation Loss: 0.981964, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1101/1500: Training Loss: 0.601746, Validation Loss: 1.014401, Time: 2.26 sec
+
+Epoch 1102/1500: Training Loss: 0.601276, Validation Loss: 1.036310, Time: 2.29 sec
+
+Epoch 1103/1500: Training Loss: 0.600439, Validation Loss: 1.043674, Time: 2.26 sec
+
+Epoch 1104/1500: Training Loss: 0.610739, Validation Loss: 0.996979, Time: 2.25 sec
+
+Epoch 1105/1500: Training Loss: 0.608344, Validation Loss: 0.962279, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1106/1500: Training Loss: 0.601926, Validation Loss: 1.022823, Time: 2.26 sec
+
+Epoch 1107/1500: Training Loss: 0.602003, Validation Loss: 1.013774, Time: 2.27 sec
+
+Epoch 1108/1500: Training Loss: 0.606945, Validation Loss: 0.982539, Time: 2.26 sec
+
+Epoch 1109/1500: Training Loss: 0.599286, Validation Loss: 1.010900, Time: 2.28 sec
+
+Epoch 1110/1500: Training Loss: 0.604154, Validation Loss: 1.046228, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1111/1500: Training Loss: 0.601356, Validation Loss: 1.002249, Time: 2.30 sec
+
+Epoch 1112/1500: Training Loss: 0.600987, Validation Loss: 0.916881, Time: 2.40 sec
+
+Epoch 1113/1500: Training Loss: 0.603070, Validation Loss: 0.936695, Time: 2.27 sec
+
+Epoch 1114/1500: Training Loss: 0.600812, Validation Loss: 0.942988, Time: 2.29 sec
+
+Epoch 1115/1500: Training Loss: 0.601220, Validation Loss: 0.904472, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1116/1500: Training Loss: 0.606769, Validation Loss: 0.958399, Time: 2.28 sec
+
+Epoch 1117/1500: Training Loss: 0.599541, Validation Loss: 0.978241, Time: 2.31 sec
+
+Epoch 1118/1500: Training Loss: 0.598547, Validation Loss: 0.920375, Time: 2.27 sec
+
+Epoch 1119/1500: Training Loss: 0.599724, Validation Loss: 0.895822, Time: 3.04 sec
+
+Epoch 1120/1500: Training Loss: 0.611033, Validation Loss: 0.938959, Time: 3.50 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1121/1500: Training Loss: 0.599247, Validation Loss: 0.894357, Time: 2.25 sec
+
+Epoch 1122/1500: Training Loss: 0.599359, Validation Loss: 0.902038, Time: 2.25 sec
+
+Epoch 1123/1500: Training Loss: 0.603714, Validation Loss: 0.896287, Time: 2.29 sec
+
+Epoch 1124/1500: Training Loss: 0.599138, Validation Loss: 0.896455, Time: 2.26 sec
+
+Epoch 1125/1500: Training Loss: 0.601911, Validation Loss: 0.870412, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1126/1500: Training Loss: 0.601039, Validation Loss: 0.897261, Time: 2.26 sec
+
+Epoch 1127/1500: Training Loss: 0.597497, Validation Loss: 0.928163, Time: 2.24 sec
+
+Epoch 1128/1500: Training Loss: 0.599556, Validation Loss: 0.912739, Time: 2.42 sec
+
+Epoch 1129/1500: Training Loss: 0.598888, Validation Loss: 0.929887, Time: 2.26 sec
+
+Epoch 1130/1500: Training Loss: 0.596432, Validation Loss: 0.907636, Time: 2.24 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1131/1500: Training Loss: 0.602047, Validation Loss: 0.906832, Time: 2.26 sec
+
+Epoch 1132/1500: Training Loss: 0.598985, Validation Loss: 0.944259, Time: 2.26 sec
+
+Epoch 1133/1500: Training Loss: 0.597043, Validation Loss: 0.959285, Time: 2.28 sec
+
+Epoch 1134/1500: Training Loss: 0.602190, Validation Loss: 0.890978, Time: 2.27 sec
+
+Epoch 1135/1500: Training Loss: 0.596648, Validation Loss: 0.890717, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1136/1500: Training Loss: 0.596265, Validation Loss: 0.921253, Time: 2.39 sec
+
+Epoch 1137/1500: Training Loss: 0.600179, Validation Loss: 0.907072, Time: 2.26 sec
+
+Epoch 1138/1500: Training Loss: 0.624453, Validation Loss: 0.884716, Time: 2.27 sec
+
+Epoch 1139/1500: Training Loss: 0.604869, Validation Loss: 0.922296, Time: 2.26 sec
+
+Epoch 1140/1500: Training Loss: 0.597084, Validation Loss: 0.955992, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1141/1500: Training Loss: 0.597969, Validation Loss: 0.926879, Time: 2.26 sec
+
+Epoch 1142/1500: Training Loss: 0.595691, Validation Loss: 0.928375, Time: 2.25 sec
+
+Epoch 1143/1500: Training Loss: 0.597046, Validation Loss: 0.930316, Time: 2.26 sec
+
+Epoch 1144/1500: Training Loss: 0.597622, Validation Loss: 0.922307, Time: 2.43 sec
+
+Epoch 1145/1500: Training Loss: 0.595910, Validation Loss: 0.910551, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1146/1500: Training Loss: 0.595987, Validation Loss: 0.917176, Time: 2.24 sec
+
+Epoch 1147/1500: Training Loss: 0.595518, Validation Loss: 0.914540, Time: 2.27 sec
+
+Epoch 1148/1500: Training Loss: 0.596005, Validation Loss: 0.907706, Time: 2.25 sec
+
+Epoch 1149/1500: Training Loss: 0.595846, Validation Loss: 0.930161, Time: 2.26 sec
+
+Epoch 1150/1500: Training Loss: 0.594270, Validation Loss: 0.938149, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1151/1500: Training Loss: 0.604289, Validation Loss: 0.907391, Time: 2.26 sec
+
+Epoch 1152/1500: Training Loss: 0.594449, Validation Loss: 0.905529, Time: 2.27 sec
+
+Epoch 1153/1500: Training Loss: 0.593394, Validation Loss: 0.910995, Time: 2.24 sec
+
+Epoch 1154/1500: Training Loss: 0.600845, Validation Loss: 0.933551, Time: 2.27 sec
+
+Epoch 1155/1500: Training Loss: 0.594996, Validation Loss: 0.912137, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1156/1500: Training Loss: 0.601113, Validation Loss: 0.874175, Time: 2.28 sec
+
+Epoch 1157/1500: Training Loss: 0.598248, Validation Loss: 0.911379, Time: 2.23 sec
+
+Epoch 1158/1500: Training Loss: 0.593683, Validation Loss: 0.905721, Time: 2.25 sec
+
+Epoch 1159/1500: Training Loss: 0.611959, Validation Loss: 0.899773, Time: 2.25 sec
+
+Epoch 1160/1500: Training Loss: 0.593271, Validation Loss: 0.934221, Time: 2.41 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1161/1500: Training Loss: 0.593067, Validation Loss: 0.969764, Time: 2.26 sec
+
+Epoch 1162/1500: Training Loss: 0.593876, Validation Loss: 0.979558, Time: 2.24 sec
+
+Epoch 1163/1500: Training Loss: 0.598585, Validation Loss: 0.879673, Time: 2.29 sec
+
+Epoch 1164/1500: Training Loss: 0.592681, Validation Loss: 0.901590, Time: 2.25 sec
+
+Epoch 1165/1500: Training Loss: 0.595036, Validation Loss: 0.935097, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1166/1500: Training Loss: 0.593056, Validation Loss: 0.928313, Time: 2.28 sec
+
+Epoch 1167/1500: Training Loss: 0.592543, Validation Loss: 0.945457, Time: 2.29 sec
+
+Epoch 1168/1500: Training Loss: 0.593386, Validation Loss: 0.971532, Time: 2.26 sec
+
+Epoch 1169/1500: Training Loss: 0.593076, Validation Loss: 0.974248, Time: 2.27 sec
+
+Epoch 1170/1500: Training Loss: 0.592380, Validation Loss: 0.898487, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1171/1500: Training Loss: 0.591773, Validation Loss: 0.920677, Time: 2.25 sec
+
+Epoch 1172/1500: Training Loss: 0.591421, Validation Loss: 0.931130, Time: 2.25 sec
+
+Epoch 1173/1500: Training Loss: 0.595641, Validation Loss: 0.898988, Time: 2.30 sec
+
+Epoch 1174/1500: Training Loss: 0.591518, Validation Loss: 0.937911, Time: 2.25 sec
+
+Epoch 1175/1500: Training Loss: 0.591914, Validation Loss: 0.960806, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1176/1500: Training Loss: 0.593588, Validation Loss: 0.950996, Time: 2.40 sec
+
+Epoch 1177/1500: Training Loss: 0.593028, Validation Loss: 0.947342, Time: 2.24 sec
+
+Epoch 1178/1500: Training Loss: 0.594754, Validation Loss: 0.963186, Time: 2.30 sec
+
+Epoch 1179/1500: Training Loss: 0.591885, Validation Loss: 0.897169, Time: 2.27 sec
+
+Epoch 1180/1500: Training Loss: 0.589978, Validation Loss: 0.887822, Time: 2.28 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1181/1500: Training Loss: 0.592135, Validation Loss: 0.905393, Time: 2.27 sec
+
+Epoch 1182/1500: Training Loss: 0.591449, Validation Loss: 0.931758, Time: 2.27 sec
+
+Epoch 1183/1500: Training Loss: 0.592191, Validation Loss: 0.938580, Time: 2.27 sec
+
+Epoch 1184/1500: Training Loss: 0.591515, Validation Loss: 0.959736, Time: 2.23 sec
+
+Epoch 1185/1500: Training Loss: 0.592310, Validation Loss: 0.911574, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1186/1500: Training Loss: 0.590756, Validation Loss: 0.915412, Time: 2.23 sec
+
+Epoch 1187/1500: Training Loss: 0.591698, Validation Loss: 0.944788, Time: 2.25 sec
+
+Epoch 1188/1500: Training Loss: 0.592526, Validation Loss: 0.907587, Time: 2.24 sec
+
+Epoch 1189/1500: Training Loss: 0.589835, Validation Loss: 0.884055, Time: 2.24 sec
+
+Epoch 1190/1500: Training Loss: 0.590697, Validation Loss: 0.919295, Time: 2.24 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1191/1500: Training Loss: 0.591004, Validation Loss: 0.939164, Time: 2.26 sec
+
+Epoch 1192/1500: Training Loss: 0.589286, Validation Loss: 0.912999, Time: 2.40 sec
+
+Epoch 1193/1500: Training Loss: 0.595865, Validation Loss: 0.933658, Time: 2.26 sec
+
+Epoch 1194/1500: Training Loss: 0.591593, Validation Loss: 0.972744, Time: 2.22 sec
+
+Epoch 1195/1500: Training Loss: 0.590433, Validation Loss: 0.954548, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1196/1500: Training Loss: 0.594496, Validation Loss: 0.893190, Time: 2.26 sec
+
+Epoch 1197/1500: Training Loss: 0.589279, Validation Loss: 0.894283, Time: 2.26 sec
+
+Epoch 1198/1500: Training Loss: 0.588855, Validation Loss: 0.916691, Time: 2.25 sec
+
+Epoch 1199/1500: Training Loss: 0.589229, Validation Loss: 0.911460, Time: 2.27 sec
+
+Epoch 1200/1500: Training Loss: 0.588365, Validation Loss: 0.951321, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1201/1500: Training Loss: 0.594246, Validation Loss: 1.008801, Time: 2.31 sec
+
+Epoch 1202/1500: Training Loss: 0.589090, Validation Loss: 0.984520, Time: 2.26 sec
+
+Epoch 1203/1500: Training Loss: 0.589215, Validation Loss: 0.957830, Time: 2.26 sec
+
+Epoch 1204/1500: Training Loss: 0.588174, Validation Loss: 0.930032, Time: 2.26 sec
+
+Epoch 1205/1500: Training Loss: 0.589547, Validation Loss: 0.922868, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1206/1500: Training Loss: 0.592885, Validation Loss: 0.924550, Time: 2.25 sec
+
+Epoch 1207/1500: Training Loss: 0.591062, Validation Loss: 0.902206, Time: 2.27 sec
+
+Epoch 1208/1500: Training Loss: 0.587491, Validation Loss: 0.920950, Time: 2.41 sec
+
+Epoch 1209/1500: Training Loss: 0.587006, Validation Loss: 0.921964, Time: 2.25 sec
+
+Epoch 1210/1500: Training Loss: 0.598223, Validation Loss: 0.896054, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1211/1500: Training Loss: 0.589285, Validation Loss: 0.897819, Time: 2.24 sec
+
+Epoch 1212/1500: Training Loss: 0.587972, Validation Loss: 0.931940, Time: 2.26 sec
+
+Epoch 1213/1500: Training Loss: 0.591760, Validation Loss: 0.942291, Time: 2.23 sec
+
+Epoch 1214/1500: Training Loss: 0.594267, Validation Loss: 0.933041, Time: 2.25 sec
+
+Epoch 1215/1500: Training Loss: 0.588382, Validation Loss: 0.954717, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1216/1500: Training Loss: 0.587655, Validation Loss: 0.964923, Time: 2.24 sec
+
+Epoch 1217/1500: Training Loss: 0.587068, Validation Loss: 0.906097, Time: 2.24 sec
+
+Epoch 1218/1500: Training Loss: 0.587119, Validation Loss: 0.913377, Time: 2.25 sec
+
+Epoch 1219/1500: Training Loss: 0.587814, Validation Loss: 0.912611, Time: 2.30 sec
+
+Epoch 1220/1500: Training Loss: 0.589671, Validation Loss: 0.931479, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1221/1500: Training Loss: 0.586545, Validation Loss: 0.947235, Time: 2.25 sec
+
+Epoch 1222/1500: Training Loss: 0.588041, Validation Loss: 0.943831, Time: 2.25 sec
+
+Epoch 1223/1500: Training Loss: 0.586912, Validation Loss: 0.924264, Time: 2.25 sec
+
+Epoch 1224/1500: Training Loss: 0.586253, Validation Loss: 0.903406, Time: 2.40 sec
+
+Epoch 1225/1500: Training Loss: 0.591535, Validation Loss: 0.914581, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1226/1500: Training Loss: 0.585405, Validation Loss: 0.903783, Time: 2.27 sec
+
+Epoch 1227/1500: Training Loss: 0.595593, Validation Loss: 0.943368, Time: 2.26 sec
+
+Epoch 1228/1500: Training Loss: 0.591416, Validation Loss: 0.943852, Time: 2.26 sec
+
+Epoch 1229/1500: Training Loss: 0.586761, Validation Loss: 0.901897, Time: 2.27 sec
+
+Epoch 1230/1500: Training Loss: 0.586174, Validation Loss: 0.921035, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1231/1500: Training Loss: 0.588802, Validation Loss: 0.968929, Time: 2.26 sec
+
+Epoch 1232/1500: Training Loss: 0.587696, Validation Loss: 0.955249, Time: 2.24 sec
+
+Epoch 1233/1500: Training Loss: 0.585172, Validation Loss: 0.938941, Time: 2.28 sec
+
+Epoch 1234/1500: Training Loss: 0.585297, Validation Loss: 0.950660, Time: 2.26 sec
+
+Epoch 1235/1500: Training Loss: 0.592583, Validation Loss: 0.913491, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1236/1500: Training Loss: 0.586136, Validation Loss: 0.898596, Time: 2.28 sec
+
+Epoch 1237/1500: Training Loss: 0.584875, Validation Loss: 0.895648, Time: 2.26 sec
+
+Epoch 1238/1500: Training Loss: 0.586075, Validation Loss: 0.911895, Time: 2.28 sec
+
+Epoch 1239/1500: Training Loss: 0.584318, Validation Loss: 0.903774, Time: 2.24 sec
+
+Epoch 1240/1500: Training Loss: 0.585532, Validation Loss: 0.905913, Time: 2.39 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1241/1500: Training Loss: 0.583906, Validation Loss: 0.895446, Time: 2.25 sec
+
+Epoch 1242/1500: Training Loss: 0.586559, Validation Loss: 0.883045, Time: 2.24 sec
+
+Epoch 1243/1500: Training Loss: 0.585337, Validation Loss: 0.903027, Time: 2.25 sec
+
+Epoch 1244/1500: Training Loss: 0.584428, Validation Loss: 0.924160, Time: 2.24 sec
+
+Epoch 1245/1500: Training Loss: 0.584498, Validation Loss: 0.901411, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1246/1500: Training Loss: 0.584927, Validation Loss: 0.887074, Time: 2.25 sec
+
+Epoch 1247/1500: Training Loss: 0.582807, Validation Loss: 0.917538, Time: 2.24 sec
+
+Epoch 1248/1500: Training Loss: 0.593468, Validation Loss: 0.896988, Time: 2.27 sec
+
+Epoch 1249/1500: Training Loss: 0.584460, Validation Loss: 0.923160, Time: 2.25 sec
+
+Epoch 1250/1500: Training Loss: 0.583868, Validation Loss: 0.933228, Time: 2.24 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1251/1500: Training Loss: 0.583492, Validation Loss: 0.916288, Time: 2.26 sec
+
+Epoch 1252/1500: Training Loss: 0.583624, Validation Loss: 0.907784, Time: 2.24 sec
+
+Epoch 1253/1500: Training Loss: 0.584624, Validation Loss: 0.905813, Time: 2.26 sec
+
+Epoch 1254/1500: Training Loss: 0.583855, Validation Loss: 0.924763, Time: 2.25 sec
+
+Epoch 1255/1500: Training Loss: 0.583288, Validation Loss: 0.955483, Time: 2.24 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1256/1500: Training Loss: 0.583078, Validation Loss: 0.972282, Time: 2.41 sec
+
+Epoch 1257/1500: Training Loss: 0.584958, Validation Loss: 0.925515, Time: 2.25 sec
+
+Epoch 1258/1500: Training Loss: 0.590368, Validation Loss: 0.881620, Time: 2.25 sec
+
+Epoch 1259/1500: Training Loss: 0.582683, Validation Loss: 0.888448, Time: 2.25 sec
+
+Epoch 1260/1500: Training Loss: 0.582863, Validation Loss: 0.901450, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1261/1500: Training Loss: 0.581290, Validation Loss: 0.883071, Time: 2.25 sec
+
+Epoch 1262/1500: Training Loss: 0.585150, Validation Loss: 0.903182, Time: 2.25 sec
+
+Epoch 1263/1500: Training Loss: 0.581795, Validation Loss: 0.925478, Time: 2.24 sec
+
+Epoch 1264/1500: Training Loss: 0.582633, Validation Loss: 0.940874, Time: 2.23 sec
+
+Epoch 1265/1500: Training Loss: 0.581679, Validation Loss: 0.941495, Time: 2.24 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1266/1500: Training Loss: 0.582181, Validation Loss: 0.904497, Time: 2.31 sec
+
+Epoch 1267/1500: Training Loss: 0.582705, Validation Loss: 0.888340, Time: 2.25 sec
+
+Epoch 1268/1500: Training Loss: 0.581908, Validation Loss: 0.898527, Time: 2.26 sec
+
+Epoch 1269/1500: Training Loss: 0.582144, Validation Loss: 0.929281, Time: 2.26 sec
+
+Epoch 1270/1500: Training Loss: 0.581520, Validation Loss: 0.952112, Time: 2.24 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1271/1500: Training Loss: 0.582422, Validation Loss: 0.912321, Time: 2.25 sec
+
+Epoch 1272/1500: Training Loss: 0.581252, Validation Loss: 0.909806, Time: 2.41 sec
+
+Epoch 1273/1500: Training Loss: 0.582115, Validation Loss: 0.951175, Time: 2.25 sec
+
+Epoch 1274/1500: Training Loss: 0.580964, Validation Loss: 0.981934, Time: 2.27 sec
+
+Epoch 1275/1500: Training Loss: 0.581662, Validation Loss: 0.958659, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1276/1500: Training Loss: 0.582030, Validation Loss: 0.899385, Time: 2.26 sec
+
+Epoch 1277/1500: Training Loss: 0.581122, Validation Loss: 0.905165, Time: 2.25 sec
+
+Epoch 1278/1500: Training Loss: 0.584245, Validation Loss: 0.909587, Time: 2.24 sec
+
+Epoch 1279/1500: Training Loss: 0.581974, Validation Loss: 0.922950, Time: 2.28 sec
+
+Epoch 1280/1500: Training Loss: 0.580988, Validation Loss: 0.916640, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1281/1500: Training Loss: 0.580391, Validation Loss: 0.926031, Time: 2.26 sec
+
+Epoch 1282/1500: Training Loss: 0.580716, Validation Loss: 0.934715, Time: 2.25 sec
+
+Epoch 1283/1500: Training Loss: 0.580764, Validation Loss: 0.920998, Time: 2.25 sec
+
+Epoch 1284/1500: Training Loss: 0.584696, Validation Loss: 0.908618, Time: 2.27 sec
+
+Epoch 1285/1500: Training Loss: 0.580429, Validation Loss: 0.903347, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1286/1500: Training Loss: 0.580407, Validation Loss: 0.923411, Time: 2.23 sec
+
+Epoch 1287/1500: Training Loss: 0.579372, Validation Loss: 0.912064, Time: 2.25 sec
+
+Epoch 1288/1500: Training Loss: 0.580188, Validation Loss: 0.923630, Time: 2.41 sec
+
+Epoch 1289/1500: Training Loss: 0.585071, Validation Loss: 0.945295, Time: 2.26 sec
+
+Epoch 1290/1500: Training Loss: 0.581542, Validation Loss: 0.931531, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1291/1500: Training Loss: 0.580079, Validation Loss: 0.917000, Time: 2.26 sec
+
+Epoch 1292/1500: Training Loss: 0.579692, Validation Loss: 0.902517, Time: 2.24 sec
+
+Epoch 1293/1500: Training Loss: 0.581320, Validation Loss: 0.901870, Time: 2.27 sec
+
+Epoch 1294/1500: Training Loss: 0.579937, Validation Loss: 0.878801, Time: 2.29 sec
+
+Epoch 1295/1500: Training Loss: 0.579290, Validation Loss: 0.896008, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1296/1500: Training Loss: 0.580095, Validation Loss: 0.912561, Time: 2.26 sec
+
+Epoch 1297/1500: Training Loss: 0.580171, Validation Loss: 0.895417, Time: 2.26 sec
+
+Epoch 1298/1500: Training Loss: 0.579599, Validation Loss: 0.900752, Time: 2.25 sec
+
+Epoch 1299/1500: Training Loss: 0.579970, Validation Loss: 0.926960, Time: 2.27 sec
+
+Epoch 1300/1500: Training Loss: 0.578484, Validation Loss: 0.908914, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1301/1500: Training Loss: 0.583358, Validation Loss: 0.902254, Time: 2.27 sec
+
+Epoch 1302/1500: Training Loss: 0.578024, Validation Loss: 0.883240, Time: 2.24 sec
+
+Epoch 1303/1500: Training Loss: 0.579169, Validation Loss: 0.905946, Time: 2.28 sec
+
+Epoch 1304/1500: Training Loss: 0.579296, Validation Loss: 0.939509, Time: 2.43 sec
+
+Epoch 1305/1500: Training Loss: 0.579805, Validation Loss: 0.923042, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1306/1500: Training Loss: 0.578584, Validation Loss: 0.931557, Time: 2.25 sec
+
+Epoch 1307/1500: Training Loss: 0.579596, Validation Loss: 0.924057, Time: 2.28 sec
+
+Epoch 1308/1500: Training Loss: 0.579456, Validation Loss: 0.907882, Time: 2.26 sec
+
+Epoch 1309/1500: Training Loss: 0.578615, Validation Loss: 0.881396, Time: 2.27 sec
+
+Epoch 1310/1500: Training Loss: 0.580471, Validation Loss: 0.890303, Time: 2.32 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1311/1500: Training Loss: 0.578843, Validation Loss: 0.902758, Time: 2.26 sec
+
+Epoch 1312/1500: Training Loss: 0.578214, Validation Loss: 0.908987, Time: 2.25 sec
+
+Epoch 1313/1500: Training Loss: 0.577721, Validation Loss: 0.916882, Time: 2.27 sec
+
+Epoch 1314/1500: Training Loss: 0.578405, Validation Loss: 0.908670, Time: 2.26 sec
+
+Epoch 1315/1500: Training Loss: 0.577420, Validation Loss: 0.895582, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1316/1500: Training Loss: 0.578131, Validation Loss: 0.898358, Time: 2.25 sec
+
+Epoch 1317/1500: Training Loss: 0.576521, Validation Loss: 0.904743, Time: 2.25 sec
+
+Epoch 1318/1500: Training Loss: 0.578483, Validation Loss: 0.915369, Time: 2.25 sec
+
+Epoch 1319/1500: Training Loss: 0.583846, Validation Loss: 0.925578, Time: 2.24 sec
+
+Epoch 1320/1500: Training Loss: 0.579554, Validation Loss: 0.927901, Time: 2.44 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1321/1500: Training Loss: 0.579608, Validation Loss: 0.942264, Time: 2.27 sec
+
+Epoch 1322/1500: Training Loss: 0.577150, Validation Loss: 0.950767, Time: 2.24 sec
+
+Epoch 1323/1500: Training Loss: 0.579324, Validation Loss: 0.942599, Time: 2.27 sec
+
+Epoch 1324/1500: Training Loss: 0.577148, Validation Loss: 0.943267, Time: 2.26 sec
+
+Epoch 1325/1500: Training Loss: 0.577575, Validation Loss: 0.898852, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1326/1500: Training Loss: 0.576637, Validation Loss: 0.887442, Time: 2.26 sec
+
+Epoch 1327/1500: Training Loss: 0.578922, Validation Loss: 0.906288, Time: 2.26 sec
+
+Epoch 1328/1500: Training Loss: 0.578249, Validation Loss: 0.917794, Time: 2.29 sec
+
+Epoch 1329/1500: Training Loss: 0.578344, Validation Loss: 0.928592, Time: 2.26 sec
+
+Epoch 1330/1500: Training Loss: 0.576399, Validation Loss: 0.943513, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1331/1500: Training Loss: 0.576275, Validation Loss: 0.937916, Time: 2.26 sec
+
+Epoch 1332/1500: Training Loss: 0.576325, Validation Loss: 0.912928, Time: 2.27 sec
+
+Epoch 1333/1500: Training Loss: 0.577539, Validation Loss: 0.910913, Time: 2.26 sec
+
+Epoch 1334/1500: Training Loss: 0.576859, Validation Loss: 0.902743, Time: 2.27 sec
+
+Epoch 1335/1500: Training Loss: 0.577013, Validation Loss: 0.911506, Time: 2.24 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1336/1500: Training Loss: 0.577204, Validation Loss: 0.913762, Time: 2.44 sec
+
+Epoch 1337/1500: Training Loss: 0.577697, Validation Loss: 0.911816, Time: 2.25 sec
+
+Epoch 1338/1500: Training Loss: 0.576909, Validation Loss: 0.916748, Time: 2.24 sec
+
+Epoch 1339/1500: Training Loss: 0.577019, Validation Loss: 0.906917, Time: 2.26 sec
+
+Epoch 1340/1500: Training Loss: 0.575572, Validation Loss: 0.906460, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1341/1500: Training Loss: 0.576622, Validation Loss: 0.890089, Time: 2.27 sec
+
+Epoch 1342/1500: Training Loss: 0.577036, Validation Loss: 0.887241, Time: 2.27 sec
+
+Epoch 1343/1500: Training Loss: 0.577116, Validation Loss: 0.897706, Time: 2.26 sec
+
+Epoch 1344/1500: Training Loss: 0.576297, Validation Loss: 0.898822, Time: 2.24 sec
+
+Epoch 1345/1500: Training Loss: 0.576561, Validation Loss: 0.900817, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1346/1500: Training Loss: 0.576569, Validation Loss: 0.921911, Time: 2.26 sec
+
+Epoch 1347/1500: Training Loss: 0.575386, Validation Loss: 0.934054, Time: 2.25 sec
+
+Epoch 1348/1500: Training Loss: 0.574803, Validation Loss: 0.943669, Time: 2.25 sec
+
+Epoch 1349/1500: Training Loss: 0.576471, Validation Loss: 0.934702, Time: 2.27 sec
+
+Epoch 1350/1500: Training Loss: 0.577117, Validation Loss: 0.918228, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1351/1500: Training Loss: 0.575252, Validation Loss: 0.908430, Time: 2.27 sec
+
+Epoch 1352/1500: Training Loss: 0.575084, Validation Loss: 0.906594, Time: 2.40 sec
+
+Epoch 1353/1500: Training Loss: 0.576120, Validation Loss: 0.908900, Time: 2.25 sec
+
+Epoch 1354/1500: Training Loss: 0.578576, Validation Loss: 0.915787, Time: 2.25 sec
+
+Epoch 1355/1500: Training Loss: 0.575074, Validation Loss: 0.928056, Time: 2.28 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1356/1500: Training Loss: 0.574755, Validation Loss: 0.926020, Time: 2.27 sec
+
+Epoch 1357/1500: Training Loss: 0.574388, Validation Loss: 0.923748, Time: 2.26 sec
+
+Epoch 1358/1500: Training Loss: 0.577591, Validation Loss: 0.920430, Time: 2.31 sec
+
+Epoch 1359/1500: Training Loss: 0.576671, Validation Loss: 0.899903, Time: 2.26 sec
+
+Epoch 1360/1500: Training Loss: 0.575407, Validation Loss: 0.907075, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1361/1500: Training Loss: 0.574502, Validation Loss: 0.914111, Time: 2.26 sec
+
+Epoch 1362/1500: Training Loss: 0.575265, Validation Loss: 0.910477, Time: 2.24 sec
+
+Epoch 1363/1500: Training Loss: 0.574500, Validation Loss: 0.921545, Time: 2.32 sec
+
+Epoch 1364/1500: Training Loss: 0.575121, Validation Loss: 0.922997, Time: 2.26 sec
+
+Epoch 1365/1500: Training Loss: 0.575189, Validation Loss: 0.937124, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1366/1500: Training Loss: 0.575831, Validation Loss: 0.938232, Time: 2.27 sec
+
+Epoch 1367/1500: Training Loss: 0.574795, Validation Loss: 0.931385, Time: 2.31 sec
+
+Epoch 1368/1500: Training Loss: 0.573917, Validation Loss: 0.913467, Time: 2.44 sec
+
+Epoch 1369/1500: Training Loss: 0.574339, Validation Loss: 0.911556, Time: 2.26 sec
+
+Epoch 1370/1500: Training Loss: 0.575302, Validation Loss: 0.916072, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1371/1500: Training Loss: 0.574357, Validation Loss: 0.932392, Time: 2.27 sec
+
+Epoch 1372/1500: Training Loss: 0.575244, Validation Loss: 0.933896, Time: 2.27 sec
+
+Epoch 1373/1500: Training Loss: 0.573373, Validation Loss: 0.910106, Time: 2.26 sec
+
+Epoch 1374/1500: Training Loss: 0.574603, Validation Loss: 0.909902, Time: 2.24 sec
+
+Epoch 1375/1500: Training Loss: 0.573218, Validation Loss: 0.928058, Time: 2.28 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1376/1500: Training Loss: 0.575402, Validation Loss: 0.924870, Time: 2.26 sec
+
+Epoch 1377/1500: Training Loss: 0.574176, Validation Loss: 0.912079, Time: 2.26 sec
+
+Epoch 1378/1500: Training Loss: 0.574365, Validation Loss: 0.906679, Time: 2.28 sec
+
+Epoch 1379/1500: Training Loss: 0.574839, Validation Loss: 0.901057, Time: 2.29 sec
+
+Epoch 1380/1500: Training Loss: 0.573796, Validation Loss: 0.900644, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1381/1500: Training Loss: 0.573985, Validation Loss: 0.902028, Time: 2.26 sec
+
+Epoch 1382/1500: Training Loss: 0.573905, Validation Loss: 0.903080, Time: 2.26 sec
+
+Epoch 1383/1500: Training Loss: 0.574170, Validation Loss: 0.915033, Time: 2.26 sec
+
+Epoch 1384/1500: Training Loss: 0.574078, Validation Loss: 0.919314, Time: 2.39 sec
+
+Epoch 1385/1500: Training Loss: 0.574598, Validation Loss: 0.906973, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1386/1500: Training Loss: 0.573208, Validation Loss: 0.902331, Time: 2.30 sec
+
+Epoch 1387/1500: Training Loss: 0.574156, Validation Loss: 0.902106, Time: 2.26 sec
+
+Epoch 1388/1500: Training Loss: 0.573504, Validation Loss: 0.899990, Time: 2.27 sec
+
+Epoch 1389/1500: Training Loss: 0.573504, Validation Loss: 0.901389, Time: 2.26 sec
+
+Epoch 1390/1500: Training Loss: 0.573128, Validation Loss: 0.902821, Time: 2.28 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1391/1500: Training Loss: 0.572995, Validation Loss: 0.907769, Time: 2.28 sec
+
+Epoch 1392/1500: Training Loss: 0.573126, Validation Loss: 0.909873, Time: 2.28 sec
+
+Epoch 1393/1500: Training Loss: 0.573642, Validation Loss: 0.909695, Time: 2.25 sec
+
+Epoch 1394/1500: Training Loss: 0.574161, Validation Loss: 0.918593, Time: 2.27 sec
+
+Epoch 1395/1500: Training Loss: 0.573336, Validation Loss: 0.921112, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1396/1500: Training Loss: 0.573712, Validation Loss: 0.931199, Time: 2.26 sec
+
+Epoch 1397/1500: Training Loss: 0.573684, Validation Loss: 0.936697, Time: 2.25 sec
+
+Epoch 1398/1500: Training Loss: 0.572644, Validation Loss: 0.923916, Time: 2.28 sec
+
+Epoch 1399/1500: Training Loss: 0.573598, Validation Loss: 0.920612, Time: 2.27 sec
+
+Epoch 1400/1500: Training Loss: 0.573569, Validation Loss: 0.915508, Time: 2.43 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1401/1500: Training Loss: 0.574077, Validation Loss: 0.917423, Time: 2.27 sec
+
+Epoch 1402/1500: Training Loss: 0.572492, Validation Loss: 0.924834, Time: 2.26 sec
+
+Epoch 1403/1500: Training Loss: 0.573441, Validation Loss: 0.922210, Time: 2.27 sec
+
+Epoch 1404/1500: Training Loss: 0.573026, Validation Loss: 0.918094, Time: 2.25 sec
+
+Epoch 1405/1500: Training Loss: 0.573328, Validation Loss: 0.918008, Time: 2.30 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1406/1500: Training Loss: 0.571268, Validation Loss: 0.916805, Time: 2.28 sec
+
+Epoch 1407/1500: Training Loss: 0.572881, Validation Loss: 0.918123, Time: 2.27 sec
+
+Epoch 1408/1500: Training Loss: 0.573800, Validation Loss: 0.918851, Time: 2.26 sec
+
+Epoch 1409/1500: Training Loss: 0.572546, Validation Loss: 0.926548, Time: 2.26 sec
+
+Epoch 1410/1500: Training Loss: 0.571439, Validation Loss: 0.923055, Time: 2.27 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1411/1500: Training Loss: 0.571803, Validation Loss: 0.925303, Time: 2.27 sec
+
+Epoch 1412/1500: Training Loss: 0.571642, Validation Loss: 0.931232, Time: 2.24 sec
+
+Epoch 1413/1500: Training Loss: 0.572235, Validation Loss: 0.927821, Time: 2.72 sec
+
+Epoch 1414/1500: Training Loss: 0.572736, Validation Loss: 0.923475, Time: 2.33 sec
+
+Epoch 1415/1500: Training Loss: 0.571052, Validation Loss: 0.916871, Time: 2.23 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1416/1500: Training Loss: 0.572798, Validation Loss: 0.929046, Time: 2.53 sec
+
+Epoch 1417/1500: Training Loss: 0.572304, Validation Loss: 0.929633, Time: 2.52 sec
+
+Epoch 1418/1500: Training Loss: 0.572642, Validation Loss: 0.926068, Time: 2.47 sec
+
+Epoch 1419/1500: Training Loss: 0.573199, Validation Loss: 0.930945, Time: 2.41 sec
+
+Epoch 1420/1500: Training Loss: 0.570863, Validation Loss: 0.925342, Time: 2.45 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1421/1500: Training Loss: 0.571433, Validation Loss: 0.919087, Time: 2.51 sec
+
+Epoch 1422/1500: Training Loss: 0.572970, Validation Loss: 0.920611, Time: 2.41 sec
+
+Epoch 1423/1500: Training Loss: 0.572269, Validation Loss: 0.922264, Time: 2.49 sec
+
+Epoch 1424/1500: Training Loss: 0.572019, Validation Loss: 0.920261, Time: 2.40 sec
+
+Epoch 1425/1500: Training Loss: 0.572113, Validation Loss: 0.915595, Time: 2.47 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1426/1500: Training Loss: 0.572130, Validation Loss: 0.914469, Time: 2.59 sec
+
+Epoch 1427/1500: Training Loss: 0.572240, Validation Loss: 0.916116, Time: 2.45 sec
+
+Epoch 1428/1500: Training Loss: 0.573095, Validation Loss: 0.909459, Time: 2.40 sec
+
+Epoch 1429/1500: Training Loss: 0.571329, Validation Loss: 0.908889, Time: 2.76 sec
+
+Epoch 1430/1500: Training Loss: 0.571550, Validation Loss: 0.907299, Time: 2.54 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1431/1500: Training Loss: 0.572166, Validation Loss: 0.911695, Time: 2.57 sec
+
+Epoch 1432/1500: Training Loss: 0.572916, Validation Loss: 0.912609, Time: 2.34 sec
+
+Epoch 1433/1500: Training Loss: 0.571581, Validation Loss: 0.913538, Time: 2.24 sec
+
+Epoch 1434/1500: Training Loss: 0.571822, Validation Loss: 0.921531, Time: 2.40 sec
+
+Epoch 1435/1500: Training Loss: 0.572237, Validation Loss: 0.918619, Time: 2.51 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1436/1500: Training Loss: 0.571905, Validation Loss: 0.918595, Time: 2.42 sec
+
+Epoch 1437/1500: Training Loss: 0.571108, Validation Loss: 0.918969, Time: 2.28 sec
+
+Epoch 1438/1500: Training Loss: 0.572619, Validation Loss: 0.915115, Time: 2.25 sec
+
+Epoch 1439/1500: Training Loss: 0.570731, Validation Loss: 0.919774, Time: 2.30 sec
+
+Epoch 1440/1500: Training Loss: 0.572634, Validation Loss: 0.922861, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1441/1500: Training Loss: 0.571382, Validation Loss: 0.923494, Time: 2.23 sec
+
+Epoch 1442/1500: Training Loss: 0.571853, Validation Loss: 0.920137, Time: 2.25 sec
+
+Epoch 1443/1500: Training Loss: 0.571013, Validation Loss: 0.914314, Time: 2.26 sec
+
+Epoch 1444/1500: Training Loss: 0.572108, Validation Loss: 0.915758, Time: 2.26 sec
+
+Epoch 1445/1500: Training Loss: 0.571953, Validation Loss: 0.918967, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1446/1500: Training Loss: 0.573265, Validation Loss: 0.920263, Time: 2.27 sec
+
+Epoch 1447/1500: Training Loss: 0.571068, Validation Loss: 0.918005, Time: 2.59 sec
+
+Epoch 1448/1500: Training Loss: 0.571174, Validation Loss: 0.916668, Time: 2.28 sec
+
+Epoch 1449/1500: Training Loss: 0.571901, Validation Loss: 0.922541, Time: 2.27 sec
+
+Epoch 1450/1500: Training Loss: 0.571317, Validation Loss: 0.922468, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1451/1500: Training Loss: 0.572565, Validation Loss: 0.920164, Time: 2.26 sec
+
+Epoch 1452/1500: Training Loss: 0.571035, Validation Loss: 0.920987, Time: 2.25 sec
+
+Epoch 1453/1500: Training Loss: 0.571792, Validation Loss: 0.922974, Time: 2.28 sec
+
+Epoch 1454/1500: Training Loss: 0.571295, Validation Loss: 0.923712, Time: 2.25 sec
+
+Epoch 1455/1500: Training Loss: 0.571174, Validation Loss: 0.923198, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1456/1500: Training Loss: 0.571304, Validation Loss: 0.922314, Time: 2.24 sec
+
+Epoch 1457/1500: Training Loss: 0.571590, Validation Loss: 0.915155, Time: 2.25 sec
+
+Epoch 1458/1500: Training Loss: 0.571172, Validation Loss: 0.912378, Time: 2.29 sec
+
+Epoch 1459/1500: Training Loss: 0.571551, Validation Loss: 0.912899, Time: 2.28 sec
+
+Epoch 1460/1500: Training Loss: 0.569957, Validation Loss: 0.911268, Time: 2.29 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1461/1500: Training Loss: 0.571726, Validation Loss: 0.914492, Time: 2.27 sec
+
+Epoch 1462/1500: Training Loss: 0.571078, Validation Loss: 0.917154, Time: 2.41 sec
+
+Epoch 1463/1500: Training Loss: 0.570198, Validation Loss: 0.914769, Time: 2.28 sec
+
+Epoch 1464/1500: Training Loss: 0.571578, Validation Loss: 0.912560, Time: 2.25 sec
+
+Epoch 1465/1500: Training Loss: 0.571817, Validation Loss: 0.915400, Time: 2.24 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1466/1500: Training Loss: 0.571021, Validation Loss: 0.912898, Time: 2.26 sec
+
+Epoch 1467/1500: Training Loss: 0.571458, Validation Loss: 0.912975, Time: 2.26 sec
+
+Epoch 1468/1500: Training Loss: 0.572340, Validation Loss: 0.911653, Time: 2.24 sec
+
+Epoch 1469/1500: Training Loss: 0.570838, Validation Loss: 0.911130, Time: 2.24 sec
+
+Epoch 1470/1500: Training Loss: 0.570691, Validation Loss: 0.913905, Time: 2.24 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1471/1500: Training Loss: 0.571261, Validation Loss: 0.914776, Time: 2.28 sec
+
+Epoch 1472/1500: Training Loss: 0.570784, Validation Loss: 0.914681, Time: 2.27 sec
+
+Epoch 1473/1500: Training Loss: 0.569434, Validation Loss: 0.916168, Time: 2.22 sec
+
+Epoch 1474/1500: Training Loss: 0.571389, Validation Loss: 0.915969, Time: 2.25 sec
+
+Epoch 1475/1500: Training Loss: 0.570326, Validation Loss: 0.914920, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1476/1500: Training Loss: 0.570064, Validation Loss: 0.915238, Time: 2.28 sec
+
+Epoch 1477/1500: Training Loss: 0.571686, Validation Loss: 0.915244, Time: 2.23 sec
+
+Epoch 1478/1500: Training Loss: 0.571798, Validation Loss: 0.914054, Time: 2.43 sec
+
+Epoch 1479/1500: Training Loss: 0.570969, Validation Loss: 0.913605, Time: 2.26 sec
+
+Epoch 1480/1500: Training Loss: 0.570828, Validation Loss: 0.914421, Time: 2.26 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1481/1500: Training Loss: 0.569889, Validation Loss: 0.914340, Time: 2.27 sec
+
+Epoch 1482/1500: Training Loss: 0.571353, Validation Loss: 0.914872, Time: 2.25 sec
+
+Epoch 1483/1500: Training Loss: 0.570571, Validation Loss: 0.914592, Time: 2.31 sec
+
+Epoch 1484/1500: Training Loss: 0.570878, Validation Loss: 0.915108, Time: 2.26 sec
+
+Epoch 1485/1500: Training Loss: 0.571380, Validation Loss: 0.915579, Time: 2.25 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1486/1500: Training Loss: 0.570259, Validation Loss: 0.917393, Time: 2.27 sec
+
+Epoch 1487/1500: Training Loss: 0.569768, Validation Loss: 0.917246, Time: 2.26 sec
+
+Epoch 1488/1500: Training Loss: 0.571902, Validation Loss: 0.917179, Time: 2.24 sec
+
+Epoch 1489/1500: Training Loss: 0.570815, Validation Loss: 0.916330, Time: 2.25 sec
+
+Epoch 1490/1500: Training Loss: 0.571161, Validation Loss: 0.916438, Time: 2.24 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1491/1500: Training Loss: 0.570027, Validation Loss: 0.915855, Time: 2.25 sec
+
+Epoch 1492/1500: Training Loss: 0.570543, Validation Loss: 0.915412, Time: 2.25 sec
+
+Epoch 1493/1500: Training Loss: 0.570059, Validation Loss: 0.915522, Time: 2.26 sec
+
+Epoch 1494/1500: Training Loss: 0.571483, Validation Loss: 0.915634, Time: 2.42 sec
+
+Epoch 1495/1500: Training Loss: 0.571394, Validation Loss: 0.915993, Time: 2.22 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+
+Epoch 1496/1500: Training Loss: 0.570484, Validation Loss: 0.916201, Time: 2.24 sec
+
+Epoch 1497/1500: Training Loss: 0.569729, Validation Loss: 0.916057, Time: 2.26 sec
+
+Epoch 1498/1500: Training Loss: 0.570073, Validation Loss: 0.915980, Time: 2.25 sec
+
+Epoch 1499/1500: Training Loss: 0.570551, Validation Loss: 0.915996, Time: 2.26 sec
+
+Epoch 1500/1500: Training Loss: 0.569447, Validation Loss: 0.916093, Time: 2.34 sec
+Checkpoint saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_checkpoint.pth
+Model weights saved: /work/home/ng66sume/MasterThesis/Models/FNN_model_v4.3/fnn_model_weights_v4.3.pth
+
+Average epoch time: 2.28 seconds

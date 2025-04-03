@@ -1,0 +1,78 @@
+
+Using device: cuda, GPU Name: NVIDIA A100-SXM4-40GB
+Starting loss hyperparameter trial 0
+Loaded 8732 samples from 1 chunks.
+Trial 0 finished with parameters: {'w_integration': 0.18267537125712396, 'w_levelset': 0.15802713513719213, 'w_separation': 0.9560933298780173, 'threshold_factor': 0.05590517299449618} and final val_loss: 0.7804547207696098
+Starting loss hyperparameter trial 1
+Loaded 8732 samples from 1 chunks.
+Trial 1 finished with parameters: {'w_integration': 0.56968285415683, 'w_levelset': 0.4060681297188199, 'w_separation': 0.7557907841774265, 'threshold_factor': 0.17015727684663043} and final val_loss: 2.070159537451608
+Starting loss hyperparameter trial 2
+Loaded 8732 samples from 1 chunks.
+Trial 2 finished with parameters: {'w_integration': 0.971932698727357, 'w_levelset': 0.9559724638651449, 'w_separation': 0.883713742396504, 'threshold_factor': 0.05090589330985976} and final val_loss: 0.011223713800843273
+Starting loss hyperparameter trial 3
+Loaded 8732 samples from 1 chunks.
+Trial 3 finished with parameters: {'w_integration': 0.4608336694561306, 'w_levelset': 0.866928287955193, 'w_separation': 0.4483297698594828, 'threshold_factor': 0.07653712584351241} and final val_loss: 0.007278787238257272
+Starting loss hyperparameter trial 4
+Loaded 8732 samples from 1 chunks.
+Trial 4 finished with parameters: {'w_integration': 0.3149080509518274, 'w_levelset': 0.49641983942125345, 'w_separation': 0.5843593181135844, 'threshold_factor': 0.17758776440062124} and final val_loss: 0.00810167649095612
+Starting loss hyperparameter trial 5
+Loaded 8732 samples from 1 chunks.
+Trial 5 pruned with parameters: {'w_integration': 0.9021646395027215, 'w_levelset': 0.9612950108798868, 'w_separation': 0.004568255329407966, 'threshold_factor': 0.07653350464305486} at epoch 0 with val_loss 0.2718562398638044
+Starting loss hyperparameter trial 6
+Loaded 8732 samples from 1 chunks.
+Trial 6 pruned with parameters: {'w_integration': 0.4075144256785781, 'w_levelset': 0.89094240824873, 'w_separation': 0.22053697495343927, 'threshold_factor': 0.1784943286445967} at epoch 0 with val_loss 3.865004335130964
+Starting loss hyperparameter trial 7
+Loaded 8732 samples from 1 chunks.
+Trial 7 pruned with parameters: {'w_integration': 0.13673391974275007, 'w_levelset': 0.5449780265452944, 'w_separation': 0.7080041313566482, 'threshold_factor': 0.09013495950458253} at epoch 2 with val_loss 0.10684874547379357
+Starting loss hyperparameter trial 8
+Loaded 8732 samples from 1 chunks.
+Trial 8 pruned with parameters: {'w_integration': 0.5570969953977516, 'w_levelset': 0.6749468795653768, 'w_separation': 0.9944209645166471, 'threshold_factor': 0.10391442517003689} at epoch 4 with val_loss 0.023836614564061165
+Starting loss hyperparameter trial 9
+Loaded 8732 samples from 1 chunks.
+Trial 9 finished with parameters: {'w_integration': 0.6099300285105641, 'w_levelset': 0.44170908636072204, 'w_separation': 0.2522618490623719, 'threshold_factor': 0.012606945735412968} and final val_loss: 0.004106791556945869
+Starting loss hyperparameter trial 10
+Loaded 8732 samples from 1 chunks.
+Trial 10 pruned with parameters: {'w_integration': 0.7689561051681947, 'w_levelset': 0.003850191964626881, 'w_separation': 0.3358087983270315, 'threshold_factor': 0.025578082494852813} at epoch 0 with val_loss 0.5208606421947479
+Starting loss hyperparameter trial 11
+Loaded 8732 samples from 1 chunks.
+Trial 11 pruned with parameters: {'w_integration': 0.7174204240429087, 'w_levelset': 0.7096344547990141, 'w_separation': 0.3787845718342856, 'threshold_factor': 0.010464366429407925} at epoch 0 with val_loss 3.3378099373408725
+Starting loss hyperparameter trial 12
+Loaded 8732 samples from 1 chunks.
+Trial 12 pruned with parameters: {'w_integration': 0.65841539402424, 'w_levelset': 0.3052053133558053, 'w_separation': 0.14363194012881794, 'threshold_factor': 0.1263050034257988} at epoch 0 with val_loss 1.261339783668518
+Starting loss hyperparameter trial 13
+Loaded 8732 samples from 1 chunks.
+Trial 13 pruned with parameters: {'w_integration': 0.38713023425196813, 'w_levelset': 0.7496166264038437, 'w_separation': 0.4894666160103714, 'threshold_factor': 0.13613865685852383} at epoch 2 with val_loss 0.0688151264829295
+Starting loss hyperparameter trial 14
+Loaded 8732 samples from 1 chunks.
+Trial 14 pruned with parameters: {'w_integration': 0.2883766615252922, 'w_levelset': 0.28279715533957284, 'w_separation': 0.3561442596687122, 'threshold_factor': 0.044100990888619296} at epoch 0 with val_loss 1.1759853192738123
+Starting loss hyperparameter trial 15
+Loaded 8732 samples from 1 chunks.
+Trial 15 pruned with parameters: {'w_integration': 0.5146120921180275, 'w_levelset': 0.5899010519835259, 'w_separation': 0.1988753861581981, 'threshold_factor': 0.002963468081839612} at epoch 4 with val_loss 0.05818870796688965
+Starting loss hyperparameter trial 16
+Loaded 8732 samples from 1 chunks.
+Trial 16 pruned with parameters: {'w_integration': 0.8353904179705838, 'w_levelset': 0.8223740446385586, 'w_separation': 0.5112883854208885, 'threshold_factor': 0.06747431629735676} at epoch 1 with val_loss 0.22010930201836995
+Starting loss hyperparameter trial 17
+Loaded 8732 samples from 1 chunks.
+Trial 17 pruned with parameters: {'w_integration': 0.6419070525473254, 'w_levelset': 0.43049099037405725, 'w_separation': 0.10483772738905306, 'threshold_factor': 0.03262293867588073} at epoch 0 with val_loss 2.142669064658029
+Starting loss hyperparameter trial 18
+Loaded 8732 samples from 1 chunks.
+Trial 18 pruned with parameters: {'w_integration': 0.43006316662908306, 'w_levelset': 0.6199924900768754, 'w_separation': 0.311971432243353, 'threshold_factor': 0.11128980991288165} at epoch 0 with val_loss 0.5001137001173837
+Starting loss hyperparameter trial 19
+Loaded 8732 samples from 1 chunks.
+Trial 19 pruned with parameters: {'w_integration': 0.2438348999944403, 'w_levelset': 0.3061373167657948, 'w_separation': 0.4485164380827568, 'threshold_factor': 0.1401682703086769} at epoch 0 with val_loss 1.426608851977757
+Starting loss hyperparameter trial 20
+Loaded 8732 samples from 1 chunks.
+Trial 20 pruned with parameters: {'w_integration': 0.033526528412100576, 'w_levelset': 0.8466247625844461, 'w_separation': 0.6178257307948525, 'threshold_factor': 0.0846008290537362} at epoch 4 with val_loss 0.046667378661887984
+Starting loss hyperparameter trial 21
+Loaded 8732 samples from 1 chunks.
+Trial 21 finished with parameters: {'w_integration': 0.3214409368830955, 'w_levelset': 0.4816310030550244, 'w_separation': 0.5494397675470235, 'threshold_factor': 0.19444800413999774} and final val_loss: 0.007169155703325357
+Starting loss hyperparameter trial 22
+Loaded 8732 samples from 1 chunks.
+Trial 22 pruned with parameters: {'w_integration': 0.478863052651853, 'w_levelset': 0.4414849998084639, 'w_separation': 0.5837835436805074, 'threshold_factor': 0.1597755792340009} at epoch 0 with val_loss 1.1060015644345964
+Starting loss hyperparameter trial 23
+Loaded 8732 samples from 1 chunks.
+Trial 23 finished with parameters: {'w_integration': 0.365111902388645, 'w_levelset': 0.16627895978291513, 'w_separation': 0.41574458595764135, 'threshold_factor': 0.02285645732727979} and final val_loss: 0.0026279952975788285
+Starting loss hyperparameter trial 24
+Loaded 8732 samples from 1 chunks.
+Trial 24 finished with parameters: {'w_integration': 0.089408680363679, 'w_levelset': 0.10602961905571848, 'w_separation': 0.6798769025593554, 'threshold_factor': 0.01967509877073377} and final val_loss: 0.0010830622715210275
+Best loss hyperparameters:  {'w_integration': 0.089408680363679, 'w_levelset': 0.10602961905571848, 'w_separation': 0.6798769025593554, 'threshold_factor': 0.01967509877073377}

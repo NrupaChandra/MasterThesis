@@ -1,0 +1,1015 @@
+
+Using device: cuda, GPU Name: NVIDIA H100 80GB HBM3
+Loaded 1749996 samples from 35 chunks.
+Dataset length: 1749996
+No checkpoint found. Starting training from epoch 1.
+
+Epoch 1/500: Training Loss: 216072477.740500, Validation Loss: 1996.421392, Time: 408.35 sec
+
+Epoch 2/500: Training Loss: 70.509044, Validation Loss: 0.085889, Time: 408.11 sec
+
+Epoch 3/500: Training Loss: 0.061464, Validation Loss: 0.048413, Time: 408.18 sec
+
+Epoch 4/500: Training Loss: 0.039185, Validation Loss: 0.030130, Time: 408.07 sec
+
+Epoch 5/500: Training Loss: 0.022305, Validation Loss: 0.012517, Time: 408.19 sec
+
+Epoch 6/500: Training Loss: 0.038212, Validation Loss: 0.007325, Time: 408.12 sec
+
+Epoch 7/500: Training Loss: 59.550404, Validation Loss: 21.284819, Time: 408.14 sec
+
+Epoch 8/500: Training Loss: 61462.354790, Validation Loss: 0.003653, Time: 408.15 sec
+
+Epoch 9/500: Training Loss: 1038803.104525, Validation Loss: 0.002102, Time: 408.17 sec
+
+Epoch 10/500: Training Loss: 5524496.496025, Validation Loss: 0.004456, Time: 408.21 sec
+
+Epoch 11/500: Training Loss: 227087.144533, Validation Loss: 0.006429, Time: 408.35 sec
+
+Epoch 12/500: Training Loss: 13416603.961471, Validation Loss: 0.006682, Time: 408.32 sec
+
+Epoch 13/500: Training Loss: 15668099.855903, Validation Loss: 10585040.390630, Time: 408.32 sec
+
+Epoch 14/500: Training Loss: 13638726.622062, Validation Loss: 0.007403, Time: 408.27 sec
+
+Epoch 15/500: Training Loss: 36979266.321076, Validation Loss: 0.049201, Time: 408.30 sec
+
+Epoch 16/500: Training Loss: 21818224.375151, Validation Loss: 9.520261, Time: 408.33 sec
+
+Epoch 17/500: Training Loss: 1906963.748208, Validation Loss: 60107.112945, Time: 408.37 sec
+
+Epoch 18/500: Training Loss: 29586071.148012, Validation Loss: 0.002135, Time: 408.33 sec
+
+Epoch 19/500: Training Loss: 27714360.150508, Validation Loss: 0.009392, Time: 408.38 sec
+
+Epoch 20/500: Training Loss: 12629366.539065, Validation Loss: 183896261.571000, Time: 408.34 sec
+
+Epoch 21/500: Training Loss: 35603809.400985, Validation Loss: 131096798.794914, Time: 408.35 sec
+
+Epoch 22/500: Training Loss: 41571677.595274, Validation Loss: 140664830.670652, Time: 408.36 sec
+
+Epoch 23/500: Training Loss: 199632900.376679, Validation Loss: 0.005079, Time: 408.38 sec
+
+Epoch 24/500: Training Loss: 134112880.744168, Validation Loss: 0.002700, Time: 408.34 sec
+
+Epoch 25/500: Training Loss: 38098354.031717, Validation Loss: 1678661982.233138, Time: 408.28 sec
+
+Epoch 26/500: Training Loss: 9588043.603099, Validation Loss: 0.008609, Time: 408.40 sec
+
+Epoch 27/500: Training Loss: 11604556.337201, Validation Loss: 0.003514, Time: 408.27 sec
+
+Epoch 28/500: Training Loss: 12425814.283810, Validation Loss: 0.009830, Time: 408.27 sec
+
+Epoch 29/500: Training Loss: 50404.147659, Validation Loss: 0.058801, Time: 408.31 sec
+
+Epoch 30/500: Training Loss: 4649240.927482, Validation Loss: 0.001586, Time: 408.29 sec
+
+Epoch 31/500: Training Loss: 2.562770, Validation Loss: 0.013597, Time: 408.34 sec
+
+Epoch 32/500: Training Loss: 0.041251, Validation Loss: 0.004188, Time: 408.36 sec
+
+Epoch 33/500: Training Loss: 0.016855, Validation Loss: 0.063078, Time: 408.32 sec
+
+Epoch 34/500: Training Loss: 0.057348, Validation Loss: 0.014066, Time: 408.38 sec
+
+Epoch 35/500: Training Loss: 0.099113, Validation Loss: 0.003220, Time: 408.37 sec
+
+Epoch 36/500: Training Loss: 0.087106, Validation Loss: 0.003826, Time: 408.32 sec
+
+Epoch 37/500: Training Loss: 0.013861, Validation Loss: 0.001902, Time: 408.30 sec
+
+Epoch 38/500: Training Loss: 0.009893, Validation Loss: 0.003097, Time: 408.34 sec
+
+Epoch 39/500: Training Loss: 0.005985, Validation Loss: 0.002020, Time: 408.30 sec
+
+Epoch 40/500: Training Loss: 0.000703, Validation Loss: 0.000707, Time: 408.40 sec
+
+Epoch 41/500: Training Loss: 0.000085, Validation Loss: 0.000031, Time: 408.31 sec
+
+Epoch 42/500: Training Loss: 0.000158, Validation Loss: 0.000027, Time: 408.19 sec
+
+Epoch 43/500: Training Loss: 0.000060, Validation Loss: 0.000058, Time: 408.25 sec
+
+Epoch 44/500: Training Loss: 0.000063, Validation Loss: 0.000014, Time: 408.26 sec
+
+Epoch 45/500: Training Loss: 0.000053, Validation Loss: 0.000019, Time: 408.34 sec
+
+Epoch 46/500: Training Loss: 0.000093, Validation Loss: 0.000021, Time: 408.26 sec
+
+Epoch 47/500: Training Loss: 0.000046, Validation Loss: 0.000018, Time: 408.26 sec
+
+Epoch 48/500: Training Loss: 0.062923, Validation Loss: 0.000041, Time: 408.34 sec
+
+Epoch 49/500: Training Loss: 0.000040, Validation Loss: 0.000039, Time: 408.34 sec
+
+Epoch 50/500: Training Loss: 0.000057, Validation Loss: 0.000018, Time: 408.34 sec
+
+Epoch 51/500: Training Loss: 0.000059, Validation Loss: 0.000016, Time: 408.31 sec
+
+Epoch 52/500: Training Loss: 0.000050, Validation Loss: 0.000013, Time: 408.28 sec
+
+Epoch 53/500: Training Loss: 0.000049, Validation Loss: 0.000016, Time: 408.41 sec
+
+Epoch 54/500: Training Loss: 0.000046, Validation Loss: 0.000016, Time: 408.40 sec
+
+Epoch 55/500: Training Loss: 0.000046, Validation Loss: 0.000017, Time: 408.44 sec
+
+Epoch 56/500: Training Loss: 0.000037, Validation Loss: 0.000012, Time: 408.40 sec
+
+Epoch 57/500: Training Loss: 0.000049, Validation Loss: 0.000018, Time: 408.38 sec
+
+Epoch 58/500: Training Loss: 0.000046, Validation Loss: 0.000022, Time: 408.47 sec
+
+Epoch 59/500: Training Loss: 0.000030, Validation Loss: 0.000016, Time: 408.47 sec
+
+Epoch 60/500: Training Loss: 0.000031, Validation Loss: 0.000008, Time: 408.42 sec
+
+Epoch 61/500: Training Loss: 0.001130, Validation Loss: 0.000010, Time: 408.38 sec
+
+Epoch 62/500: Training Loss: 0.000035, Validation Loss: 0.000014, Time: 408.43 sec
+
+Epoch 63/500: Training Loss: 0.000028, Validation Loss: 0.000010, Time: 408.39 sec
+
+Epoch 64/500: Training Loss: 0.000026, Validation Loss: 0.000009, Time: 408.37 sec
+
+Epoch 65/500: Training Loss: 0.000025, Validation Loss: 0.000082, Time: 408.48 sec
+
+Epoch 66/500: Training Loss: 0.000025, Validation Loss: 0.000015, Time: 408.43 sec
+
+Epoch 67/500: Training Loss: 0.000023, Validation Loss: 0.000008, Time: 408.36 sec
+
+Epoch 68/500: Training Loss: 0.000021, Validation Loss: 0.000012, Time: 408.41 sec
+
+Epoch 69/500: Training Loss: 0.000047, Validation Loss: 0.000018, Time: 408.40 sec
+
+Epoch 70/500: Training Loss: 0.000021, Validation Loss: 0.000013, Time: 408.38 sec
+
+Epoch 71/500: Training Loss: 0.000024, Validation Loss: 0.000011, Time: 408.40 sec
+
+Epoch 72/500: Training Loss: 0.000024, Validation Loss: 0.000009, Time: 408.33 sec
+
+Epoch 73/500: Training Loss: 0.000017, Validation Loss: 0.000009, Time: 409.04 sec
+
+Epoch 74/500: Training Loss: 0.000020, Validation Loss: 0.000007, Time: 408.34 sec
+
+Epoch 75/500: Training Loss: 0.000035, Validation Loss: 0.000017, Time: 408.34 sec
+
+Epoch 76/500: Training Loss: 0.000020, Validation Loss: 0.000013, Time: 408.38 sec
+
+Epoch 77/500: Training Loss: 0.000025, Validation Loss: 0.000027, Time: 408.41 sec
+
+Epoch 78/500: Training Loss: 0.000024, Validation Loss: 0.000011, Time: 408.39 sec
+
+Epoch 79/500: Training Loss: 0.000018, Validation Loss: 0.000008, Time: 408.42 sec
+
+Epoch 80/500: Training Loss: 0.000018, Validation Loss: 0.000006, Time: 408.32 sec
+
+Epoch 81/500: Training Loss: 0.036208, Validation Loss: 0.000022, Time: 408.37 sec
+
+Epoch 82/500: Training Loss: 0.000026, Validation Loss: 0.000022, Time: 408.37 sec
+
+Epoch 83/500: Training Loss: 0.000018, Validation Loss: 0.000005, Time: 408.38 sec
+
+Epoch 84/500: Training Loss: 0.000018, Validation Loss: 0.000016, Time: 408.38 sec
+
+Epoch 85/500: Training Loss: 0.000017, Validation Loss: 0.000005, Time: 408.34 sec
+
+Epoch 86/500: Training Loss: 0.000018, Validation Loss: 0.000010, Time: 408.41 sec
+
+Epoch 87/500: Training Loss: 0.000013, Validation Loss: 0.000508, Time: 408.37 sec
+
+Epoch 88/500: Training Loss: 2.194918, Validation Loss: 0.000012, Time: 408.42 sec
+
+Epoch 89/500: Training Loss: 0.000016, Validation Loss: 0.000034, Time: 408.43 sec
+
+Epoch 90/500: Training Loss: 0.000015, Validation Loss: 0.000004, Time: 408.43 sec
+
+Epoch 91/500: Training Loss: 0.000029, Validation Loss: 0.000004, Time: 408.35 sec
+
+Epoch 92/500: Training Loss: 0.000010, Validation Loss: 0.000007, Time: 408.42 sec
+
+Epoch 93/500: Training Loss: 0.000011, Validation Loss: 0.000004, Time: 408.31 sec
+
+Epoch 94/500: Training Loss: 0.000011, Validation Loss: 0.000013, Time: 408.36 sec
+
+Epoch 95/500: Training Loss: 0.000013, Validation Loss: 0.000003, Time: 408.36 sec
+
+Epoch 96/500: Training Loss: 0.000011, Validation Loss: 0.000003, Time: 408.45 sec
+
+Epoch 97/500: Training Loss: 0.000011, Validation Loss: 0.000003, Time: 408.38 sec
+
+Epoch 98/500: Training Loss: 0.000008, Validation Loss: 0.000004, Time: 408.42 sec
+
+Epoch 99/500: Training Loss: 0.000009, Validation Loss: 0.000002, Time: 408.38 sec
+
+Epoch 100/500: Training Loss: 0.000009, Validation Loss: 0.000002, Time: 408.37 sec
+Checkpoint saved: /work/scratch/ng66sume/MasterThesis/Models/CNN/CNN_V2/cnn_checkpoint.pth
+
+Epoch 101/500: Training Loss: 0.000239, Validation Loss: 0.000004, Time: 408.40 sec
+
+Epoch 102/500: Training Loss: 0.000006, Validation Loss: 0.000002, Time: 408.42 sec
+
+Epoch 103/500: Training Loss: 0.000014, Validation Loss: 0.000014, Time: 408.35 sec
+
+Epoch 104/500: Training Loss: 0.000007, Validation Loss: 0.000001, Time: 408.36 sec
+
+Epoch 105/500: Training Loss: 0.000010, Validation Loss: 0.000007, Time: 408.36 sec
+
+Epoch 106/500: Training Loss: 0.000005, Validation Loss: 0.000002, Time: 408.35 sec
+
+Epoch 107/500: Training Loss: 0.000010, Validation Loss: 0.000002, Time: 408.44 sec
+
+Epoch 108/500: Training Loss: 0.000014, Validation Loss: 0.000011, Time: 408.34 sec
+
+Epoch 109/500: Training Loss: 0.000010, Validation Loss: 0.000008, Time: 408.36 sec
+
+Epoch 110/500: Training Loss: 0.000008, Validation Loss: 0.000018, Time: 408.36 sec
+
+Epoch 111/500: Training Loss: 0.001310, Validation Loss: 0.000008, Time: 408.35 sec
+
+Epoch 112/500: Training Loss: 0.000010, Validation Loss: 0.000007, Time: 408.42 sec
+
+Epoch 113/500: Training Loss: 0.000009, Validation Loss: 0.001937, Time: 408.42 sec
+
+Epoch 114/500: Training Loss: 0.000011, Validation Loss: 0.000002, Time: 408.35 sec
+
+Epoch 115/500: Training Loss: 0.000010, Validation Loss: 0.000001, Time: 408.27 sec
+
+Epoch 116/500: Training Loss: 0.000006, Validation Loss: 0.000001, Time: 408.23 sec
+
+Epoch 117/500: Training Loss: 0.000007, Validation Loss: 0.000001, Time: 408.27 sec
+
+Epoch 118/500: Training Loss: 0.000007, Validation Loss: 0.000001, Time: 408.29 sec
+
+Epoch 119/500: Training Loss: 0.000012, Validation Loss: 0.000008, Time: 408.40 sec
+
+Epoch 120/500: Training Loss: 0.232099, Validation Loss: 0.000025, Time: 408.29 sec
+
+Epoch 121/500: Training Loss: 0.000012, Validation Loss: 0.000008, Time: 408.28 sec
+
+Epoch 122/500: Training Loss: 0.000012, Validation Loss: 0.000011, Time: 408.33 sec
+
+Epoch 123/500: Training Loss: 0.000010, Validation Loss: 0.000007, Time: 408.34 sec
+
+Epoch 124/500: Training Loss: 0.000006, Validation Loss: 0.000002, Time: 408.25 sec
+
+Epoch 125/500: Training Loss: 0.000010, Validation Loss: 0.000001, Time: 408.27 sec
+
+Epoch 126/500: Training Loss: 0.000005, Validation Loss: 0.000024, Time: 408.34 sec
+
+Epoch 127/500: Training Loss: 0.000013, Validation Loss: 0.000001, Time: 408.28 sec
+
+Epoch 128/500: Training Loss: 0.000008, Validation Loss: 0.000005, Time: 408.25 sec
+
+Epoch 129/500: Training Loss: 0.000008, Validation Loss: 0.000003, Time: 408.23 sec
+
+Epoch 130/500: Training Loss: 0.000008, Validation Loss: 0.000047, Time: 408.19 sec
+
+Epoch 131/500: Training Loss: 0.000013, Validation Loss: 0.000006, Time: 408.23 sec
+
+Epoch 132/500: Training Loss: 0.000008, Validation Loss: 0.000002, Time: 408.28 sec
+
+Epoch 133/500: Training Loss: 0.000008, Validation Loss: 0.000009, Time: 408.26 sec
+
+Epoch 134/500: Training Loss: 0.000004, Validation Loss: 0.000004, Time: 408.28 sec
+
+Epoch 135/500: Training Loss: 0.000009, Validation Loss: 0.000025, Time: 408.30 sec
+
+Epoch 136/500: Training Loss: 0.000006, Validation Loss: 0.000001, Time: 408.31 sec
+
+Epoch 137/500: Training Loss: 0.000004, Validation Loss: 0.000004, Time: 408.31 sec
+
+Epoch 138/500: Training Loss: 0.000012, Validation Loss: 0.000005, Time: 408.31 sec
+
+Epoch 139/500: Training Loss: 0.000006, Validation Loss: 0.000003, Time: 408.29 sec
+
+Epoch 140/500: Training Loss: 0.000010, Validation Loss: 0.000007, Time: 408.32 sec
+
+Epoch 141/500: Training Loss: 0.000004, Validation Loss: 0.000011, Time: 408.30 sec
+
+Epoch 142/500: Training Loss: 0.000013, Validation Loss: 0.000002, Time: 408.42 sec
+
+Epoch 143/500: Training Loss: 0.000004, Validation Loss: 0.000001, Time: 408.26 sec
+
+Epoch 144/500: Training Loss: 0.000016, Validation Loss: 0.000012, Time: 408.32 sec
+
+Epoch 145/500: Training Loss: 0.000011, Validation Loss: 0.000046, Time: 408.25 sec
+
+Epoch 146/500: Training Loss: 0.000009, Validation Loss: 0.000031, Time: 408.31 sec
+
+Epoch 147/500: Training Loss: 0.000010, Validation Loss: 0.000013, Time: 408.28 sec
+
+Epoch 148/500: Training Loss: 0.000011, Validation Loss: 0.000010, Time: 408.29 sec
+
+Epoch 149/500: Training Loss: 0.000008, Validation Loss: 0.000036, Time: 408.25 sec
+
+Epoch 150/500: Training Loss: 0.000006, Validation Loss: 0.000010, Time: 408.25 sec
+
+Epoch 151/500: Training Loss: 0.000005, Validation Loss: 0.000044, Time: 408.30 sec
+
+Epoch 152/500: Training Loss: 0.000011, Validation Loss: 0.000007, Time: 408.20 sec
+
+Epoch 153/500: Training Loss: 0.000006, Validation Loss: 0.000008, Time: 408.24 sec
+
+Epoch 154/500: Training Loss: 0.000008, Validation Loss: 0.000056, Time: 408.25 sec
+
+Epoch 155/500: Training Loss: 0.000005, Validation Loss: 0.000007, Time: 408.32 sec
+
+Epoch 156/500: Training Loss: 0.000003, Validation Loss: 0.000001, Time: 408.39 sec
+
+Epoch 157/500: Training Loss: 0.000005, Validation Loss: 0.000002, Time: 408.31 sec
+
+Epoch 158/500: Training Loss: 0.000009, Validation Loss: 0.000004, Time: 408.28 sec
+
+Epoch 159/500: Training Loss: 0.000002, Validation Loss: 0.000003, Time: 408.30 sec
+
+Epoch 160/500: Training Loss: 0.000004, Validation Loss: 0.000007, Time: 408.33 sec
+
+Epoch 161/500: Training Loss: 0.000003, Validation Loss: 0.000015, Time: 408.43 sec
+
+Epoch 162/500: Training Loss: 0.000010, Validation Loss: 0.000019, Time: 408.38 sec
+
+Epoch 163/500: Training Loss: 0.000006, Validation Loss: 0.000003, Time: 408.28 sec
+
+Epoch 164/500: Training Loss: 0.000008, Validation Loss: 0.000005, Time: 408.39 sec
+
+Epoch 165/500: Training Loss: 0.000006, Validation Loss: 0.000001, Time: 408.36 sec
+
+Epoch 166/500: Training Loss: 0.000008, Validation Loss: 0.000003, Time: 408.29 sec
+
+Epoch 167/500: Training Loss: 0.000011, Validation Loss: 0.000006, Time: 408.42 sec
+
+Epoch 168/500: Training Loss: 0.000010, Validation Loss: 0.000004, Time: 408.37 sec
+
+Epoch 169/500: Training Loss: 0.000007, Validation Loss: 0.000004, Time: 408.36 sec
+
+Epoch 170/500: Training Loss: 0.000007, Validation Loss: 0.000009, Time: 408.34 sec
+
+Epoch 171/500: Training Loss: 0.000007, Validation Loss: 0.000003, Time: 408.34 sec
+
+Epoch 172/500: Training Loss: 0.000002, Validation Loss: 0.000006, Time: 408.38 sec
+
+Epoch 173/500: Training Loss: 0.000003, Validation Loss: 0.000003, Time: 408.33 sec
+
+Epoch 174/500: Training Loss: 0.000008, Validation Loss: 0.000002, Time: 408.44 sec
+
+Epoch 175/500: Training Loss: 0.000006, Validation Loss: 0.000005, Time: 408.40 sec
+
+Epoch 176/500: Training Loss: 0.000006, Validation Loss: 0.000004, Time: 408.44 sec
+
+Epoch 177/500: Training Loss: 0.000004, Validation Loss: 0.000002, Time: 408.30 sec
+
+Epoch 178/500: Training Loss: 0.000004, Validation Loss: 0.000001, Time: 408.36 sec
+
+Epoch 179/500: Training Loss: 0.000007, Validation Loss: 0.000026, Time: 408.39 sec
+
+Epoch 180/500: Training Loss: 0.000005, Validation Loss: 0.000002, Time: 408.37 sec
+
+Epoch 181/500: Training Loss: 0.000009, Validation Loss: 0.000004, Time: 408.37 sec
+
+Epoch 182/500: Training Loss: 0.000007, Validation Loss: 0.000005, Time: 408.40 sec
+
+Epoch 183/500: Training Loss: 0.000003, Validation Loss: 0.000017, Time: 408.31 sec
+
+Epoch 184/500: Training Loss: 0.000004, Validation Loss: 0.000023, Time: 408.33 sec
+
+Epoch 185/500: Training Loss: 0.000006, Validation Loss: 0.000001, Time: 408.31 sec
+
+Epoch 186/500: Training Loss: 0.000003, Validation Loss: 0.000013, Time: 408.28 sec
+
+Epoch 187/500: Training Loss: 0.000007, Validation Loss: 0.000001, Time: 408.35 sec
+
+Epoch 188/500: Training Loss: 0.000002, Validation Loss: 0.000002, Time: 408.29 sec
+
+Epoch 189/500: Training Loss: 0.000007, Validation Loss: 0.000001, Time: 408.29 sec
+
+Epoch 190/500: Training Loss: 0.000007, Validation Loss: 0.000002, Time: 408.27 sec
+
+Epoch 191/500: Training Loss: 0.000002, Validation Loss: 0.000026, Time: 408.28 sec
+
+Epoch 192/500: Training Loss: 0.000005, Validation Loss: 0.000003, Time: 408.28 sec
+
+Epoch 193/500: Training Loss: 0.000002, Validation Loss: 0.000001, Time: 408.33 sec
+
+Epoch 194/500: Training Loss: 0.000003, Validation Loss: 0.000007, Time: 408.37 sec
+
+Epoch 195/500: Training Loss: 0.000005, Validation Loss: 0.000001, Time: 408.30 sec
+
+Epoch 196/500: Training Loss: 0.000005, Validation Loss: 0.000001, Time: 408.28 sec
+
+Epoch 197/500: Training Loss: 0.000005, Validation Loss: 0.000001, Time: 408.31 sec
+
+Epoch 198/500: Training Loss: 0.000010, Validation Loss: 0.000001, Time: 408.28 sec
+
+Epoch 199/500: Training Loss: 0.000003, Validation Loss: 0.000003, Time: 408.22 sec
+
+Epoch 200/500: Training Loss: 0.000007, Validation Loss: 0.000003, Time: 408.22 sec
+Checkpoint saved: /work/scratch/ng66sume/MasterThesis/Models/CNN/CNN_V2/cnn_checkpoint.pth
+
+Epoch 201/500: Training Loss: 0.000003, Validation Loss: 0.000011, Time: 408.26 sec
+
+Epoch 202/500: Training Loss: 0.000002, Validation Loss: 0.000000, Time: 408.28 sec
+
+Epoch 203/500: Training Loss: 0.000008, Validation Loss: 0.000001, Time: 408.36 sec
+
+Epoch 204/500: Training Loss: 0.000002, Validation Loss: 0.000001, Time: 408.35 sec
+
+Epoch 205/500: Training Loss: 0.000003, Validation Loss: 0.000001, Time: 408.33 sec
+
+Epoch 206/500: Training Loss: 0.000007, Validation Loss: 0.000006, Time: 408.41 sec
+
+Epoch 207/500: Training Loss: 0.000001, Validation Loss: 0.000001, Time: 408.41 sec
+
+Epoch 208/500: Training Loss: 0.000004, Validation Loss: 0.000001, Time: 408.36 sec
+
+Epoch 209/500: Training Loss: 0.000009, Validation Loss: 0.000007, Time: 408.27 sec
+
+Epoch 210/500: Training Loss: 0.000006, Validation Loss: 0.000004, Time: 408.34 sec
+
+Epoch 211/500: Training Loss: 0.000004, Validation Loss: 0.000013, Time: 408.30 sec
+
+Epoch 212/500: Training Loss: 0.000007, Validation Loss: 0.000005, Time: 407.93 sec
+
+Epoch 213/500: Training Loss: 0.000008, Validation Loss: 0.000009, Time: 408.37 sec
+
+Epoch 214/500: Training Loss: 0.000004, Validation Loss: 0.000001, Time: 408.47 sec
+
+Epoch 215/500: Training Loss: 0.000006, Validation Loss: 0.000002, Time: 408.35 sec
+
+Epoch 216/500: Training Loss: 0.000002, Validation Loss: 0.000002, Time: 408.38 sec
+
+Epoch 217/500: Training Loss: 0.000009, Validation Loss: 0.000009, Time: 408.28 sec
+
+Epoch 218/500: Training Loss: 0.000008, Validation Loss: 0.000034, Time: 407.99 sec
+
+Epoch 219/500: Training Loss: 0.000006, Validation Loss: 0.000004, Time: 408.21 sec
+
+Epoch 220/500: Training Loss: 0.000004, Validation Loss: 0.000002, Time: 407.96 sec
+
+Epoch 221/500: Training Loss: 0.000002, Validation Loss: 0.000001, Time: 408.32 sec
+
+Epoch 222/500: Training Loss: 0.000006, Validation Loss: 0.000012, Time: 408.30 sec
+
+Epoch 223/500: Training Loss: 0.000004, Validation Loss: 0.000002, Time: 408.36 sec
+
+Epoch 224/500: Training Loss: 0.000004, Validation Loss: 0.000002, Time: 408.28 sec
+
+Epoch 225/500: Training Loss: 0.000005, Validation Loss: 0.000005, Time: 408.38 sec
+
+Epoch 226/500: Training Loss: 0.000011, Validation Loss: 0.000008, Time: 408.33 sec
+
+Epoch 227/500: Training Loss: 0.000009, Validation Loss: 0.000018, Time: 408.23 sec
+
+Epoch 228/500: Training Loss: 0.000007, Validation Loss: 0.000001, Time: 408.37 sec
+
+Epoch 229/500: Training Loss: 0.000007, Validation Loss: 0.000009, Time: 408.29 sec
+
+Epoch 230/500: Training Loss: 0.000008, Validation Loss: 0.000011, Time: 408.25 sec
+
+Epoch 231/500: Training Loss: 0.000008, Validation Loss: 0.000024, Time: 408.32 sec
+
+Epoch 232/500: Training Loss: 0.000008, Validation Loss: 0.000003, Time: 408.46 sec
+
+Epoch 233/500: Training Loss: 0.000004, Validation Loss: 0.000006, Time: 407.90 sec
+
+Epoch 234/500: Training Loss: 0.000003, Validation Loss: 0.000001, Time: 408.36 sec
+
+Epoch 235/500: Training Loss: 0.000004, Validation Loss: 0.000001, Time: 408.34 sec
+
+Epoch 236/500: Training Loss: 0.000005, Validation Loss: 0.000027, Time: 408.29 sec
+
+Epoch 237/500: Training Loss: 0.000007, Validation Loss: 0.000003, Time: 408.25 sec
+
+Epoch 238/500: Training Loss: 0.000024, Validation Loss: 0.000001, Time: 408.25 sec
+
+Epoch 239/500: Training Loss: 0.000005, Validation Loss: 0.000001, Time: 408.32 sec
+
+Epoch 240/500: Training Loss: 0.000003, Validation Loss: 0.000003, Time: 408.36 sec
+
+Epoch 241/500: Training Loss: 0.000002, Validation Loss: 0.000003, Time: 408.42 sec
+
+Epoch 242/500: Training Loss: 0.000005, Validation Loss: 0.000007, Time: 408.35 sec
+
+Epoch 243/500: Training Loss: 0.000007, Validation Loss: 0.000001, Time: 408.37 sec
+
+Epoch 244/500: Training Loss: 0.000003, Validation Loss: 0.000003, Time: 408.32 sec
+
+Epoch 245/500: Training Loss: 0.000006, Validation Loss: 0.000016, Time: 408.33 sec
+
+Epoch 246/500: Training Loss: 0.000008, Validation Loss: 0.000002, Time: 408.44 sec
+
+Epoch 247/500: Training Loss: 0.000007, Validation Loss: 0.000013, Time: 408.34 sec
+
+Epoch 248/500: Training Loss: 0.000005, Validation Loss: 0.000001, Time: 408.26 sec
+
+Epoch 249/500: Training Loss: 0.000005, Validation Loss: 0.000010, Time: 408.33 sec
+
+Epoch 250/500: Training Loss: 0.000010, Validation Loss: 0.000002, Time: 408.28 sec
+
+Epoch 251/500: Training Loss: 0.000004, Validation Loss: 0.000007, Time: 408.34 sec
+
+Epoch 252/500: Training Loss: 0.000007, Validation Loss: 0.000002, Time: 408.38 sec
+
+Epoch 253/500: Training Loss: 0.000002, Validation Loss: 0.000006, Time: 408.34 sec
+
+Epoch 254/500: Training Loss: 0.000002, Validation Loss: 0.000003, Time: 408.32 sec
+
+Epoch 255/500: Training Loss: 0.000002, Validation Loss: 0.000002, Time: 408.24 sec
+
+Epoch 256/500: Training Loss: 0.000004, Validation Loss: 0.000001, Time: 408.28 sec
+
+Epoch 257/500: Training Loss: 0.000005, Validation Loss: 0.000003, Time: 408.32 sec
+
+Epoch 258/500: Training Loss: 0.000004, Validation Loss: 0.000002, Time: 408.31 sec
+
+Epoch 259/500: Training Loss: 0.000002, Validation Loss: 0.000004, Time: 408.40 sec
+
+Epoch 260/500: Training Loss: 0.000008, Validation Loss: 0.000000, Time: 408.38 sec
+
+Epoch 261/500: Training Loss: 0.000002, Validation Loss: 0.000002, Time: 408.37 sec
+
+Epoch 262/500: Training Loss: 0.000002, Validation Loss: 0.000010, Time: 408.31 sec
+
+Epoch 263/500: Training Loss: 0.000005, Validation Loss: 0.000050, Time: 408.39 sec
+
+Epoch 264/500: Training Loss: 0.000006, Validation Loss: 0.000010, Time: 408.29 sec
+
+Epoch 265/500: Training Loss: 0.000006, Validation Loss: 0.000005, Time: 408.22 sec
+
+Epoch 266/500: Training Loss: 0.000006, Validation Loss: 0.000003, Time: 408.02 sec
+
+Epoch 267/500: Training Loss: 0.000006, Validation Loss: 0.000006, Time: 408.45 sec
+
+Epoch 268/500: Training Loss: 0.000008, Validation Loss: 0.000005, Time: 407.93 sec
+
+Epoch 269/500: Training Loss: 0.000007, Validation Loss: 0.000003, Time: 408.28 sec
+
+Epoch 270/500: Training Loss: 0.000006, Validation Loss: 0.000017, Time: 408.26 sec
+
+Epoch 271/500: Training Loss: 0.000004, Validation Loss: 0.000014, Time: 407.92 sec
+
+Epoch 272/500: Training Loss: 0.000005, Validation Loss: 0.000001, Time: 408.29 sec
+
+Epoch 273/500: Training Loss: 0.000001, Validation Loss: 0.000001, Time: 408.30 sec
+
+Epoch 274/500: Training Loss: 0.000002, Validation Loss: 0.000006, Time: 408.31 sec
+
+Epoch 275/500: Training Loss: 0.000005, Validation Loss: 0.000020, Time: 407.94 sec
+
+Epoch 276/500: Training Loss: 0.000003, Validation Loss: 0.000001, Time: 408.29 sec
+
+Epoch 277/500: Training Loss: 0.000002, Validation Loss: 0.000006, Time: 408.27 sec
+
+Epoch 278/500: Training Loss: 0.000002, Validation Loss: 0.000001, Time: 408.32 sec
+
+Epoch 279/500: Training Loss: 0.000003, Validation Loss: 0.000000, Time: 408.34 sec
+
+Epoch 280/500: Training Loss: 0.000003, Validation Loss: 0.000011, Time: 408.33 sec
+
+Epoch 281/500: Training Loss: 0.000006, Validation Loss: 0.000002, Time: 408.27 sec
+
+Epoch 282/500: Training Loss: 0.000007, Validation Loss: 0.000009, Time: 408.28 sec
+
+Epoch 283/500: Training Loss: 0.000007, Validation Loss: 0.000002, Time: 408.27 sec
+
+Epoch 284/500: Training Loss: 0.000005, Validation Loss: 0.000001, Time: 408.31 sec
+
+Epoch 285/500: Training Loss: 0.000005, Validation Loss: 0.000012, Time: 408.31 sec
+
+Epoch 286/500: Training Loss: 0.000009, Validation Loss: 0.000013, Time: 408.47 sec
+
+Epoch 287/500: Training Loss: 0.000005, Validation Loss: 0.000006, Time: 407.97 sec
+
+Epoch 288/500: Training Loss: 0.000003, Validation Loss: 0.000001, Time: 408.28 sec
+
+Epoch 289/500: Training Loss: 0.000001, Validation Loss: 0.000001, Time: 408.38 sec
+
+Epoch 290/500: Training Loss: 0.000005, Validation Loss: 0.000007, Time: 408.32 sec
+
+Epoch 291/500: Training Loss: 0.000007, Validation Loss: 0.000017, Time: 408.29 sec
+
+Epoch 292/500: Training Loss: 0.000006, Validation Loss: 0.000011, Time: 408.31 sec
+
+Epoch 293/500: Training Loss: 0.000006, Validation Loss: 0.000006, Time: 408.37 sec
+
+Epoch 294/500: Training Loss: 0.000004, Validation Loss: 0.000001, Time: 408.29 sec
+
+Epoch 295/500: Training Loss: 0.000002, Validation Loss: 0.000001, Time: 408.31 sec
+
+Epoch 296/500: Training Loss: 0.000003, Validation Loss: 0.000002, Time: 408.27 sec
+
+Epoch 297/500: Training Loss: 0.000002, Validation Loss: 0.000002, Time: 408.32 sec
+
+Epoch 298/500: Training Loss: 0.000004, Validation Loss: 0.000018, Time: 408.30 sec
+
+Epoch 299/500: Training Loss: 0.000004, Validation Loss: 0.000001, Time: 408.30 sec
+
+Epoch 300/500: Training Loss: 0.000001, Validation Loss: 0.000000, Time: 408.25 sec
+Checkpoint saved: /work/scratch/ng66sume/MasterThesis/Models/CNN/CNN_V2/cnn_checkpoint.pth
+
+Epoch 301/500: Training Loss: 0.000002, Validation Loss: 0.000007, Time: 408.27 sec
+
+Epoch 302/500: Training Loss: 0.000001, Validation Loss: 0.000001, Time: 408.26 sec
+
+Epoch 303/500: Training Loss: 0.000001, Validation Loss: 0.000001, Time: 408.30 sec
+
+Epoch 304/500: Training Loss: 0.000003, Validation Loss: 0.000001, Time: 407.86 sec
+
+Epoch 305/500: Training Loss: 0.000001, Validation Loss: 0.000002, Time: 408.33 sec
+
+Epoch 306/500: Training Loss: 0.000005, Validation Loss: 0.000002, Time: 408.34 sec
+
+Epoch 307/500: Training Loss: 0.000001, Validation Loss: 0.000004, Time: 407.96 sec
+
+Epoch 308/500: Training Loss: 0.000002, Validation Loss: 0.000003, Time: 407.97 sec
+
+Epoch 309/500: Training Loss: 0.000001, Validation Loss: 0.000006, Time: 408.37 sec
+
+Epoch 310/500: Training Loss: 0.000003, Validation Loss: 0.000000, Time: 408.37 sec
+
+Epoch 311/500: Training Loss: 0.000001, Validation Loss: 0.000000, Time: 408.31 sec
+
+Epoch 312/500: Training Loss: 0.000001, Validation Loss: 0.000024, Time: 408.27 sec
+
+Epoch 313/500: Training Loss: 0.000001, Validation Loss: 0.000001, Time: 408.38 sec
+
+Epoch 314/500: Training Loss: 0.000001, Validation Loss: 0.000003, Time: 408.32 sec
+
+Epoch 315/500: Training Loss: 0.000001, Validation Loss: 0.000006, Time: 408.32 sec
+
+Epoch 316/500: Training Loss: 0.000003, Validation Loss: 0.000003, Time: 408.31 sec
+
+Epoch 317/500: Training Loss: 0.000001, Validation Loss: 0.000006, Time: 408.34 sec
+
+Epoch 318/500: Training Loss: 0.000001, Validation Loss: 0.000009, Time: 408.33 sec
+
+Epoch 319/500: Training Loss: 0.000001, Validation Loss: 0.000000, Time: 408.33 sec
+
+Epoch 320/500: Training Loss: 0.000005, Validation Loss: 0.000001, Time: 408.34 sec
+
+Epoch 321/500: Training Loss: 0.000006, Validation Loss: 0.000010, Time: 408.31 sec
+
+Epoch 322/500: Training Loss: 0.000005, Validation Loss: 0.000007, Time: 408.30 sec
+
+Epoch 323/500: Training Loss: 0.000005, Validation Loss: 0.000008, Time: 408.30 sec
+
+Epoch 324/500: Training Loss: 0.000017, Validation Loss: 0.000006, Time: 407.90 sec
+
+Epoch 325/500: Training Loss: 0.000006, Validation Loss: 0.000005, Time: 408.28 sec
+
+Epoch 326/500: Training Loss: 0.000005, Validation Loss: 0.000013, Time: 408.28 sec
+
+Epoch 327/500: Training Loss: 0.000003, Validation Loss: 0.000002, Time: 407.92 sec
+
+Epoch 328/500: Training Loss: 0.000006, Validation Loss: 0.000037, Time: 408.27 sec
+
+Epoch 329/500: Training Loss: 0.000003, Validation Loss: 0.000015, Time: 408.32 sec
+
+Epoch 330/500: Training Loss: 0.000001, Validation Loss: 0.000021, Time: 408.21 sec
+
+Epoch 331/500: Training Loss: 0.000001, Validation Loss: 0.000038, Time: 408.34 sec
+
+Epoch 332/500: Training Loss: 0.000001, Validation Loss: 0.000050, Time: 407.92 sec
+
+Epoch 333/500: Training Loss: 0.000002, Validation Loss: 0.000033, Time: 407.96 sec
+
+Epoch 334/500: Training Loss: 0.000002, Validation Loss: 0.000005, Time: 408.36 sec
+
+Epoch 335/500: Training Loss: 0.000002, Validation Loss: 0.000001, Time: 408.25 sec
+
+Epoch 336/500: Training Loss: 0.000002, Validation Loss: 0.000001, Time: 407.94 sec
+
+Epoch 337/500: Training Loss: 0.000002, Validation Loss: 0.000002, Time: 407.91 sec
+
+Epoch 338/500: Training Loss: 0.000005, Validation Loss: 0.000001, Time: 408.31 sec
+
+Epoch 339/500: Training Loss: 0.000002, Validation Loss: 0.000001, Time: 407.96 sec
+
+Epoch 340/500: Training Loss: 0.000001, Validation Loss: 0.000001, Time: 408.25 sec
+
+Epoch 341/500: Training Loss: 0.000002, Validation Loss: 0.000001, Time: 408.33 sec
+
+Epoch 342/500: Training Loss: 0.000001, Validation Loss: 0.000009, Time: 408.45 sec
+
+Epoch 343/500: Training Loss: 0.000001, Validation Loss: 0.000015, Time: 408.42 sec
+
+Epoch 344/500: Training Loss: 0.000004, Validation Loss: 0.000009, Time: 408.41 sec
+
+Epoch 345/500: Training Loss: 0.000001, Validation Loss: 0.000011, Time: 408.40 sec
+
+Epoch 346/500: Training Loss: 0.000002, Validation Loss: 0.000005, Time: 408.36 sec
+
+Epoch 347/500: Training Loss: 0.000004, Validation Loss: 0.000009, Time: 408.26 sec
+
+Epoch 348/500: Training Loss: 0.000003, Validation Loss: 0.000004, Time: 408.36 sec
+
+Epoch 349/500: Training Loss: 0.000003, Validation Loss: 0.000003, Time: 408.31 sec
+
+Epoch 350/500: Training Loss: 0.000001, Validation Loss: 0.000007, Time: 408.32 sec
+
+Epoch 351/500: Training Loss: 0.000001, Validation Loss: 0.000005, Time: 408.29 sec
+
+Epoch 352/500: Training Loss: 0.000002, Validation Loss: 0.000003, Time: 408.29 sec
+
+Epoch 353/500: Training Loss: 0.000004, Validation Loss: 0.000002, Time: 408.31 sec
+
+Epoch 354/500: Training Loss: 0.000001, Validation Loss: 0.000001, Time: 408.33 sec
+
+Epoch 355/500: Training Loss: 0.000001, Validation Loss: 0.000001, Time: 408.35 sec
+
+Epoch 356/500: Training Loss: 0.000001, Validation Loss: 0.000001, Time: 408.22 sec
+
+Epoch 357/500: Training Loss: 0.000001, Validation Loss: 0.000003, Time: 407.91 sec
+
+Epoch 358/500: Training Loss: 0.000001, Validation Loss: 0.000010, Time: 408.42 sec
+
+Epoch 359/500: Training Loss: 0.000001, Validation Loss: 0.000007, Time: 408.28 sec
+
+Epoch 360/500: Training Loss: 0.000000, Validation Loss: 0.000008, Time: 407.97 sec
+
+Epoch 361/500: Training Loss: 0.000002, Validation Loss: 0.000010, Time: 408.33 sec
+
+Epoch 362/500: Training Loss: 0.000005, Validation Loss: 0.000012, Time: 408.34 sec
+
+Epoch 363/500: Training Loss: 0.000005, Validation Loss: 0.000006, Time: 407.92 sec
+
+Epoch 364/500: Training Loss: 0.000004, Validation Loss: 0.000013, Time: 407.98 sec
+
+Epoch 365/500: Training Loss: 0.000001, Validation Loss: 0.000002, Time: 408.35 sec
+
+Epoch 366/500: Training Loss: 0.000000, Validation Loss: 0.000008, Time: 408.33 sec
+
+Epoch 367/500: Training Loss: 0.000000, Validation Loss: 0.000011, Time: 408.27 sec
+
+Epoch 368/500: Training Loss: 0.000001, Validation Loss: 0.000013, Time: 407.94 sec
+
+Epoch 369/500: Training Loss: 0.000001, Validation Loss: 0.000015, Time: 408.32 sec
+
+Epoch 370/500: Training Loss: 0.000000, Validation Loss: 0.000006, Time: 407.99 sec
+
+Epoch 371/500: Training Loss: 0.000001, Validation Loss: 0.000019, Time: 408.35 sec
+
+Epoch 372/500: Training Loss: 0.000001, Validation Loss: 0.000017, Time: 408.45 sec
+
+Epoch 373/500: Training Loss: 0.000001, Validation Loss: 0.000009, Time: 407.92 sec
+
+Epoch 374/500: Training Loss: 0.000000, Validation Loss: 0.000013, Time: 408.30 sec
+
+Epoch 375/500: Training Loss: 0.000001, Validation Loss: 0.000006, Time: 408.35 sec
+
+Epoch 376/500: Training Loss: 0.000001, Validation Loss: 0.000001, Time: 408.33 sec
+
+Epoch 377/500: Training Loss: 0.000001, Validation Loss: 0.000017, Time: 408.37 sec
+
+Epoch 378/500: Training Loss: 0.000002, Validation Loss: 0.000017, Time: 408.32 sec
+
+Epoch 379/500: Training Loss: 0.000001, Validation Loss: 0.000020, Time: 408.31 sec
+
+Epoch 380/500: Training Loss: 0.000002, Validation Loss: 0.000015, Time: 408.29 sec
+
+Epoch 381/500: Training Loss: 0.000002, Validation Loss: 0.000008, Time: 408.28 sec
+
+Epoch 382/500: Training Loss: 0.000003, Validation Loss: 0.000008, Time: 408.36 sec
+
+Epoch 383/500: Training Loss: 0.000001, Validation Loss: 0.000004, Time: 408.36 sec
+
+Epoch 384/500: Training Loss: 0.000000, Validation Loss: 0.000017, Time: 408.32 sec
+
+Epoch 385/500: Training Loss: 0.000002, Validation Loss: 0.000008, Time: 408.40 sec
+
+Epoch 386/500: Training Loss: 0.000001, Validation Loss: 0.000014, Time: 408.33 sec
+
+Epoch 387/500: Training Loss: 0.000002, Validation Loss: 0.000012, Time: 408.35 sec
+
+Epoch 388/500: Training Loss: 0.000001, Validation Loss: 0.000009, Time: 408.44 sec
+
+Epoch 389/500: Training Loss: 0.000002, Validation Loss: 0.000006, Time: 408.34 sec
+
+Epoch 390/500: Training Loss: 0.000000, Validation Loss: 0.000005, Time: 408.31 sec
+
+Epoch 391/500: Training Loss: 0.000000, Validation Loss: 0.000004, Time: 408.33 sec
+
+Epoch 392/500: Training Loss: 0.000003, Validation Loss: 0.000006, Time: 408.36 sec
+
+Epoch 393/500: Training Loss: 0.000000, Validation Loss: 0.000003, Time: 408.24 sec
+
+Epoch 394/500: Training Loss: 0.000001, Validation Loss: 0.000005, Time: 408.36 sec
+
+Epoch 395/500: Training Loss: 0.000001, Validation Loss: 0.000013, Time: 408.33 sec
+
+Epoch 396/500: Training Loss: 0.000001, Validation Loss: 0.000007, Time: 408.33 sec
+
+Epoch 397/500: Training Loss: 0.000001, Validation Loss: 0.000003, Time: 407.93 sec
+
+Epoch 398/500: Training Loss: 0.000000, Validation Loss: 0.000008, Time: 408.28 sec
+
+Epoch 399/500: Training Loss: 0.000001, Validation Loss: 0.000006, Time: 408.31 sec
+
+Epoch 400/500: Training Loss: 0.000001, Validation Loss: 0.000004, Time: 408.29 sec
+Checkpoint saved: /work/scratch/ng66sume/MasterThesis/Models/CNN/CNN_V2/cnn_checkpoint.pth
+
+Epoch 401/500: Training Loss: 0.000001, Validation Loss: 0.000010, Time: 408.38 sec
+
+Epoch 402/500: Training Loss: 0.000001, Validation Loss: 0.000007, Time: 408.35 sec
+
+Epoch 403/500: Training Loss: 0.000000, Validation Loss: 0.000004, Time: 408.35 sec
+
+Epoch 404/500: Training Loss: 0.000000, Validation Loss: 0.000003, Time: 408.41 sec
+
+Epoch 405/500: Training Loss: 0.000000, Validation Loss: 0.000006, Time: 408.35 sec
+
+Epoch 406/500: Training Loss: 0.000001, Validation Loss: 0.000005, Time: 408.31 sec
+
+Epoch 407/500: Training Loss: 0.000000, Validation Loss: 0.000004, Time: 408.30 sec
+
+Epoch 408/500: Training Loss: 0.000001, Validation Loss: 0.000003, Time: 408.33 sec
+
+Epoch 409/500: Training Loss: 0.000000, Validation Loss: 0.000003, Time: 408.30 sec
+
+Epoch 410/500: Training Loss: 0.000001, Validation Loss: 0.000007, Time: 408.31 sec
+
+Epoch 411/500: Training Loss: 0.000000, Validation Loss: 0.000003, Time: 408.32 sec
+
+Epoch 412/500: Training Loss: 0.000000, Validation Loss: 0.000010, Time: 408.28 sec
+
+Epoch 413/500: Training Loss: 0.000001, Validation Loss: 0.000003, Time: 408.29 sec
+
+Epoch 414/500: Training Loss: 0.000001, Validation Loss: 0.000002, Time: 408.36 sec
+
+Epoch 415/500: Training Loss: 0.000004, Validation Loss: 0.000007, Time: 408.37 sec
+
+Epoch 416/500: Training Loss: 0.000004, Validation Loss: 0.000004, Time: 408.37 sec
+
+Epoch 417/500: Training Loss: 0.000002, Validation Loss: 0.000005, Time: 408.30 sec
+
+Epoch 418/500: Training Loss: 0.000001, Validation Loss: 0.000004, Time: 408.42 sec
+
+Epoch 419/500: Training Loss: 0.000001, Validation Loss: 0.000003, Time: 408.35 sec
+
+Epoch 420/500: Training Loss: 0.000001, Validation Loss: 0.000018, Time: 408.36 sec
+
+Epoch 421/500: Training Loss: 0.000000, Validation Loss: 0.000002, Time: 408.36 sec
+
+Epoch 422/500: Training Loss: 0.000001, Validation Loss: 0.000004, Time: 408.39 sec
+
+Epoch 423/500: Training Loss: 0.000001, Validation Loss: 0.000003, Time: 408.39 sec
+
+Epoch 424/500: Training Loss: 0.000000, Validation Loss: 0.000019, Time: 408.43 sec
+
+Epoch 425/500: Training Loss: 0.000001, Validation Loss: 0.000003, Time: 408.33 sec
+
+Epoch 426/500: Training Loss: 0.000001, Validation Loss: 0.000003, Time: 408.34 sec
+
+Epoch 427/500: Training Loss: 0.000000, Validation Loss: 0.000002, Time: 408.27 sec
+
+Epoch 428/500: Training Loss: 0.000001, Validation Loss: 0.000005, Time: 408.41 sec
+
+Epoch 429/500: Training Loss: 0.000001, Validation Loss: 0.000003, Time: 408.33 sec
+
+Epoch 430/500: Training Loss: 0.000000, Validation Loss: 0.000002, Time: 408.26 sec
+
+Epoch 431/500: Training Loss: 0.000000, Validation Loss: 0.000003, Time: 408.26 sec
+
+Epoch 432/500: Training Loss: 0.000002, Validation Loss: 0.000003, Time: 408.32 sec
+
+Epoch 433/500: Training Loss: 0.000000, Validation Loss: 0.000003, Time: 408.35 sec
+
+Epoch 434/500: Training Loss: 0.000002, Validation Loss: 0.000002, Time: 409.04 sec
+
+Epoch 435/500: Training Loss: 0.000000, Validation Loss: 0.000002, Time: 408.34 sec
+
+Epoch 436/500: Training Loss: 0.000000, Validation Loss: 0.000003, Time: 408.32 sec
+
+Epoch 437/500: Training Loss: 0.000001, Validation Loss: 0.000002, Time: 408.46 sec
+
+Epoch 438/500: Training Loss: 0.000001, Validation Loss: 0.000007, Time: 408.39 sec
+
+Epoch 439/500: Training Loss: 0.000000, Validation Loss: 0.000004, Time: 408.31 sec
+
+Epoch 440/500: Training Loss: 0.000001, Validation Loss: 0.000003, Time: 408.43 sec
+
+Epoch 441/500: Training Loss: 0.000001, Validation Loss: 0.000002, Time: 408.37 sec
+
+Epoch 442/500: Training Loss: 0.000001, Validation Loss: 0.000003, Time: 408.40 sec
+
+Epoch 443/500: Training Loss: 0.000000, Validation Loss: 0.000002, Time: 408.34 sec
+
+Epoch 444/500: Training Loss: 0.000000, Validation Loss: 0.000002, Time: 408.35 sec
+
+Epoch 445/500: Training Loss: 0.000000, Validation Loss: 0.000002, Time: 408.52 sec
+
+Epoch 446/500: Training Loss: 0.000001, Validation Loss: 0.000001, Time: 408.39 sec
+
+Epoch 447/500: Training Loss: 0.000000, Validation Loss: 0.000002, Time: 408.25 sec
+
+Epoch 448/500: Training Loss: 0.000001, Validation Loss: 0.000002, Time: 408.29 sec
+
+Epoch 449/500: Training Loss: 0.000000, Validation Loss: 0.000002, Time: 408.40 sec
+
+Epoch 450/500: Training Loss: 0.000001, Validation Loss: 0.000002, Time: 408.41 sec
+
+Epoch 451/500: Training Loss: 0.000000, Validation Loss: 0.000002, Time: 408.32 sec
+
+Epoch 452/500: Training Loss: 0.000001, Validation Loss: 0.000003, Time: 408.30 sec
+
+Epoch 453/500: Training Loss: 0.000000, Validation Loss: 0.000003, Time: 408.34 sec
+
+Epoch 454/500: Training Loss: 0.000001, Validation Loss: 0.000002, Time: 408.34 sec
+
+Epoch 455/500: Training Loss: 0.000001, Validation Loss: 0.000003, Time: 408.38 sec
+
+Epoch 456/500: Training Loss: 0.000001, Validation Loss: 0.000011, Time: 408.35 sec
+
+Epoch 457/500: Training Loss: 0.000001, Validation Loss: 0.000002, Time: 408.37 sec
+
+Epoch 458/500: Training Loss: 0.000001, Validation Loss: 0.000012, Time: 408.29 sec
+
+Epoch 459/500: Training Loss: 0.000002, Validation Loss: 0.000011, Time: 408.32 sec
+
+Epoch 460/500: Training Loss: 0.000000, Validation Loss: 0.000002, Time: 408.29 sec
+
+Epoch 461/500: Training Loss: 0.000001, Validation Loss: 0.000003, Time: 408.34 sec
+
+Epoch 462/500: Training Loss: 0.000001, Validation Loss: 0.000015, Time: 408.35 sec
+
+Epoch 463/500: Training Loss: 0.000000, Validation Loss: 0.000002, Time: 408.33 sec
+
+Epoch 464/500: Training Loss: 0.000000, Validation Loss: 0.000003, Time: 408.35 sec
+
+Epoch 465/500: Training Loss: 0.000001, Validation Loss: 0.000002, Time: 408.43 sec
+
+Epoch 466/500: Training Loss: 0.000000, Validation Loss: 0.000002, Time: 408.30 sec
+
+Epoch 467/500: Training Loss: 0.000000, Validation Loss: 0.000002, Time: 408.38 sec
+
+Epoch 468/500: Training Loss: 0.000000, Validation Loss: 0.000002, Time: 408.29 sec
+
+Epoch 469/500: Training Loss: 0.000001, Validation Loss: 0.000002, Time: 408.34 sec
+
+Epoch 470/500: Training Loss: 0.000000, Validation Loss: 0.000003, Time: 408.34 sec
+
+Epoch 471/500: Training Loss: 0.000001, Validation Loss: 0.000002, Time: 408.37 sec
+
+Epoch 472/500: Training Loss: 0.000000, Validation Loss: 0.000002, Time: 408.28 sec
+
+Epoch 473/500: Training Loss: 0.000001, Validation Loss: 0.000002, Time: 408.31 sec
+
+Epoch 474/500: Training Loss: 0.000000, Validation Loss: 0.000002, Time: 408.40 sec
+
+Epoch 475/500: Training Loss: 0.000000, Validation Loss: 0.000002, Time: 408.31 sec
+
+Epoch 476/500: Training Loss: 0.000000, Validation Loss: 0.000002, Time: 408.28 sec
+
+Epoch 477/500: Training Loss: 0.000001, Validation Loss: 0.000010, Time: 408.33 sec
+
+Epoch 478/500: Training Loss: 0.000001, Validation Loss: 0.000002, Time: 408.38 sec
+
+Epoch 479/500: Training Loss: 0.000001, Validation Loss: 0.000002, Time: 408.35 sec
+
+Epoch 480/500: Training Loss: 0.000000, Validation Loss: 0.000002, Time: 408.33 sec
+
+Epoch 481/500: Training Loss: 0.000000, Validation Loss: 0.000002, Time: 408.33 sec
+
+Epoch 482/500: Training Loss: 0.000000, Validation Loss: 0.000001, Time: 408.38 sec
+
+Epoch 483/500: Training Loss: 0.000000, Validation Loss: 0.000002, Time: 408.34 sec
+
+Epoch 484/500: Training Loss: 0.000000, Validation Loss: 0.000002, Time: 408.33 sec
+
+Epoch 485/500: Training Loss: 0.000000, Validation Loss: 0.000001, Time: 408.30 sec
+
+Epoch 486/500: Training Loss: 0.000000, Validation Loss: 0.000001, Time: 408.35 sec
+
+Epoch 487/500: Training Loss: 0.000000, Validation Loss: 0.000001, Time: 408.33 sec
+
+Epoch 488/500: Training Loss: 0.000000, Validation Loss: 0.000001, Time: 408.31 sec
+
+Epoch 489/500: Training Loss: 0.000000, Validation Loss: 0.000002, Time: 408.30 sec
+
+Epoch 490/500: Training Loss: 0.000000, Validation Loss: 0.000002, Time: 408.33 sec
+
+Epoch 491/500: Training Loss: 0.000000, Validation Loss: 0.000002, Time: 408.34 sec
+
+Epoch 492/500: Training Loss: 0.000000, Validation Loss: 0.000001, Time: 408.29 sec
+
+Epoch 493/500: Training Loss: 0.000000, Validation Loss: 0.000001, Time: 408.31 sec
+
+Epoch 494/500: Training Loss: 0.000000, Validation Loss: 0.000001, Time: 408.29 sec
+
+Epoch 495/500: Training Loss: 0.000000, Validation Loss: 0.000001, Time: 408.33 sec
+
+Epoch 496/500: Training Loss: 0.000000, Validation Loss: 0.000001, Time: 407.95 sec
+
+Epoch 497/500: Training Loss: 0.000000, Validation Loss: 0.000001, Time: 408.33 sec
+
+Epoch 498/500: Training Loss: 0.000000, Validation Loss: 0.000001, Time: 408.35 sec
+
+Epoch 499/500: Training Loss: 0.000000, Validation Loss: 0.000001, Time: 408.37 sec
+
+Epoch 500/500: Training Loss: 0.000000, Validation Loss: 0.000001, Time: 408.35 sec
+Checkpoint saved: /work/scratch/ng66sume/MasterThesis/Models/CNN/CNN_V2/cnn_checkpoint.pth
+Model weights saved: /work/scratch/ng66sume/MasterThesis/Models/CNN/CNN_V2/cnn_model_weights_v2.0.pth
+
+Average epoch time: 408.31 seconds
+
+Average epoch time: 408.31 seconds

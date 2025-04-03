@@ -1,0 +1,1276 @@
+Loaded 178 samples from 1 chunks.
+Result for sample ('b0cde567bfea0a8c7b687b96735abf8c',):
+  True Integral:         1.6621e+00
+  Predicted Integral:    1.6602e+00
+  Trapezoidal Integral:  1.6670e+00
+  Abs Diff (Pred-True):  1.9289e-03   Relative Error: 0.116051%
+  Abs Diff (Trap-True):  4.8186e-03   Relative Error: 0.289903%
+
+Result for sample ('d9949f73cfdedb356e7cdb4a2f6b8d04',):
+  True Integral:         2.3379e+00
+  Predicted Integral:    2.3411e+00
+  Trapezoidal Integral:  2.3330e+00
+  Abs Diff (Pred-True):  3.2520e-03   Relative Error: 0.139103%
+  Abs Diff (Trap-True):  4.8189e-03   Relative Error: 0.206126%
+
+Result for sample ('77b1546d6bac2f4b8559d9352fe7bfea',):
+  True Integral:         1.8301e+00
+  Predicted Integral:    1.8305e+00
+  Trapezoidal Integral:  1.8304e+00
+  Abs Diff (Pred-True):  3.6025e-04   Relative Error: 0.019685%
+  Abs Diff (Trap-True):  3.3487e-04   Relative Error: 0.018298%
+
+Result for sample ('56c93dedef2216f8f7825a8e91850329',):
+  True Integral:         2.1699e+00
+  Predicted Integral:    2.1720e+00
+  Trapezoidal Integral:  2.1696e+00
+  Abs Diff (Pred-True):  2.0843e-03   Relative Error: 0.096054%
+  Abs Diff (Trap-True):  3.3499e-04   Relative Error: 0.015438%
+
+Result for sample ('035e8014af3b2ad2e8d3bfe274022b24',):
+  True Integral:         1.0660e+00
+  Predicted Integral:    1.0699e+00
+  Trapezoidal Integral:  1.0631e+00
+  Abs Diff (Pred-True):  3.9116e-03   Relative Error: 0.366950%
+  Abs Diff (Trap-True):  2.8326e-03   Relative Error: 0.265727%
+
+Result for sample ('c047bc7c37a0ae61001c6eb24c4f47c1',):
+  True Integral:         2.9340e+00
+  Predicted Integral:    2.9329e+00
+  Trapezoidal Integral:  2.9369e+00
+  Abs Diff (Pred-True):  1.1065e-03   Relative Error: 0.037713%
+  Abs Diff (Trap-True):  2.8326e-03   Relative Error: 0.096543%
+
+Result for sample ('6992af529f6a75fe99ef9e186c37a071',):
+  True Integral:         3.8997e+00
+  Predicted Integral:    3.8983e+00
+  Trapezoidal Integral:  3.8988e+00
+  Abs Diff (Pred-True):  1.3356e-03   Relative Error: 0.034250%
+  Abs Diff (Trap-True):  8.7309e-04   Relative Error: 0.022389%
+
+Result for sample ('d87915a43727885f1c7c527a5302694f',):
+  True Integral:         1.0034e-01
+  Predicted Integral:    9.9081e-02
+  Trapezoidal Integral:  1.0121e-01
+  Abs Diff (Pred-True):  1.2575e-03   Relative Error: 1.253228%
+  Abs Diff (Trap-True):  8.7305e-04   Relative Error: 0.870105%
+
+Result for sample ('282efed2bb841d7cc7849c9e7df27a49',):
+  True Integral:         3.5570e+00
+  Predicted Integral:    3.5585e+00
+  Trapezoidal Integral:  3.5597e+00
+  Abs Diff (Pred-True):  1.5283e-03   Relative Error: 0.042965%
+  Abs Diff (Trap-True):  2.7242e-03   Relative Error: 0.076587%
+
+Result for sample ('f49b26ee4f23e301e62b2d7436a8cd21',):
+  True Integral:         4.4304e-01
+  Predicted Integral:    4.4431e-01
+  Trapezoidal Integral:  4.4031e-01
+  Abs Diff (Pred-True):  1.2706e-03   Relative Error: 0.286799%
+  Abs Diff (Trap-True):  2.7240e-03   Relative Error: 0.614850%
+
+Result for sample ('8d5f2687cfcbb66953606de67955eaba',):
+  True Integral:         2.4468e+00
+  Predicted Integral:    2.4474e+00
+  Trapezoidal Integral:  2.4446e+00
+  Abs Diff (Pred-True):  6.7019e-04   Relative Error: 0.027391%
+  Abs Diff (Trap-True):  2.1242e-03   Relative Error: 0.086817%
+
+Result for sample ('173c57df600f7af12807986ed45bce6e',):
+  True Integral:         1.5532e+00
+  Predicted Integral:    1.5543e+00
+  Trapezoidal Integral:  1.5554e+00
+  Abs Diff (Pred-True):  1.0645e-03   Relative Error: 0.068537%
+  Abs Diff (Trap-True):  2.1242e-03   Relative Error: 0.136760%
+
+Result for sample ('1156cd42033697f47939b8dfc832fb50',):
+  True Integral:         8.6901e-02
+  Predicted Integral:    8.7323e-02
+  Trapezoidal Integral:  9.0830e-02
+  Abs Diff (Pred-True):  4.2254e-04   Relative Error: 0.486230%
+  Abs Diff (Trap-True):  3.9297e-03   Relative Error: 4.522048%
+
+Result for sample ('95c4651f24b086902ff0ed0e78c4cee8',):
+  True Integral:         3.9131e+00
+  Predicted Integral:    3.9118e+00
+  Trapezoidal Integral:  3.9092e+00
+  Abs Diff (Pred-True):  1.2772e-03   Relative Error: 0.032639%
+  Abs Diff (Trap-True):  3.9300e-03   Relative Error: 0.100431%
+
+Result for sample ('b85e2b94563e2fdff38e88c8a8a49d8a',):
+  True Integral:         1.6214e+00
+  Predicted Integral:    1.6226e+00
+  Trapezoidal Integral:  1.6211e+00
+  Abs Diff (Pred-True):  1.2800e-03   Relative Error: 0.078943%
+  Abs Diff (Trap-True):  2.4541e-04   Relative Error: 0.015136%
+
+Result for sample ('0d6ba9f401915778a415d5676dd58ab3',):
+  True Integral:         2.3786e+00
+  Predicted Integral:    2.3795e+00
+  Trapezoidal Integral:  2.3789e+00
+  Abs Diff (Pred-True):  8.9240e-04   Relative Error: 0.037517%
+  Abs Diff (Trap-True):  2.4541e-04   Relative Error: 0.010317%
+
+Result for sample ('839c78ddf7f16baed83bcc31e518d628',):
+  True Integral:         2.6318e+00
+  Predicted Integral:    2.6340e+00
+  Trapezoidal Integral:  2.6298e+00
+  Abs Diff (Pred-True):  2.2302e-03   Relative Error: 0.084739%
+  Abs Diff (Trap-True):  2.0517e-03   Relative Error: 0.077957%
+
+Result for sample ('86d677f24d0973d2553ccf4599ed54bf',):
+  True Integral:         1.3682e+00
+  Predicted Integral:    1.3717e+00
+  Trapezoidal Integral:  1.3702e+00
+  Abs Diff (Pred-True):  3.5166e-03   Relative Error: 0.257022%
+  Abs Diff (Trap-True):  2.0517e-03   Relative Error: 0.149956%
+
+Result for sample ('24cb31199bbd5090520314a5dedf073a',):
+  True Integral:         9.5016e-01
+  Predicted Integral:    9.5178e-01
+  Trapezoidal Integral:  9.5329e-01
+  Abs Diff (Pred-True):  1.6274e-03   Relative Error: 0.171275%
+  Abs Diff (Trap-True):  3.1299e-03   Relative Error: 0.329410%
+
+Result for sample ('1cdf17f04b50bfbfa3cd111f03de8dfd',):
+  True Integral:         3.0498e+00
+  Predicted Integral:    3.0500e+00
+  Trapezoidal Integral:  3.0467e+00
+  Abs Diff (Pred-True):  1.3018e-04   Relative Error: 0.004268%
+  Abs Diff (Trap-True):  3.1300e-03   Relative Error: 0.102629%
+
+Result for sample ('9b3f3d0e0767189db422608b1202352f',):
+  True Integral:         3.9657e+00
+  Predicted Integral:    3.9699e+00
+  Trapezoidal Integral:  3.9645e+00
+  Abs Diff (Pred-True):  4.2818e-03   Relative Error: 0.107971%
+  Abs Diff (Trap-True):  1.1318e-03   Relative Error: 0.028539%
+
+Result for sample ('3d0d5a6fb1a5ff2b03980aaec5a14022',):
+  True Integral:         3.4336e-02
+  Predicted Integral:    3.4305e-02
+  Trapezoidal Integral:  3.5467e-02
+  Abs Diff (Pred-True):  3.0302e-05   Relative Error: 0.088251%
+  Abs Diff (Trap-True):  1.1316e-03   Relative Error: 3.295791%
+
+Result for sample ('93e1d29af60652e9a20d2fa7c7450947',):
+  True Integral:         2.1930e+00
+  Predicted Integral:    2.1928e+00
+  Trapezoidal Integral:  2.1955e+00
+  Abs Diff (Pred-True):  1.5497e-04   Relative Error: 0.007067%
+  Abs Diff (Trap-True):  2.5202e-03   Relative Error: 0.114923%
+
+Result for sample ('e7412a0e43dd7dfe00b41e845f0d82a7',):
+  True Integral:         1.8070e+00
+  Predicted Integral:    1.8090e+00
+  Trapezoidal Integral:  1.8045e+00
+  Abs Diff (Pred-True):  2.0076e-03   Relative Error: 0.111100%
+  Abs Diff (Trap-True):  2.5204e-03   Relative Error: 0.139477%
+
+Result for sample ('f421fb78134c4ddea980f3c6d5c8a1e8',):
+  True Integral:         6.0740e-01
+  Predicted Integral:    6.0727e-01
+  Trapezoidal Integral:  6.1159e-01
+  Abs Diff (Pred-True):  1.2583e-04   Relative Error: 0.020715%
+  Abs Diff (Trap-True):  4.1911e-03   Relative Error: 0.690006%
+
+Result for sample ('81d4f127363643e26c7f4a48faf194c6',):
+  True Integral:         3.3926e+00
+  Predicted Integral:    3.3941e+00
+  Trapezoidal Integral:  3.3884e+00
+  Abs Diff (Pred-True):  1.4689e-03   Relative Error: 0.043297%
+  Abs Diff (Trap-True):  4.1913e-03   Relative Error: 0.123542%
+
+Result for sample ('d9a75321cdb9a284e63c5033fb3d28d9',):
+  True Integral:         2.1898e+00
+  Predicted Integral:    2.1921e+00
+  Trapezoidal Integral:  2.1834e+00
+  Abs Diff (Pred-True):  2.2483e-03   Relative Error: 0.102671%
+  Abs Diff (Trap-True):  6.4164e-03   Relative Error: 0.293013%
+
+Result for sample ('53f078ff748024ed4094d97047729e09',):
+  True Integral:         1.8102e+00
+  Predicted Integral:    1.8104e+00
+  Trapezoidal Integral:  1.8166e+00
+  Abs Diff (Pred-True):  2.5606e-04   Relative Error: 0.014146%
+  Abs Diff (Trap-True):  6.4164e-03   Relative Error: 0.354460%
+
+Result for sample ('a6a068a075e6d37a96b3922d38cc56b0',):
+  True Integral:         2.3847e+00
+  Predicted Integral:    2.3832e+00
+  Trapezoidal Integral:  2.3772e+00
+  Abs Diff (Pred-True):  1.4458e-03   Relative Error: 0.060627%
+  Abs Diff (Trap-True):  7.5262e-03   Relative Error: 0.315606%
+
+Result for sample ('d04baa82e0f807196c45450786d616ab',):
+  True Integral:         1.6153e+00
+  Predicted Integral:    1.6175e+00
+  Trapezoidal Integral:  1.6228e+00
+  Abs Diff (Pred-True):  2.1504e-03   Relative Error: 0.133127%
+  Abs Diff (Trap-True):  7.5262e-03   Relative Error: 0.465930%
+
+Result for sample ('8ab022b51f3a0eb6eb1df8b59a24239d',):
+  True Integral:         1.1648e+00
+  Predicted Integral:    1.1664e+00
+  Trapezoidal Integral:  1.1531e+00
+  Abs Diff (Pred-True):  1.6155e-03   Relative Error: 0.138694%
+  Abs Diff (Trap-True):  1.1698e-02   Relative Error: 1.004274%
+
+Result for sample ('17948c227da6801974ca93df791f3d0b',):
+  True Integral:         2.8352e+00
+  Predicted Integral:    2.8354e+00
+  Trapezoidal Integral:  2.8469e+00
+  Abs Diff (Pred-True):  2.2435e-04   Relative Error: 0.007913%
+  Abs Diff (Trap-True):  1.1698e-02   Relative Error: 0.412597%
+
+Result for sample ('31a96bffd61f7ac0b86b73592d9eaf68',):
+  True Integral:         8.9484e-03
+  Predicted Integral:    8.8413e-03
+  Trapezoidal Integral:  9.5156e-03
+  Abs Diff (Pred-True):  1.0710e-04   Relative Error: 1.196901%
+  Abs Diff (Trap-True):  5.6713e-04   Relative Error: 6.337800%
+
+Result for sample ('0d14cc8eb7c6a44c6c52f531773443a7',):
+  True Integral:         3.9911e+00
+  Predicted Integral:    4.0065e+00
+  Trapezoidal Integral:  3.9905e+00
+  Abs Diff (Pred-True):  1.5424e-02   Relative Error: 0.386465%
+  Abs Diff (Trap-True):  5.6748e-04   Relative Error: 0.014219%
+
+Result for sample ('d76d017db9756c1f38bf537388cae577',):
+  True Integral:         2.7718e+00
+  Predicted Integral:    2.7726e+00
+  Trapezoidal Integral:  2.7734e+00
+  Abs Diff (Pred-True):  8.3041e-04   Relative Error: 0.029960%
+  Abs Diff (Trap-True):  1.5871e-03   Relative Error: 0.057260%
+
+Result for sample ('db00db2b66a83c72fa1b39fd5520dcb6',):
+  True Integral:         1.2282e+00
+  Predicted Integral:    1.2306e+00
+  Trapezoidal Integral:  1.2266e+00
+  Abs Diff (Pred-True):  2.3872e-03   Relative Error: 0.194358%
+  Abs Diff (Trap-True):  1.5872e-03   Relative Error: 0.129229%
+
+Result for sample ('9c469d7854cdb09290680f17cdd18fee',):
+  True Integral:         6.8118e-01
+  Predicted Integral:    6.8206e-01
+  Trapezoidal Integral:  6.8253e-01
+  Abs Diff (Pred-True):  8.7398e-04   Relative Error: 0.128304%
+  Abs Diff (Trap-True):  1.3426e-03   Relative Error: 0.197091%
+
+Result for sample ('99ff79afba68b5250e46eb1ee62ae5e6',):
+  True Integral:         3.3188e+00
+  Predicted Integral:    3.3189e+00
+  Trapezoidal Integral:  3.3175e+00
+  Abs Diff (Pred-True):  7.9870e-05   Relative Error: 0.002407%
+  Abs Diff (Trap-True):  1.3426e-03   Relative Error: 0.040455%
+
+Result for sample ('01bda8b6c1530f13e2822592fa432cf1',):
+  True Integral:         1.9647e+00
+  Predicted Integral:    1.9647e+00
+  Trapezoidal Integral:  1.9654e+00
+  Abs Diff (Pred-True):  3.4571e-06   Relative Error: 0.000176%
+  Abs Diff (Trap-True):  7.0330e-04   Relative Error: 0.035797%
+
+Result for sample ('ee810b08c686e3a3afa81ad42f7f15e8',):
+  True Integral:         2.0353e+00
+  Predicted Integral:    2.0358e+00
+  Trapezoidal Integral:  2.0346e+00
+  Abs Diff (Pred-True):  4.5681e-04   Relative Error: 0.022444%
+  Abs Diff (Trap-True):  7.0295e-04   Relative Error: 0.034538%
+
+Result for sample ('677f5179ac04287b6689172084719a2e',):
+  True Integral:         3.1721e-01
+  Predicted Integral:    3.1937e-01
+  Trapezoidal Integral:  3.2007e-01
+  Abs Diff (Pred-True):  2.1676e-03   Relative Error: 0.683333%
+  Abs Diff (Trap-True):  2.8619e-03   Relative Error: 0.902226%
+
+Result for sample ('6d56064f2449aecacdc207d96f211cb2',):
+  True Integral:         3.6828e+00
+  Predicted Integral:    3.6952e+00
+  Trapezoidal Integral:  3.6799e+00
+  Abs Diff (Pred-True):  1.2415e-02   Relative Error: 0.337113%
+  Abs Diff (Trap-True):  2.8616e-03   Relative Error: 0.077703%
+
+Result for sample ('fe5b11344b95fdcfa6af8904f85506fc',):
+  True Integral:         3.3273e+00
+  Predicted Integral:    3.3265e+00
+  Trapezoidal Integral:  3.3244e+00
+  Abs Diff (Pred-True):  8.2827e-04   Relative Error: 0.024893%
+  Abs Diff (Trap-True):  2.9013e-03   Relative Error: 0.087197%
+
+Result for sample ('5202ccf349f4fc814bf5c923c72231cc',):
+  True Integral:         6.7270e-01
+  Predicted Integral:    6.7444e-01
+  Trapezoidal Integral:  6.7561e-01
+  Abs Diff (Pred-True):  1.7362e-03   Relative Error: 0.258096%
+  Abs Diff (Trap-True):  2.9014e-03   Relative Error: 0.431309%
+
+Result for sample ('27053ac05457596eee70682dd594da4d',):
+  True Integral:         3.6292e+00
+  Predicted Integral:    3.6283e+00
+  Trapezoidal Integral:  3.6220e+00
+  Abs Diff (Pred-True):  8.7547e-04   Relative Error: 0.024123%
+  Abs Diff (Trap-True):  7.1781e-03   Relative Error: 0.197789%
+
+Result for sample ('29ca813e1fe05bcf4052522de626e4c5',):
+  True Integral:         3.7085e-01
+  Predicted Integral:    3.7207e-01
+  Trapezoidal Integral:  3.7803e-01
+  Abs Diff (Pred-True):  1.2244e-03   Relative Error: 0.330160%
+  Abs Diff (Trap-True):  7.1780e-03   Relative Error: 1.935567%
+
+Result for sample ('e649a3f2ae11371a7cfcb07663178fa7',):
+  True Integral:         1.2019e+00
+  Predicted Integral:    1.2015e+00
+  Trapezoidal Integral:  1.2059e+00
+  Abs Diff (Pred-True):  3.7599e-04   Relative Error: 0.031283%
+  Abs Diff (Trap-True):  3.9862e-03   Relative Error: 0.331656%
+
+Result for sample ('686e5fe6d8a56be54528511d1b40c93b',):
+  True Integral:         2.7981e+00
+  Predicted Integral:    2.7988e+00
+  Trapezoidal Integral:  2.7941e+00
+  Abs Diff (Pred-True):  7.2002e-04   Relative Error: 0.025733%
+  Abs Diff (Trap-True):  3.9866e-03   Relative Error: 0.142476%
+
+Result for sample ('49bee50c69079fdfde677f926724c95b',):
+  True Integral:         6.7334e-01
+  Predicted Integral:    6.7236e-01
+  Trapezoidal Integral:  6.7128e-01
+  Abs Diff (Pred-True):  9.7883e-04   Relative Error: 0.145368%
+  Abs Diff (Trap-True):  2.0631e-03   Relative Error: 0.306403%
+
+Result for sample ('3f3751d6fd56585455f6a63d05723c03',):
+  True Integral:         3.3267e+00
+  Predicted Integral:    3.3300e+00
+  Trapezoidal Integral:  3.3287e+00
+  Abs Diff (Pred-True):  3.3684e-03   Relative Error: 0.101254%
+  Abs Diff (Trap-True):  2.0629e-03   Relative Error: 0.062011%
+
+Result for sample ('d078b7e29166c4d028c853565a19235f',):
+  True Integral:         3.3382e+00
+  Predicted Integral:    3.3388e+00
+  Trapezoidal Integral:  3.3417e+00
+  Abs Diff (Pred-True):  6.1321e-04   Relative Error: 0.018369%
+  Abs Diff (Trap-True):  3.4623e-03   Relative Error: 0.103716%
+
+Result for sample ('ab5c95acf4b44ca4f65e8ca19abd5bbc',):
+  True Integral:         6.6177e-01
+  Predicted Integral:    6.6492e-01
+  Trapezoidal Integral:  6.5830e-01
+  Abs Diff (Pred-True):  3.1494e-03   Relative Error: 0.475907%
+  Abs Diff (Trap-True):  3.4620e-03   Relative Error: 0.523150%
+
+Result for sample ('65f31161e67c664d073097750d52ea87',):
+  True Integral:         2.4715e+00
+  Predicted Integral:    2.4720e+00
+  Trapezoidal Integral:  2.4706e+00
+  Abs Diff (Pred-True):  5.0020e-04   Relative Error: 0.020239%
+  Abs Diff (Trap-True):  8.6686e-04   Relative Error: 0.035075%
+
+Result for sample ('88f075d588c263435b1347c4d9af9010',):
+  True Integral:         1.5285e+00
+  Predicted Integral:    1.5314e+00
+  Trapezoidal Integral:  1.5294e+00
+  Abs Diff (Pred-True):  2.8162e-03   Relative Error: 0.184241%
+  Abs Diff (Trap-True):  8.6686e-04   Relative Error: 0.056712%
+
+Result for sample ('0a0490f39cfd8ee78c6702c182ca1e05',):
+  True Integral:         1.9943e+00
+  Predicted Integral:    1.9957e+00
+  Trapezoidal Integral:  1.9896e+00
+  Abs Diff (Pred-True):  1.4229e-03   Relative Error: 0.071347%
+  Abs Diff (Trap-True):  4.6823e-03   Relative Error: 0.234784%
+
+Result for sample ('bf9c480a2edb46c3f81bcbcf358633c4',):
+  True Integral:         2.0057e+00
+  Predicted Integral:    2.0121e+00
+  Trapezoidal Integral:  2.0104e+00
+  Abs Diff (Pred-True):  6.4297e-03   Relative Error: 0.320570%
+  Abs Diff (Trap-True):  4.6822e-03   Relative Error: 0.233444%
+
+Result for sample ('6ce56bb6bc6122f0d93eee39e4ad3bb5',):
+  True Integral:         1.9052e+00
+  Predicted Integral:    1.9068e+00
+  Trapezoidal Integral:  1.9014e+00
+  Abs Diff (Pred-True):  1.6028e-03   Relative Error: 0.084128%
+  Abs Diff (Trap-True):  3.7749e-03   Relative Error: 0.198142%
+
+Result for sample ('ad55bb79fd403430527376f6fb6b1f47',):
+  True Integral:         2.0948e+00
+  Predicted Integral:    2.0960e+00
+  Trapezoidal Integral:  2.0986e+00
+  Abs Diff (Pred-True):  1.1890e-03   Relative Error: 0.056758%
+  Abs Diff (Trap-True):  3.7749e-03   Relative Error: 0.180200%
+
+Result for sample ('6e76880149bc49a16798075ad45f1f56',):
+  True Integral:         2.6242e-01
+  Predicted Integral:    2.6284e-01
+  Trapezoidal Integral:  2.6384e-01
+  Abs Diff (Pred-True):  4.1676e-04   Relative Error: 0.158811%
+  Abs Diff (Trap-True):  1.4183e-03   Relative Error: 0.540475%
+
+Result for sample ('4b71129f6f00b77b214cb4a586b51da9',):
+  True Integral:         3.7376e+00
+  Predicted Integral:    3.7369e+00
+  Trapezoidal Integral:  3.7362e+00
+  Abs Diff (Pred-True):  7.1216e-04   Relative Error: 0.019054%
+  Abs Diff (Trap-True):  1.4180e-03   Relative Error: 0.037940%
+
+Result for sample ('f832e235897d8989d71d31ce8f768593',):
+  True Integral:         3.4337e+00
+  Predicted Integral:    3.4347e+00
+  Trapezoidal Integral:  3.4334e+00
+  Abs Diff (Pred-True):  9.4914e-04   Relative Error: 0.027642%
+  Abs Diff (Trap-True):  3.3364e-04   Relative Error: 0.009717%
+
+Result for sample ('69872bcdee60e679c21d79c10ed5236a',):
+  True Integral:         5.6628e-01
+  Predicted Integral:    5.6701e-01
+  Trapezoidal Integral:  5.6661e-01
+  Abs Diff (Pred-True):  7.3659e-04   Relative Error: 0.130077%
+  Abs Diff (Trap-True):  3.3340e-04   Relative Error: 0.058876%
+
+Result for sample ('89a74adea4968dd705f872347f7c6ce0',):
+  True Integral:         6.2298e-01
+  Predicted Integral:    6.2455e-01
+  Trapezoidal Integral:  6.2024e-01
+  Abs Diff (Pred-True):  1.5668e-03   Relative Error: 0.251495%
+  Abs Diff (Trap-True):  2.7384e-03   Relative Error: 0.439561%
+
+Result for sample ('c4606645bd183ca45b8e070f62c9bc24',):
+  True Integral:         3.3770e+00
+  Predicted Integral:    3.3773e+00
+  Trapezoidal Integral:  3.3798e+00
+  Abs Diff (Pred-True):  2.4700e-04   Relative Error: 0.007314%
+  Abs Diff (Trap-True):  2.7384e-03   Relative Error: 0.081089%
+
+Result for sample ('473d09fe0ed4703eb4d7c18968a90033',):
+  True Integral:         2.7137e+00
+  Predicted Integral:    2.7163e+00
+  Trapezoidal Integral:  2.7085e+00
+  Abs Diff (Pred-True):  2.5940e-03   Relative Error: 0.095589%
+  Abs Diff (Trap-True):  5.2161e-03   Relative Error: 0.192214%
+
+Result for sample ('a3909e4e7a67ffed17809e0a3abb7acd',):
+  True Integral:         1.2863e+00
+  Predicted Integral:    1.2893e+00
+  Trapezoidal Integral:  1.2915e+00
+  Abs Diff (Pred-True):  2.9771e-03   Relative Error: 0.231448%
+  Abs Diff (Trap-True):  5.2161e-03   Relative Error: 0.405511%
+
+Result for sample ('142eb88666275710c9f8ec08d1f33a79',):
+  True Integral:         5.9865e-03
+  Predicted Integral:    5.5162e-03
+  Trapezoidal Integral:  6.0554e-03
+  Abs Diff (Pred-True):  4.7031e-04   Relative Error: 7.856144%
+  Abs Diff (Trap-True):  6.8862e-05   Relative Error: 1.150293%
+
+Result for sample ('25befb468d8030f52093e0227610f771',):
+  True Integral:         3.9940e+00
+  Predicted Integral:    4.0066e+00
+  Trapezoidal Integral:  3.9939e+00
+  Abs Diff (Pred-True):  1.2542e-02   Relative Error: 0.314008%
+  Abs Diff (Trap-True):  6.8911e-05   Relative Error: 0.001725%
+
+Result for sample ('804292591070c08cd22d271991be33e6',):
+  True Integral:         1.4570e+00
+  Predicted Integral:    1.4567e+00
+  Trapezoidal Integral:  1.4481e+00
+  Abs Diff (Pred-True):  3.3271e-04   Relative Error: 0.022835%
+  Abs Diff (Trap-True):  8.9214e-03   Relative Error: 0.612303%
+
+Result for sample ('dbdc141a330399c558f69b8930cf23b1',):
+  True Integral:         2.5430e+00
+  Predicted Integral:    2.5464e+00
+  Trapezoidal Integral:  2.5519e+00
+  Abs Diff (Pred-True):  3.4320e-03   Relative Error: 0.134961%
+  Abs Diff (Trap-True):  8.9215e-03   Relative Error: 0.350828%
+
+Result for sample ('2da20de77709c9d608a6a56e1d4b1eb0',):
+  True Integral:         1.0047e+00
+  Predicted Integral:    1.0049e+00
+  Trapezoidal Integral:  1.0069e+00
+  Abs Diff (Pred-True):  1.6749e-04   Relative Error: 0.016670%
+  Abs Diff (Trap-True):  2.2101e-03   Relative Error: 0.219974%
+
+Result for sample ('d04e22c93df2e0b7448fdc01fb86ce93',):
+  True Integral:         2.9953e+00
+  Predicted Integral:    2.9969e+00
+  Trapezoidal Integral:  2.9931e+00
+  Abs Diff (Pred-True):  1.5776e-03   Relative Error: 0.052670%
+  Abs Diff (Trap-True):  2.2100e-03   Relative Error: 0.073782%
+
+Result for sample ('d668be623c03abfb66a130eac04e054b',):
+  True Integral:         3.9710e+00
+  Predicted Integral:    3.9737e+00
+  Trapezoidal Integral:  3.9680e+00
+  Abs Diff (Pred-True):  2.7010e-03   Relative Error: 0.068019%
+  Abs Diff (Trap-True):  3.0190e-03   Relative Error: 0.076027%
+
+Result for sample ('6c32801fc64e154f0362c3339c9cc49e',):
+  True Integral:         2.8988e-02
+  Predicted Integral:    2.8406e-02
+  Trapezoidal Integral:  3.2007e-02
+  Abs Diff (Pred-True):  5.8258e-04   Relative Error: 2.009732%
+  Abs Diff (Trap-True):  3.0188e-03   Relative Error: 10.413954%
+
+Result for sample ('e2323e9290ef12c5bfba2f1515f767d8',):
+  True Integral:         1.0212e+00
+  Predicted Integral:    1.0235e+00
+  Trapezoidal Integral:  1.0216e+00
+  Abs Diff (Pred-True):  2.2384e-03   Relative Error: 0.219185%
+  Abs Diff (Trap-True):  3.9071e-04   Relative Error: 0.038259%
+
+Result for sample ('8cbe701127afc8b40c0d54316bd35b9d',):
+  True Integral:         2.9788e+00
+  Predicted Integral:    2.9798e+00
+  Trapezoidal Integral:  2.9784e+00
+  Abs Diff (Pred-True):  1.0786e-03   Relative Error: 0.036210%
+  Abs Diff (Trap-True):  3.9083e-04   Relative Error: 0.013121%
+
+Result for sample ('838f74c61338c8ea8af9643df83f4c70',):
+  True Integral:         1.4880e-01
+  Predicted Integral:    1.4837e-01
+  Trapezoidal Integral:  1.4965e-01
+  Abs Diff (Pred-True):  4.3204e-04   Relative Error: 0.290346%
+  Abs Diff (Trap-True):  8.5057e-04   Relative Error: 0.571604%
+
+Result for sample ('9c1b26b3e31bd49ead5f7884de77b5fc',):
+  True Integral:         3.8512e+00
+  Predicted Integral:    3.8518e+00
+  Trapezoidal Integral:  3.8503e+00
+  Abs Diff (Pred-True):  5.8079e-04   Relative Error: 0.015081%
+  Abs Diff (Trap-True):  8.5027e-04   Relative Error: 0.022078%
+
+Result for sample ('ee748f13b34ecbf19aa554dc18ff9f94',):
+  True Integral:         2.5046e+00
+  Predicted Integral:    2.5062e+00
+  Trapezoidal Integral:  2.5052e+00
+  Abs Diff (Pred-True):  1.6289e-03   Relative Error: 0.065035%
+  Abs Diff (Trap-True):  5.9384e-04   Relative Error: 0.023710%
+
+Result for sample ('3f41105791b3843f1ec8deaf7e078ea4',):
+  True Integral:         1.4954e+00
+  Predicted Integral:    1.4989e+00
+  Trapezoidal Integral:  1.4948e+00
+  Abs Diff (Pred-True):  3.4798e-03   Relative Error: 0.232702%
+  Abs Diff (Trap-True):  5.9396e-04   Relative Error: 0.039719%
+
+Result for sample ('8f72f34de51ff685ed50414a6d0adec4',):
+  True Integral:         2.7328e+00
+  Predicted Integral:    2.7331e+00
+  Trapezoidal Integral:  2.7353e+00
+  Abs Diff (Pred-True):  3.0422e-04   Relative Error: 0.011132%
+  Abs Diff (Trap-True):  2.5251e-03   Relative Error: 0.092401%
+
+Result for sample ('7af947d1f67b48029a2cfc3bdc1973dc',):
+  True Integral:         1.2672e+00
+  Predicted Integral:    1.2689e+00
+  Trapezoidal Integral:  1.2647e+00
+  Abs Diff (Pred-True):  1.6413e-03   Relative Error: 0.129517%
+  Abs Diff (Trap-True):  2.5250e-03   Relative Error: 0.199252%
+
+Result for sample ('67634ad1a110c379b98d3d90e16443df',):
+  True Integral:         1.2916e+00
+  Predicted Integral:    1.2938e+00
+  Trapezoidal Integral:  1.2950e+00
+  Abs Diff (Pred-True):  2.2230e-03   Relative Error: 0.172114%
+  Abs Diff (Trap-True):  3.3853e-03   Relative Error: 0.262104%
+
+Result for sample ('2ad0dde8006923032f14fbf385d78736',):
+  True Integral:         2.7084e+00
+  Predicted Integral:    2.7086e+00
+  Trapezoidal Integral:  2.7050e+00
+  Abs Diff (Pred-True):  2.0885e-04   Relative Error: 0.007711%
+  Abs Diff (Trap-True):  3.3853e-03   Relative Error: 0.124994%
+
+Result for sample ('07cff5fb83015ae7cee8c15deb62d31d',):
+  True Integral:         2.3116e+00
+  Predicted Integral:    2.3139e+00
+  Trapezoidal Integral:  2.3088e+00
+  Abs Diff (Pred-True):  2.2898e-03   Relative Error: 0.099054%
+  Abs Diff (Trap-True):  2.8220e-03   Relative Error: 0.122077%
+
+Result for sample ('40e945e93ae5ad078168b5ad253d638c',):
+  True Integral:         1.6884e+00
+  Predicted Integral:    1.6882e+00
+  Trapezoidal Integral:  1.6912e+00
+  Abs Diff (Pred-True):  1.1921e-04   Relative Error: 0.007061%
+  Abs Diff (Trap-True):  2.8220e-03   Relative Error: 0.167144%
+
+Result for sample ('2babab3a8f8d28c707d242eb8b970f17',):
+  True Integral:         3.9858e+00
+  Predicted Integral:    3.9815e+00
+  Trapezoidal Integral:  3.9888e+00
+  Abs Diff (Pred-True):  4.3201e-03   Relative Error: 0.108389%
+  Abs Diff (Trap-True):  2.9762e-03   Relative Error: 0.074671%
+
+Result for sample ('6d1ce5810f395c9cf240fab54e1cd0f6',):
+  True Integral:         1.4222e-02
+  Predicted Integral:    1.4371e-02
+  Trapezoidal Integral:  1.1246e-02
+  Abs Diff (Pred-True):  1.4878e-04   Relative Error: 1.046154%
+  Abs Diff (Trap-True):  2.9763e-03   Relative Error: 20.927318%
+
+Result for sample ('458e52c72537b1cc3d96d20b225963ff',):
+  True Integral:         3.1650e+00
+  Predicted Integral:    3.1670e+00
+  Trapezoidal Integral:  3.1618e+00
+  Abs Diff (Pred-True):  1.9984e-03   Relative Error: 0.063141%
+  Abs Diff (Trap-True):  3.2512e-03   Relative Error: 0.102724%
+
+Result for sample ('c462ab1cc4dd0821f5a42dd03d2c9dc0',):
+  True Integral:         8.3498e-01
+  Predicted Integral:    8.3586e-01
+  Trapezoidal Integral:  8.3824e-01
+  Abs Diff (Pred-True):  8.7202e-04   Relative Error: 0.104435%
+  Abs Diff (Trap-True):  3.2511e-03   Relative Error: 0.389362%
+
+Result for sample ('7553acc3eb6eea72ecbcb77434cf89fb',):
+  True Integral:         2.6063e+00
+  Predicted Integral:    2.6074e+00
+  Trapezoidal Integral:  2.6021e+00
+  Abs Diff (Pred-True):  1.1692e-03   Relative Error: 0.044861%
+  Abs Diff (Trap-True):  4.1904e-03   Relative Error: 0.160781%
+
+Result for sample ('a3c339d4e5c433614d111453b8383c19',):
+  True Integral:         1.3937e+00
+  Predicted Integral:    1.3965e+00
+  Trapezoidal Integral:  1.3979e+00
+  Abs Diff (Pred-True):  2.7213e-03   Relative Error: 0.195253%
+  Abs Diff (Trap-True):  4.1906e-03   Relative Error: 0.300675%
+
+Result for sample ('9409f901f5c24b049404740f2363b6d1',):
+  True Integral:         3.2906e+00
+  Predicted Integral:    3.2925e+00
+  Trapezoidal Integral:  3.2863e+00
+  Abs Diff (Pred-True):  1.8182e-03   Relative Error: 0.055253%
+  Abs Diff (Trap-True):  4.3025e-03   Relative Error: 0.130748%
+
+Result for sample ('2d33c4a50847c847703adbd3bda8653d',):
+  True Integral:         7.0937e-01
+  Predicted Integral:    7.1037e-01
+  Trapezoidal Integral:  7.1367e-01
+  Abs Diff (Pred-True):  1.0018e-03   Relative Error: 0.141230%
+  Abs Diff (Trap-True):  4.3023e-03   Relative Error: 0.606504%
+
+Result for sample ('cb3d1f1fffed9b756f6fd4632607b709',):
+  True Integral:         1.6641e+00
+  Predicted Integral:    1.6643e+00
+  Trapezoidal Integral:  1.6661e+00
+  Abs Diff (Pred-True):  2.6000e-04   Relative Error: 0.015624%
+  Abs Diff (Trap-True):  2.0332e-03   Relative Error: 0.122183%
+
+Result for sample ('de4ee1490683d2539547e0ae28ab0e55',):
+  True Integral:         2.3359e+00
+  Predicted Integral:    2.3371e+00
+  Trapezoidal Integral:  2.3339e+00
+  Abs Diff (Pred-True):  1.1673e-03   Relative Error: 0.049971%
+  Abs Diff (Trap-True):  2.0332e-03   Relative Error: 0.087039%
+
+Result for sample ('6ac7fcad207cd6a69a03a4e35be81c86',):
+  True Integral:         2.6566e+00
+  Predicted Integral:    2.6590e+00
+  Trapezoidal Integral:  2.6574e+00
+  Abs Diff (Pred-True):  2.4631e-03   Relative Error: 0.092717%
+  Abs Diff (Trap-True):  8.5828e-04   Relative Error: 0.032308%
+
+Result for sample ('328d1dda15e7a4d03e9b21ce4162ac9d',):
+  True Integral:         1.3434e+00
+  Predicted Integral:    1.3477e+00
+  Trapezoidal Integral:  1.3426e+00
+  Abs Diff (Pred-True):  4.2375e-03   Relative Error: 0.315429%
+  Abs Diff (Trap-True):  8.5828e-04   Relative Error: 0.063888%
+
+Result for sample ('1657ff81fcfb17be2b83480110b5ca94',):
+  True Integral:         3.6789e+00
+  Predicted Integral:    3.6766e+00
+  Trapezoidal Integral:  3.6825e+00
+  Abs Diff (Pred-True):  2.3255e-03   Relative Error: 0.063212%
+  Abs Diff (Trap-True):  3.5926e-03   Relative Error: 0.097652%
+
+Result for sample ('6d01275578eb8170fdca791afdd5f8ac',):
+  True Integral:         3.2107e-01
+  Predicted Integral:    3.2276e-01
+  Trapezoidal Integral:  3.1747e-01
+  Abs Diff (Pred-True):  1.6980e-03   Relative Error: 0.528849%
+  Abs Diff (Trap-True):  3.5926e-03   Relative Error: 1.118967%
+
+Result for sample ('8bfc82e3276a94df7655ef733cf054e4',):
+  True Integral:         2.9270e+00
+  Predicted Integral:    2.9261e+00
+  Trapezoidal Integral:  2.9299e+00
+  Abs Diff (Pred-True):  9.3031e-04   Relative Error: 0.031783%
+  Abs Diff (Trap-True):  2.8993e-03   Relative Error: 0.099052%
+
+Result for sample ('9168dfc6cd682dfe0534c56b2caadebe',):
+  True Integral:         1.0730e+00
+  Predicted Integral:    1.0756e+00
+  Trapezoidal Integral:  1.0701e+00
+  Abs Diff (Pred-True):  2.6758e-03   Relative Error: 0.249380%
+  Abs Diff (Trap-True):  2.8994e-03   Relative Error: 0.270222%
+
+Result for sample ('11f5e52a62eb58167b79912c4e48701d',):
+  True Integral:         1.7330e+00
+  Predicted Integral:    1.7386e+00
+  Trapezoidal Integral:  1.7422e+00
+  Abs Diff (Pred-True):  5.5821e-03   Relative Error: 0.322109%
+  Abs Diff (Trap-True):  9.2295e-03   Relative Error: 0.532579%
+
+Result for sample ('720b9efbd5d0f2de3ffe7f02e24a3e34',):
+  True Integral:         2.2670e+00
+  Predicted Integral:    2.2660e+00
+  Trapezoidal Integral:  2.2578e+00
+  Abs Diff (Pred-True):  1.0059e-03   Relative Error: 0.044371%
+  Abs Diff (Trap-True):  9.2295e-03   Relative Error: 0.407122%
+
+Result for sample ('c82f876b23fa31c72177d31b80b5f1c2',):
+  True Integral:         2.8825e+00
+  Predicted Integral:    2.8893e+00
+  Trapezoidal Integral:  2.8806e+00
+  Abs Diff (Pred-True):  6.7806e-03   Relative Error: 0.235236%
+  Abs Diff (Trap-True):  1.8494e-03   Relative Error: 0.064162%
+
+Result for sample ('729340e0bc7e2afb7db25c90f9f2afec',):
+  True Integral:         1.1175e+00
+  Predicted Integral:    1.1226e+00
+  Trapezoidal Integral:  1.1194e+00
+  Abs Diff (Pred-True):  5.0620e-03   Relative Error: 0.452963%
+  Abs Diff (Trap-True):  1.8496e-03   Relative Error: 0.165505%
+
+Result for sample ('293597555ed19cb887d87ae57e7826fc',):
+  True Integral:         3.7802e+00
+  Predicted Integral:    3.7802e+00
+  Trapezoidal Integral:  3.7829e+00
+  Abs Diff (Pred-True):  3.5763e-06   Relative Error: 0.000095%
+  Abs Diff (Trap-True):  2.7113e-03   Relative Error: 0.071725%
+
+Result for sample ('a173aab31dbd8b2839920d523816a925',):
+  True Integral:         2.1984e-01
+  Predicted Integral:    2.2018e-01
+  Trapezoidal Integral:  2.1713e-01
+  Abs Diff (Pred-True):  3.4118e-04   Relative Error: 0.155194%
+  Abs Diff (Trap-True):  2.7112e-03   Relative Error: 1.233259%
+
+Result for sample ('67be8edead5437e17bb8731a539d8125',):
+  True Integral:         2.2535e-01
+  Predicted Integral:    2.2484e-01
+  Trapezoidal Integral:  2.2664e-01
+  Abs Diff (Pred-True):  5.0965e-04   Relative Error: 0.226157%
+  Abs Diff (Trap-True):  1.2915e-03   Relative Error: 0.573112%
+
+Result for sample ('749c28c0d9bc93a13f19b7d402eef98b',):
+  True Integral:         3.7746e+00
+  Predicted Integral:    3.7727e+00
+  Trapezoidal Integral:  3.7734e+00
+  Abs Diff (Pred-True):  1.9431e-03   Relative Error: 0.051478%
+  Abs Diff (Trap-True):  1.2918e-03   Relative Error: 0.034223%
+
+Result for sample ('f3587448de9c5fad73fbc6b3e4f735a3',):
+  True Integral:         2.3581e-02
+  Predicted Integral:    2.2942e-02
+  Trapezoidal Integral:  2.5087e-02
+  Abs Diff (Pred-True):  6.3928e-04   Relative Error: 2.711018%
+  Abs Diff (Trap-True):  1.5055e-03   Relative Error: 6.384567%
+
+Result for sample ('0c917fcb7c4eb788931e688823aa5b5a',):
+  True Integral:         3.9764e+00
+  Predicted Integral:    3.9801e+00
+  Trapezoidal Integral:  3.9749e+00
+  Abs Diff (Pred-True):  3.7274e-03   Relative Error: 0.093739%
+  Abs Diff (Trap-True):  1.5057e-03   Relative Error: 0.037866%
+
+Result for sample ('373bc7fbf3dfabf8c8d9bb94bcfefd89',):
+  True Integral:         2.1174e+00
+  Predicted Integral:    2.1205e+00
+  Trapezoidal Integral:  2.1176e+00
+  Abs Diff (Pred-True):  3.1211e-03   Relative Error: 0.147407%
+  Abs Diff (Trap-True):  2.8384e-04   Relative Error: 0.013406%
+
+Result for sample ('759668f0f69846f9a5aa195ba0968f7b',):
+  True Integral:         1.8826e+00
+  Predicted Integral:    1.8833e+00
+  Trapezoidal Integral:  1.8824e+00
+  Abs Diff (Pred-True):  7.0310e-04   Relative Error: 0.037346%
+  Abs Diff (Trap-True):  2.8373e-04   Relative Error: 0.015071%
+
+Result for sample ('018fc86be180e6f9a557c91cce5e4796',):
+  True Integral:         8.4818e-01
+  Predicted Integral:    8.5089e-01
+  Trapezoidal Integral:  8.3910e-01
+  Abs Diff (Pred-True):  2.7146e-03   Relative Error: 0.320055%
+  Abs Diff (Trap-True):  9.0766e-03   Relative Error: 1.070125%
+
+Result for sample ('ef54dd2bae16daa3ee66b9e1d995cf31',):
+  True Integral:         3.1518e+00
+  Predicted Integral:    3.1453e+00
+  Trapezoidal Integral:  3.1609e+00
+  Abs Diff (Pred-True):  6.4771e-03   Relative Error: 0.205504%
+  Abs Diff (Trap-True):  9.0766e-03   Relative Error: 0.287980%
+
+Result for sample ('786b1cedf5879f91e4377896a1a547cd',):
+  True Integral:         8.7461e-01
+  Predicted Integral:    8.7478e-01
+  Trapezoidal Integral:  8.7976e-01
+  Abs Diff (Pred-True):  1.7470e-04   Relative Error: 0.019975%
+  Abs Diff (Trap-True):  5.1527e-03   Relative Error: 0.589149%
+
+Result for sample ('4b013aa0d15e09326f8aa776fe3026ce',):
+  True Integral:         3.1254e+00
+  Predicted Integral:    3.1243e+00
+  Trapezoidal Integral:  3.1202e+00
+  Abs Diff (Pred-True):  1.1325e-03   Relative Error: 0.036235%
+  Abs Diff (Trap-True):  5.1526e-03   Relative Error: 0.164863%
+
+Result for sample ('efa46049868439318899614fd5e68007',):
+  True Integral:         8.8337e-01
+  Predicted Integral:    8.8461e-01
+  Trapezoidal Integral:  8.8408e-01
+  Abs Diff (Pred-True):  1.2390e-03   Relative Error: 0.140258%
+  Abs Diff (Trap-True):  7.0865e-04   Relative Error: 0.080221%
+
+Result for sample ('106918d84b53538173e528d7a657c538',):
+  True Integral:         3.1166e+00
+  Predicted Integral:    3.1180e+00
+  Trapezoidal Integral:  3.1159e+00
+  Abs Diff (Pred-True):  1.3256e-03   Relative Error: 0.042533%
+  Abs Diff (Trap-True):  7.0859e-04   Relative Error: 0.022736%
+
+Result for sample ('f6ab9deb04aeb466076f9263f19bc8f1',):
+  True Integral:         3.1614e+00
+  Predicted Integral:    3.1598e+00
+  Trapezoidal Integral:  3.1635e+00
+  Abs Diff (Pred-True):  1.5867e-03   Relative Error: 0.050189%
+  Abs Diff (Trap-True):  2.0628e-03   Relative Error: 0.065248%
+
+Result for sample ('95d4786635975dc10a58d92f43fcc5e7',):
+  True Integral:         8.3857e-01
+  Predicted Integral:    8.3979e-01
+  Trapezoidal Integral:  8.3651e-01
+  Abs Diff (Pred-True):  1.2187e-03   Relative Error: 0.145335%
+  Abs Diff (Trap-True):  2.0628e-03   Relative Error: 0.245989%
+
+Result for sample ('1489e3d999e4c483db21335d0e201086',):
+  True Integral:         1.5075e+00
+  Predicted Integral:    1.5103e+00
+  Trapezoidal Integral:  1.5087e+00
+  Abs Diff (Pred-True):  2.8211e-03   Relative Error: 0.187137%
+  Abs Diff (Trap-True):  1.1486e-03   Relative Error: 0.076190%
+
+Result for sample ('9ce6ea24eee6c0f986ee8cdbcefcf31f',):
+  True Integral:         2.4925e+00
+  Predicted Integral:    2.4970e+00
+  Trapezoidal Integral:  2.4913e+00
+  Abs Diff (Pred-True):  4.5142e-03   Relative Error: 0.181112%
+  Abs Diff (Trap-True):  1.1484e-03   Relative Error: 0.046076%
+
+Result for sample ('c80eb7941cce1e56f9b6abee8abd4831',):
+  True Integral:         4.5406e-01
+  Predicted Integral:    4.5453e-01
+  Trapezoidal Integral:  4.4896e-01
+  Abs Diff (Pred-True):  4.6915e-04   Relative Error: 0.103322%
+  Abs Diff (Trap-True):  5.1020e-03   Relative Error: 1.123627%
+
+Result for sample ('6adcab3f7a405aece715968ffc7fc43e',):
+  True Integral:         3.5459e+00
+  Predicted Integral:    3.5439e+00
+  Trapezoidal Integral:  3.5510e+00
+  Abs Diff (Pred-True):  1.9875e-03   Relative Error: 0.056049%
+  Abs Diff (Trap-True):  5.1020e-03   Relative Error: 0.143882%
+
+Result for sample ('166879473ebfd187b3bdf688d6885c44',):
+  True Integral:         3.6426e-01
+  Predicted Integral:    3.6525e-01
+  Trapezoidal Integral:  3.6765e-01
+  Abs Diff (Pred-True):  9.8926e-04   Relative Error: 0.271579%
+  Abs Diff (Trap-True):  3.3848e-03   Relative Error: 0.929214%
+
+Result for sample ('5d3504671d77992b0b3cce20de0b7a8b',):
+  True Integral:         3.6357e+00
+  Predicted Integral:    3.6385e+00
+  Trapezoidal Integral:  3.6324e+00
+  Abs Diff (Pred-True):  2.7392e-03   Relative Error: 0.075341%
+  Abs Diff (Trap-True):  3.3847e-03   Relative Error: 0.093096%
+
+Result for sample ('990b4917eb2488de96a5e748738c8968',):
+  True Integral:         1.9153e+00
+  Predicted Integral:    1.9171e+00
+  Trapezoidal Integral:  1.9126e+00
+  Abs Diff (Pred-True):  1.8206e-03   Relative Error: 0.095056%
+  Abs Diff (Trap-True):  2.6284e-03   Relative Error: 0.137235%
+
+Result for sample ('eb8251e217480163e8955dd4c1674799',):
+  True Integral:         2.0847e+00
+  Predicted Integral:    2.0849e+00
+  Trapezoidal Integral:  2.0874e+00
+  Abs Diff (Pred-True):  1.7715e-04   Relative Error: 0.008497%
+  Abs Diff (Trap-True):  2.6284e-03   Relative Error: 0.126079%
+
+Result for sample ('5b57c9c4290a1752a18fb9fb0b616adf',):
+  True Integral:         3.9858e+00
+  Predicted Integral:    3.9892e+00
+  Trapezoidal Integral:  3.9870e+00
+  Abs Diff (Pred-True):  3.3360e-03   Relative Error: 0.083696%
+  Abs Diff (Trap-True):  1.2077e-03   Relative Error: 0.030301%
+
+Result for sample ('d56f124f6c3eb5ddecde2cb05305da50',):
+  True Integral:         1.4183e-02
+  Predicted Integral:    1.4795e-02
+  Trapezoidal Integral:  1.2976e-02
+  Abs Diff (Pred-True):  6.1117e-04   Relative Error: 4.309078%
+  Abs Diff (Trap-True):  1.2076e-03   Relative Error: 8.514205%
+
+Result for sample ('793476b5bf8b0388494385921989210f',):
+  True Integral:         4.4696e-03
+  Predicted Integral:    6.0343e-03
+  Trapezoidal Integral:  4.3253e-03
+  Abs Diff (Pred-True):  1.5647e-03   Relative Error: 35.006974%
+  Abs Diff (Trap-True):  1.4438e-04   Relative Error: 3.230220%
+
+Result for sample ('ebcf024feb2413626876e6e20712f774',):
+  True Integral:         3.9955e+00
+  Predicted Integral:    4.0138e+00
+  Trapezoidal Integral:  3.9957e+00
+  Abs Diff (Pred-True):  1.8291e-02   Relative Error: 0.457798%
+  Abs Diff (Trap-True):  1.4461e-04   Relative Error: 0.003619%
+
+Result for sample ('acf6c538f233fe58c720806b20232fde',):
+  True Integral:         1.1600e+00
+  Predicted Integral:    1.1605e+00
+  Trapezoidal Integral:  1.1618e+00
+  Abs Diff (Pred-True):  4.6110e-04   Relative Error: 0.039750%
+  Abs Diff (Trap-True):  1.7744e-03   Relative Error: 0.152966%
+
+Result for sample ('db4de0c9e8fd8e8333fbcef7760f8114',):
+  True Integral:         2.8400e+00
+  Predicted Integral:    2.8395e+00
+  Trapezoidal Integral:  2.8382e+00
+  Abs Diff (Pred-True):  4.9615e-04   Relative Error: 0.017470%
+  Abs Diff (Trap-True):  1.7744e-03   Relative Error: 0.062478%
+
+Result for sample ('d24d366d52547f6ac1f54bdbc012c517',):
+  True Integral:         3.0626e+00
+  Predicted Integral:    3.0642e+00
+  Trapezoidal Integral:  3.0657e+00
+  Abs Diff (Pred-True):  1.6067e-03   Relative Error: 0.052462%
+  Abs Diff (Trap-True):  3.1698e-03   Relative Error: 0.103501%
+
+Result for sample ('b6ac2f2535db910886dd0c3be26fc7b1',):
+  True Integral:         9.3743e-01
+  Predicted Integral:    9.3972e-01
+  Trapezoidal Integral:  9.3426e-01
+  Abs Diff (Pred-True):  2.2953e-03   Relative Error: 0.244847%
+  Abs Diff (Trap-True):  3.1700e-03   Relative Error: 0.338164%
+
+Result for sample ('86791adeb24851ae9bd3f4419416f295',):
+  True Integral:         3.4830e+00
+  Predicted Integral:    3.4841e+00
+  Trapezoidal Integral:  3.4827e+00
+  Abs Diff (Pred-True):  1.1029e-03   Relative Error: 0.031666%
+  Abs Diff (Trap-True):  3.4185e-04   Relative Error: 0.009815%
+
+Result for sample ('7ab7046e3fa23fd4161c3d644e6640d6',):
+  True Integral:         5.1696e-01
+  Predicted Integral:    5.1881e-01
+  Trapezoidal Integral:  5.1730e-01
+  Abs Diff (Pred-True):  1.8529e-03   Relative Error: 0.358429%
+  Abs Diff (Trap-True):  3.4179e-04   Relative Error: 0.066115%
+
+Result for sample ('d38363ef337fa0e6d9a3526c2462b835',):
+  True Integral:         5.4573e-01
+  Predicted Integral:    5.4703e-01
+  Trapezoidal Integral:  5.4325e-01
+  Abs Diff (Pred-True):  1.2993e-03   Relative Error: 0.238089%
+  Abs Diff (Trap-True):  2.4769e-03   Relative Error: 0.453863%
+
+Result for sample ('885f47fd2b2bb7df443d41f1b67dcdca',):
+  True Integral:         3.4543e+00
+  Predicted Integral:    3.4493e+00
+  Trapezoidal Integral:  3.4567e+00
+  Abs Diff (Pred-True):  4.9524e-03   Relative Error: 0.143371%
+  Abs Diff (Trap-True):  2.4768e-03   Relative Error: 0.071703%
+
+Result for sample ('0844075d65fda1cdd6bb94ed2ee20fbb',):
+  True Integral:         1.2191e+00
+  Predicted Integral:    1.2218e+00
+  Trapezoidal Integral:  1.2240e+00
+  Abs Diff (Pred-True):  2.7344e-03   Relative Error: 0.224305%
+  Abs Diff (Trap-True):  4.9827e-03   Relative Error: 0.408728%
+
+Result for sample ('e60582d89a03115c202373d593f22304',):
+  True Integral:         2.7809e+00
+  Predicted Integral:    2.7806e+00
+  Trapezoidal Integral:  2.7760e+00
+  Abs Diff (Pred-True):  3.3736e-04   Relative Error: 0.012131%
+  Abs Diff (Trap-True):  4.9825e-03   Relative Error: 0.179168%
+
+Result for sample ('a4c9aa886ea3f320689260625bf18213',):
+  True Integral:         1.0754e+00
+  Predicted Integral:    1.0756e+00
+  Trapezoidal Integral:  1.0753e+00
+  Abs Diff (Pred-True):  2.3878e-04   Relative Error: 0.022204%
+  Abs Diff (Trap-True):  1.2379e-04   Relative Error: 0.011511%
+
+Result for sample ('a9e5c12b7b68742657a86c52bd5ebca1',):
+  True Integral:         2.9246e+00
+  Predicted Integral:    2.9265e+00
+  Trapezoidal Integral:  2.9247e+00
+  Abs Diff (Pred-True):  1.8542e-03   Relative Error: 0.063399%
+  Abs Diff (Trap-True):  1.2391e-04   Relative Error: 0.004237%
+
+Result for sample ('742b7e6e1ef15f1a6f194b635bff9c23',):
+  True Integral:         1.5311e+00
+  Predicted Integral:    1.5345e+00
+  Trapezoidal Integral:  1.5346e+00
+  Abs Diff (Pred-True):  3.4618e-03   Relative Error: 0.226106%
+  Abs Diff (Trap-True):  3.5340e-03   Relative Error: 0.230819%
+
+Result for sample ('e0356ac3ed3506a9e2074c6f417ea81c',):
+  True Integral:         2.4689e+00
+  Predicted Integral:    2.4723e+00
+  Trapezoidal Integral:  2.4654e+00
+  Abs Diff (Pred-True):  3.3295e-03   Relative Error: 0.134857%
+  Abs Diff (Trap-True):  3.5340e-03   Relative Error: 0.143138%
+
+Result for sample ('33b21cf9a86d657806461b14db6d524d',):
+  True Integral:         1.5218e+00
+  Predicted Integral:    1.5256e+00
+  Trapezoidal Integral:  1.5251e+00
+  Abs Diff (Pred-True):  3.8141e-03   Relative Error: 0.250626%
+  Abs Diff (Trap-True):  3.2580e-03   Relative Error: 0.214083%
+
+Result for sample ('ee58590892285a1b8b123b02ad2e24ff',):
+  True Integral:         2.4782e+00
+  Predicted Integral:    2.4814e+00
+  Trapezoidal Integral:  2.4749e+00
+  Abs Diff (Pred-True):  3.1796e-03   Relative Error: 0.128302%
+  Abs Diff (Trap-True):  3.2581e-03   Relative Error: 0.131472%
+
+Result for sample ('1c96b5cc4337485697f36ab8526e5d2d',):
+  True Integral:         8.6971e-01
+  Predicted Integral:    8.6997e-01
+  Trapezoidal Integral:  8.6765e-01
+  Abs Diff (Pred-True):  2.5499e-04   Relative Error: 0.029319%
+  Abs Diff (Trap-True):  2.0640e-03   Relative Error: 0.237325%
+
+Result for sample ('8ddcf17cb9a77b959177e01ea9eac5ea',):
+  True Integral:         3.1303e+00
+  Predicted Integral:    3.1302e+00
+  Trapezoidal Integral:  3.1324e+00
+  Abs Diff (Pred-True):  7.9870e-05   Relative Error: 0.002552%
+  Abs Diff (Trap-True):  2.0643e-03   Relative Error: 0.065947%
+
+Result for sample ('5e9ca2a2b1419a14102e743419fc21cc',):
+  True Integral:         2.0160e+00
+  Predicted Integral:    2.0167e+00
+  Trapezoidal Integral:  2.0138e+00
+  Abs Diff (Pred-True):  7.1740e-04   Relative Error: 0.035586%
+  Abs Diff (Trap-True):  2.1115e-03   Relative Error: 0.104740%
+
+Result for sample ('b162bd935fa02286f7fe201ceaa327c6',):
+  True Integral:         1.9840e+00
+  Predicted Integral:    1.9863e+00
+  Trapezoidal Integral:  1.9862e+00
+  Abs Diff (Pred-True):  2.2058e-03   Relative Error: 0.111179%
+  Abs Diff (Trap-True):  2.1115e-03   Relative Error: 0.106425%
+
+Result for sample ('4ab7680121e68c3190816dddc990f50b',):
+  True Integral:         3.3173e+00
+  Predicted Integral:    3.3179e+00
+  Trapezoidal Integral:  3.3140e+00
+  Abs Diff (Pred-True):  5.6481e-04   Relative Error: 0.017026%
+  Abs Diff (Trap-True):  3.3075e-03   Relative Error: 0.099703%
+
+Result for sample ('1978679b20a4491c9e0912eeeb323f63',):
+  True Integral:         6.8268e-01
+  Predicted Integral:    6.8470e-01
+  Trapezoidal Integral:  6.8599e-01
+  Abs Diff (Pred-True):  2.0236e-03   Relative Error: 0.296417%
+  Abs Diff (Trap-True):  3.3072e-03   Relative Error: 0.484448%
+
+Result for sample ('e837b16cfce0083e16b8b77e32e65d6c',):
+  True Integral:         1.6461e+00
+  Predicted Integral:    1.6459e+00
+  Trapezoidal Integral:  1.6514e+00
+  Abs Diff (Pred-True):  2.0993e-04   Relative Error: 0.012753%
+  Abs Diff (Trap-True):  5.2683e-03   Relative Error: 0.320045%
+
+Result for sample ('5029bc3b7d7a7178025f2cd4eaeff66a',):
+  True Integral:         2.3539e+00
+  Predicted Integral:    2.3553e+00
+  Trapezoidal Integral:  2.3486e+00
+  Abs Diff (Pred-True):  1.4203e-03   Relative Error: 0.060337%
+  Abs Diff (Trap-True):  5.2685e-03   Relative Error: 0.223823%
+
+Result for sample ('d0e4840ec6fa10d1be1602b33f3045c7',):
+  True Integral:         2.6596e+00
+  Predicted Integral:    2.6613e+00
+  Trapezoidal Integral:  2.6600e+00
+  Abs Diff (Pred-True):  1.6518e-03   Relative Error: 0.062106%
+  Abs Diff (Trap-True):  4.2862e-04   Relative Error: 0.016116%
+
+Result for sample ('8cd352ebbe8af9ff9ad03f241592330c',):
+  True Integral:         1.3404e+00
+  Predicted Integral:    1.3406e+00
+  Trapezoidal Integral:  1.3400e+00
+  Abs Diff (Pred-True):  1.6463e-04   Relative Error: 0.012282%
+  Abs Diff (Trap-True):  4.2850e-04   Relative Error: 0.031968%
+
+Result for sample ('255b2fe2dd4481c301981eb44b9ca2c2',):
+  True Integral:         5.4672e-01
+  Predicted Integral:    5.4717e-01
+  Trapezoidal Integral:  5.4758e-01
+  Abs Diff (Pred-True):  4.5526e-04   Relative Error: 0.083271%
+  Abs Diff (Trap-True):  8.5938e-04   Relative Error: 0.157188%
+
+Result for sample ('d21dec2aa9403adc9f0defdc38ed6a60',):
+  True Integral:         3.4533e+00
+  Predicted Integral:    3.4557e+00
+  Trapezoidal Integral:  3.4524e+00
+  Abs Diff (Pred-True):  2.4023e-03   Relative Error: 0.069566%
+  Abs Diff (Trap-True):  8.5950e-04   Relative Error: 0.024889%
+
+Result for sample ('3eb1f1dacf2504cfeaca10fa9a235e24',):
+  True Integral:         3.4725e+00
+  Predicted Integral:    3.4739e+00
+  Trapezoidal Integral:  3.4715e+00
+  Abs Diff (Pred-True):  1.4277e-03   Relative Error: 0.041113%
+  Abs Diff (Trap-True):  1.0137e-03   Relative Error: 0.029191%
+
+Result for sample ('0348c4827f002b4decf80a1918d2169a',):
+  True Integral:         5.2753e-01
+  Predicted Integral:    5.2823e-01
+  Trapezoidal Integral:  5.2855e-01
+  Abs Diff (Pred-True):  6.9523e-04   Relative Error: 0.131789%
+  Abs Diff (Trap-True):  1.0135e-03   Relative Error: 0.192128%
+
+Result for sample ('624d49ec95ff5c43e83fc5a3058627ad',):
+  True Integral:         3.6161e+00
+  Predicted Integral:    3.6161e+00
+  Trapezoidal Integral:  3.6151e+00
+  Abs Diff (Pred-True):  2.8610e-05   Relative Error: 0.000791%
+  Abs Diff (Trap-True):  1.0506e-03   Relative Error: 0.029052%
+
+Result for sample ('f076dc7a38a72d20c14def2a0b81c251',):
+  True Integral:         3.8390e-01
+  Predicted Integral:    3.8502e-01
+  Trapezoidal Integral:  3.8495e-01
+  Abs Diff (Pred-True):  1.1190e-03   Relative Error: 0.291496%
+  Abs Diff (Trap-True):  1.0503e-03   Relative Error: 0.273600%
+
+Result for sample ('e0beaea894bc6ef9bb57456b39a0fea5',):
+  True Integral:         1.4514e+00
+  Predicted Integral:    1.4549e+00
+  Trapezoidal Integral:  1.4524e+00
+  Abs Diff (Pred-True):  3.4324e-03   Relative Error: 0.236482%
+  Abs Diff (Trap-True):  9.8324e-04   Relative Error: 0.067743%
+
+Result for sample ('64093f34cc50965696dd97d32ac4f312',):
+  True Integral:         2.5486e+00
+  Predicted Integral:    2.5513e+00
+  Trapezoidal Integral:  2.5476e+00
+  Abs Diff (Pred-True):  2.7125e-03   Relative Error: 0.106432%
+  Abs Diff (Trap-True):  9.8348e-04   Relative Error: 0.038590%
+
+Result for sample ('7d0168c54ee4689a293fc27220c6dc0d',):
+  True Integral:         3.0325e+00
+  Predicted Integral:    3.0342e+00
+  Trapezoidal Integral:  3.0320e+00
+  Abs Diff (Pred-True):  1.7164e-03   Relative Error: 0.056600%
+  Abs Diff (Trap-True):  4.7237e-04   Relative Error: 0.015577%
+
+Result for sample ('843daa33eade1683dcf27cd70399b4dc',):
+  True Integral:         9.6752e-01
+  Predicted Integral:    9.7048e-01
+  Trapezoidal Integral:  9.6799e-01
+  Abs Diff (Pred-True):  2.9598e-03   Relative Error: 0.305921%
+  Abs Diff (Trap-True):  4.7237e-04   Relative Error: 0.048822%
+
+Result for sample ('dc93b629d70610057ee88e4a1050d9d3',):
+  True Integral:         2.0478e+00
+  Predicted Integral:    2.0507e+00
+  Trapezoidal Integral:  2.0467e+00
+  Abs Diff (Pred-True):  2.9418e-03   Relative Error: 0.143659%
+  Abs Diff (Trap-True):  1.0794e-03   Relative Error: 0.052710%
+
+Result for sample ('5734ce490fe647a8a33e2e4c01934ec3',):
+  True Integral:         1.9522e+00
+  Predicted Integral:    1.9531e+00
+  Trapezoidal Integral:  1.9533e+00
+  Abs Diff (Pred-True):  9.1457e-04   Relative Error: 0.046848%
+  Abs Diff (Trap-True):  1.0794e-03   Relative Error: 0.055291%
+
+Result for sample ('162139263dad1565c81da5242d7403bb',):
+  True Integral:         2.1397e+00
+  Predicted Integral:    2.1458e+00
+  Trapezoidal Integral:  2.1427e+00
+  Abs Diff (Pred-True):  6.1579e-03   Relative Error: 0.287793%
+  Abs Diff (Trap-True):  3.0479e-03   Relative Error: 0.142448%
+
+Result for sample ('215bf7fffa271848a07010be935c2ea3',):
+  True Integral:         1.8603e+00
+  Predicted Integral:    1.8641e+00
+  Trapezoidal Integral:  1.8573e+00
+  Abs Diff (Pred-True):  3.7687e-03   Relative Error: 0.202583%
+  Abs Diff (Trap-True):  3.0479e-03   Relative Error: 0.163840%
+
+Result for sample ('662f2b7b69fbe7b68fee361ac342395d',):
+  True Integral:         1.7067e-01
+  Predicted Integral:    1.6960e-01
+  Trapezoidal Integral:  1.6696e-01
+  Abs Diff (Pred-True):  1.0695e-03   Relative Error: 0.626651%
+  Abs Diff (Trap-True):  3.7168e-03   Relative Error: 2.177749%
+
+Result for sample ('243fc11d41e81b4a83e3b3cf28cbb6fe',):
+  True Integral:         3.8293e+00
+  Predicted Integral:    3.8287e+00
+  Trapezoidal Integral:  3.8330e+00
+  Abs Diff (Pred-True):  6.6972e-04   Relative Error: 0.017489%
+  Abs Diff (Trap-True):  3.7169e-03   Relative Error: 0.097065%
+
+Result for sample ('f21f8e4588a78964867c8d1187970f51',):
+  True Integral:         3.7713e+00
+  Predicted Integral:    3.7766e+00
+  Trapezoidal Integral:  3.7725e+00
+  Abs Diff (Pred-True):  5.2779e-03   Relative Error: 0.139949%
+  Abs Diff (Trap-True):  1.1994e-03   Relative Error: 0.031803%
+
+Result for sample ('eef603c79d5dd80eab782fe2c64bd518',):
+  True Integral:         2.2871e-01
+  Predicted Integral:    2.2669e-01
+  Trapezoidal Integral:  2.2751e-01
+  Abs Diff (Pred-True):  2.0225e-03   Relative Error: 0.884324%
+  Abs Diff (Trap-True):  1.1993e-03   Relative Error: 0.524395%
+
+Overall MAE (Predicted vs. True): 1.9914e-03
+Overall MAE (Trapezoidal vs. True): 2.7514e-03
+Mean Relative Error (Predicted vs. True): 0.439277%
+Mean Relative Error (Trapezoidal vs. True): 0.584064%
+Identified 12 outlier samples (relative error (Predicted vs. True) > 0.51%):
+Sample d87915a43727885f1c7c527a5302694f: Relative Error (Pred vs. True) = 1.25%
+Sample 31a96bffd61f7ac0b86b73592d9eaf68: Relative Error (Pred vs. True) = 1.20%
+Sample 677f5179ac04287b6689172084719a2e: Relative Error (Pred vs. True) = 0.68%
+Sample 142eb88666275710c9f8ec08d1f33a79: Relative Error (Pred vs. True) = 7.86%
+Sample 6c32801fc64e154f0362c3339c9cc49e: Relative Error (Pred vs. True) = 2.01%
+Sample 6d1ce5810f395c9cf240fab54e1cd0f6: Relative Error (Pred vs. True) = 1.05%
+Sample 6d01275578eb8170fdca791afdd5f8ac: Relative Error (Pred vs. True) = 0.53%
+Sample f3587448de9c5fad73fbc6b3e4f735a3: Relative Error (Pred vs. True) = 2.71%
+Sample d56f124f6c3eb5ddecde2cb05305da50: Relative Error (Pred vs. True) = 4.31%
+Sample 793476b5bf8b0388494385921989210f: Relative Error (Pred vs. True) = 35.01%
+Sample 662f2b7b69fbe7b68fee361ac342395d: Relative Error (Pred vs. True) = 0.63%
+Sample eef603c79d5dd80eab782fe2c64bd518: Relative Error (Pred vs. True) = 0.88%
+Copied plot for sample d87915a43727885f1c7c527a5302694f to outliers folder.
+Copied plot for sample 31a96bffd61f7ac0b86b73592d9eaf68 to outliers folder.
+Copied plot for sample 677f5179ac04287b6689172084719a2e to outliers folder.
+Copied plot for sample 142eb88666275710c9f8ec08d1f33a79 to outliers folder.
+Copied plot for sample 6c32801fc64e154f0362c3339c9cc49e to outliers folder.
+Copied plot for sample 6d1ce5810f395c9cf240fab54e1cd0f6 to outliers folder.
+Copied plot for sample 6d01275578eb8170fdca791afdd5f8ac to outliers folder.
+Copied plot for sample f3587448de9c5fad73fbc6b3e4f735a3 to outliers folder.
+Copied plot for sample d56f124f6c3eb5ddecde2cb05305da50 to outliers folder.
+Copied plot for sample 793476b5bf8b0388494385921989210f to outliers folder.
+Copied plot for sample 662f2b7b69fbe7b68fee361ac342395d to outliers folder.
+Copied plot for sample eef603c79d5dd80eab782fe2c64bd518 to outliers folder.

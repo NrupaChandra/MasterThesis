@@ -1,0 +1,7 @@
+about this version : 
+
+CNN first test
+
+350 x 350 grid
+
+trained with 100KBernstein polynomials

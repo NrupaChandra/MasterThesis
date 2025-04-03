@@ -1,0 +1,933 @@
+Loaded 178 samples from 1 chunks.
+Result of integration for ('b0cde567bfea0a8c7b687b96735abf8c',):
+Algoim (True):  1.6621e+00
+QuadNET (Pred): 1.6675e+00
+Absolute Difference: 5.4067e-03
+Relative Error: 0.33%
+Result of integration for ('d9949f73cfdedb356e7cdb4a2f6b8d04',):
+Algoim (True):  2.3379e+00
+QuadNET (Pred): 2.3378e+00
+Absolute Difference: 9.2983e-05
+Relative Error: 0.00%
+Result of integration for ('77b1546d6bac2f4b8559d9352fe7bfea',):
+Algoim (True):  1.8301e+00
+QuadNET (Pred): 1.8268e+00
+Absolute Difference: 3.2774e-03
+Relative Error: 0.18%
+Result of integration for ('56c93dedef2216f8f7825a8e91850329',):
+Algoim (True):  2.1699e+00
+QuadNET (Pred): 2.1701e+00
+Absolute Difference: 2.4438e-04
+Relative Error: 0.01%
+Result of integration for ('035e8014af3b2ad2e8d3bfe274022b24',):
+Algoim (True):  1.0660e+00
+QuadNET (Pred): 1.0639e+00
+Absolute Difference: 2.0864e-03
+Relative Error: 0.20%
+Result of integration for ('c047bc7c37a0ae61001c6eb24c4f47c1',):
+Algoim (True):  2.9340e+00
+QuadNET (Pred): 2.9355e+00
+Absolute Difference: 1.4315e-03
+Relative Error: 0.05%
+Result of integration for ('6992af529f6a75fe99ef9e186c37a071',):
+Algoim (True):  3.8997e+00
+QuadNET (Pred): 3.8974e+00
+Absolute Difference: 2.2609e-03
+Relative Error: 0.06%
+Result of integration for ('d87915a43727885f1c7c527a5302694f',):
+Algoim (True):  1.0034e-01
+QuadNET (Pred): 1.0154e-01
+Absolute Difference: 1.2060e-03
+Relative Error: 1.20%
+Result of integration for ('282efed2bb841d7cc7849c9e7df27a49',):
+Algoim (True):  3.5570e+00
+QuadNET (Pred): 3.5568e+00
+Absolute Difference: 1.9836e-04
+Relative Error: 0.01%
+Result of integration for ('f49b26ee4f23e301e62b2d7436a8cd21',):
+Algoim (True):  4.4304e-01
+QuadNET (Pred): 4.4680e-01
+Absolute Difference: 3.7601e-03
+Relative Error: 0.85%
+Result of integration for ('8d5f2687cfcbb66953606de67955eaba',):
+Algoim (True):  2.4468e+00
+QuadNET (Pred): 2.4494e+00
+Absolute Difference: 2.6069e-03
+Relative Error: 0.11%
+Result of integration for ('173c57df600f7af12807986ed45bce6e',):
+Algoim (True):  1.5532e+00
+QuadNET (Pred): 1.5557e+00
+Absolute Difference: 2.4625e-03
+Relative Error: 0.16%
+Result of integration for ('1156cd42033697f47939b8dfc832fb50',):
+Algoim (True):  8.6901e-02
+QuadNET (Pred): 8.6264e-02
+Absolute Difference: 6.3697e-04
+Relative Error: 0.73%
+Result of integration for ('95c4651f24b086902ff0ed0e78c4cee8',):
+Algoim (True):  3.9131e+00
+QuadNET (Pred): 3.9191e+00
+Absolute Difference: 6.0482e-03
+Relative Error: 0.15%
+Result of integration for ('b85e2b94563e2fdff38e88c8a8a49d8a',):
+Algoim (True):  1.6214e+00
+QuadNET (Pred): 1.6210e+00
+Absolute Difference: 3.6907e-04
+Relative Error: 0.02%
+Result of integration for ('0d6ba9f401915778a415d5676dd58ab3',):
+Algoim (True):  2.3786e+00
+QuadNET (Pred): 2.3797e+00
+Absolute Difference: 1.0767e-03
+Relative Error: 0.05%
+Result of integration for ('839c78ddf7f16baed83bcc31e518d628',):
+Algoim (True):  2.6318e+00
+QuadNET (Pred): 2.6317e+00
+Absolute Difference: 1.1921e-04
+Relative Error: 0.00%
+Result of integration for ('86d677f24d0973d2553ccf4599ed54bf',):
+Algoim (True):  1.3682e+00
+QuadNET (Pred): 1.3663e+00
+Absolute Difference: 1.8715e-03
+Relative Error: 0.14%
+Result of integration for ('24cb31199bbd5090520314a5dedf073a',):
+Algoim (True):  9.5016e-01
+QuadNET (Pred): 9.4258e-01
+Absolute Difference: 7.5821e-03
+Relative Error: 0.80%
+Result of integration for ('1cdf17f04b50bfbfa3cd111f03de8dfd',):
+Algoim (True):  3.0498e+00
+QuadNET (Pred): 3.0378e+00
+Absolute Difference: 1.2085e-02
+Relative Error: 0.40%
+Result of integration for ('9b3f3d0e0767189db422608b1202352f',):
+Algoim (True):  3.9657e+00
+QuadNET (Pred): 3.9576e+00
+Absolute Difference: 8.0936e-03
+Relative Error: 0.20%
+Result of integration for ('3d0d5a6fb1a5ff2b03980aaec5a14022',):
+Algoim (True):  3.4336e-02
+QuadNET (Pred): 7.9770e-02
+Absolute Difference: 4.5435e-02
+Relative Error: 132.33%
+Result of integration for ('93e1d29af60652e9a20d2fa7c7450947',):
+Algoim (True):  2.1930e+00
+QuadNET (Pred): 2.1902e+00
+Absolute Difference: 2.7359e-03
+Relative Error: 0.12%
+Result of integration for ('e7412a0e43dd7dfe00b41e845f0d82a7',):
+Algoim (True):  1.8070e+00
+QuadNET (Pred): 1.8091e+00
+Absolute Difference: 2.1034e-03
+Relative Error: 0.12%
+Result of integration for ('f421fb78134c4ddea980f3c6d5c8a1e8',):
+Algoim (True):  6.0740e-01
+QuadNET (Pred): 6.0659e-01
+Absolute Difference: 8.1360e-04
+Relative Error: 0.13%
+Result of integration for ('81d4f127363643e26c7f4a48faf194c6',):
+Algoim (True):  3.3926e+00
+QuadNET (Pred): 3.3965e+00
+Absolute Difference: 3.8736e-03
+Relative Error: 0.11%
+Result of integration for ('d9a75321cdb9a284e63c5033fb3d28d9',):
+Algoim (True):  2.1898e+00
+QuadNET (Pred): 2.1874e+00
+Absolute Difference: 2.3646e-03
+Relative Error: 0.11%
+Result of integration for ('53f078ff748024ed4094d97047729e09',):
+Algoim (True):  1.8102e+00
+QuadNET (Pred): 1.8037e+00
+Absolute Difference: 6.4648e-03
+Relative Error: 0.36%
+Result of integration for ('a6a068a075e6d37a96b3922d38cc56b0',):
+Algoim (True):  2.3847e+00
+QuadNET (Pred): 2.3781e+00
+Absolute Difference: 6.5911e-03
+Relative Error: 0.28%
+Result of integration for ('d04baa82e0f807196c45450786d616ab',):
+Algoim (True):  1.6153e+00
+QuadNET (Pred): 1.6164e+00
+Absolute Difference: 1.1356e-03
+Relative Error: 0.07%
+Result of integration for ('8ab022b51f3a0eb6eb1df8b59a24239d',):
+Algoim (True):  1.1648e+00
+QuadNET (Pred): 1.1652e+00
+Absolute Difference: 4.1580e-04
+Relative Error: 0.04%
+Result of integration for ('17948c227da6801974ca93df791f3d0b',):
+Algoim (True):  2.8352e+00
+QuadNET (Pred): 2.8287e+00
+Absolute Difference: 6.4383e-03
+Relative Error: 0.23%
+Result of integration for ('31a96bffd61f7ac0b86b73592d9eaf68',):
+Algoim (True):  8.9484e-03
+QuadNET (Pred): 1.4171e-02
+Absolute Difference: 5.2222e-03
+Relative Error: 58.36%
+Result of integration for ('0d14cc8eb7c6a44c6c52f531773443a7',):
+Algoim (True):  3.9911e+00
+QuadNET (Pred): 3.9961e+00
+Absolute Difference: 5.0433e-03
+Relative Error: 0.13%
+Result of integration for ('d76d017db9756c1f38bf537388cae577',):
+Algoim (True):  2.7718e+00
+QuadNET (Pred): 2.7568e+00
+Absolute Difference: 1.4923e-02
+Relative Error: 0.54%
+Result of integration for ('db00db2b66a83c72fa1b39fd5520dcb6',):
+Algoim (True):  1.2282e+00
+QuadNET (Pred): 1.2322e+00
+Absolute Difference: 3.9645e-03
+Relative Error: 0.32%
+Result of integration for ('9c469d7854cdb09290680f17cdd18fee',):
+Algoim (True):  6.8118e-01
+QuadNET (Pred): 6.8097e-01
+Absolute Difference: 2.1219e-04
+Relative Error: 0.03%
+Result of integration for ('99ff79afba68b5250e46eb1ee62ae5e6',):
+Algoim (True):  3.3188e+00
+QuadNET (Pred): 3.3146e+00
+Absolute Difference: 4.2195e-03
+Relative Error: 0.13%
+Result of integration for ('01bda8b6c1530f13e2822592fa432cf1',):
+Algoim (True):  1.9647e+00
+QuadNET (Pred): 1.9731e+00
+Absolute Difference: 8.4130e-03
+Relative Error: 0.43%
+Result of integration for ('ee810b08c686e3a3afa81ad42f7f15e8',):
+Algoim (True):  2.0353e+00
+QuadNET (Pred): 2.0387e+00
+Absolute Difference: 3.4359e-03
+Relative Error: 0.17%
+Result of integration for ('677f5179ac04287b6689172084719a2e',):
+Algoim (True):  3.1721e-01
+QuadNET (Pred): 3.2367e-01
+Absolute Difference: 6.4619e-03
+Relative Error: 2.04%
+Result of integration for ('6d56064f2449aecacdc207d96f211cb2',):
+Algoim (True):  3.6828e+00
+QuadNET (Pred): 3.7024e+00
+Absolute Difference: 1.9645e-02
+Relative Error: 0.53%
+Result of integration for ('fe5b11344b95fdcfa6af8904f85506fc',):
+Algoim (True):  3.3273e+00
+QuadNET (Pred): 3.3274e+00
+Absolute Difference: 7.6771e-05
+Relative Error: 0.00%
+Result of integration for ('5202ccf349f4fc814bf5c923c72231cc',):
+Algoim (True):  6.7270e-01
+QuadNET (Pred): 6.7068e-01
+Absolute Difference: 2.0255e-03
+Relative Error: 0.30%
+Result of integration for ('27053ac05457596eee70682dd594da4d',):
+Algoim (True):  3.6292e+00
+QuadNET (Pred): 3.6279e+00
+Absolute Difference: 1.2145e-03
+Relative Error: 0.03%
+Result of integration for ('29ca813e1fe05bcf4052522de626e4c5',):
+Algoim (True):  3.7085e-01
+QuadNET (Pred): 3.7007e-01
+Absolute Difference: 7.7918e-04
+Relative Error: 0.21%
+Result of integration for ('e649a3f2ae11371a7cfcb07663178fa7',):
+Algoim (True):  1.2019e+00
+QuadNET (Pred): 1.2002e+00
+Absolute Difference: 1.7123e-03
+Relative Error: 0.14%
+Result of integration for ('686e5fe6d8a56be54528511d1b40c93b',):
+Algoim (True):  2.7981e+00
+QuadNET (Pred): 2.8021e+00
+Absolute Difference: 3.9854e-03
+Relative Error: 0.14%
+Result of integration for ('49bee50c69079fdfde677f926724c95b',):
+Algoim (True):  6.7334e-01
+QuadNET (Pred): 6.7406e-01
+Absolute Difference: 7.2008e-04
+Relative Error: 0.11%
+Result of integration for ('3f3751d6fd56585455f6a63d05723c03',):
+Algoim (True):  3.3267e+00
+QuadNET (Pred): 3.3268e+00
+Absolute Difference: 1.4496e-04
+Relative Error: 0.00%
+Result of integration for ('d078b7e29166c4d028c853565a19235f',):
+Algoim (True):  3.3382e+00
+QuadNET (Pred): 3.3392e+00
+Absolute Difference: 9.6250e-04
+Relative Error: 0.03%
+Result of integration for ('ab5c95acf4b44ca4f65e8ca19abd5bbc',):
+Algoim (True):  6.6177e-01
+QuadNET (Pred): 6.5901e-01
+Absolute Difference: 2.7580e-03
+Relative Error: 0.42%
+Result of integration for ('65f31161e67c664d073097750d52ea87',):
+Algoim (True):  2.4715e+00
+QuadNET (Pred): 2.4685e+00
+Absolute Difference: 2.9407e-03
+Relative Error: 0.12%
+Result of integration for ('88f075d588c263435b1347c4d9af9010',):
+Algoim (True):  1.5285e+00
+QuadNET (Pred): 1.5331e+00
+Absolute Difference: 4.5334e-03
+Relative Error: 0.30%
+Result of integration for ('0a0490f39cfd8ee78c6702c182ca1e05',):
+Algoim (True):  1.9943e+00
+QuadNET (Pred): 1.9920e+00
+Absolute Difference: 2.2988e-03
+Relative Error: 0.12%
+Result of integration for ('bf9c480a2edb46c3f81bcbcf358633c4',):
+Algoim (True):  2.0057e+00
+QuadNET (Pred): 2.0075e+00
+Absolute Difference: 1.7951e-03
+Relative Error: 0.09%
+Result of integration for ('6ce56bb6bc6122f0d93eee39e4ad3bb5',):
+Algoim (True):  1.9052e+00
+QuadNET (Pred): 1.9016e+00
+Absolute Difference: 3.5701e-03
+Relative Error: 0.19%
+Result of integration for ('ad55bb79fd403430527376f6fb6b1f47',):
+Algoim (True):  2.0948e+00
+QuadNET (Pred): 2.0952e+00
+Absolute Difference: 4.0865e-04
+Relative Error: 0.02%
+Result of integration for ('6e76880149bc49a16798075ad45f1f56',):
+Algoim (True):  2.6242e-01
+QuadNET (Pred): 2.6788e-01
+Absolute Difference: 5.4526e-03
+Relative Error: 2.08%
+Result of integration for ('4b71129f6f00b77b214cb4a586b51da9',):
+Algoim (True):  3.7376e+00
+QuadNET (Pred): 3.7402e+00
+Absolute Difference: 2.5733e-03
+Relative Error: 0.07%
+Result of integration for ('f832e235897d8989d71d31ce8f768593',):
+Algoim (True):  3.4337e+00
+QuadNET (Pred): 3.4340e+00
+Absolute Difference: 2.6536e-04
+Relative Error: 0.01%
+Result of integration for ('69872bcdee60e679c21d79c10ed5236a',):
+Algoim (True):  5.6628e-01
+QuadNET (Pred): 5.6555e-01
+Absolute Difference: 7.2587e-04
+Relative Error: 0.13%
+Result of integration for ('89a74adea4968dd705f872347f7c6ce0',):
+Algoim (True):  6.2298e-01
+QuadNET (Pred): 6.2017e-01
+Absolute Difference: 2.8116e-03
+Relative Error: 0.45%
+Result of integration for ('c4606645bd183ca45b8e070f62c9bc24',):
+Algoim (True):  3.3770e+00
+QuadNET (Pred): 3.3779e+00
+Absolute Difference: 8.9884e-04
+Relative Error: 0.03%
+Result of integration for ('473d09fe0ed4703eb4d7c18968a90033',):
+Algoim (True):  2.7137e+00
+QuadNET (Pred): 2.7175e+00
+Absolute Difference: 3.7951e-03
+Relative Error: 0.14%
+Result of integration for ('a3909e4e7a67ffed17809e0a3abb7acd',):
+Algoim (True):  1.2863e+00
+QuadNET (Pred): 1.2874e+00
+Absolute Difference: 1.0856e-03
+Relative Error: 0.08%
+Result of integration for ('142eb88666275710c9f8ec08d1f33a79',):
+Algoim (True):  5.9865e-03
+QuadNET (Pred): 1.2292e-02
+Absolute Difference: 6.3051e-03
+Relative Error: 105.32%
+Result of integration for ('25befb468d8030f52093e0227610f771',):
+Algoim (True):  3.9940e+00
+QuadNET (Pred): 3.9938e+00
+Absolute Difference: 2.4486e-04
+Relative Error: 0.01%
+Result of integration for ('804292591070c08cd22d271991be33e6',):
+Algoim (True):  1.4570e+00
+QuadNET (Pred): 1.4694e+00
+Absolute Difference: 1.2357e-02
+Relative Error: 0.85%
+Result of integration for ('dbdc141a330399c558f69b8930cf23b1',):
+Algoim (True):  2.5430e+00
+QuadNET (Pred): 2.5438e+00
+Absolute Difference: 8.4972e-04
+Relative Error: 0.03%
+Result of integration for ('2da20de77709c9d608a6a56e1d4b1eb0',):
+Algoim (True):  1.0047e+00
+QuadNET (Pred): 1.0033e+00
+Absolute Difference: 1.4406e-03
+Relative Error: 0.14%
+Result of integration for ('d04e22c93df2e0b7448fdc01fb86ce93',):
+Algoim (True):  2.9953e+00
+QuadNET (Pred): 2.9909e+00
+Absolute Difference: 4.4143e-03
+Relative Error: 0.15%
+Result of integration for ('d668be623c03abfb66a130eac04e054b',):
+Algoim (True):  3.9710e+00
+QuadNET (Pred): 3.9566e+00
+Absolute Difference: 1.4446e-02
+Relative Error: 0.36%
+Result of integration for ('6c32801fc64e154f0362c3339c9cc49e',):
+Algoim (True):  2.8988e-02
+QuadNET (Pred): 2.9217e-02
+Absolute Difference: 2.2894e-04
+Relative Error: 0.79%
+Result of integration for ('e2323e9290ef12c5bfba2f1515f767d8',):
+Algoim (True):  1.0212e+00
+QuadNET (Pred): 1.0227e+00
+Absolute Difference: 1.4443e-03
+Relative Error: 0.14%
+Result of integration for ('8cbe701127afc8b40c0d54316bd35b9d',):
+Algoim (True):  2.9788e+00
+QuadNET (Pred): 2.9807e+00
+Absolute Difference: 1.9102e-03
+Relative Error: 0.06%
+Result of integration for ('838f74c61338c8ea8af9643df83f4c70',):
+Algoim (True):  1.4880e-01
+QuadNET (Pred): 1.4747e-01
+Absolute Difference: 1.3290e-03
+Relative Error: 0.89%
+Result of integration for ('9c1b26b3e31bd49ead5f7884de77b5fc',):
+Algoim (True):  3.8512e+00
+QuadNET (Pred): 3.8543e+00
+Absolute Difference: 3.1037e-03
+Relative Error: 0.08%
+Result of integration for ('ee748f13b34ecbf19aa554dc18ff9f94',):
+Algoim (True):  2.5046e+00
+QuadNET (Pred): 2.5103e+00
+Absolute Difference: 5.7504e-03
+Relative Error: 0.23%
+Result of integration for ('3f41105791b3843f1ec8deaf7e078ea4',):
+Algoim (True):  1.4954e+00
+QuadNET (Pred): 1.4860e+00
+Absolute Difference: 9.4380e-03
+Relative Error: 0.63%
+Result of integration for ('8f72f34de51ff685ed50414a6d0adec4',):
+Algoim (True):  2.7328e+00
+QuadNET (Pred): 2.7271e+00
+Absolute Difference: 5.6748e-03
+Relative Error: 0.21%
+Result of integration for ('7af947d1f67b48029a2cfc3bdc1973dc',):
+Algoim (True):  1.2672e+00
+QuadNET (Pred): 1.2660e+00
+Absolute Difference: 1.2490e-03
+Relative Error: 0.10%
+Result of integration for ('67634ad1a110c379b98d3d90e16443df',):
+Algoim (True):  1.2916e+00
+QuadNET (Pred): 1.2861e+00
+Absolute Difference: 5.4752e-03
+Relative Error: 0.42%
+Result of integration for ('2ad0dde8006923032f14fbf385d78736',):
+Algoim (True):  2.7084e+00
+QuadNET (Pred): 2.7131e+00
+Absolute Difference: 4.7126e-03
+Relative Error: 0.17%
+Result of integration for ('07cff5fb83015ae7cee8c15deb62d31d',):
+Algoim (True):  2.3116e+00
+QuadNET (Pred): 2.3145e+00
+Absolute Difference: 2.8315e-03
+Relative Error: 0.12%
+Result of integration for ('40e945e93ae5ad078168b5ad253d638c',):
+Algoim (True):  1.6884e+00
+QuadNET (Pred): 1.6943e+00
+Absolute Difference: 5.9209e-03
+Relative Error: 0.35%
+Result of integration for ('2babab3a8f8d28c707d242eb8b970f17',):
+Algoim (True):  3.9858e+00
+QuadNET (Pred): 3.9865e+00
+Absolute Difference: 7.1359e-04
+Relative Error: 0.02%
+Result of integration for ('6d1ce5810f395c9cf240fab54e1cd0f6',):
+Algoim (True):  1.4222e-02
+QuadNET (Pred): 1.8389e-02
+Absolute Difference: 4.1669e-03
+Relative Error: 29.30%
+Result of integration for ('458e52c72537b1cc3d96d20b225963ff',):
+Algoim (True):  3.1650e+00
+QuadNET (Pred): 3.1657e+00
+Absolute Difference: 6.8259e-04
+Relative Error: 0.02%
+Result of integration for ('c462ab1cc4dd0821f5a42dd03d2c9dc0',):
+Algoim (True):  8.3498e-01
+QuadNET (Pred): 8.4791e-01
+Absolute Difference: 1.2928e-02
+Relative Error: 1.55%
+Result of integration for ('7553acc3eb6eea72ecbcb77434cf89fb',):
+Algoim (True):  2.6063e+00
+QuadNET (Pred): 2.6057e+00
+Absolute Difference: 5.7793e-04
+Relative Error: 0.02%
+Result of integration for ('a3c339d4e5c433614d111453b8383c19',):
+Algoim (True):  1.3937e+00
+QuadNET (Pred): 1.3890e+00
+Absolute Difference: 4.7060e-03
+Relative Error: 0.34%
+Result of integration for ('9409f901f5c24b049404740f2363b6d1',):
+Algoim (True):  3.2906e+00
+QuadNET (Pred): 3.2929e+00
+Absolute Difference: 2.2445e-03
+Relative Error: 0.07%
+Result of integration for ('2d33c4a50847c847703adbd3bda8653d',):
+Algoim (True):  7.0937e-01
+QuadNET (Pred): 7.0871e-01
+Absolute Difference: 6.5267e-04
+Relative Error: 0.09%
+Result of integration for ('cb3d1f1fffed9b756f6fd4632607b709',):
+Algoim (True):  1.6641e+00
+QuadNET (Pred): 1.6638e+00
+Absolute Difference: 3.0088e-04
+Relative Error: 0.02%
+Result of integration for ('de4ee1490683d2539547e0ae28ab0e55',):
+Algoim (True):  2.3359e+00
+QuadNET (Pred): 2.3366e+00
+Absolute Difference: 6.3515e-04
+Relative Error: 0.03%
+Result of integration for ('6ac7fcad207cd6a69a03a4e35be81c86',):
+Algoim (True):  2.6566e+00
+QuadNET (Pred): 2.6693e+00
+Absolute Difference: 1.2712e-02
+Relative Error: 0.48%
+Result of integration for ('328d1dda15e7a4d03e9b21ce4162ac9d',):
+Algoim (True):  1.3434e+00
+QuadNET (Pred): 1.3327e+00
+Absolute Difference: 1.0762e-02
+Relative Error: 0.80%
+Result of integration for ('1657ff81fcfb17be2b83480110b5ca94',):
+Algoim (True):  3.6789e+00
+QuadNET (Pred): 3.6768e+00
+Absolute Difference: 2.1808e-03
+Relative Error: 0.06%
+Result of integration for ('6d01275578eb8170fdca791afdd5f8ac',):
+Algoim (True):  3.2107e-01
+QuadNET (Pred): 3.2290e-01
+Absolute Difference: 1.8318e-03
+Relative Error: 0.57%
+Result of integration for ('8bfc82e3276a94df7655ef733cf054e4',):
+Algoim (True):  2.9270e+00
+QuadNET (Pred): 2.9298e+00
+Absolute Difference: 2.8048e-03
+Relative Error: 0.10%
+Result of integration for ('9168dfc6cd682dfe0534c56b2caadebe',):
+Algoim (True):  1.0730e+00
+QuadNET (Pred): 1.0811e+00
+Absolute Difference: 8.0873e-03
+Relative Error: 0.75%
+Result of integration for ('11f5e52a62eb58167b79912c4e48701d',):
+Algoim (True):  1.7330e+00
+QuadNET (Pred): 1.7597e+00
+Absolute Difference: 2.6680e-02
+Relative Error: 1.54%
+Result of integration for ('720b9efbd5d0f2de3ffe7f02e24a3e34',):
+Algoim (True):  2.2670e+00
+QuadNET (Pred): 2.2330e+00
+Absolute Difference: 3.4011e-02
+Relative Error: 1.50%
+Result of integration for ('c82f876b23fa31c72177d31b80b5f1c2',):
+Algoim (True):  2.8825e+00
+QuadNET (Pred): 2.9009e+00
+Absolute Difference: 1.8400e-02
+Relative Error: 0.64%
+Result of integration for ('729340e0bc7e2afb7db25c90f9f2afec',):
+Algoim (True):  1.1175e+00
+QuadNET (Pred): 1.1053e+00
+Absolute Difference: 1.2268e-02
+Relative Error: 1.10%
+Result of integration for ('293597555ed19cb887d87ae57e7826fc',):
+Algoim (True):  3.7802e+00
+QuadNET (Pred): 3.7839e+00
+Absolute Difference: 3.7448e-03
+Relative Error: 0.10%
+Result of integration for ('a173aab31dbd8b2839920d523816a925',):
+Algoim (True):  2.1984e-01
+QuadNET (Pred): 2.2173e-01
+Absolute Difference: 1.8880e-03
+Relative Error: 0.86%
+Result of integration for ('67be8edead5437e17bb8731a539d8125',):
+Algoim (True):  2.2535e-01
+QuadNET (Pred): 2.3000e-01
+Absolute Difference: 4.6528e-03
+Relative Error: 2.06%
+Result of integration for ('749c28c0d9bc93a13f19b7d402eef98b',):
+Algoim (True):  3.7746e+00
+QuadNET (Pred): 3.7764e+00
+Absolute Difference: 1.7538e-03
+Relative Error: 0.05%
+Result of integration for ('f3587448de9c5fad73fbc6b3e4f735a3',):
+Algoim (True):  2.3581e-02
+QuadNET (Pred): 2.2872e-02
+Absolute Difference: 7.0918e-04
+Relative Error: 3.01%
+Result of integration for ('0c917fcb7c4eb788931e688823aa5b5a',):
+Algoim (True):  3.9764e+00
+QuadNET (Pred): 3.9983e+00
+Absolute Difference: 2.1912e-02
+Relative Error: 0.55%
+Result of integration for ('373bc7fbf3dfabf8c8d9bb94bcfefd89',):
+Algoim (True):  2.1174e+00
+QuadNET (Pred): 2.1180e+00
+Absolute Difference: 6.0225e-04
+Relative Error: 0.03%
+Result of integration for ('759668f0f69846f9a5aa195ba0968f7b',):
+Algoim (True):  1.8826e+00
+QuadNET (Pred): 1.8814e+00
+Absolute Difference: 1.2373e-03
+Relative Error: 0.07%
+Result of integration for ('018fc86be180e6f9a557c91cce5e4796',):
+Algoim (True):  8.4818e-01
+QuadNET (Pred): 8.4808e-01
+Absolute Difference: 9.7692e-05
+Relative Error: 0.01%
+Result of integration for ('ef54dd2bae16daa3ee66b9e1d995cf31',):
+Algoim (True):  3.1518e+00
+QuadNET (Pred): 3.1277e+00
+Absolute Difference: 2.4170e-02
+Relative Error: 0.77%
+Result of integration for ('786b1cedf5879f91e4377896a1a547cd',):
+Algoim (True):  8.7461e-01
+QuadNET (Pred): 8.7406e-01
+Absolute Difference: 5.4574e-04
+Relative Error: 0.06%
+Result of integration for ('4b013aa0d15e09326f8aa776fe3026ce',):
+Algoim (True):  3.1254e+00
+QuadNET (Pred): 3.1238e+00
+Absolute Difference: 1.6022e-03
+Relative Error: 0.05%
+Result of integration for ('efa46049868439318899614fd5e68007',):
+Algoim (True):  8.8337e-01
+QuadNET (Pred): 8.8873e-01
+Absolute Difference: 5.3549e-03
+Relative Error: 0.61%
+Result of integration for ('106918d84b53538173e528d7a657c538',):
+Algoim (True):  3.1166e+00
+QuadNET (Pred): 3.1155e+00
+Absolute Difference: 1.1647e-03
+Relative Error: 0.04%
+Result of integration for ('f6ab9deb04aeb466076f9263f19bc8f1',):
+Algoim (True):  3.1614e+00
+QuadNET (Pred): 3.1692e+00
+Absolute Difference: 7.7641e-03
+Relative Error: 0.25%
+Result of integration for ('95d4786635975dc10a58d92f43fcc5e7',):
+Algoim (True):  8.3857e-01
+QuadNET (Pred): 8.4824e-01
+Absolute Difference: 9.6720e-03
+Relative Error: 1.15%
+Result of integration for ('1489e3d999e4c483db21335d0e201086',):
+Algoim (True):  1.5075e+00
+QuadNET (Pred): 1.4977e+00
+Absolute Difference: 9.7728e-03
+Relative Error: 0.65%
+Result of integration for ('9ce6ea24eee6c0f986ee8cdbcefcf31f',):
+Algoim (True):  2.4925e+00
+QuadNET (Pred): 2.5080e+00
+Absolute Difference: 1.5522e-02
+Relative Error: 0.62%
+Result of integration for ('c80eb7941cce1e56f9b6abee8abd4831',):
+Algoim (True):  4.5406e-01
+QuadNET (Pred): 4.5625e-01
+Absolute Difference: 2.1827e-03
+Relative Error: 0.48%
+Result of integration for ('6adcab3f7a405aece715968ffc7fc43e',):
+Algoim (True):  3.5459e+00
+QuadNET (Pred): 3.5439e+00
+Absolute Difference: 2.0628e-03
+Relative Error: 0.06%
+Result of integration for ('166879473ebfd187b3bdf688d6885c44',):
+Algoim (True):  3.6426e-01
+QuadNET (Pred): 3.6185e-01
+Absolute Difference: 2.4080e-03
+Relative Error: 0.66%
+Result of integration for ('5d3504671d77992b0b3cce20de0b7a8b',):
+Algoim (True):  3.6357e+00
+QuadNET (Pred): 3.6221e+00
+Absolute Difference: 1.3659e-02
+Relative Error: 0.38%
+Result of integration for ('990b4917eb2488de96a5e748738c8968',):
+Algoim (True):  1.9153e+00
+QuadNET (Pred): 1.9213e+00
+Absolute Difference: 6.0351e-03
+Relative Error: 0.32%
+Result of integration for ('eb8251e217480163e8955dd4c1674799',):
+Algoim (True):  2.0847e+00
+QuadNET (Pred): 2.0929e+00
+Absolute Difference: 8.1789e-03
+Relative Error: 0.39%
+Result of integration for ('5b57c9c4290a1752a18fb9fb0b616adf',):
+Algoim (True):  3.9858e+00
+QuadNET (Pred): 4.0186e+00
+Absolute Difference: 3.2828e-02
+Relative Error: 0.82%
+Result of integration for ('d56f124f6c3eb5ddecde2cb05305da50',):
+Algoim (True):  1.4183e-02
+QuadNET (Pred): 1.6103e-02
+Absolute Difference: 1.9198e-03
+Relative Error: 13.54%
+Result of integration for ('793476b5bf8b0388494385921989210f',):
+Algoim (True):  4.4696e-03
+QuadNET (Pred): 1.3029e-02
+Absolute Difference: 8.5590e-03
+Relative Error: 191.49%
+Result of integration for ('ebcf024feb2413626876e6e20712f774',):
+Algoim (True):  3.9955e+00
+QuadNET (Pred): 3.9967e+00
+Absolute Difference: 1.1981e-03
+Relative Error: 0.03%
+Result of integration for ('acf6c538f233fe58c720806b20232fde',):
+Algoim (True):  1.1600e+00
+QuadNET (Pred): 1.1539e+00
+Absolute Difference: 6.0613e-03
+Relative Error: 0.52%
+Result of integration for ('db4de0c9e8fd8e8333fbcef7760f8114',):
+Algoim (True):  2.8400e+00
+QuadNET (Pred): 2.8427e+00
+Absolute Difference: 2.6977e-03
+Relative Error: 0.09%
+Result of integration for ('d24d366d52547f6ac1f54bdbc012c517',):
+Algoim (True):  3.0626e+00
+QuadNET (Pred): 3.0448e+00
+Absolute Difference: 1.7808e-02
+Relative Error: 0.58%
+Result of integration for ('b6ac2f2535db910886dd0c3be26fc7b1',):
+Algoim (True):  9.3743e-01
+QuadNET (Pred): 1.0494e+00
+Absolute Difference: 1.1199e-01
+Relative Error: 11.95%
+Result of integration for ('86791adeb24851ae9bd3f4419416f295',):
+Algoim (True):  3.4830e+00
+QuadNET (Pred): 3.4864e+00
+Absolute Difference: 3.3429e-03
+Relative Error: 0.10%
+Result of integration for ('7ab7046e3fa23fd4161c3d644e6640d6',):
+Algoim (True):  5.1696e-01
+QuadNET (Pred): 5.0365e-01
+Absolute Difference: 1.3307e-02
+Relative Error: 2.57%
+Result of integration for ('d38363ef337fa0e6d9a3526c2462b835',):
+Algoim (True):  5.4573e-01
+QuadNET (Pred): 5.4142e-01
+Absolute Difference: 4.3128e-03
+Relative Error: 0.79%
+Result of integration for ('885f47fd2b2bb7df443d41f1b67dcdca',):
+Algoim (True):  3.4543e+00
+QuadNET (Pred): 3.4493e+00
+Absolute Difference: 4.9570e-03
+Relative Error: 0.14%
+Result of integration for ('0844075d65fda1cdd6bb94ed2ee20fbb',):
+Algoim (True):  1.2191e+00
+QuadNET (Pred): 1.2205e+00
+Absolute Difference: 1.3984e-03
+Relative Error: 0.11%
+Result of integration for ('e60582d89a03115c202373d593f22304',):
+Algoim (True):  2.7809e+00
+QuadNET (Pred): 2.7828e+00
+Absolute Difference: 1.8711e-03
+Relative Error: 0.07%
+Result of integration for ('a4c9aa886ea3f320689260625bf18213',):
+Algoim (True):  1.0754e+00
+QuadNET (Pred): 1.0842e+00
+Absolute Difference: 8.7949e-03
+Relative Error: 0.82%
+Result of integration for ('a9e5c12b7b68742657a86c52bd5ebca1',):
+Algoim (True):  2.9246e+00
+QuadNET (Pred): 2.9214e+00
+Absolute Difference: 3.2263e-03
+Relative Error: 0.11%
+Result of integration for ('742b7e6e1ef15f1a6f194b635bff9c23',):
+Algoim (True):  1.5311e+00
+QuadNET (Pred): 1.5671e+00
+Absolute Difference: 3.6049e-02
+Relative Error: 2.35%
+Result of integration for ('e0356ac3ed3506a9e2074c6f417ea81c',):
+Algoim (True):  2.4689e+00
+QuadNET (Pred): 2.4281e+00
+Absolute Difference: 4.0847e-02
+Relative Error: 1.65%
+Result of integration for ('33b21cf9a86d657806461b14db6d524d',):
+Algoim (True):  1.5218e+00
+QuadNET (Pred): 1.5054e+00
+Absolute Difference: 1.6465e-02
+Relative Error: 1.08%
+Result of integration for ('ee58590892285a1b8b123b02ad2e24ff',):
+Algoim (True):  2.4782e+00
+QuadNET (Pred): 2.4833e+00
+Absolute Difference: 5.0976e-03
+Relative Error: 0.21%
+Result of integration for ('1c96b5cc4337485697f36ab8526e5d2d',):
+Algoim (True):  8.6971e-01
+QuadNET (Pred): 8.7214e-01
+Absolute Difference: 2.4294e-03
+Relative Error: 0.28%
+Result of integration for ('8ddcf17cb9a77b959177e01ea9eac5ea',):
+Algoim (True):  3.1303e+00
+QuadNET (Pred): 3.1368e+00
+Absolute Difference: 6.4983e-03
+Relative Error: 0.21%
+Result of integration for ('5e9ca2a2b1419a14102e743419fc21cc',):
+Algoim (True):  2.0160e+00
+QuadNET (Pred): 2.0176e+00
+Absolute Difference: 1.6539e-03
+Relative Error: 0.08%
+Result of integration for ('b162bd935fa02286f7fe201ceaa327c6',):
+Algoim (True):  1.9840e+00
+QuadNET (Pred): 1.9829e+00
+Absolute Difference: 1.1036e-03
+Relative Error: 0.06%
+Result of integration for ('4ab7680121e68c3190816dddc990f50b',):
+Algoim (True):  3.3173e+00
+QuadNET (Pred): 3.3167e+00
+Absolute Difference: 6.4802e-04
+Relative Error: 0.02%
+Result of integration for ('1978679b20a4491c9e0912eeeb323f63',):
+Algoim (True):  6.8268e-01
+QuadNET (Pred): 6.8438e-01
+Absolute Difference: 1.6986e-03
+Relative Error: 0.25%
+Result of integration for ('e837b16cfce0083e16b8b77e32e65d6c',):
+Algoim (True):  1.6461e+00
+QuadNET (Pred): 1.6501e+00
+Absolute Difference: 4.0225e-03
+Relative Error: 0.24%
+Result of integration for ('5029bc3b7d7a7178025f2cd4eaeff66a',):
+Algoim (True):  2.3539e+00
+QuadNET (Pred): 2.3551e+00
+Absolute Difference: 1.2090e-03
+Relative Error: 0.05%
+Result of integration for ('d0e4840ec6fa10d1be1602b33f3045c7',):
+Algoim (True):  2.6596e+00
+QuadNET (Pred): 2.6639e+00
+Absolute Difference: 4.2627e-03
+Relative Error: 0.16%
+Result of integration for ('8cd352ebbe8af9ff9ad03f241592330c',):
+Algoim (True):  1.3404e+00
+QuadNET (Pred): 1.3297e+00
+Absolute Difference: 1.0667e-02
+Relative Error: 0.80%
+Result of integration for ('255b2fe2dd4481c301981eb44b9ca2c2',):
+Algoim (True):  5.4672e-01
+QuadNET (Pred): 5.4527e-01
+Absolute Difference: 1.4441e-03
+Relative Error: 0.26%
+Result of integration for ('d21dec2aa9403adc9f0defdc38ed6a60',):
+Algoim (True):  3.4533e+00
+QuadNET (Pred): 3.4539e+00
+Absolute Difference: 6.4516e-04
+Relative Error: 0.02%
+Result of integration for ('3eb1f1dacf2504cfeaca10fa9a235e24',):
+Algoim (True):  3.4725e+00
+QuadNET (Pred): 3.4711e+00
+Absolute Difference: 1.3533e-03
+Relative Error: 0.04%
+Result of integration for ('0348c4827f002b4decf80a1918d2169a',):
+Algoim (True):  5.2753e-01
+QuadNET (Pred): 5.2928e-01
+Absolute Difference: 1.7490e-03
+Relative Error: 0.33%
+Result of integration for ('624d49ec95ff5c43e83fc5a3058627ad',):
+Algoim (True):  3.6161e+00
+QuadNET (Pred): 3.6156e+00
+Absolute Difference: 4.5848e-04
+Relative Error: 0.01%
+Result of integration for ('f076dc7a38a72d20c14def2a0b81c251',):
+Algoim (True):  3.8390e-01
+QuadNET (Pred): 3.9762e-01
+Absolute Difference: 1.3719e-02
+Relative Error: 3.57%
+Result of integration for ('e0beaea894bc6ef9bb57456b39a0fea5',):
+Algoim (True):  1.4514e+00
+QuadNET (Pred): 1.4481e+00
+Absolute Difference: 3.3213e-03
+Relative Error: 0.23%
+Result of integration for ('64093f34cc50965696dd97d32ac4f312',):
+Algoim (True):  2.5486e+00
+QuadNET (Pred): 2.5519e+00
+Absolute Difference: 3.3705e-03
+Relative Error: 0.13%
+Result of integration for ('7d0168c54ee4689a293fc27220c6dc0d',):
+Algoim (True):  3.0325e+00
+QuadNET (Pred): 3.0361e+00
+Absolute Difference: 3.6261e-03
+Relative Error: 0.12%
+Result of integration for ('843daa33eade1683dcf27cd70399b4dc',):
+Algoim (True):  9.6752e-01
+QuadNET (Pred): 9.6601e-01
+Absolute Difference: 1.5067e-03
+Relative Error: 0.16%
+Result of integration for ('dc93b629d70610057ee88e4a1050d9d3',):
+Algoim (True):  2.0478e+00
+QuadNET (Pred): 2.0510e+00
+Absolute Difference: 3.1583e-03
+Relative Error: 0.15%
+Result of integration for ('5734ce490fe647a8a33e2e4c01934ec3',):
+Algoim (True):  1.9522e+00
+QuadNET (Pred): 1.9522e+00
+Absolute Difference: 1.1802e-05
+Relative Error: 0.00%
+Result of integration for ('162139263dad1565c81da5242d7403bb',):
+Algoim (True):  2.1397e+00
+QuadNET (Pred): 2.1397e+00
+Absolute Difference: 3.7670e-05
+Relative Error: 0.00%
+Result of integration for ('215bf7fffa271848a07010be935c2ea3',):
+Algoim (True):  1.8603e+00
+QuadNET (Pred): 1.8647e+00
+Absolute Difference: 4.3356e-03
+Relative Error: 0.23%
+Result of integration for ('662f2b7b69fbe7b68fee361ac342395d',):
+Algoim (True):  1.7067e-01
+QuadNET (Pred): 1.7082e-01
+Absolute Difference: 1.5077e-04
+Relative Error: 0.09%
+Result of integration for ('243fc11d41e81b4a83e3b3cf28cbb6fe',):
+Algoim (True):  3.8293e+00
+QuadNET (Pred): 3.8204e+00
+Absolute Difference: 8.8871e-03
+Relative Error: 0.23%
+Result of integration for ('f21f8e4588a78964867c8d1187970f51',):
+Algoim (True):  3.7713e+00
+QuadNET (Pred): 3.7606e+00
+Absolute Difference: 1.0709e-02
+Relative Error: 0.28%
+Result of integration for ('eef603c79d5dd80eab782fe2c64bd518',):
+Algoim (True):  2.2871e-01
+QuadNET (Pred): 2.3429e-01
+Absolute Difference: 5.5775e-03
+Relative Error: 2.44%
+Overall MAE: 6.0366e-03
+Mean Relative Error: 3.43%
+Median Relative Error: 0.17%
+Identified 19 outlier samples (relative error > 1.31%):
+Sample 3d0d5a6fb1a5ff2b03980aaec5a14022: Relative Error = 132.33%
+Sample 31a96bffd61f7ac0b86b73592d9eaf68: Relative Error = 58.36%
+Sample 677f5179ac04287b6689172084719a2e: Relative Error = 2.04%
+Sample 6e76880149bc49a16798075ad45f1f56: Relative Error = 2.08%
+Sample 142eb88666275710c9f8ec08d1f33a79: Relative Error = 105.32%
+Sample 6d1ce5810f395c9cf240fab54e1cd0f6: Relative Error = 29.30%
+Sample c462ab1cc4dd0821f5a42dd03d2c9dc0: Relative Error = 1.55%
+Sample 11f5e52a62eb58167b79912c4e48701d: Relative Error = 1.54%
+Sample 720b9efbd5d0f2de3ffe7f02e24a3e34: Relative Error = 1.50%
+Sample 67be8edead5437e17bb8731a539d8125: Relative Error = 2.06%
+Sample f3587448de9c5fad73fbc6b3e4f735a3: Relative Error = 3.01%
+Sample d56f124f6c3eb5ddecde2cb05305da50: Relative Error = 13.54%
+Sample 793476b5bf8b0388494385921989210f: Relative Error = 191.49%
+Sample b6ac2f2535db910886dd0c3be26fc7b1: Relative Error = 11.95%
+Sample 7ab7046e3fa23fd4161c3d644e6640d6: Relative Error = 2.57%
+Sample 742b7e6e1ef15f1a6f194b635bff9c23: Relative Error = 2.35%
+Sample e0356ac3ed3506a9e2074c6f417ea81c: Relative Error = 1.65%
+Sample f076dc7a38a72d20c14def2a0b81c251: Relative Error = 3.57%
+Sample eef603c79d5dd80eab782fe2c64bd518: Relative Error = 2.44%
+Copied plot for sample 3d0d5a6fb1a5ff2b03980aaec5a14022 to outliers folder.
+Copied plot for sample 31a96bffd61f7ac0b86b73592d9eaf68 to outliers folder.
+Copied plot for sample 677f5179ac04287b6689172084719a2e to outliers folder.
+Copied plot for sample 6e76880149bc49a16798075ad45f1f56 to outliers folder.
+Copied plot for sample 142eb88666275710c9f8ec08d1f33a79 to outliers folder.
+Copied plot for sample 6d1ce5810f395c9cf240fab54e1cd0f6 to outliers folder.
+Copied plot for sample c462ab1cc4dd0821f5a42dd03d2c9dc0 to outliers folder.
+Copied plot for sample 11f5e52a62eb58167b79912c4e48701d to outliers folder.
+Copied plot for sample 720b9efbd5d0f2de3ffe7f02e24a3e34 to outliers folder.
+Copied plot for sample 67be8edead5437e17bb8731a539d8125 to outliers folder.
+Copied plot for sample f3587448de9c5fad73fbc6b3e4f735a3 to outliers folder.
+Copied plot for sample d56f124f6c3eb5ddecde2cb05305da50 to outliers folder.
+Copied plot for sample 793476b5bf8b0388494385921989210f to outliers folder.
+Copied plot for sample b6ac2f2535db910886dd0c3be26fc7b1 to outliers folder.
+Copied plot for sample 7ab7046e3fa23fd4161c3d644e6640d6 to outliers folder.
+Copied plot for sample 742b7e6e1ef15f1a6f194b635bff9c23 to outliers folder.
+Copied plot for sample e0356ac3ed3506a9e2074c6f417ea81c to outliers folder.
+Copied plot for sample f076dc7a38a72d20c14def2a0b81c251 to outliers folder.
+Copied plot for sample eef603c79d5dd80eab782fe2c64bd518 to outliers folder.
