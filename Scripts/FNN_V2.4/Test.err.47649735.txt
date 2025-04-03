@@ -1,0 +1,42 @@
+/usr/bin/lua: /usr/share/lmod/lmod/libexec/Cache.lua:340: bad argument #1 to 'next' (table expected, got boolean)
+stack traceback:
+	[C]: in function 'next'
+	/usr/share/lmod/lmod/libexec/Cache.lua:340: in upvalue 'l_readCacheFile'
+	/usr/share/lmod/lmod/libexec/Cache.lua:564: in function 'Cache.build'
+	/usr/share/lmod/lmod/libexec/ModuleA.lua:691: in function 'ModuleA.singleton'
+	/usr/share/lmod/lmod/libexec/MName.lua:206: in upvalue 'l_lazyEval'
+	/usr/share/lmod/lmod/libexec/MName.lua:296: in function 'MName.sn'
+	/usr/share/lmod/lmod/libexec/Hub.lua:319: in function 'Hub.load'
+	/usr/share/lmod/lmod/libexec/MainControl.lua:1189: in function 'MC_CheckSyntax.load'
+	/usr/share/lmod/lmod/libexec/MainControl.lua:1165: in function 'MC_CheckSyntax.load_usr'
+	/usr/share/lmod/lmod/libexec/cmdfuncs.lua:554: in upvalue 'l_usrLoad'
+	/usr/share/lmod/lmod/libexec/cmdfuncs.lua:582: in function 'Load_Usr'
+	/usr/share/lmod/lmod/libexec/lmod:517: in function 'main'
+	/usr/share/lmod/lmod/libexec/lmod:588: in main chunk
+	[C]: in ?
+Wed Feb 26 15:51:53 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 555.42.02              Driver Version: 555.42.02      CUDA Version: 12.5     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  |   00000000:90:00.0 Off |                    0 |
+| N/A   33C    P0             51W /  400W |       1MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+/work/home/ng66sume/MasterThesis/Scripts/FNN_V2.4/multidataloader_fnn.py:38: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  chunk_data = torch.load(chunk_file)
+/home/ng66sume/miniconda3/envs/env3/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:62: UserWarning: The verbose parameter is deprecated. Please use get_last_lr() to access the learning rate.
+  warnings.warn(
+/work/home/ng66sume/MasterThesis/Scripts/FNN_V2.4/train_fnn.py:251: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()

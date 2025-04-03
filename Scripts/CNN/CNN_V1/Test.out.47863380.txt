@@ -1,0 +1,64 @@
+
+Computing area by subdividing domain and calling CNN per subcell (with full-cell check):
+  Subcells: 1x1
+    Predicted area: 0.493518
+    Analytical area: 0.502655
+    Relative error: 1.8176%
+
+Aggregate subcell plot saved as 'predicted_nodes_n1.png'.
+  Subcells: 2x2
+    Predicted area: 0.500574
+    Analytical area: 0.502655
+    Relative error: 0.4141%
+
+Aggregate subcell plot saved as 'predicted_nodes_n2.png'.
+  Subcells: 4x4
+    Predicted area: 0.502124
+    Analytical area: 0.502655
+    Relative error: 0.1056%
+
+Aggregate subcell plot saved as 'predicted_nodes_n4.png'.
+  Subcells: 8x8
+    Predicted area: 0.502579
+    Analytical area: 0.502655
+    Relative error: 0.0150%
+
+Aggregate subcell plot saved as 'predicted_nodes_n8.png'.
+  Subcells: 16x16
+    Predicted area: 0.502705
+    Analytical area: 0.502655
+    Relative error: 0.0100%
+
+Aggregate subcell plot saved as 'predicted_nodes_n16.png'.
+  Subcells: 32x32
+    Predicted area: 0.503002
+    Analytical area: 0.502655
+    Relative error: 0.0692%
+
+Aggregate subcell plot saved as 'predicted_nodes_n32.png'.
+  Subcells: 64x64
+    Predicted area: 0.502719
+    Analytical area: 0.502655
+    Relative error: 0.0127%
+
+Aggregate subcell plot saved as 'predicted_nodes_n64.png'.
+  Subcells: 128x128
+    Predicted area: 0.502681
+    Analytical area: 0.502655
+    Relative error: 0.0052%
+
+Aggregate subcell plot saved as 'predicted_nodes_n128.png'.
+  Subcells: 256x256
+    Predicted area: 0.502664
+    Analytical area: 0.502655
+    Relative error: 0.0017%
+
+Aggregate subcell plot saved as 'predicted_nodes_n256.png'.
+  Subcells: 512x512
+    Predicted area: 0.502660
+    Analytical area: 0.502655
+    Relative error: 0.0011%
+
+Aggregate subcell plot saved as 'predicted_nodes_n512.png'.
+Relative error vs. element size plot saved as 'error_vs_element_size.png'.
+Integral area plot saved as 'area_vs_refinement.png'.

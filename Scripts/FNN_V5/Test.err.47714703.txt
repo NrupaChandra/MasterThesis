@@ -1,0 +1,205 @@
+Lmod: loading gcc 8.5.0 
+Lmod: loading cuda 11.8 
+Wed Mar  5 09:07:14 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 555.42.02              Driver Version: 555.42.02      CUDA Version: 12.5     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  |   00000000:47:00.0 Off |                    0 |
+| N/A   28C    P0             52W /  400W |       1MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+[I 2025-03-05 09:07:36,889] A new study created in memory with name: no-name-d5763ac6-497c-44f9-9542-23e70e12a99b
+/work/home/ng66sume/MasterThesis/Scripts/FNN_V5/master_hyperparameter.py:172: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  dropout_rate = trial.suggest_uniform("dropout_rate", 0.0, 0.5)
+/work/home/ng66sume/MasterThesis/Scripts/FNN_V5/master_hyperparameter.py:173: FutureWarning: suggest_loguniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float(..., log=True) instead.
+  learning_rate = trial.suggest_loguniform("lr", 1e-5, 1e-2)
+/work/home/ng66sume/MasterThesis/Scripts/FNN_V5/master_hyperparameter.py:174: FutureWarning: suggest_loguniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float(..., log=True) instead.
+  weight_decay = trial.suggest_loguniform("weight_decay", 1e-6, 1e-2)
+/work/home/ng66sume/MasterThesis/Scripts/FNN_V5/master_hyperparameter.py:179: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  w_integration = trial.suggest_uniform("w_integration", 0, 1.0)
+/work/home/ng66sume/MasterThesis/Scripts/FNN_V5/master_hyperparameter.py:180: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  w_levelset = trial.suggest_uniform("w_levelset", 0, 1.0)
+/work/home/ng66sume/MasterThesis/Scripts/FNN_V5/master_hyperparameter.py:181: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  w_separation = trial.suggest_uniform("w_separation", 0, 1.0)
+/work/home/ng66sume/MasterThesis/Scripts/FNN_V5/master_hyperparameter.py:182: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  threshold_factor = trial.suggest_uniform("threshold_factor", 0, 0.2)
+/work/home/ng66sume/MasterThesis/Scripts/FNN_V5/multidataloader_fnn.py:38: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  chunk_data = torch.load(chunk_file)
+/home/ng66sume/miniconda3/envs/env3/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:62: UserWarning: The verbose parameter is deprecated. Please use get_last_lr() to access the learning rate.
+  warnings.warn(
+[I 2025-03-05 09:21:32,606] Trial 0 finished with value: 0.6556747853755951 and parameters: {'num_shared_layers': 1, 'hidden_dim': 512, 'output_dim': 512, 'dropout_rate': 0.4773334332646636, 'lr': 1.9425141319834268e-05, 'weight_decay': 9.269964178728329e-06, 'batch_size': 1024, 'max_output_len': 64, 'w_integration': 0.88151217143228, 'w_levelset': 0.6335612218333174, 'w_separation': 0.4903515491920346, 'threshold_factor': 0.18706085390032512}. Best is trial 0 with value: 0.6556747853755951.
+/work/home/ng66sume/MasterThesis/Scripts/FNN_V5/master_hyperparameter.py:172: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  dropout_rate = trial.suggest_uniform("dropout_rate", 0.0, 0.5)
+/work/home/ng66sume/MasterThesis/Scripts/FNN_V5/master_hyperparameter.py:173: FutureWarning: suggest_loguniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float(..., log=True) instead.
+  learning_rate = trial.suggest_loguniform("lr", 1e-5, 1e-2)
+/work/home/ng66sume/MasterThesis/Scripts/FNN_V5/master_hyperparameter.py:174: FutureWarning: suggest_loguniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float(..., log=True) instead.
+  weight_decay = trial.suggest_loguniform("weight_decay", 1e-6, 1e-2)
+/work/home/ng66sume/MasterThesis/Scripts/FNN_V5/master_hyperparameter.py:179: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  w_integration = trial.suggest_uniform("w_integration", 0, 1.0)
+/work/home/ng66sume/MasterThesis/Scripts/FNN_V5/master_hyperparameter.py:180: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  w_levelset = trial.suggest_uniform("w_levelset", 0, 1.0)
+/work/home/ng66sume/MasterThesis/Scripts/FNN_V5/master_hyperparameter.py:181: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  w_separation = trial.suggest_uniform("w_separation", 0, 1.0)
+/work/home/ng66sume/MasterThesis/Scripts/FNN_V5/master_hyperparameter.py:182: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  threshold_factor = trial.suggest_uniform("threshold_factor", 0, 0.2)
+[I 2025-03-05 09:35:25,052] Trial 1 finished with value: 0.07840445265173912 and parameters: {'num_shared_layers': 3, 'hidden_dim': 256, 'output_dim': 256, 'dropout_rate': 0.17131443733575918, 'lr': 1.98206446037518e-05, 'weight_decay': 0.003549415811033722, 'batch_size': 512, 'max_output_len': 16, 'w_integration': 0.6693804231981404, 'w_levelset': 0.26522765889591804, 'w_separation': 0.2616349576904273, 'threshold_factor': 0.0012670902647671234}. Best is trial 1 with value: 0.07840445265173912.
+[I 2025-03-05 09:49:31,122] Trial 2 finished with value: 0.024122553877532482 and parameters: {'num_shared_layers': 2, 'hidden_dim': 512, 'output_dim': 1024, 'dropout_rate': 0.36390623180681303, 'lr': 8.278451120722614e-05, 'weight_decay': 8.658506979715234e-06, 'batch_size': 1024, 'max_output_len': 64, 'w_integration': 0.2161193010844943, 'w_levelset': 0.030241748616661845, 'w_separation': 0.22085252915773146, 'threshold_factor': 0.02143657340121117}. Best is trial 2 with value: 0.024122553877532482.
+[I 2025-03-05 10:03:40,213] Trial 3 finished with value: 0.20309950271621346 and parameters: {'num_shared_layers': 2, 'hidden_dim': 512, 'output_dim': 256, 'dropout_rate': 0.012323886590430266, 'lr': 0.0031037019656824194, 'weight_decay': 3.668299146492347e-06, 'batch_size': 1024, 'max_output_len': 32, 'w_integration': 0.9429025501653884, 'w_levelset': 0.49802855550643044, 'w_separation': 0.1630334936306569, 'threshold_factor': 0.11660691917509938}. Best is trial 2 with value: 0.024122553877532482.
+[I 2025-03-05 10:17:46,336] Trial 4 finished with value: 0.4445937063012804 and parameters: {'num_shared_layers': 6, 'hidden_dim': 512, 'output_dim': 512, 'dropout_rate': 0.21134572113895994, 'lr': 0.005416604995620322, 'weight_decay': 0.0008190988038105851, 'batch_size': 256, 'max_output_len': 16, 'w_integration': 0.03727458700783726, 'w_levelset': 0.29298436597685185, 'w_separation': 0.13447490216510838, 'threshold_factor': 0.14441644009570728}. Best is trial 2 with value: 0.024122553877532482.
+[I 2025-03-05 10:19:15,456] Trial 5 pruned. 
+[I 2025-03-05 10:19:21,706] Trial 6 pruned. 
+[I 2025-03-05 10:19:36,215] Trial 7 pruned. 
+[I 2025-03-05 10:20:41,348] Trial 8 pruned. 
+[I 2025-03-05 10:34:34,122] Trial 9 finished with value: 0.011692339438013732 and parameters: {'num_shared_layers': 5, 'hidden_dim': 256, 'output_dim': 256, 'dropout_rate': 0.002774017483957225, 'lr': 0.00171305887906394, 'weight_decay': 2.3686230951596925e-06, 'batch_size': 512, 'max_output_len': 16, 'w_integration': 0.397177329841113, 'w_levelset': 0.6892947842400591, 'w_separation': 0.3319251861467676, 'threshold_factor': 0.18370159499339608}. Best is trial 9 with value: 0.011692339438013732.
+[I 2025-03-05 10:48:31,091] Trial 10 finished with value: 0.008968031033873558 and parameters: {'num_shared_layers': 4, 'hidden_dim': 2048, 'output_dim': 256, 'dropout_rate': 0.003020080123855169, 'lr': 0.001095926004109859, 'weight_decay': 5.93843847472132e-05, 'batch_size': 512, 'max_output_len': 16, 'w_integration': 0.5674559680281034, 'w_levelset': 0.9919589907724135, 'w_separation': 0.4750247831059347, 'threshold_factor': 0.07381640712849948}. Best is trial 10 with value: 0.008968031033873558.
+[I 2025-03-05 10:48:49,837] Trial 11 pruned. 
+[I 2025-03-05 11:02:47,781] Trial 12 finished with value: 0.001306409525568597 and parameters: {'num_shared_layers': 4, 'hidden_dim': 2048, 'output_dim': 256, 'dropout_rate': 0.12130377756855365, 'lr': 0.0007839345076097612, 'weight_decay': 8.627394634597379e-05, 'batch_size': 512, 'max_output_len': 16, 'w_integration': 0.4828509052278633, 'w_levelset': 0.9740975201554384, 'w_separation': 0.374116964839856, 'threshold_factor': 0.08010980721421389}. Best is trial 12 with value: 0.001306409525568597.
+[I 2025-03-05 11:02:54,031] Trial 13 pruned. 
+[I 2025-03-05 11:16:52,997] Trial 14 finished with value: 0.0022085736854933202 and parameters: {'num_shared_layers': 4, 'hidden_dim': 2048, 'output_dim': 256, 'dropout_rate': 0.27011222102245375, 'lr': 0.0003390894450129612, 'weight_decay': 0.00010647231843976726, 'batch_size': 512, 'max_output_len': 16, 'w_integration': 0.5340671272895869, 'w_levelset': 0.8653290452173333, 'w_separation': 0.6133807098214266, 'threshold_factor': 0.11367798767346915}. Best is trial 12 with value: 0.001306409525568597.
+[I 2025-03-05 11:16:59,198] Trial 15 pruned. 
+[I 2025-03-05 11:17:05,408] Trial 16 pruned. 
+[I 2025-03-05 11:18:22,265] Trial 17 pruned. 
+[I 2025-03-05 11:18:28,540] Trial 18 pruned. 
+[I 2025-03-05 11:18:34,745] Trial 19 pruned. 
+[I 2025-03-05 11:18:45,184] Trial 20 pruned. 
+[I 2025-03-05 11:32:42,901] Trial 21 finished with value: 0.0018778226803988218 and parameters: {'num_shared_layers': 4, 'hidden_dim': 2048, 'output_dim': 256, 'dropout_rate': 0.0760150069859069, 'lr': 0.0011558986225641084, 'weight_decay': 4.8512795558781185e-05, 'batch_size': 512, 'max_output_len': 16, 'w_integration': 0.5885409064800371, 'w_levelset': 0.9370632915992658, 'w_separation': 0.4244545417176306, 'threshold_factor': 0.07668359521960791}. Best is trial 12 with value: 0.001306409525568597.
+[I 2025-03-05 11:32:57,526] Trial 22 pruned. 
+[I 2025-03-05 11:33:03,864] Trial 23 pruned. 
+[I 2025-03-05 11:33:10,093] Trial 24 pruned. 
+[I 2025-03-05 11:47:09,352] Trial 25 finished with value: 0.007079096976667643 and parameters: {'num_shared_layers': 5, 'hidden_dim': 2048, 'output_dim': 256, 'dropout_rate': 0.17608181038098228, 'lr': 0.00042240656232471637, 'weight_decay': 0.00013277128618479055, 'batch_size': 512, 'max_output_len': 16, 'w_integration': 0.3171430868131747, 'w_levelset': 0.5701435952679595, 'w_separation': 0.5521506412730635, 'threshold_factor': 0.10863581451001078}. Best is trial 12 with value: 0.001306409525568597.
+[I 2025-03-05 11:47:15,462] Trial 26 pruned. 
+[I 2025-03-05 11:47:46,650] Trial 27 pruned. 
+[I 2025-03-05 11:47:52,971] Trial 28 pruned. 
+[I 2025-03-05 11:47:59,197] Trial 29 pruned. 
+[I 2025-03-05 11:48:05,420] Trial 30 pruned. 
+[I 2025-03-05 11:48:32,574] Trial 31 pruned. 
+[I 2025-03-05 11:48:38,998] Trial 32 pruned. 
+[I 2025-03-05 12:02:35,880] Trial 33 finished with value: 0.002540596586186439 and parameters: {'num_shared_layers': 3, 'hidden_dim': 2048, 'output_dim': 256, 'dropout_rate': 0.1546224086009116, 'lr': 0.0003514689973191852, 'weight_decay': 1.1273304462344057e-06, 'batch_size': 512, 'max_output_len': 16, 'w_integration': 0.17437683319430602, 'w_levelset': 0.928612681275663, 'w_separation': 0.558828524256022, 'threshold_factor': 0.10933241077950032}. Best is trial 12 with value: 0.001306409525568597.
+[I 2025-03-05 12:03:20,174] Trial 34 pruned. 
+[I 2025-03-05 12:04:12,463] Trial 35 pruned. 
+[I 2025-03-05 12:04:18,755] Trial 36 pruned. 
+[I 2025-03-05 12:04:24,837] Trial 37 pruned. 
+[I 2025-03-05 12:04:35,059] Trial 38 pruned. 
+[I 2025-03-05 12:04:41,458] Trial 39 pruned. 
+[I 2025-03-05 12:04:47,546] Trial 40 pruned. 
+[I 2025-03-05 12:05:18,779] Trial 41 pruned. 
+[I 2025-03-05 12:05:25,123] Trial 42 pruned. 
+[I 2025-03-05 12:06:25,956] Trial 43 pruned. 
+[I 2025-03-05 12:20:25,568] Trial 44 finished with value: 0.002161126205464825 and parameters: {'num_shared_layers': 4, 'hidden_dim': 2048, 'output_dim': 256, 'dropout_rate': 0.23810118721355367, 'lr': 0.00021201496087691323, 'weight_decay': 6.047653045184361e-05, 'batch_size': 512, 'max_output_len': 16, 'w_integration': 0.15013855833848289, 'w_levelset': 0.5459567138737149, 'w_separation': 0.6389160020769591, 'threshold_factor': 0.15080455523635128}. Best is trial 12 with value: 0.001306409525568597.
+[I 2025-03-05 12:20:40,131] Trial 45 pruned. 
+[I 2025-03-05 12:20:46,211] Trial 46 pruned. 
+[I 2025-03-05 12:20:56,583] Trial 47 pruned. 
+[I 2025-03-05 12:34:52,651] Trial 48 finished with value: 0.0028213824189151637 and parameters: {'num_shared_layers': 2, 'hidden_dim': 2048, 'output_dim': 512, 'dropout_rate': 0.2617043451123808, 'lr': 0.0024520521006182027, 'weight_decay': 4.8589368075675955e-06, 'batch_size': 512, 'max_output_len': 16, 'w_integration': 0.2031710765742491, 'w_levelset': 0.31684330263152594, 'w_separation': 0.8641211015368189, 'threshold_factor': 0.08014584222803695}. Best is trial 12 with value: 0.001306409525568597.
+[I 2025-03-05 12:34:58,863] Trial 49 pruned. 
+[I 2025-03-05 12:35:04,985] Trial 50 pruned. 
+[I 2025-03-05 12:35:44,442] Trial 51 pruned. 
+[I 2025-03-05 12:49:37,477] Trial 52 finished with value: 0.0021294701291481033 and parameters: {'num_shared_layers': 3, 'hidden_dim': 2048, 'output_dim': 512, 'dropout_rate': 0.3262361632806058, 'lr': 0.002114917974596591, 'weight_decay': 1.5707804231319011e-06, 'batch_size': 512, 'max_output_len': 16, 'w_integration': 0.08759415411199342, 'w_levelset': 0.20128796810186067, 'w_separation': 0.904288858632287, 'threshold_factor': 0.07094889505335661}. Best is trial 12 with value: 0.001306409525568597.
+[I 2025-03-05 13:03:29,685] Trial 53 finished with value: 0.0009205790556734428 and parameters: {'num_shared_layers': 3, 'hidden_dim': 2048, 'output_dim': 512, 'dropout_rate': 0.3843236636349078, 'lr': 0.0045044456683995095, 'weight_decay': 1.8482340174925376e-06, 'batch_size': 512, 'max_output_len': 16, 'w_integration': 0.09370519521564852, 'w_levelset': 0.08820333107393108, 'w_separation': 0.8614318574163826, 'threshold_factor': 0.05737166459339106}. Best is trial 53 with value: 0.0009205790556734428.
+[I 2025-03-05 13:04:05,083] Trial 54 pruned. 
+[I 2025-03-05 13:12:20,378] Trial 55 pruned. 
+[I 2025-03-05 13:12:56,001] Trial 56 pruned. 
+[I 2025-03-05 13:26:50,491] Trial 57 finished with value: 0.00032364048820454627 and parameters: {'num_shared_layers': 3, 'hidden_dim': 2048, 'output_dim': 512, 'dropout_rate': 0.3667951833893296, 'lr': 0.002412400310438056, 'weight_decay': 0.00016466798377201116, 'batch_size': 512, 'max_output_len': 16, 'w_integration': 0.00032183000943117324, 'w_levelset': 0.0023730773955149276, 'w_separation': 0.8313054613413656, 'threshold_factor': 0.04506489948882164}. Best is trial 57 with value: 0.00032364048820454627.
+[I 2025-03-05 13:31:34,697] Trial 58 pruned. 
+[I 2025-03-05 13:32:14,070] Trial 59 pruned. 
+[I 2025-03-05 13:32:49,943] Trial 60 pruned. 
+[I 2025-03-05 13:33:17,003] Trial 61 pruned. 
+[I 2025-03-05 13:33:48,355] Trial 62 pruned. 
+[I 2025-03-05 13:34:11,375] Trial 63 pruned. 
+[I 2025-03-05 13:48:11,602] Trial 64 finished with value: 0.0008036717190407217 and parameters: {'num_shared_layers': 5, 'hidden_dim': 2048, 'output_dim': 512, 'dropout_rate': 0.3813059194925892, 'lr': 0.0009381287350663536, 'weight_decay': 7.618013552918287e-05, 'batch_size': 512, 'max_output_len': 16, 'w_integration': 0.05140195976622518, 'w_levelset': 0.060870956989522884, 'w_separation': 0.9385244394482071, 'threshold_factor': 0.06609479130725396}. Best is trial 57 with value: 0.00032364048820454627.
+[I 2025-03-05 13:48:17,708] Trial 65 pruned. 
+[I 2025-03-05 13:48:57,488] Trial 66 pruned. 
+[I 2025-03-05 13:49:20,578] Trial 67 pruned. 
+[I 2025-03-05 14:03:15,460] Trial 68 finished with value: 0.00015254048048518598 and parameters: {'num_shared_layers': 4, 'hidden_dim': 256, 'output_dim': 512, 'dropout_rate': 0.35861080054941574, 'lr': 0.0018946648392857374, 'weight_decay': 1.5911759512176832e-05, 'batch_size': 512, 'max_output_len': 16, 'w_integration': 0.009399683682120491, 'w_levelset': 0.06254660658284544, 'w_separation': 0.8918660758517758, 'threshold_factor': 0.04751733050041843}. Best is trial 68 with value: 0.00015254048048518598.
+[I 2025-03-05 14:04:27,100] Trial 69 pruned. 
+[I 2025-03-05 14:05:02,351] Trial 70 pruned. 
+[I 2025-03-05 14:05:41,764] Trial 71 pruned. 
+[I 2025-03-05 14:19:36,819] Trial 72 finished with value: 0.00017326394299743697 and parameters: {'num_shared_layers': 4, 'hidden_dim': 256, 'output_dim': 512, 'dropout_rate': 0.323986783721144, 'lr': 0.0011897766237918812, 'weight_decay': 9.088810277531315e-05, 'batch_size': 512, 'max_output_len': 16, 'w_integration': 0.0036964679115925212, 'w_levelset': 0.06866430631660486, 'w_separation': 0.37414325247976477, 'threshold_factor': 0.014708035367888159}. Best is trial 68 with value: 0.00015254048048518598.
+[I 2025-03-05 14:33:29,787] Trial 73 finished with value: 0.00032040976657299325 and parameters: {'num_shared_layers': 4, 'hidden_dim': 256, 'output_dim': 512, 'dropout_rate': 0.33279536068508253, 'lr': 0.0013232711876642544, 'weight_decay': 0.0001084430313273828, 'batch_size': 512, 'max_output_len': 16, 'w_integration': 0.007196938952606773, 'w_levelset': 0.09041181125953279, 'w_separation': 0.3760571620979699, 'threshold_factor': 0.0021804613526734285}. Best is trial 68 with value: 0.00015254048048518598.
+[I 2025-03-05 14:47:24,334] Trial 74 finished with value: 0.0015171384729910642 and parameters: {'num_shared_layers': 5, 'hidden_dim': 256, 'output_dim': 512, 'dropout_rate': 0.370862500790971, 'lr': 0.0008175137034689757, 'weight_decay': 8.719144705831247e-05, 'batch_size': 512, 'max_output_len': 16, 'w_integration': 0.0018499008505106218, 'w_levelset': 0.09390006427994205, 'w_separation': 0.365803465080956, 'threshold_factor': 0.005674133921694115}. Best is trial 68 with value: 0.00015254048048518598.
+[I 2025-03-05 15:01:17,676] Trial 75 finished with value: 0.00028999453206779435 and parameters: {'num_shared_layers': 5, 'hidden_dim': 256, 'output_dim': 512, 'dropout_rate': 0.37246151809534805, 'lr': 0.0007540390464393026, 'weight_decay': 0.00022063442357607392, 'batch_size': 512, 'max_output_len': 16, 'w_integration': 0.005387409730277404, 'w_levelset': 0.09419350033177834, 'w_separation': 0.37123327206177986, 'threshold_factor': 0.006299804165015362}. Best is trial 68 with value: 0.00015254048048518598.
+[I 2025-03-05 15:01:40,615] Trial 76 pruned. 
+[I 2025-03-05 15:15:48,561] Trial 77 finished with value: 0.000413379049859941 and parameters: {'num_shared_layers': 5, 'hidden_dim': 256, 'output_dim': 512, 'dropout_rate': 0.28842721301944707, 'lr': 0.0005221021730078376, 'weight_decay': 0.0001308052246329024, 'batch_size': 256, 'max_output_len': 16, 'w_integration': 0.033420688411307485, 'w_levelset': 0.07314889395477367, 'w_separation': 0.3732368550510607, 'threshold_factor': 0.012866894684534676}. Best is trial 68 with value: 0.00015254048048518598.
+[I 2025-03-05 15:15:54,658] Trial 78 pruned. 
+[I 2025-03-05 15:16:01,029] Trial 79 pruned. 
+[I 2025-03-05 15:16:23,896] Trial 80 pruned. 
+[I 2025-03-05 15:30:30,212] Trial 81 finished with value: 0.0003096360679981964 and parameters: {'num_shared_layers': 5, 'hidden_dim': 256, 'output_dim': 512, 'dropout_rate': 0.4044652802370151, 'lr': 0.0007673094999586502, 'weight_decay': 0.00018701651429742013, 'batch_size': 256, 'max_output_len': 16, 'w_integration': 0.008509957366748405, 'w_levelset': 0.06992829119804972, 'w_separation': 0.33056053562580645, 'threshold_factor': 0.019315940655326824}. Best is trial 68 with value: 0.00015254048048518598.
+[I 2025-03-05 15:44:32,087] Trial 82 finished with value: 0.0001186055555340967 and parameters: {'num_shared_layers': 5, 'hidden_dim': 256, 'output_dim': 512, 'dropout_rate': 0.40460114998356306, 'lr': 0.0005577061327620307, 'weight_decay': 0.00011148684307691789, 'batch_size': 256, 'max_output_len': 16, 'w_integration': 0.008889092647839186, 'w_levelset': 0.024280991240010798, 'w_separation': 0.267959184115362, 'threshold_factor': 0.00916578492387743}. Best is trial 82 with value: 0.0001186055555340967.
+[I 2025-03-05 15:58:34,855] Trial 83 finished with value: 0.00012590297202612937 and parameters: {'num_shared_layers': 5, 'hidden_dim': 256, 'output_dim': 512, 'dropout_rate': 0.4022658032515339, 'lr': 0.0005014984804013981, 'weight_decay': 0.00011136227203726361, 'batch_size': 256, 'max_output_len': 16, 'w_integration': 0.0013435041140989765, 'w_levelset': 0.029274553550648168, 'w_separation': 0.2808058187201563, 'threshold_factor': 0.008053203905976955}. Best is trial 82 with value: 0.0001186055555340967.
+[I 2025-03-05 15:59:18,746] Trial 84 pruned. 
+[I 2025-03-05 16:13:23,606] Trial 85 finished with value: 0.00013950590489132862 and parameters: {'num_shared_layers': 5, 'hidden_dim': 256, 'output_dim': 512, 'dropout_rate': 0.43883598510652444, 'lr': 0.0004994061020219391, 'weight_decay': 0.00018612396973720642, 'batch_size': 256, 'max_output_len': 16, 'w_integration': 0.009238894413757477, 'w_levelset': 0.03220695648365427, 'w_separation': 0.3312536025371655, 'threshold_factor': 0.017900897723716752}. Best is trial 82 with value: 0.0001186055555340967.
+[I 2025-03-05 16:13:29,710] Trial 86 pruned. 
+[I 2025-03-05 16:13:35,765] Trial 87 pruned. 
+[I 2025-03-05 16:27:40,968] Trial 88 finished with value: 0.0006536455143110029 and parameters: {'num_shared_layers': 5, 'hidden_dim': 256, 'output_dim': 1024, 'dropout_rate': 0.44819529228438404, 'lr': 0.00118444275053226, 'weight_decay': 0.0002435960238372856, 'batch_size': 256, 'max_output_len': 16, 'w_integration': 0.0009139168559582872, 'w_levelset': 0.038289118518356105, 'w_separation': 0.32834303185114827, 'threshold_factor': 0.018282821124086038}. Best is trial 82 with value: 0.0001186055555340967.
+[I 2025-03-05 16:27:47,101] Trial 89 pruned. 
+[I 2025-03-05 16:28:10,282] Trial 90 pruned. 
+[I 2025-03-05 16:28:16,562] Trial 91 pruned. 
+[I 2025-03-05 16:28:22,798] Trial 92 pruned. 
+[I 2025-03-05 16:28:28,912] Trial 93 pruned. 
+[I 2025-03-05 16:28:35,110] Trial 94 pruned. 
+[I 2025-03-05 16:28:41,314] Trial 95 pruned. 
+[I 2025-03-05 16:28:47,517] Trial 96 pruned. 
+[I 2025-03-05 16:28:53,656] Trial 97 pruned. 
+[I 2025-03-05 16:28:59,856] Trial 98 pruned. 
+[I 2025-03-05 16:29:05,968] Trial 99 pruned. 
+[I 2025-03-05 16:41:56,996] Trial 100 pruned. 
+[I 2025-03-05 16:56:01,700] Trial 101 finished with value: 0.00037560836894304624 and parameters: {'num_shared_layers': 5, 'hidden_dim': 256, 'output_dim': 512, 'dropout_rate': 0.450472383707466, 'lr': 0.0011485884233724134, 'weight_decay': 0.0002590922551738177, 'batch_size': 256, 'max_output_len': 16, 'w_integration': 0.00378887715647122, 'w_levelset': 0.04773217905253351, 'w_separation': 0.324972364200507, 'threshold_factor': 0.019465022468769997}. Best is trial 82 with value: 0.0001186055555340967.
+[I 2025-03-05 16:56:07,867] Trial 102 pruned. 
+[I 2025-03-05 16:56:14,040] Trial 103 pruned. 
+[I 2025-03-05 16:56:24,454] Trial 104 pruned. 
+[I 2025-03-05 16:56:30,674] Trial 105 pruned. 
+[I 2025-03-05 17:10:37,985] Trial 106 finished with value: 0.0009732641296328179 and parameters: {'num_shared_layers': 5, 'hidden_dim': 256, 'output_dim': 512, 'dropout_rate': 0.4671996881435473, 'lr': 0.0015903500734050194, 'weight_decay': 0.00015678985998170028, 'batch_size': 256, 'max_output_len': 16, 'w_integration': 0.001004209634346279, 'w_levelset': 0.07722356592376252, 'w_separation': 0.4154440611415907, 'threshold_factor': 0.03669934577750277}. Best is trial 82 with value: 0.0001186055555340967.
+[I 2025-03-05 17:10:44,124] Trial 107 pruned. 
+[I 2025-03-05 17:10:50,379] Trial 108 pruned. 
+[I 2025-03-05 17:10:56,636] Trial 109 pruned. 
+[I 2025-03-05 17:11:02,734] Trial 110 pruned. 
+[I 2025-03-05 17:25:06,943] Trial 111 finished with value: 0.00047220796113833785 and parameters: {'num_shared_layers': 5, 'hidden_dim': 256, 'output_dim': 1024, 'dropout_rate': 0.44404582469087894, 'lr': 0.0014220363480863616, 'weight_decay': 0.0002386646757974664, 'batch_size': 256, 'max_output_len': 16, 'w_integration': 0.0052633834119337804, 'w_levelset': 0.04130726209149675, 'w_separation': 0.3365196925570757, 'threshold_factor': 0.017115214903686823}. Best is trial 82 with value: 0.0001186055555340967.
+[I 2025-03-05 17:25:13,119] Trial 112 pruned. 
+[I 2025-03-05 17:25:19,284] Trial 113 pruned. 
+[I 2025-03-05 17:25:29,763] Trial 114 pruned. 
+[I 2025-03-05 17:39:34,842] Trial 115 finished with value: 0.0048555291972921365 and parameters: {'num_shared_layers': 5, 'hidden_dim': 256, 'output_dim': 1024, 'dropout_rate': 0.40465116058523726, 'lr': 0.0026830301515099503, 'weight_decay': 0.00012263714167802837, 'batch_size': 256, 'max_output_len': 16, 'w_integration': 0.00033309433664769185, 'w_levelset': 0.10465328662172999, 'w_separation': 0.2120993936149902, 'threshold_factor': 0.004549895283660678}. Best is trial 82 with value: 0.0001186055555340967.
+[I 2025-03-05 17:39:40,936] Trial 116 pruned. 
+[I 2025-03-05 17:39:47,168] Trial 117 pruned. 
+[I 2025-03-05 17:39:53,509] Trial 118 pruned. 
+[I 2025-03-05 17:39:59,641] Trial 119 pruned. 
+[I 2025-03-05 17:40:05,916] Trial 120 pruned. 
+[I 2025-03-05 17:54:11,019] Trial 121 finished with value: 0.00027770739065350166 and parameters: {'num_shared_layers': 5, 'hidden_dim': 256, 'output_dim': 1024, 'dropout_rate': 0.44447375104485276, 'lr': 0.0017334378958769, 'weight_decay': 0.00022217063036609005, 'batch_size': 256, 'max_output_len': 16, 'w_integration': 0.01688203156518383, 'w_levelset': 0.040322716538742795, 'w_separation': 0.3117414347166527, 'threshold_factor': 0.0173887229945738}. Best is trial 82 with value: 0.0001186055555340967.
+[I 2025-03-05 18:08:19,073] Trial 122 finished with value: 0.0002810858526832557 and parameters: {'num_shared_layers': 5, 'hidden_dim': 256, 'output_dim': 1024, 'dropout_rate': 0.44395436182991294, 'lr': 0.0016251181566860817, 'weight_decay': 0.00021650835036766906, 'batch_size': 256, 'max_output_len': 16, 'w_integration': 0.017335922617897147, 'w_levelset': 0.027795218927380537, 'w_separation': 0.3166145502051748, 'threshold_factor': 0.00791597266213098}. Best is trial 82 with value: 0.0001186055555340967.
+[I 2025-03-05 18:09:03,044] Trial 123 pruned. 
+[I 2025-03-05 18:09:09,274] Trial 124 pruned. 
+[I 2025-03-05 18:09:15,629] Trial 125 pruned. 
+[I 2025-03-05 18:09:21,763] Trial 126 pruned. 
+[I 2025-03-05 18:09:32,049] Trial 127 pruned. 
+[I 2025-03-05 18:09:38,188] Trial 128 pruned. 
+[I 2025-03-05 18:09:44,455] Trial 129 pruned. 
+[I 2025-03-05 18:09:50,602] Trial 130 pruned. 
+[I 2025-03-05 18:20:07,831] Trial 131 pruned. 
+[I 2025-03-05 18:34:11,047] Trial 132 finished with value: 0.0002871373186020979 and parameters: {'num_shared_layers': 5, 'hidden_dim': 256, 'output_dim': 1024, 'dropout_rate': 0.45029985252379295, 'lr': 0.0015520597043102784, 'weight_decay': 0.00028851578539406466, 'batch_size': 256, 'max_output_len': 16, 'w_integration': 0.017301522008671764, 'w_levelset': 0.014450276350687082, 'w_separation': 0.35615288160957637, 'threshold_factor': 0.014123071167001552}. Best is trial 82 with value: 0.0001186055555340967.
+[I 2025-03-05 18:34:42,447] Trial 133 pruned. 
+[I 2025-03-05 18:34:48,727] Trial 134 pruned. 
+[I 2025-03-05 18:34:54,868] Trial 135 pruned. 
+[I 2025-03-05 18:35:01,068] Trial 136 pruned. 
+[I 2025-03-05 18:35:07,185] Trial 137 pruned. 
+[I 2025-03-05 18:35:13,368] Trial 138 pruned. 
+[I 2025-03-05 18:35:27,787] Trial 139 pruned. 
+[I 2025-03-05 18:35:34,008] Trial 140 pruned. 
+[I 2025-03-05 18:49:36,235] Trial 141 finished with value: 0.0004251694107162101 and parameters: {'num_shared_layers': 5, 'hidden_dim': 256, 'output_dim': 1024, 'dropout_rate': 0.44528360351180185, 'lr': 0.0010662563849945527, 'weight_decay': 0.00022918279343392027, 'batch_size': 256, 'max_output_len': 16, 'w_integration': 0.00042366680091952564, 'w_levelset': 0.04408240455030279, 'w_separation': 0.338529080300292, 'threshold_factor': 0.016367388263427183}. Best is trial 82 with value: 0.0001186055555340967.
+[I 2025-03-05 18:49:42,315] Trial 142 pruned. 
+[I 2025-03-05 18:49:48,482] Trial 143 pruned. 
+[I 2025-03-05 18:49:54,633] Trial 144 pruned. 
+[I 2025-03-05 18:50:01,047] Trial 145 pruned. 
+[I 2025-03-05 18:58:14,505] Trial 146 pruned. 
+[I 2025-03-05 18:58:20,537] Trial 147 pruned. 
+[I 2025-03-05 18:58:26,826] Trial 148 pruned. 
+[I 2025-03-05 18:58:32,967] Trial 149 pruned. 

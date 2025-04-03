@@ -1,0 +1,34 @@
+Lmod: loading gcc 8.5.0 
+Lmod: loading cuda 11.8 
+Wed Mar 19 16:21:57 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 555.42.02              Driver Version: 555.42.02      CUDA Version: 12.5     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA H100 80GB HBM3          On  |   00000000:C6:00.0 Off |                    0 |
+| N/A   23C    P0             66W /  700W |       1MiB /  81559MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+/work/home/ng66sume/MasterThesis/Scripts/FNN_V5.3/model_fnn.py:105: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(weights_path))
+Traceback (most recent call last):
+  File "/work/home/ng66sume/MasterThesis/Scripts/FNN_V5.3/analytical.py", line 41, in <module>
+    pred_integral_tensor = utilities.compute_integration(
+  File "/work/home/ng66sume/MasterThesis/Scripts/FNN_V5.3/utilities.py", line 5, in compute_integration
+    integral = torch.sum(weights * test_fn(nodes_x, nodes_y), 1)
+TypeError: sum() received an invalid combination of arguments - got (numpy.ndarray, int), but expected one of:
+ * (Tensor input, *, torch.dtype dtype = None)
+ * (Tensor input, tuple of ints dim, bool keepdim = False, *, torch.dtype dtype = None, Tensor out = None)
+ * (Tensor input, tuple of names dim, bool keepdim = False, *, torch.dtype dtype = None, Tensor out = None)
+

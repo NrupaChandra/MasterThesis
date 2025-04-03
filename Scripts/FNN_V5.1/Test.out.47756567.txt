@@ -1,0 +1,603 @@
+
+Using device: cuda, GPU Name: NVIDIA H100 80GB HBM3
+Starting trial 0
+Loaded 8732 samples from 1 chunks.
+Trial 0 finished with parameters: {'num_shared_layers': 4, 'hidden_dim': 1024, 'output_dim': 1024, 'max_output_len': 16, 'dropout_rate': 0.47996048435271965, 'lr': 0.005000680020323008, 'weight_decay': 1.557112821552188e-06, 'batch_size': 1024, 'w_levelset': 0.009123591215217997, 'w_separation': 0.4557441965603155, 'threshold_factor': 0.1613628652258816} and final val_loss: 0.6989447474479675
+Starting trial 1
+Loaded 8732 samples from 1 chunks.
+Trial 1 finished with parameters: {'num_shared_layers': 7, 'hidden_dim': 512, 'output_dim': 512, 'max_output_len': 16, 'dropout_rate': 0.38645968181913903, 'lr': 0.008806964323664861, 'weight_decay': 2.509662373385194e-06, 'batch_size': 1024, 'w_levelset': 0.7729653391832936, 'w_separation': 0.6578758296582368, 'threshold_factor': 0.01727089770759156} and final val_loss: 3.7958145141601562
+Starting trial 2
+Loaded 8732 samples from 1 chunks.
+Trial 2 finished with parameters: {'num_shared_layers': 4, 'hidden_dim': 256, 'output_dim': 1024, 'max_output_len': 64, 'dropout_rate': 0.3463727087969448, 'lr': 2.2094529051325012e-05, 'weight_decay': 0.00032955442184162925, 'batch_size': 256, 'w_levelset': 0.9429406980225924, 'w_separation': 0.7626289498450993, 'threshold_factor': 0.024291799614787713} and final val_loss: 0.15463361995560782
+Starting trial 3
+Loaded 8732 samples from 1 chunks.
+Trial 3 finished with parameters: {'num_shared_layers': 1, 'hidden_dim': 512, 'output_dim': 256, 'max_output_len': 16, 'dropout_rate': 0.171742479961225, 'lr': 1.3653006038043136e-05, 'weight_decay': 6.819697473191784e-06, 'batch_size': 1024, 'w_levelset': 0.3958632336401883, 'w_separation': 0.5842559429104313, 'threshold_factor': 0.10361677148524484} and final val_loss: 0.17201809585094452
+Starting trial 4
+Loaded 8732 samples from 1 chunks.
+Trial 4 finished with parameters: {'num_shared_layers': 6, 'hidden_dim': 512, 'output_dim': 1024, 'max_output_len': 64, 'dropout_rate': 0.21250525512173057, 'lr': 1.6575411891005525e-05, 'weight_decay': 1.749291719383043e-05, 'batch_size': 512, 'w_levelset': 0.6612196196030602, 'w_separation': 0.04776090855890647, 'threshold_factor': 0.08381464166555033} and final val_loss: 0.10311715118587017
+Starting trial 5
+Loaded 8732 samples from 1 chunks.
+Trial 5 finished with parameters: {'num_shared_layers': 3, 'hidden_dim': 128, 'output_dim': 1024, 'max_output_len': 16, 'dropout_rate': 0.023052247642181112, 'lr': 0.0022147568946401805, 'weight_decay': 7.786861870863201e-05, 'batch_size': 1024, 'w_levelset': 0.9727833826031416, 'w_separation': 0.34333643004126113, 'threshold_factor': 0.02370221743541572} and final val_loss: 0.0026237424463033676
+Starting trial 6
+Loaded 8732 samples from 1 chunks.
+Trial 6 pruned at epoch 4 with val_loss 75.12742233276367
+Starting trial 7
+Loaded 8732 samples from 1 chunks.
+Trial 7 finished with parameters: {'num_shared_layers': 3, 'hidden_dim': 256, 'output_dim': 512, 'max_output_len': 32, 'dropout_rate': 0.45489997443616603, 'lr': 0.002271606252600788, 'weight_decay': 7.71669166802564e-06, 'batch_size': 1024, 'w_levelset': 0.9530830830457457, 'w_separation': 0.9629333864044562, 'threshold_factor': 0.002477522599378679} and final val_loss: 0.006636672653257847
+Starting trial 8
+Loaded 8732 samples from 1 chunks.
+Trial 8 pruned at epoch 0 with val_loss 251.8937110900879
+Starting trial 9
+Loaded 8732 samples from 1 chunks.
+Trial 9 finished with parameters: {'num_shared_layers': 3, 'hidden_dim': 256, 'output_dim': 1024, 'max_output_len': 16, 'dropout_rate': 0.4609453469118813, 'lr': 0.003299991645000285, 'weight_decay': 1.8187687067573271e-06, 'batch_size': 256, 'w_levelset': 0.267091612544468, 'w_separation': 0.7809976641937142, 'threshold_factor': 0.11181116335432106} and final val_loss: 0.0045447008950369695
+Starting trial 10
+Loaded 8732 samples from 1 chunks.
+Trial 10 pruned at epoch 4 with val_loss 13.877084970474243
+Starting trial 11
+Loaded 8732 samples from 1 chunks.
+Trial 11 finished with parameters: {'num_shared_layers': 2, 'hidden_dim': 2048, 'output_dim': 1024, 'max_output_len': 16, 'dropout_rate': 0.0015931587193090402, 'lr': 0.0009038243970396367, 'weight_decay': 0.0006990858323495662, 'batch_size': 256, 'w_levelset': 0.3442379505084726, 'w_separation': 0.9168041609381445, 'threshold_factor': 0.12441140312926517} and final val_loss: 0.001391460482929168
+Starting trial 12
+Loaded 8732 samples from 1 chunks.
+Trial 12 finished with parameters: {'num_shared_layers': 1, 'hidden_dim': 2048, 'output_dim': 1024, 'max_output_len': 16, 'dropout_rate': 0.0074283807261865675, 'lr': 0.0006582163818999682, 'weight_decay': 0.0008318634828811184, 'batch_size': 256, 'w_levelset': 0.41054758523531576, 'w_separation': 0.9731208452999056, 'threshold_factor': 0.18195161966524442} and final val_loss: 0.004944291423141424
+Starting trial 13
+Loaded 8732 samples from 1 chunks.
+Trial 13 finished with parameters: {'num_shared_layers': 2, 'hidden_dim': 2048, 'output_dim': 1024, 'max_output_len': 16, 'dropout_rate': 0.0718234340555636, 'lr': 0.0011613889975379944, 'weight_decay': 4.4359740700614145e-05, 'batch_size': 256, 'w_levelset': 0.18807797869620801, 'w_separation': 0.16637744138986665, 'threshold_factor': 0.05444905667042478} and final val_loss: 0.00047408807482237795
+Starting trial 14
+Loaded 8732 samples from 1 chunks.
+Trial 14 pruned at epoch 0 with val_loss 12.621765272957939
+Starting trial 15
+Loaded 8732 samples from 1 chunks.
+Trial 15 pruned at epoch 0 with val_loss 22.3047673361642
+Starting trial 16
+Loaded 8732 samples from 1 chunks.
+Trial 16 pruned at epoch 0 with val_loss 17.12420082092285
+Starting trial 17
+Loaded 8732 samples from 1 chunks.
+Trial 17 pruned at epoch 0 with val_loss 11.724757466997419
+Starting trial 18
+Loaded 8732 samples from 1 chunks.
+Trial 18 pruned at epoch 0 with val_loss 108.39194052559989
+Starting trial 19
+Loaded 8732 samples from 1 chunks.
+Trial 19 pruned at epoch 0 with val_loss 9.488178253173828
+Starting trial 20
+Loaded 8732 samples from 1 chunks.
+Trial 20 pruned at epoch 0 with val_loss 16.656078338623047
+Starting trial 21
+Loaded 8732 samples from 1 chunks.
+Trial 21 pruned at epoch 0 with val_loss 17.05320167541504
+Starting trial 22
+Loaded 8732 samples from 1 chunks.
+Trial 22 pruned at epoch 0 with val_loss 18.38209342956543
+Starting trial 23
+Loaded 8732 samples from 1 chunks.
+Trial 23 pruned at epoch 0 with val_loss 14.60105562210083
+Starting trial 24
+Loaded 8732 samples from 1 chunks.
+Trial 24 finished with parameters: {'num_shared_layers': 3, 'hidden_dim': 128, 'output_dim': 1024, 'max_output_len': 16, 'dropout_rate': 0.1264265199149962, 'lr': 0.008037691436921499, 'weight_decay': 2.1897823919911725e-05, 'batch_size': 256, 'w_levelset': 0.48586424083345386, 'w_separation': 0.36424830949764614, 'threshold_factor': 0.0753550958455142} and final val_loss: 0.0032297938263842036
+Starting trial 25
+Loaded 8732 samples from 1 chunks.
+Trial 25 pruned at epoch 40 with val_loss 0.04148002527654171
+Starting trial 26
+Loaded 8732 samples from 1 chunks.
+Trial 26 finished with parameters: {'num_shared_layers': 2, 'hidden_dim': 1024, 'output_dim': 1024, 'max_output_len': 16, 'dropout_rate': 0.08068923616708935, 'lr': 0.004894287369944318, 'weight_decay': 0.0006762848978865583, 'batch_size': 256, 'w_levelset': 0.6351696405430447, 'w_separation': 0.09236750373597628, 'threshold_factor': 0.09584029388479176} and final val_loss: 0.001413816785705941
+Starting trial 27
+Loaded 8732 samples from 1 chunks.
+Trial 27 pruned at epoch 104 with val_loss 0.012017810185040747
+Starting trial 28
+Loaded 8732 samples from 1 chunks.
+Trial 28 pruned at epoch 0 with val_loss 200.85403660365515
+Starting trial 29
+Loaded 8732 samples from 1 chunks.
+Trial 29 pruned at epoch 0 with val_loss 4.7490162168230325
+Starting trial 30
+Loaded 8732 samples from 1 chunks.
+Trial 30 pruned at epoch 0 with val_loss 15.368297849382673
+Starting trial 31
+Loaded 8732 samples from 1 chunks.
+Trial 31 pruned at epoch 0 with val_loss 16.814528465270996
+Starting trial 32
+Loaded 8732 samples from 1 chunks.
+Trial 32 finished with parameters: {'num_shared_layers': 2, 'hidden_dim': 1024, 'output_dim': 1024, 'max_output_len': 16, 'dropout_rate': 0.03659276026213238, 'lr': 0.0017837083184979081, 'weight_decay': 0.0006692866573641639, 'batch_size': 256, 'w_levelset': 0.21678985482940435, 'w_separation': 0.4061294264330645, 'threshold_factor': 0.0945116518839516} and final val_loss: 0.0005282980502150687
+Starting trial 33
+Loaded 8732 samples from 1 chunks.
+Trial 33 pruned at epoch 0 with val_loss 69.59083945410592
+Starting trial 34
+Loaded 8732 samples from 1 chunks.
+Trial 34 finished with parameters: {'num_shared_layers': 1, 'hidden_dim': 1024, 'output_dim': 1024, 'max_output_len': 16, 'dropout_rate': 0.13136713697222174, 'lr': 0.0013327884174453295, 'weight_decay': 0.002220360687792863, 'batch_size': 256, 'w_levelset': 0.2394445273402675, 'w_separation': 0.7079924590379798, 'threshold_factor': 0.0955617851190944} and final val_loss: 0.0025530444192034857
+Starting trial 35
+Loaded 8732 samples from 1 chunks.
+Trial 35 pruned at epoch 0 with val_loss 39.523924010140554
+Starting trial 36
+Loaded 8732 samples from 1 chunks.
+Trial 36 pruned at epoch 0 with val_loss 5.579929828643799
+Starting trial 37
+Loaded 8732 samples from 1 chunks.
+Trial 37 pruned at epoch 0 with val_loss 298.3056182861328
+Starting trial 38
+Loaded 8732 samples from 1 chunks.
+Trial 38 pruned at epoch 2 with val_loss 0.8724913256508964
+Starting trial 39
+Loaded 8732 samples from 1 chunks.
+Trial 39 pruned at epoch 0 with val_loss 17.670340129307338
+Starting trial 40
+Loaded 8732 samples from 1 chunks.
+Trial 40 pruned at epoch 0 with val_loss 4.060629504067557
+Starting trial 41
+Loaded 8732 samples from 1 chunks.
+Trial 41 pruned at epoch 0 with val_loss 3.6090141364506314
+Starting trial 42
+Loaded 8732 samples from 1 chunks.
+Trial 42 pruned at epoch 34 with val_loss 0.042336284049919674
+Starting trial 43
+Loaded 8732 samples from 1 chunks.
+Trial 43 finished with parameters: {'num_shared_layers': 2, 'hidden_dim': 1024, 'output_dim': 1024, 'max_output_len': 16, 'dropout_rate': 0.021178819646295456, 'lr': 0.001365843784312657, 'weight_decay': 0.0007874354145641782, 'batch_size': 256, 'w_levelset': 0.30782497392862457, 'w_separation': 0.7653943925399038, 'threshold_factor': 0.08009556918403903} and final val_loss: 0.0010074065607373736
+Starting trial 44
+Loaded 8732 samples from 1 chunks.
+Trial 44 pruned at epoch 0 with val_loss 7.624890565872192
+Starting trial 45
+Loaded 8732 samples from 1 chunks.
+Trial 45 pruned at epoch 0 with val_loss 58.798492431640625
+Starting trial 46
+Loaded 8732 samples from 1 chunks.
+Trial 46 pruned at epoch 0 with val_loss 16.754808153424943
+Starting trial 47
+Loaded 8732 samples from 1 chunks.
+Trial 47 pruned at epoch 0 with val_loss 13.804722513471331
+Starting trial 48
+Loaded 8732 samples from 1 chunks.
+Trial 48 pruned at epoch 0 with val_loss 8.63084076132093
+Starting trial 49
+Loaded 8732 samples from 1 chunks.
+Trial 49 pruned at epoch 0 with val_loss 64.65027618408203
+Starting trial 50
+Loaded 8732 samples from 1 chunks.
+Trial 50 pruned at epoch 2 with val_loss 1.1082775081907
+Starting trial 51
+Loaded 8732 samples from 1 chunks.
+Trial 51 pruned at epoch 0 with val_loss 4.994265692574637
+Starting trial 52
+Loaded 8732 samples from 1 chunks.
+Trial 52 pruned at epoch 14 with val_loss 0.14745640701481275
+Starting trial 53
+Loaded 8732 samples from 1 chunks.
+Trial 53 pruned at epoch 0 with val_loss 9.452928815569196
+Starting trial 54
+Loaded 8732 samples from 1 chunks.
+Trial 54 finished with parameters: {'num_shared_layers': 2, 'hidden_dim': 1024, 'output_dim': 1024, 'max_output_len': 16, 'dropout_rate': 0.04563265178033974, 'lr': 0.001723756373763693, 'weight_decay': 0.0006664789806703576, 'batch_size': 256, 'w_levelset': 0.21155765382238303, 'w_separation': 0.7056662250333785, 'threshold_factor': 0.11538291190414408} and final val_loss: 0.00048064897834722487
+Starting trial 55
+Loaded 8732 samples from 1 chunks.
+Trial 55 pruned at epoch 2 with val_loss 0.6861867074455533
+Starting trial 56
+Loaded 8732 samples from 1 chunks.
+Trial 56 pruned at epoch 2 with val_loss 2.501312494277954
+Starting trial 57
+Loaded 8732 samples from 1 chunks.
+Trial 57 pruned at epoch 0 with val_loss 4.717304161616734
+Starting trial 58
+Loaded 8732 samples from 1 chunks.
+Trial 58 pruned at epoch 0 with val_loss 17.38713264465332
+Starting trial 59
+Loaded 8732 samples from 1 chunks.
+Trial 59 pruned at epoch 3 with val_loss 0.27035472435610636
+Starting trial 60
+Loaded 8732 samples from 1 chunks.
+Trial 60 pruned at epoch 0 with val_loss 16.84562921524048
+Starting trial 61
+Loaded 8732 samples from 1 chunks.
+Trial 61 pruned at epoch 0 with val_loss 3.9387358937944685
+Starting trial 62
+Loaded 8732 samples from 1 chunks.
+Trial 62 pruned at epoch 0 with val_loss 7.011074338640485
+Starting trial 63
+Loaded 8732 samples from 1 chunks.
+Trial 63 finished with parameters: {'num_shared_layers': 2, 'hidden_dim': 1024, 'output_dim': 1024, 'max_output_len': 16, 'dropout_rate': 0.036948651438765176, 'lr': 0.0012024803775002506, 'weight_decay': 0.0038891452148826665, 'batch_size': 256, 'w_levelset': 0.24175353283656384, 'w_separation': 0.6517410778323588, 'threshold_factor': 0.10542374139809915} and final val_loss: 0.0006903141849241885
+Starting trial 64
+Loaded 8732 samples from 1 chunks.
+Trial 64 pruned at epoch 2 with val_loss 0.4304367985044207
+Starting trial 65
+Loaded 8732 samples from 1 chunks.
+Trial 65 pruned at epoch 4 with val_loss 0.17228547164372035
+Starting trial 66
+Loaded 8732 samples from 1 chunks.
+Trial 66 pruned at epoch 4 with val_loss 0.4750351309776306
+Starting trial 67
+Loaded 8732 samples from 1 chunks.
+Trial 67 pruned at epoch 0 with val_loss 18.045912742614746
+Starting trial 68
+Loaded 8732 samples from 1 chunks.
+Trial 68 pruned at epoch 0 with val_loss 2.5485455308641707
+Starting trial 69
+Loaded 8732 samples from 1 chunks.
+Trial 69 pruned at epoch 0 with val_loss 85.53028760637555
+Starting trial 70
+Loaded 8732 samples from 1 chunks.
+Trial 70 pruned at epoch 2 with val_loss 0.9240919777325222
+Starting trial 71
+Loaded 8732 samples from 1 chunks.
+Trial 71 pruned at epoch 0 with val_loss 6.09205995287214
+Starting trial 72
+Loaded 8732 samples from 1 chunks.
+Trial 72 finished with parameters: {'num_shared_layers': 2, 'hidden_dim': 1024, 'output_dim': 1024, 'max_output_len': 16, 'dropout_rate': 0.09229461284203855, 'lr': 0.0014143058453569483, 'weight_decay': 0.005252979332960514, 'batch_size': 256, 'w_levelset': 0.24839169291672897, 'w_separation': 0.6708839073329809, 'threshold_factor': 0.09389019693781772} and final val_loss: 0.0010212038469035178
+Starting trial 73
+Loaded 8732 samples from 1 chunks.
+Trial 73 finished with parameters: {'num_shared_layers': 2, 'hidden_dim': 1024, 'output_dim': 1024, 'max_output_len': 16, 'dropout_rate': 0.09162789510754574, 'lr': 0.0033101578018970576, 'weight_decay': 0.004123985248356322, 'batch_size': 256, 'w_levelset': 0.29650736460770066, 'w_separation': 0.1287444982971107, 'threshold_factor': 0.10568107374293592} and final val_loss: 0.002224021133900221
+Starting trial 74
+Loaded 8732 samples from 1 chunks.
+Trial 74 finished with parameters: {'num_shared_layers': 2, 'hidden_dim': 1024, 'output_dim': 1024, 'max_output_len': 16, 'dropout_rate': 0.05622406248219366, 'lr': 0.0017002474362278247, 'weight_decay': 0.005007626740213921, 'batch_size': 256, 'w_levelset': 0.20165941854073716, 'w_separation': 0.6297297867365739, 'threshold_factor': 0.13073691425074707} and final val_loss: 0.0008531085830847067
+Starting trial 75
+Loaded 8732 samples from 1 chunks.
+Trial 75 pruned at epoch 1 with val_loss 2.5343918119158064
+Starting trial 76
+Loaded 8732 samples from 1 chunks.
+Trial 76 pruned at epoch 0 with val_loss 2.7488182612827847
+Starting trial 77
+Loaded 8732 samples from 1 chunks.
+Trial 77 pruned at epoch 0 with val_loss 16.586861201695033
+Starting trial 78
+Loaded 8732 samples from 1 chunks.
+Trial 78 pruned at epoch 0 with val_loss 1.8349420172827584
+Starting trial 79
+Loaded 8732 samples from 1 chunks.
+Trial 79 pruned at epoch 0 with val_loss 13.190008640289307
+Starting trial 80
+Loaded 8732 samples from 1 chunks.
+Trial 80 pruned at epoch 0 with val_loss 16.704405307769775
+Starting trial 81
+Loaded 8732 samples from 1 chunks.
+Trial 81 finished with parameters: {'num_shared_layers': 2, 'hidden_dim': 1024, 'output_dim': 1024, 'max_output_len': 16, 'dropout_rate': 0.07893562836389241, 'lr': 0.001680035943606515, 'weight_decay': 0.0006760929039527883, 'batch_size': 256, 'w_levelset': 0.23535138528264024, 'w_separation': 0.7571584628189028, 'threshold_factor': 0.09237039450133167} and final val_loss: 0.0013710614065140752
+Starting trial 82
+Loaded 8732 samples from 1 chunks.
+Trial 82 pruned at epoch 1 with val_loss 62.77162787743977
+Starting trial 83
+Loaded 8732 samples from 1 chunks.
+Trial 83 pruned at epoch 1 with val_loss 44.62392949206488
+Starting trial 84
+Loaded 8732 samples from 1 chunks.
+Trial 84 pruned at epoch 0 with val_loss 6.9181927272251675
+Starting trial 85
+Loaded 8732 samples from 1 chunks.
+Trial 85 pruned at epoch 0 with val_loss 2.2649689401899065
+Starting trial 86
+Loaded 8732 samples from 1 chunks.
+Trial 86 pruned at epoch 1 with val_loss 1.0469024351664953
+Starting trial 87
+Loaded 8732 samples from 1 chunks.
+Trial 87 pruned at epoch 0 with val_loss 137.16139221191406
+Starting trial 88
+Loaded 8732 samples from 1 chunks.
+Trial 88 finished with parameters: {'num_shared_layers': 2, 'hidden_dim': 1024, 'output_dim': 512, 'max_output_len': 16, 'dropout_rate': 0.041494273909997284, 'lr': 0.0038695873479312067, 'weight_decay': 0.0029479443518937378, 'batch_size': 256, 'w_levelset': 0.32348010929326987, 'w_separation': 0.5927852993786973, 'threshold_factor': 0.08640104689436223} and final val_loss: 0.0017707307748163917
+Starting trial 89
+Loaded 8732 samples from 1 chunks.
+Trial 89 pruned at epoch 1 with val_loss 3.978926496846335
+Starting trial 90
+Loaded 8732 samples from 1 chunks.
+Trial 90 pruned at epoch 1 with val_loss 1.3579918827329363
+Starting trial 91
+Loaded 8732 samples from 1 chunks.
+Trial 91 finished with parameters: {'num_shared_layers': 2, 'hidden_dim': 1024, 'output_dim': 1024, 'max_output_len': 16, 'dropout_rate': 0.07188786133458794, 'lr': 0.005556988710856084, 'weight_decay': 0.0007163583734379334, 'batch_size': 256, 'w_levelset': 0.26143234098199614, 'w_separation': 0.030920466623619754, 'threshold_factor': 0.09735480216908543} and final val_loss: 0.0011355890726138438
+Starting trial 92
+Loaded 8732 samples from 1 chunks.
+Trial 92 pruned at epoch 0 with val_loss 1.6549650260380335
+Starting trial 93
+Loaded 8732 samples from 1 chunks.
+Trial 93 pruned at epoch 2 with val_loss 0.776326767035893
+Starting trial 94
+Loaded 8732 samples from 1 chunks.
+Trial 94 pruned at epoch 0 with val_loss 9.193320955548968
+Starting trial 95
+Loaded 8732 samples from 1 chunks.
+Trial 95 pruned at epoch 1 with val_loss 1.0074381061962672
+Starting trial 96
+Loaded 8732 samples from 1 chunks.
+Trial 96 pruned at epoch 0 with val_loss 48.091947828020366
+Starting trial 97
+Loaded 8732 samples from 1 chunks.
+Trial 97 pruned at epoch 0 with val_loss 17.228954315185547
+Starting trial 98
+Loaded 8732 samples from 1 chunks.
+Trial 98 pruned at epoch 0 with val_loss 14.983431679861885
+Starting trial 99
+Loaded 8732 samples from 1 chunks.
+Trial 99 pruned at epoch 3 with val_loss 0.30400616356304716
+Starting trial 100
+Loaded 8732 samples from 1 chunks.
+Trial 100 pruned at epoch 0 with val_loss 1.922029972076416
+Starting trial 101
+Loaded 8732 samples from 1 chunks.
+Trial 101 pruned at epoch 24 with val_loss 0.043388454775725095
+Starting trial 102
+Loaded 8732 samples from 1 chunks.
+Trial 102 pruned at epoch 2 with val_loss 0.5600783665265355
+Starting trial 103
+Loaded 8732 samples from 1 chunks.
+Trial 103 pruned at epoch 0 with val_loss 2.630406311580113
+Starting trial 104
+Loaded 8732 samples from 1 chunks.
+Trial 104 pruned at epoch 6 with val_loss 0.2206298661019121
+Starting trial 105
+Loaded 8732 samples from 1 chunks.
+Trial 105 pruned at epoch 0 with val_loss 2.579690524509975
+Starting trial 106
+Loaded 8732 samples from 1 chunks.
+Trial 106 pruned at epoch 0 with val_loss 4.481929097856794
+Starting trial 107
+Loaded 8732 samples from 1 chunks.
+Trial 107 pruned at epoch 4 with val_loss 0.1380992286971637
+Starting trial 108
+Loaded 8732 samples from 1 chunks.
+Trial 108 pruned at epoch 0 with val_loss 5.800812653132847
+Starting trial 109
+Loaded 8732 samples from 1 chunks.
+Trial 109 pruned at epoch 0 with val_loss 15.438520295279366
+Starting trial 110
+Loaded 8732 samples from 1 chunks.
+Trial 110 pruned at epoch 0 with val_loss 58.834600176130024
+Starting trial 111
+Loaded 8732 samples from 1 chunks.
+Trial 111 pruned at epoch 5 with val_loss 0.6344848647713661
+Starting trial 112
+Loaded 8732 samples from 1 chunks.
+Trial 112 pruned at epoch 24 with val_loss 0.017622826487890313
+Starting trial 113
+Loaded 8732 samples from 1 chunks.
+Trial 113 pruned at epoch 1 with val_loss 0.8269484554018293
+Starting trial 114
+Loaded 8732 samples from 1 chunks.
+Trial 114 pruned at epoch 1 with val_loss 0.9031133140836444
+Starting trial 115
+Loaded 8732 samples from 1 chunks.
+Trial 115 pruned at epoch 0 with val_loss 2.011427095958165
+Starting trial 116
+Loaded 8732 samples from 1 chunks.
+Trial 116 pruned at epoch 0 with val_loss 3.229462146759033
+Starting trial 117
+Loaded 8732 samples from 1 chunks.
+Trial 117 pruned at epoch 1 with val_loss 1.00679549574852
+Starting trial 118
+Loaded 8732 samples from 1 chunks.
+Trial 118 pruned at epoch 1 with val_loss 1.1683790172849382
+Starting trial 119
+Loaded 8732 samples from 1 chunks.
+Trial 119 pruned at epoch 0 with val_loss 2.5129761695861816
+Starting trial 120
+Loaded 8732 samples from 1 chunks.
+Trial 120 pruned at epoch 0 with val_loss 9.897467476981026
+Starting trial 121
+Loaded 8732 samples from 1 chunks.
+Trial 121 finished with parameters: {'num_shared_layers': 2, 'hidden_dim': 1024, 'output_dim': 1024, 'max_output_len': 16, 'dropout_rate': 0.09027709088932617, 'lr': 0.0036148041794129104, 'weight_decay': 0.004363549262432851, 'batch_size': 256, 'w_levelset': 0.2959222697499059, 'w_separation': 0.12355267914082382, 'threshold_factor': 0.09567777134102373} and final val_loss: 0.0006697315714388553
+Starting trial 122
+Loaded 8732 samples from 1 chunks.
+Trial 122 pruned at epoch 0 with val_loss 1.8855303866522652
+Starting trial 123
+Loaded 8732 samples from 1 chunks.
+Trial 123 pruned at epoch 2 with val_loss 0.34138462373188566
+Starting trial 124
+Loaded 8732 samples from 1 chunks.
+Trial 124 finished with parameters: {'num_shared_layers': 2, 'hidden_dim': 1024, 'output_dim': 1024, 'max_output_len': 16, 'dropout_rate': 0.09800545293923624, 'lr': 0.004235111020744998, 'weight_decay': 0.003462178587427534, 'batch_size': 256, 'w_levelset': 0.29234429617109553, 'w_separation': 0.09997891658586168, 'threshold_factor': 0.09379451771482016} and final val_loss: 0.0025258257436299963
+Starting trial 125
+Loaded 8732 samples from 1 chunks.
+Trial 125 pruned at epoch 2 with val_loss 0.4590263856308801
+Starting trial 126
+Loaded 8732 samples from 1 chunks.
+Trial 126 pruned at epoch 0 with val_loss 1.4739509310041154
+Starting trial 127
+Loaded 8732 samples from 1 chunks.
+Trial 127 pruned at epoch 0 with val_loss 8.820962360927037
+Starting trial 128
+Loaded 8732 samples from 1 chunks.
+Trial 128 pruned at epoch 1 with val_loss 26.61685100197792
+Starting trial 129
+Loaded 8732 samples from 1 chunks.
+Trial 129 pruned at epoch 0 with val_loss 1.481580342565264
+Starting trial 130
+Loaded 8732 samples from 1 chunks.
+Trial 130 pruned at epoch 2 with val_loss 0.32943293026515413
+Starting trial 131
+Loaded 8732 samples from 1 chunks.
+Trial 131 finished with parameters: {'num_shared_layers': 2, 'hidden_dim': 1024, 'output_dim': 1024, 'max_output_len': 16, 'dropout_rate': 0.09294566571891792, 'lr': 0.003344900980331322, 'weight_decay': 0.004475565124994346, 'batch_size': 256, 'w_levelset': 0.30647536996348357, 'w_separation': 0.12577682666078024, 'threshold_factor': 0.10289710133102739} and final val_loss: 0.0011657320927562459
+Starting trial 132
+Loaded 8732 samples from 1 chunks.
+Trial 132 pruned at epoch 2 with val_loss 3.554301921810423
+Starting trial 133
+Loaded 8732 samples from 1 chunks.
+Trial 133 finished with parameters: {'num_shared_layers': 2, 'hidden_dim': 1024, 'output_dim': 1024, 'max_output_len': 16, 'dropout_rate': 0.038364891197623735, 'lr': 0.0036349085453940035, 'weight_decay': 4.575633269007805e-05, 'batch_size': 256, 'w_levelset': 0.3021874144506299, 'w_separation': 0.21238563712028927, 'threshold_factor': 0.09542908733362705} and final val_loss: 0.0009067576112491744
+Starting trial 134
+Loaded 8732 samples from 1 chunks.
+Trial 134 finished with parameters: {'num_shared_layers': 2, 'hidden_dim': 1024, 'output_dim': 1024, 'max_output_len': 16, 'dropout_rate': 0.11086370458458233, 'lr': 0.0029657471158806067, 'weight_decay': 5.434729440452228e-05, 'batch_size': 256, 'w_levelset': 0.27053740507933477, 'w_separation': 0.20942045087764724, 'threshold_factor': 0.09572577750878164} and final val_loss: 0.0011038180673494935
+Starting trial 135
+Loaded 8732 samples from 1 chunks.
+Trial 135 finished with parameters: {'num_shared_layers': 2, 'hidden_dim': 1024, 'output_dim': 1024, 'max_output_len': 16, 'dropout_rate': 0.10232086617065178, 'lr': 0.0029972913943754785, 'weight_decay': 4.098863779505233e-05, 'batch_size': 256, 'w_levelset': 0.2835243405550764, 'w_separation': 0.21985025099511235, 'threshold_factor': 0.1005544613789044} and final val_loss: 0.0010565423331822135
+Starting trial 136
+Loaded 8732 samples from 1 chunks.
+Trial 136 pruned at epoch 8 with val_loss 0.046383053064346313
+Starting trial 137
+Loaded 8732 samples from 1 chunks.
+Trial 137 finished with parameters: {'num_shared_layers': 2, 'hidden_dim': 1024, 'output_dim': 1024, 'max_output_len': 16, 'dropout_rate': 0.11116605200504726, 'lr': 0.002595619347409704, 'weight_decay': 6.600418168390247e-05, 'batch_size': 256, 'w_levelset': 0.28450276200522673, 'w_separation': 0.23358955179272856, 'threshold_factor': 0.0944331883575069} and final val_loss: 0.0009883672298331345
+Starting trial 138
+Loaded 8732 samples from 1 chunks.
+Trial 138 finished with parameters: {'num_shared_layers': 2, 'hidden_dim': 1024, 'output_dim': 1024, 'max_output_len': 16, 'dropout_rate': 0.16235081095928672, 'lr': 0.0026135169777287376, 'weight_decay': 6.091450077802212e-05, 'batch_size': 256, 'w_levelset': 0.2802054064856716, 'w_separation': 0.25040243864904566, 'threshold_factor': 0.10405898874512695} and final val_loss: 0.0007339775578917138
+Starting trial 139
+Loaded 8732 samples from 1 chunks.
+Trial 139 pruned at epoch 0 with val_loss 1.9730389288493566
+Starting trial 140
+Loaded 8732 samples from 1 chunks.
+Trial 140 pruned at epoch 5 with val_loss 0.08895861676761083
+Starting trial 141
+Loaded 8732 samples from 1 chunks.
+Trial 141 finished with parameters: {'num_shared_layers': 2, 'hidden_dim': 1024, 'output_dim': 1024, 'max_output_len': 16, 'dropout_rate': 0.11005054258803404, 'lr': 0.003493590742165239, 'weight_decay': 7.632248750492741e-05, 'batch_size': 256, 'w_levelset': 0.3081989257461891, 'w_separation': 0.18125752732495476, 'threshold_factor': 0.10440227268937899} and final val_loss: 0.0009457734163983592
+Starting trial 142
+Loaded 8732 samples from 1 chunks.
+Trial 142 pruned at epoch 2 with val_loss 0.39690534131867544
+Starting trial 143
+Loaded 8732 samples from 1 chunks.
+Trial 143 pruned at epoch 1 with val_loss 4.942230769566128
+Starting trial 144
+Loaded 8732 samples from 1 chunks.
+Trial 144 finished with parameters: {'num_shared_layers': 2, 'hidden_dim': 1024, 'output_dim': 1024, 'max_output_len': 16, 'dropout_rate': 0.11188559197703467, 'lr': 0.0025614025476029686, 'weight_decay': 2.9072472343768826e-05, 'batch_size': 256, 'w_levelset': 0.22264997444024337, 'w_separation': 0.22647814069733935, 'threshold_factor': 0.11192617930418458} and final val_loss: 0.0007940925965418241
+Starting trial 145
+Loaded 8732 samples from 1 chunks.
+Trial 145 finished with parameters: {'num_shared_layers': 2, 'hidden_dim': 1024, 'output_dim': 1024, 'max_output_len': 16, 'dropout_rate': 0.15988775660466345, 'lr': 0.0025452353943682584, 'weight_decay': 1.851208340890802e-05, 'batch_size': 256, 'w_levelset': 0.23801163233217407, 'w_separation': 0.2062594946128793, 'threshold_factor': 0.11427427285680897} and final val_loss: 0.000941312505996653
+Starting trial 146
+Loaded 8732 samples from 1 chunks.
+Trial 146 pruned at epoch 0 with val_loss 14.822770595550537
+Starting trial 147
+Loaded 8732 samples from 1 chunks.
+Trial 147 finished with parameters: {'num_shared_layers': 2, 'hidden_dim': 1024, 'output_dim': 1024, 'max_output_len': 16, 'dropout_rate': 0.19578322184074692, 'lr': 0.0024612536490434154, 'weight_decay': 3.156022048582134e-05, 'batch_size': 256, 'w_levelset': 0.22303682868420477, 'w_separation': 0.22324432184635226, 'threshold_factor': 0.1197347812457956} and final val_loss: 0.0006445900154566127
+Starting trial 148
+Loaded 8732 samples from 1 chunks.
+Trial 148 pruned at epoch 0 with val_loss 1.2655209813799178
+Starting trial 149
+Loaded 8732 samples from 1 chunks.
+Trial 149 pruned at epoch 0 with val_loss 14.002938747406006
+Starting trial 150
+Loaded 8732 samples from 1 chunks.
+Trial 150 pruned at epoch 1 with val_loss 1.0439665487834386
+Starting trial 151
+Loaded 8732 samples from 1 chunks.
+Trial 151 pruned at epoch 2 with val_loss 1.3132009719099318
+Starting trial 152
+Loaded 8732 samples from 1 chunks.
+Trial 152 pruned at epoch 2 with val_loss 0.8909730953829629
+Starting trial 153
+Loaded 8732 samples from 1 chunks.
+Trial 153 pruned at epoch 1 with val_loss 0.6505471127373832
+Starting trial 154
+Loaded 8732 samples from 1 chunks.
+Trial 154 pruned at epoch 1 with val_loss 16.133720900331223
+Starting trial 155
+Loaded 8732 samples from 1 chunks.
+Trial 155 pruned at epoch 0 with val_loss 1.2359378678458077
+Starting trial 156
+Loaded 8732 samples from 1 chunks.
+Trial 156 pruned at epoch 0 with val_loss 1.181581974029541
+Starting trial 157
+Loaded 8732 samples from 1 chunks.
+Trial 157 pruned at epoch 0 with val_loss 3.0512870720454623
+Starting trial 158
+Loaded 8732 samples from 1 chunks.
+Trial 158 pruned at epoch 0 with val_loss 2.009154098374503
+Starting trial 159
+Loaded 8732 samples from 1 chunks.
+Trial 159 pruned at epoch 0 with val_loss 1.3184704780578613
+Starting trial 160
+Loaded 8732 samples from 1 chunks.
+Trial 160 pruned at epoch 0 with val_loss 1.4165358883993966
+Starting trial 161
+Loaded 8732 samples from 1 chunks.
+Trial 161 pruned at epoch 5 with val_loss 0.5519707346601146
+Starting trial 162
+Loaded 8732 samples from 1 chunks.
+Trial 162 pruned at epoch 5 with val_loss 0.0928731198821749
+Starting trial 163
+Loaded 8732 samples from 1 chunks.
+Trial 163 pruned at epoch 0 with val_loss 1.1203774894986833
+Starting trial 164
+Loaded 8732 samples from 1 chunks.
+Trial 164 pruned at epoch 5 with val_loss 0.07703757286071777
+Starting trial 165
+Loaded 8732 samples from 1 chunks.
+Trial 165 pruned at epoch 0 with val_loss 17.226889201572963
+Starting trial 166
+Loaded 8732 samples from 1 chunks.
+Trial 166 pruned at epoch 1 with val_loss 0.6320051891463143
+Starting trial 167
+Loaded 8732 samples from 1 chunks.
+Trial 167 pruned at epoch 0 with val_loss 1.2293252774647303
+Starting trial 168
+Loaded 8732 samples from 1 chunks.
+Trial 168 pruned at epoch 1 with val_loss 0.969083309173584
+Starting trial 169
+Loaded 8732 samples from 1 chunks.
+Trial 169 pruned at epoch 0 with val_loss 1.7822647605623518
+Starting trial 170
+Loaded 8732 samples from 1 chunks.
+Trial 170 pruned at epoch 0 with val_loss 2.087087665285383
+Starting trial 171
+Loaded 8732 samples from 1 chunks.
+Trial 171 pruned at epoch 0 with val_loss 1.2331523043768746
+Starting trial 172
+Loaded 8732 samples from 1 chunks.
+Trial 172 pruned at epoch 0 with val_loss 1.179568818637303
+Starting trial 173
+Loaded 8732 samples from 1 chunks.
+Trial 173 pruned at epoch 214 with val_loss 0.002571511431597173
+Starting trial 174
+Loaded 8732 samples from 1 chunks.
+Trial 174 pruned at epoch 1 with val_loss 0.714067918913705
+Starting trial 175
+Loaded 8732 samples from 1 chunks.
+Trial 175 finished with parameters: {'num_shared_layers': 2, 'hidden_dim': 1024, 'output_dim': 1024, 'max_output_len': 16, 'dropout_rate': 0.030395057595332127, 'lr': 0.0032811951130220086, 'weight_decay': 2.372618227020493e-05, 'batch_size': 256, 'w_levelset': 0.28543155218857985, 'w_separation': 0.21859026915244315, 'threshold_factor': 0.10647041539370297} and final val_loss: 0.0012644332101834671
+Starting trial 176
+Loaded 8732 samples from 1 chunks.
+Trial 176 pruned at epoch 0 with val_loss 1.1277879774570465
+Starting trial 177
+Loaded 8732 samples from 1 chunks.
+Trial 177 pruned at epoch 0 with val_loss 15.951233863830566
+Starting trial 178
+Loaded 8732 samples from 1 chunks.
+Trial 178 pruned at epoch 0 with val_loss 1.5411770514079504
+Starting trial 179
+Loaded 8732 samples from 1 chunks.
+Trial 179 pruned at epoch 0 with val_loss 1.4383060932159424
+Starting trial 180
+Loaded 8732 samples from 1 chunks.
+Trial 180 pruned at epoch 1 with val_loss 0.7742384501865932
+Starting trial 181
+Loaded 8732 samples from 1 chunks.
+Trial 181 pruned at epoch 0 with val_loss 1.1331249816077096
+Starting trial 182
+Loaded 8732 samples from 1 chunks.
+Trial 182 pruned at epoch 0 with val_loss 1.154200860432216
+Starting trial 183
+Loaded 8732 samples from 1 chunks.
+Trial 183 pruned at epoch 0 with val_loss 7.473291873931885
+Starting trial 184
+Loaded 8732 samples from 1 chunks.
+Trial 184 pruned at epoch 0 with val_loss 1.1429821252822876
+Starting trial 185
+Loaded 8732 samples from 1 chunks.
+Trial 185 pruned at epoch 0 with val_loss 1.7266139132635934
+Starting trial 186
+Loaded 8732 samples from 1 chunks.
+Trial 186 pruned at epoch 4 with val_loss 0.7265543655625412
+Starting trial 187
+Loaded 8732 samples from 1 chunks.
+Trial 187 pruned at epoch 0 with val_loss 1.5638792855398995
+Starting trial 188
+Loaded 8732 samples from 1 chunks.
+Trial 188 pruned at epoch 0 with val_loss 2.6525284222194125
+Starting trial 189
+Loaded 8732 samples from 1 chunks.
+Trial 189 pruned at epoch 0 with val_loss 4.777261734008789
+Starting trial 190
+Loaded 8732 samples from 1 chunks.
+Trial 190 pruned at epoch 0 with val_loss 1.3234906196594238
+Starting trial 191
+Loaded 8732 samples from 1 chunks.
+Trial 191 pruned at epoch 2 with val_loss 0.3145987391471863
+Starting trial 192
+Loaded 8732 samples from 1 chunks.
+Trial 192 pruned at epoch 12 with val_loss 0.10135840278651033
+Starting trial 193
+Loaded 8732 samples from 1 chunks.
+Trial 193 pruned at epoch 7 with val_loss 0.08796238154172897
+Starting trial 194
+Loaded 8732 samples from 1 chunks.
+Trial 194 pruned at epoch 1 with val_loss 0.5863586919648307
+Starting trial 195
+Loaded 8732 samples from 1 chunks.
+Trial 195 pruned at epoch 1 with val_loss 42.427418095724924
+Starting trial 196
+Loaded 8732 samples from 1 chunks.
+Trial 196 pruned at epoch 0 with val_loss 1.849534341267177
+Starting trial 197
+Loaded 8732 samples from 1 chunks.
+Trial 197 pruned at epoch 0 with val_loss 195.57835783277238
+Starting trial 198
+Loaded 8732 samples from 1 chunks.
+Trial 198 pruned at epoch 0 with val_loss 14.17591667175293
+Starting trial 199
+Loaded 8732 samples from 1 chunks.
+Trial 199 pruned at epoch 0 with val_loss 1.1603757653917586
+Best hyperparameters:  {'num_shared_layers': 2, 'hidden_dim': 2048, 'output_dim': 1024, 'max_output_len': 16, 'dropout_rate': 0.0718234340555636, 'lr': 0.0011613889975379944, 'weight_decay': 4.4359740700614145e-05, 'batch_size': 256, 'w_levelset': 0.18807797869620801, 'w_separation': 0.16637744138986665, 'threshold_factor': 0.05444905667042478}

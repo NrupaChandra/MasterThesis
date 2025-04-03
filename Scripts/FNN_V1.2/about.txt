@@ -1,0 +1,29 @@
+about this version : 
+
+- Has a FNN arcticture (with Residual block)
+- It implements nodal representation without normailzation 
+-The nodal values are passed through a feedforward network that consists of:
+
+Input Layer: A fully connected layer mapping from num_nodes to hidden_dim, followed by ReLU activation.
+Residual Blocks (PreActResidualBlock): A stack of 6 residual blocks that enhance feature extraction and stability. Each block contains:
+ReLU activation
+Linear transformation
+Dropout (0.1 probability)
+Batch normalization
+Second linear transformation
+Skip connection (residual connection) for stable gradient propagation.
+Shared Hidden Layer: A dense layer after residual blocks to refine features.
+
+-Prediction Heads
+The model has two separate branches:
+
+Nodes Prediction Branch
+Predicts x and y coordinates for a set of points.
+Uses tanh activation to ensure values remain within a reasonable range.
+Weights Prediction Branch
+Predicts associated weights.
+Uses softplus activation to ensure weights remain non-negative.
+
+-It uses double precission (float 64)
+
+-The test function while training are 9 legendre polynomials.

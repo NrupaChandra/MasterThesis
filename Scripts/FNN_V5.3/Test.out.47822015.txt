@@ -1,0 +1,4 @@
+Predicted area of circle: 0.022072
+Analytical area of circle (r=0.5): 0.785398
+Relative Error: 97.19%
+MSE: 5.8267e-01
