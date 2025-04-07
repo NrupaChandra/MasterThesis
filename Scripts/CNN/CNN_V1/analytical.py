@@ -10,8 +10,11 @@ import utilities  # Assumes utilities.compute_integration() is available
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 # Load the trained model (adjust weights_path as needed).
-model_path = "C:\Git\MasterThesis\Models\CNN\CNN_V1\cnn_model_weights_v1.0.pth"
+model_path = "C:\\Git\\MasterThesis\\Models\\CNN\\CNN_V1\\cnn_model_weights_v1.0.pth"
 model = load_shallow_cnn_model(weights_path=model_path, num_nodes=1225, domain=(-1,1), dropout_rate=0.0)
+
+# Load the model with appropriate device mapping
+model.load_state_dict(torch.load(model_path, map_location=device))
 model.to(device)
 model.eval()
 
@@ -43,7 +46,7 @@ pred_integral_tensor = utilities.compute_integration(
 predicted_area = pred_integral_tensor[0].item()
 
 # Convert from domain integral to circle area (4 - predicted_area).
-predicted_area_circle =  predicted_area
+predicted_area_circle = predicted_area
 
 # Analytical area of a circle with radius 0.5.
 analytical_area = math.pi * (0.5**2)
@@ -82,7 +85,7 @@ scatter = plt.scatter(
 plt.colorbar(scatter, label='Predicted Weight')
 
 # Plot the circle boundary in red.
-theta = np.linspace(0, 2*np.pi, 200)
+theta = np.linspace(0, 2 * np.pi, 200)
 x_circle = 0.5 * np.cos(theta)
 y_circle = 0.5 * np.sin(theta)
 plt.plot(x_circle, y_circle, 'r-', linewidth=2, label='Circle Boundary')
@@ -90,7 +93,6 @@ plt.plot(x_circle, y_circle, 'r-', linewidth=2, label='Circle Boundary')
 plt.title("Analytical solution - circle")
 plt.xlabel("X-coordinate")
 plt.ylabel("Y-coordinate")
-
 
 # Make the axes square so the circle isn't stretched.
 plt.gca().set_aspect('equal', adjustable='box')
@@ -115,5 +117,6 @@ plt.text(
 )
 
 # Save the plot to a file.
+plt.show()
 plt.savefig("predicted_circle_integral.png", dpi=300)
 plt.close()
