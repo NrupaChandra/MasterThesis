@@ -10,7 +10,7 @@ import utilities  # Assumes utilities.compute_integration() is available
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 # Load the trained model (adjust weights_path as needed).
-model_path = "/work/scratch/ng66sume/Models/CNN/CNN_V1/cnn_model_weights_v1.0.pth"
+model_path = "C:\Git\MasterThesis\Models\CNN\CNN_V1\cnn_model_weights_v1.0.pth"
 model = load_shallow_cnn_model(weights_path=model_path, num_nodes=1225, domain=(-1,1), dropout_rate=0.0)
 model.to(device)
 model.eval()
