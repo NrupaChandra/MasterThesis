@@ -83,7 +83,7 @@ def load_shallow_cnn_model(weights_path=None, num_nodes=1225, domain=(-1,1), dro
     model = CNN_Weights(num_nodes=num_nodes, domain=domain, dropout_rate=dropout_rate)
     model = model.float()
     if weights_path:
-        model.load_state_dict(torch.load(weights_path))
+        model.load_state_dict(torch.load(weights_path, map_location=torch.device('cuda' if torch.cuda.is_available() else 'cpu')))
     return model
 
 def save_checkpoint(model, optimizer, epoch, loss, filename="checkpoint.pth"):
