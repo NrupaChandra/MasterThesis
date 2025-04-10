@@ -2,14 +2,15 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
-from hrefinement_circle import compute_error_circle # Import the function from compute_area.py
+from hrefinement_circle import compute_error_circle 
 from hrefinement_ellipse import compute_error_ellipse
+from hrefinement_triangle import compute_error_triangle
 
 def main():
-    output_folder = r"C:\Git\MasterThesis\Scripts\CNN\CNN_V1\plt"
+    output_folder = r"C:\Git\MasterThesis\Scripts\CNN\CNN_V1\plt\Triangle"
     
     # Get error_list and refinement_levels from compute_area module
-    error_list, refinement_levels = compute_error_ellipse
+    error_list, refinement_levels = compute_error_triangle()
     error_list = np.array(error_list)
     refinement_levels = np.array(refinement_levels)
     
@@ -22,8 +23,8 @@ def main():
 
     # Perform linear regression in log space: log_y ~ slope * log_x + intercept
     slope, intercept = np.polyfit(log_x, log_y, 1)
-    print(f"Fitted slope in log-log space = {slope:.4f}")
-    print(f"Fitted intercept in log-log space = {intercept:.4f}")
+    print(f"Fitted slope in log-log space = {slope:.6f}")
+    print(f"Fitted intercept in log-log space = {intercept:.6f}")
 
     # Generate regression line for plotting.
     fit_log_y = slope * log_x + intercept
@@ -40,7 +41,8 @@ def main():
     # plt.gca().invert_yaxis()
     plt.xlabel("Element Size (log scale)")
     plt.ylabel("Relative Error (log scale)")
-    plt.title("Log-Log Regression of Error vs. Element Size")
+    plt.title(f"Log-Log Regression of Error vs. Element Size - triangle, slope = {slope:.6f}")
+
     plt.legend()
     plt.grid(True, which='both', linestyle='--', alpha=0.7)
 
