@@ -14,7 +14,7 @@ import utilities  # Must provide utilities.compute_integration(...)
 ###############################################################################
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 model_path = r"C:\Git\MasterThesis\Models\CNN\CNN_V1\cnn_model_weights_v1.0.pth"
-output_folder = r"C:\Git\MasterThesis\Scripts\CNN\CNN_V1\plt"
+output_folder = r"C:\Git\MasterThesis\Scripts\CNN\CNN_V1\plt\circle"
 
 model = load_shallow_cnn_model(
     weights_path=model_path,
@@ -225,7 +225,7 @@ def compute_error_circle():
         refinement_levels (list): List of refinement levels used.
     """
     analytical_area = math.pi * (0.4**2)  # Analytical area for a circle of radius 0.4
-    refinement_levels = [1, 2, 4, 8, 16]
+    refinement_levels = [1, 2, 4, 8, 16, 32, 64, 128, 256]
     error_list = []  # Relative error for each refinement level.
     area_list = []   # Predicted integral areas.
 
