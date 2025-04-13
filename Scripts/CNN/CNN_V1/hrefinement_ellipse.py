@@ -272,7 +272,7 @@ def compute_error_ellipse():
         refinement_levels (list): List of refinement levels used.
     """
     analytical_area = math.pi * a * b  # Analytical area for the ellipse
-    refinement_levels = [1, 2, 4, 8, 16, 32]
+    refinement_levels = [1, 2, 4, 8, 16]
     error_list = []  # Relative error for each refinement level.
     area_list = []   # Predicted integral areas.
 

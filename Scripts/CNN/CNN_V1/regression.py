@@ -7,7 +7,7 @@ from hrefinement_ellipse import compute_error_ellipse
 from hrefinement_triangle import compute_error_triangle
 
 def main():
-    output_folder = r"C:\Git\MasterThesis\Scripts\CNN\CNN_V1\plt\Triangle"
+    output_folder = r"C:\Git\MasterThesis\Scripts\CNN\CNN_V1\plt\triangle"
     
     # Get error_list and refinement_levels from compute_area module
     error_list, refinement_levels = compute_error_triangle()

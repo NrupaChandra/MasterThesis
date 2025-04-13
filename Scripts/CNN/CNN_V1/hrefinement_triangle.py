@@ -256,7 +256,7 @@ def compute_error_triangle():
     analytical_area = 0.0  
     analytical_area = 0.5*1.5*1.5
 
-    refinement_levels = [1, 2, 4, 8, 16, 32, 64, 128, 256]
+    refinement_levels = [1, 2, 4, 8, 16]
     error_list = []
     area_list = []
 
