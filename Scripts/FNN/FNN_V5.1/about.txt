@@ -1,1 +1,0 @@
-about this version : FNN model from the best of the hyperparameter study with removing weight for integration loss
