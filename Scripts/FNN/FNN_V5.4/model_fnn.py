@@ -102,9 +102,15 @@ def load_ff_pipelines_model(weights_path=None, hidden_dim=2048, output_dim=1024,
                              num_nodes=25, domain=(-1,1), dropout_rate=0.0718234340555636, num_shared_layers=2):
     model = FeedForwardNN(hidden_dim, output_dim, max_output_len, num_nodes, domain, dropout_rate, num_shared_layers)
     model = model.float()
+
+    map_location = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
     if weights_path:
-        model.load_state_dict(torch.load(weights_path))
+        state_dict = torch.load(weights_path, map_location=map_location)
+        model.load_state_dict(state_dict)
+
     return model
+
 
 def save_checkpoint(model, optimizer, epoch, loss, filename="checkpoint.pth"):
     checkpoint = {
