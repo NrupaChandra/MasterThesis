@@ -17,45 +17,45 @@ model_path = r"C:\Git\MasterThesis\Models\CNN\CNN_V6\cnn_model_weights_v5.0.pth"
 output_folder = r"C:\Git\MasterThesis\Scripts\CNN\CNN_V6\plt\circle"
 
 # (1) construct the model architecture without weights
-model = load_shallow_cnn_model(None)  
+model = load_shallow_cnn_model(None)
 
 # (2) load the state dict onto CPU explicitly
 state_dict = torch.load(model_path, map_location=torch.device('cpu'))
 model.load_state_dict(state_dict)
 
 # (3) then move to your chosen device (in this case CPU)
-model.to(torch.device('cpu'))
+model.to(device)
 model.eval()
-
 
 
 ###############################################################################
 # 2. Helper: Build the Circle Polynomial in a Subcell (radius = 0.4)
+#    with reference‐cell normalization (divide by h^2)
 ###############################################################################
 def make_subcell_circle_polynomial(ox, oy, n, device='cpu'):
     """
-    Creates the polynomial representation of the circle level-set:
-      f(x,y) = -1 + 6.25*(x^2+y^2)
-    but shifted & scaled into a subcell centered at (ox, oy) with half-width 1/n.
-    
-    Returns:
-      exps_x, exps_y, coeffs (tensors on the given device)
-    such that:
-      f_sub(X,Y) = sum_i coeffs[i] * X^(exps_x[i]) * Y^(exps_y[i])
-    for (X,Y) in the subcell's local reference coords.
-    """
-    sub_half = 1.0 / n  # half-width of the subcell
+    Creates the normalized polynomial representation of the circle level-set:
+      f_phys(x,y) = -1 + 6.25*(x^2+y^2)
+    on the subcell center (ox, oy) of half-width h = 1/n,
+    then rescales to reference coords [X,Y] in [-1,1] via
+      f_ref(X,Y) = f_phys(ox + h*X, oy + h*Y) / h^2.
 
-    # For a circle of radius 0.4, we use: f(x,y) = -1 + 6.25*(x^2+y^2)
-    c_X2 = 6.25 * (sub_half**2)
-    c_Y2 = 6.25 * (sub_half**2)
-    c_X  = 12.5 * (ox * sub_half)
-    c_Y  = 12.5 * (oy * sub_half)
-    c_0  = -1.0 + 6.25*(ox**2 + oy**2)
+    Returns exps_x, exps_y, coeffs for
+      f_ref(X,Y) = sum coeffs[i] * X^exps_x[i] * Y^exps_y[i]
+    """
+    h = 1.0 / n
+    # Expand f_phys(ox + h X, oy + h Y) / h^2:
+    # f_phys = -1 + 6.25*((ox + hX)^2 + (oy + hY)^2)
+    # Divide each term by h^2
+    c0 = (-1.0 + 6.25*(ox*ox + oy*oy)) / (h*h)
+    cX = (12.5 * ox * h) / (h*h)    # = 12.5 * ox / h
+    cY = (12.5 * oy * h) / (h*h)    # = 12.5 * oy / h
+    cX2 = (6.25 * h*h) / (h*h)      # = 6.25
+    cY2 = (6.25 * h*h) / (h*h)      # = 6.25
 
     exps_x = torch.tensor([[0, 1, 2, 0, 0]], dtype=torch.float32, device=device)
     exps_y = torch.tensor([[0, 0, 0, 1, 2]], dtype=torch.float32, device=device)
-    coeffs = torch.tensor([[c_0, c_X, c_X2, c_Y, c_Y2]], dtype=torch.float32, device=device)
+    coeffs = torch.tensor([[c0, cX, cX2, cY, cY2]], dtype=torch.float32, device=device)
 
     return exps_x, exps_y, coeffs
 
@@ -66,58 +66,50 @@ def is_inside_circle(x, y):
     """
     Returns True if (x, y) is inside or on the circle defined by:
         f(x,y) = -1 + 6.25*(x^2+y^2) <= 0.
-    This circle has a radius of 0.4.
     """
     return (-1 + 6.25*x**2 + 6.25*y**2) <= 0
 
 ###############################################################################
-# 4. Subcell-based Integration with Full-Cell Check (modified for n==1)
+# 4. Subcell-based Integration with Full-Cell Check + ML fallback
 ###############################################################################
 def compute_h_refined_integral(n_subdivisions, model, device='cpu'):
-    """
-    For each subcell:
-      - For n > 1, if the subcell is entirely inside the circle, assign full area;
-        if entirely outside, assign zero; otherwise, call the CNN.
-      - For n == 1, always call the CNN so that the entire domain is used.
-      Multiply the subcell's integration result by the Jacobian and sum over all subcells.
-    """
-    subcell_half = 1.0 / n_subdivisions   # half-width in physical units
-    jacobian = subcell_half**2            # Jacobian from reference [-1,1]^2 to physical subcell.
-    centers = np.linspace(-1 + subcell_half, 1 - subcell_half, n_subdivisions)
+    h = 1.0 / n_subdivisions
+    jacobian = h*h
+    centers = np.linspace(-1 + h, 1 - h, n_subdivisions)
     total_integral = 0.0
 
     nodes_x_ref = model.nodal_preprocessor.X.unsqueeze(0).to(device)
     nodes_y_ref = model.nodal_preprocessor.Y.unsqueeze(0).to(device)
 
+    # threshold for ML fallback (single-precision eps ~1e-7)
+    eps_fallback = 1e-4
+
     for ox in centers:
         for oy in centers:
-            if n_subdivisions == 1:
-                exps_x_sub, exps_y_sub, coeffs_sub = make_subcell_circle_polynomial(ox, oy, n_subdivisions, device)
-                with torch.no_grad():
-                    pred_weights = model(exps_x_sub, exps_y_sub, coeffs_sub)
-                    pred_weights = pred_weights.view(1, -1)
-                subcell_integral_tensor = utilities.compute_integration(
-                    nodes_x_ref, nodes_y_ref, pred_weights, lambda x, y: 1.0
-                )
-                subcell_integral = subcell_integral_tensor[0].item()
+            # Determine full/empty/partial
+            if n_subdivisions > 1:
+                corners = [(ox - h, oy - h), (ox - h, oy + h), (ox + h, oy - h), (ox + h, oy + h)]
+                flags = [is_inside_circle(xc, yc) for xc, yc in corners]
+                if all(flags):
+                    subint = 4.0
+                    total_integral += jacobian * subint
+                    continue
+                if not any(flags):
+                    # outside
+                    continue
+            # partial (or n_subdivisions==1)
+            # build normalized polynomial for this subcell
+            exps_x_sub, exps_y_sub, coeffs_sub = make_subcell_circle_polynomial(ox, oy, n_subdivisions, device)
+            with torch.no_grad():
+                pred_weights = model(exps_x_sub, exps_y_sub, coeffs_sub).view(1, -1)
+            # fallback: if all predicted weights tiny, treat as inside
+            if torch.all(pred_weights.abs() < eps_fallback):
+                subint = 4.0
             else:
-                corners_x = [ox - subcell_half, ox - subcell_half, ox + subcell_half, ox + subcell_half]
-                corners_y = [oy - subcell_half, oy + subcell_half, oy - subcell_half, oy + subcell_half]
-                inside_flags = [is_inside_circle(x, y) for x, y in zip(corners_x, corners_y)]
-                if all(inside_flags):
-                    subcell_integral = 4.0
-                elif not any(inside_flags):
-                    subcell_integral = 0.0
-                else:
-                    exps_x_sub, exps_y_sub, coeffs_sub = make_subcell_circle_polynomial(ox, oy, n_subdivisions, device)
-                    with torch.no_grad():
-                        pred_weights = model(exps_x_sub, exps_y_sub, coeffs_sub)
-                        pred_weights = pred_weights.view(1, -1)
-                    subcell_integral_tensor = utilities.compute_integration(
-                        nodes_x_ref, nodes_y_ref, pred_weights, lambda x, y: 1.0
-                    )
-                    subcell_integral = subcell_integral_tensor[0].item()
-            total_integral += jacobian * subcell_integral
+                subint = utilities.compute_integration(
+                    nodes_x_ref, nodes_y_ref, pred_weights, lambda x, y: 1.0
+                )[0].item()
+            total_integral += jacobian * subint
 
     return total_integral
 
@@ -229,7 +221,7 @@ def compute_error_circle():
         refinement_levels (list): List of refinement levels used.
     """
     analytical_area = math.pi * (0.4**2)  # Analytical area for a circle of radius 0.4
-    refinement_levels = [1, 2, 4, 8]
+    refinement_levels = [1, 2, 4, 8,16,32]
     error_list = []  # Relative error for each refinement level.
     area_list = []   # Predicted integral areas.
 

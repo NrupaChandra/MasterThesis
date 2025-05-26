@@ -6,10 +6,10 @@ from hrefinement_circle import compute_error_circle
 from hrefinement_ellipse import compute_error_ellipse
 
 def main():
-    output_folder = r"C:\Git\MasterThesis\Scripts\CNN\CNN_V1\plt\ellipse"
+    output_folder = r"C:\Git\MasterThesis\Scripts\CNN\CNN_V1\plt\circle"
     
     # Get error_list and refinement_levels from compute_area module
-    error_list, refinement_levels = compute_error_ellipse()
+    error_list, refinement_levels = compute_error_circle()
     error_list = np.array(error_list)
     refinement_levels = np.array(refinement_levels)
     
@@ -40,7 +40,7 @@ def main():
     # plt.gca().invert_yaxis()
     plt.xlabel("Element Size (log scale)")
     plt.ylabel("Relative Error (log scale)")
-    plt.title(f"Log-Log Regression of Error vs. Element Size - Circle, slope = {slope:.6f}")
+    plt.title(f"Log-Log Regression of Error vs. Element Size - ellipse, slope = {slope:.6f}")
 
     plt.legend()
     plt.grid(True, which='both', linestyle='--', alpha=0.7)
