@@ -1,0 +1,5 @@
+about this version : 
+
+final version of FNN - parameters selected from the best hyperparameter study, 
+
+training data comes from - training 10k p1, p2 and p3 polynomials 
