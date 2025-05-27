@@ -6,10 +6,10 @@ from hrefinement_circle import compute_error_circle
 from hrefinement_ellipse import compute_error_ellipse
 
 def main():
-    output_folder = r"C:\Git\MasterThesis\Scripts\CNN\CNN_V1\plt\circle"
+    output_folder = r"C:\Git\MasterThesis\Scripts\CNN_hybrid\Hybrid_V5\plt\ellipse"
     
     # Get error_list and refinement_levels from compute_area module
-    error_list, refinement_levels = compute_error_circle()
+    error_list, refinement_levels = compute_error_ellipse()
     error_list = np.array(error_list)
     refinement_levels = np.array(refinement_levels)
     

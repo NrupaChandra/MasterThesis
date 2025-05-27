@@ -155,7 +155,10 @@ def load_shallow_cnn_model(
     )
     model = model.float()
     if weights_path:
-        model.load_state_dict(torch.load(weights_path))
+        # model.load_state_dict(torch.load(weights_path))
+        # force all CUDA tensors onto CPU
+        state = torch.load(weights_path, map_location=torch.device('cpu'))
+        model.load_state_dict(state)
     return model
 
 
