@@ -198,7 +198,7 @@ def save_subcell_nodes_plot_ellipse(n_subdivisions, model, device='cpu', filenam
 ###############################################################################
 def compute_error_ellipse():
     analytical_area = math.pi * a * b
-    refinement_levels = [1, 2, 4, 8,16,32]
+    refinement_levels = [1, 2, 4, 8,16]
     error_list, area_list = [], []
 
     print("\nComputing area by subdividing domain and calling FNN per subcell (with full-cell check) for the ellipse:")

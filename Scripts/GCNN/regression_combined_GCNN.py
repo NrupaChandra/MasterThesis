@@ -17,7 +17,7 @@ def linear_regression(element_sizes, error_list):
 
 def main():
     # Define output folder path.
-    output_folder = r"C:\Git\MasterThesis\Scripts\CNN\CNN_V1\plt\Combined"
+    output_folder = r"C:\Git\MasterThesis\Scripts\GCNN\plt\Combined"
 
     # === Circle Data ===
     error_list_circle, refinement_levels_circle = compute_error_circle()
@@ -53,7 +53,7 @@ def main():
     plt.yscale('log')
     plt.xlabel("Element Size (log scale)")
     plt.ylabel("Relative Error (log scale)")
-    plt.title("Log–Log Regression of Error vs. Element Size\nCircle and Ellipse")
+    plt.title("Log–Log Regression (GCNN) of Error vs. Element Size\nCircle and Ellipse")
     plt.legend()
     plt.grid(True, which='both', linestyle='--', alpha=0.7)
 

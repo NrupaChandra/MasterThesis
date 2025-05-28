@@ -1,0 +1,4 @@
+GCNN
+
+-this version is from the best hyperparameter study of gcnn
+- the model is  trained on the 10k p1, p2 and p3 bernstein polynomials

@@ -221,7 +221,7 @@ def compute_error_circle():
         refinement_levels (list): List of refinement levels used.
     """
     analytical_area = math.pi * (0.4**2)  # Analytical area for a circle of radius 0.4
-    refinement_levels = [1, 2, 4, 8,16,32]
+    refinement_levels = [1, 2, 4, 8,16]
     error_list = []  # Relative error for each refinement level.
     area_list = []   # Predicted integral areas.
 

@@ -6,10 +6,10 @@ from hrefinement_circle import compute_error_circle
 from hrefinement_ellipse import compute_error_ellipse
 
 def main():
-    output_folder = r"C:\Git\MasterThesis\Scripts\FNN\FNN_V6\plt\ellipse"
+    output_folder = r"C:\Git\MasterThesis\Scripts\FNN\FNN_V6\plt\circle"
     
     # Get error_list and refinement_levels from compute_area module
-    error_list, refinement_levels = compute_error_ellipse()
+    error_list, refinement_levels = compute_error_circle()
     error_list = np.array(error_list)
     refinement_levels = np.array(refinement_levels)
     

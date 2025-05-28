@@ -17,7 +17,7 @@ def linear_regression(element_sizes, error_list):
 
 def main():
     # Define output folder path.
-    output_folder = r"C:\Git\MasterThesis\Scripts\CNN\CNN_V1\plt\Combined"
+    output_folder = r"C:\Git\MasterThesis\Scripts\FNN\FNN_V6\plt\Combined"
 
     # === Circle Data ===
     error_list_circle, refinement_levels_circle = compute_error_circle()

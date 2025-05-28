@@ -192,7 +192,7 @@ def save_subcell_nodes_plot(n_subdivisions, model, device='cpu', filename='subce
 ###############################################################################
 def compute_error_circle():
     analytical_area = math.pi * (0.4**2)
-    refinement_levels = [1, 2, 4, 8,16,32,64]
+    refinement_levels = [2, 4, 8,16]
     error_list = []
     area_list = []
 
