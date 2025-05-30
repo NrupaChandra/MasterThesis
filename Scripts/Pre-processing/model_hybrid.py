@@ -1,26 +1,29 @@
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import numpy as np
-import math
 
 class NodalPreprocessor(nn.Module):
     def __init__(self,
-                 node_x: torch.Tensor,
-                 node_y: torch.Tensor):
-        super().__init__()
-        x = node_x.to(torch.float32)
-        y = node_y.to(torch.float32)
-        if x.numel() != y.numel():
-            raise ValueError("node_x and node_y must have the same number of elements")
-        N = x.numel()
-        s = int(math.sqrt(N))
-        if s * s != N:
-            raise ValueError(f"Expected a square grid; got {N} points")
-        self.register_buffer("X", x)
-        self.register_buffer("Y", y)
-        self.num_nodes = N
-        self.grid_size = s
+                 num_nodes=64,
+                 domain=(-1, 1),
+                 node_x_str: str = None,
+                 node_y_str: str = None):
+        super(NodalPreprocessor, self).__init__()
+        self.num_nodes = num_nodes
+        self.domain = domain
+        self.grid_size = int(np.sqrt(num_nodes))
+     # Parse custom node positions
+        x_vals = list(map(float, node_x_str.strip().split(',')))
+        y_vals = list(map(float, node_y_str.strip().split(',')))
+            
+        X = torch.tensor(x_vals, dtype=torch.float32)
+        Y = torch.tensor(y_vals, dtype=torch.float32)
+    
+        # Register as buffers for lightning-fast access and serialization
+        self.register_buffer("X", X)
+        self.register_buffer("Y", Y)
 
     def forward(self, exp_x, exp_y, coeff):
         if exp_x.dim() == 1:
@@ -28,7 +31,8 @@ class NodalPreprocessor(nn.Module):
             exp_y = exp_y.unsqueeze(0)
             coeff = coeff.unsqueeze(0)
 
-        X = self.X.unsqueeze(0).unsqueeze(2)  # (1, num_nodes, 1)
+        # (batch, num_nodes, m_terms)
+        X = self.X.unsqueeze(0).unsqueeze(2)
         Y = self.Y.unsqueeze(0).unsqueeze(2)
         exp_x = exp_x.unsqueeze(1)
         exp_y = exp_y.unsqueeze(1)
@@ -41,43 +45,64 @@ class NodalPreprocessor(nn.Module):
         max_val = nodal_values.max(dim=1, keepdim=True)[0] + 1e-6
         return nodal_values / max_val
 
-
-class CNN(nn.Module):
-
+class CNN_FNN(nn.Module):
     def __init__(self,
-                 dropout_rate: float = 0.0,
-                 node_x: torch.Tensor = None,
-                 node_y: torch.Tensor = None):
-        super(CNN, self).__init__()
+                 hidden_dim,
+                 output_dim,
+                 max_output_len,
+                 num_nodes=64,
+                 domain=(-1,1),
+                 dropout_rate=0.0,
+                 node_x_str: str = None,
+                 node_y_str: str = None):
+        super(CNN_FNN, self).__init__()
+        # Pass custom nodes into preprocessor
         self.nodal_preprocessor = NodalPreprocessor(
-            node_x=node_x,
-            node_y=node_y)
-        self.grid_size = self.nodal_preprocessor.grid_size
-        
-        # Define a pure convolutional network.
-        self.conv1 = nn.Conv2d(in_channels=1, out_channels=8, kernel_size=3, padding=1)
-        self.conv2 = nn.Conv2d(in_channels=8, out_channels=16, kernel_size=3, padding=1)
-        self.conv3 = nn.Conv2d(in_channels=16, out_channels=1, kernel_size=3, padding=1)
+            num_nodes=num_nodes,
+            domain=domain,
+            node_x_str=node_x_str,
+            node_y_str=node_y_str
+        )
+        self.grid_size = int(np.sqrt(num_nodes))
+
+        self.conv = nn.Conv2d(1, 8, kernel_size=3, padding=1)
         self.relu = nn.ReLU()
-        self.softplus = nn.Softplus()  # ensures output weights are non-negative
-        self.dropout = nn.Dropout(dropout_rate) if dropout_rate > 0 else nn.Identity()
+        flattened_dim = 8 * self.grid_size * self.grid_size
+
+        self.fc_shared = nn.Sequential(
+            nn.Linear(flattened_dim, hidden_dim),
+            nn.ReLU(),
+            nn.Dropout(dropout_rate) if dropout_rate > 0 else nn.Identity()
+        )
+
+        self.node_x_branch = nn.Sequential(
+            nn.Linear(hidden_dim, max_output_len),
+            nn.Tanh()
+        )
+        self.node_y_branch = nn.Sequential(
+            nn.Linear(hidden_dim, max_output_len),
+            nn.Tanh()
+        )
+        self.weight_branch = nn.Sequential(
+            nn.Linear(hidden_dim, output_dim),
+            nn.ReLU(),
+            nn.Linear(output_dim, max_output_len),
+            nn.Softplus()
+        )
 
     def forward(self, exp_x, exp_y, coeff):
-        # Compute the nodal representation using the preprocessor.
-        # Output shape: (batch, num_nodes)
         nodal_values = self.nodal_preprocessor(exp_x, exp_y, coeff)
-        # Reshape to image format: (batch, 1, grid_size, grid_size)
-        nodal_image = nodal_values.view(-1, 1, self.grid_size, self.grid_size)
-        
-        # Process through convolutional layers.
-        x = self.relu(self.conv1(nodal_image))
-        x = self.dropout(x)
-        x = self.relu(self.conv2(x))
-        x = self.dropout(x)
-        # Final convolution produces the weight grid.
-        weight_grid = self.softplus(self.conv3(x))
-        return weight_grid
+        img = nodal_values.view(-1, 1, self.grid_size, self.grid_size)
+        conv_out = self.relu(self.conv(img))
+        flat = conv_out.view(conv_out.size(0), -1)
+        shared = self.fc_shared(flat)
+        return (
+            self.node_x_branch(shared),
+            self.node_y_branch(shared),
+            self.weight_branch(shared)
+        )
 
+# Example instantiation with your custom 8x8 nodes:
 node_x_str = """-0.9602898564975362,-0.9602898564975362,-0.9602898564975362,-0.9602898564975362,-0.9602898564975362,-0.9602898564975362,-0.9602898564975362,-0.9602898564975362,
 -0.7966664774136267,-0.7966664774136267,-0.7966664774136267,-0.7966664774136267,-0.7966664774136267,-0.7966664774136267,-0.7966664774136267,-0.7966664774136267,
 -0.5255324099163290,-0.5255324099163290,-0.5255324099163290,-0.5255324099163290,-0.5255324099163290,-0.5255324099163290,-0.5255324099163290,-0.5255324099163290,
@@ -96,25 +121,59 @@ node_y_str = """-0.9602898564975362,-0.7966664774136267,-0.5255324099163290,-0.1
 -0.9602898564975362,-0.7966664774136267,-0.5255324099163290,-0.1834346424956498,0.1834346424956499,0.5255324099163290,0.7966664774136267,0.9602898564975362,
 -0.9602898564975362,-0.7966664774136267,-0.5255324099163290,-0.1834346424956498,0.1834346424956499,0.5255324099163290,0.7966664774136267,0.9602898564975362"""
 
-node_x_list = [float(v) for v in node_x_str.replace("\n", "").split(",") if v]
-node_y_list = [float(v) for v in node_y_str.replace("\n", "").split(",") if v]
+model = CNN_FNN(
+    hidden_dim=256,
+    output_dim=256,
+    max_output_len=64,
+    num_nodes=64,
+    domain=(-1,1),
+    dropout_rate=0.0,
+    node_x_str=node_x_str,
+    node_y_str=node_y_str
+)
 
-tx = torch.tensor(node_x_list, dtype=torch.float32)
-ty = torch.tensor(node_y_list, dtype=torch.float32)
-
-def load_shallow_cnn_model(weights_path=None,
-                           node_x=tx,
-                           node_y=ty,
-                           dropout_rate=0.0):
-    model = CNN(
-                node_x=tx,
-                node_y=ty,
-                dropout_rate=dropout_rate)
+def load_shallow_cnn_model(
+    weights_path=None,
+    hidden_dim=256,
+    output_dim=256,
+    max_output_len=64,
+    num_nodes=64,
+    domain=(-1,1),
+    dropout_rate=0.0,
+    node_x_str: str = None,
+    node_y_str: str = None
+):
+    model = CNN_FNN(
+        hidden_dim,
+        output_dim,
+        max_output_len,
+        num_nodes=num_nodes,
+        domain=domain,
+        dropout_rate=dropout_rate,
+        node_x_str=node_x_str,
+        node_y_str=node_y_str
+    )
     model = model.float()
     if weights_path:
-        model.load_state_dict(torch.load(weights_path))
+        # model.load_state_dict(torch.load(weights_path))
+        # force all CUDA tensors onto CPU
+        state = torch.load(weights_path, map_location=torch.device('cpu'))
+        model.load_state_dict(state)
     return model
 
+
+# Create the model instance (for example usage)
+model = load_shallow_cnn_model(
+    weights_path=None,
+    hidden_dim=256,
+    output_dim=256,
+    max_output_len=64,
+    num_nodes=64,
+    domain=(-1,1),
+    dropout_rate=0.0,
+    node_x_str=node_x_str,
+    node_y_str=node_y_str
+)
 
 # --- Checkpoint Saving/Loading Functions ---
 

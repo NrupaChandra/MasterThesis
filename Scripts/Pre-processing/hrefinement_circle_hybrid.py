@@ -233,6 +233,85 @@ def save_subcell_nodes_plot(n_subdivisions, model, device='cpu', filename='subce
     plt.tight_layout()
     plt.savefig(filename, dpi=300)
     plt.close()
+def plot_all_subcell_nodes_landscape(refinement_levels, model, device='cpu', filename='all_subcell_nodes_landscape.png'):
+    """
+    Landscape plot of all refinement levels: arranges subcell prediction plots side by side for each n
+    """
+    import matplotlib.pyplot as plt
+    import numpy as np
+    import os
+
+    n_levels = len(refinement_levels)
+    # create one row of subplots, one column per level
+    fig, axes = plt.subplots(1, n_levels, figsize=(5 * n_levels, 5), squeeze=False)
+
+    # prepare true circle boundary
+    theta = np.linspace(0, 2 * np.pi, 200)
+    x_circle = 0.4 * np.cos(theta)
+    y_circle = 0.4 * np.sin(theta)
+
+    for ax, n in zip(axes[0], refinement_levels):
+        h = 1.0 / n
+        centers = np.linspace(-1 + h, 1 - h, n)
+        partial_x, partial_y, partial_w = [], [], []
+
+        for ox in centers:
+            for oy in centers:
+                # determine cell case
+                if n == 1:
+                    case = 'partial'
+                else:
+                    corners = [(ox - h, oy - h), (ox - h, oy + h), (ox + h, oy - h), (ox + h, oy + h)]
+                    flags = [is_inside_circle(xc, yc) for xc, yc in corners]
+                    case = 'inside' if all(flags) else 'outside' if not any(flags) else 'partial'
+
+                if case == 'inside':
+                    rect = plt.Rectangle((ox - h, oy - h), 2 * h, 2 * h,
+                                         facecolor='lightgreen', edgecolor='blue', alpha=0.5, linestyle='--')
+                    ax.add_patch(rect)
+                elif case == 'outside':
+                    rect = plt.Rectangle((ox - h, oy - h), 2 * h, 2 * h,
+                                         facecolor='lightgray', edgecolor='blue', alpha=0.3, linestyle='--')
+                    ax.add_patch(rect)
+                else:
+                    exps_x_sub, exps_y_sub, coeffs_sub = make_subcell_circle_polynomial(ox, oy, n, device)
+                    with torch.no_grad():
+                        px, py, pw = model(exps_x_sub, exps_y_sub, coeffs_sub)
+                    x_phys = (ox + h * px).cpu().numpy().ravel()
+                    y_phys = (oy + h * py).cpu().numpy().ravel()
+                    w_phys = pw.cpu().numpy().ravel()
+                    partial_x.append(x_phys)
+                    partial_y.append(y_phys)
+                    partial_w.append(w_phys)
+
+        # scatter partial predictions
+        if partial_x:
+            X = np.concatenate(partial_x)
+            Y = np.concatenate(partial_y)
+            W = np.concatenate(partial_w)
+            sc = ax.scatter(X, Y, c=W, cmap='viridis', s=10, edgecolors='k')
+
+        # draw true boundary
+        ax.plot(x_circle, y_circle, 'r-', linewidth=2)
+        ax.set_title(f"n = {n}")
+        ax.set_xlim(-1, 1)
+        ax.set_ylim(-1, 1)
+        ax.set_aspect('equal')
+        ax.grid(True, linestyle='--', linewidth=0.5)
+
+    # add single colorbar above all
+    if 'sc' in locals():
+        cbar = fig.colorbar(sc, ax=axes[0].tolist(), orientation='horizontal', fraction=0.04, pad=0.12, location='top', aspect=40)
+        cbar.ax.xaxis.set_ticks_position('top')
+        cbar.ax.xaxis.set_label_position('top')
+        cbar.set_label('Predicted Weight')
+
+    plt.subplots_adjust(top=0.85, bottom=0.10)
+    plt.tight_layout(rect=[0, 0.10, 1, 0.85])
+    # ensure output folder exists
+    os.makedirs(os.path.dirname(filename), exist_ok=True)
+    plt.savefig(filename, dpi=300)
+    plt.close()
 
 
 ###############################################################################
@@ -297,11 +376,17 @@ def compute_error_circle():
     return error_list, refinement_levels
 
 
+
 ###############################################################################
 # 7. Main Script: Run everything if executed directly
 ###############################################################################
 def main():
-    compute_error_circle()
+    error_list, refinement_levels = compute_error_circle()
+    # Generate combined landscape plot
+    landscape_fn = os.path.join(output_folder, "all_subcell_nodes_landscape.png")
+    plot_all_subcell_nodes_landscape(refinement_levels, model, device=device, filename=landscape_fn)
+    print(f"Combined landscape plot saved as '{landscape_fn}'")
+
 
 
 if __name__ == "__main__":

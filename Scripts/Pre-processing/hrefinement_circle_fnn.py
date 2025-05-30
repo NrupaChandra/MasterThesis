@@ -18,7 +18,6 @@ model_path = r"C:\Git\MasterThesis\Models\FNN\FNN_model_v6\fnn_model_weights_v6.
 output_folder = r"C:\Git\MasterThesis\Scripts\FNN\FNN_V6\plt\circle"
 
 # (1) construct the FNN with the same hyperparameters used in training
-
 model = load_ff_pipelines_model(weights_path=None)
 
 # (2) load the state dict onto CPU explicitly
@@ -69,7 +68,6 @@ def compute_h_refined_integral(n_subdivisions, model, device='cpu'):
                 exps_x_sub, exps_y_sub, coeffs_sub = make_subcell_circle_polynomial(ox, oy, n_subdivisions, device)
                 with torch.no_grad():
                     pred_nodes_x, pred_nodes_y, pred_weights = model(exps_x_sub, exps_y_sub, coeffs_sub)
-                # map reference nodes → physical subcell coords
                 x_phys = ox + subcell_half * pred_nodes_x
                 y_phys = oy + subcell_half * pred_nodes_y
                 subcell_integral_tensor = utilities.compute_integration(
@@ -78,7 +76,6 @@ def compute_h_refined_integral(n_subdivisions, model, device='cpu'):
                 subcell_integral = subcell_integral_tensor[0].item()
 
             else:
-                # check corners
                 corners_x = [ox - subcell_half, ox - subcell_half, ox + subcell_half, ox + subcell_half]
                 corners_y = [oy - subcell_half, oy + subcell_half, oy - subcell_half, oy + subcell_half]
                 inside_flags = [is_inside_circle(xc, yc) for xc, yc in zip(corners_x, corners_y)]
@@ -146,7 +143,6 @@ def save_subcell_nodes_plot(n_subdivisions, model, device='cpu', filename='subce
                 exps_x_sub, exps_y_sub, coeffs_sub = make_subcell_circle_polynomial(ox, oy, n_subdivisions, device)
                 with torch.no_grad():
                     xn, yn, w = model(exps_x_sub, exps_y_sub, coeffs_sub)
-                # physical coords
                 x_mapped = (ox + subcell_half * xn).cpu().numpy().ravel()
                 y_mapped = (oy + subcell_half * yn).cpu().numpy().ravel()
                 w_mapped = w.cpu().numpy().ravel()
@@ -161,13 +157,11 @@ def save_subcell_nodes_plot(n_subdivisions, model, device='cpu', filename='subce
         sc = plt.scatter(xs, ys, c=ws, cmap='viridis', s=10, edgecolors='k')
         plt.colorbar(sc, label="Predicted Weight")
 
-    # Plot analytical circle boundary
     theta = np.linspace(0, 2*np.pi, 200)
     x_circle = 0.4 * np.cos(theta)
     y_circle = 0.4 * np.sin(theta)
     plt.plot(x_circle, y_circle, 'r-', linewidth=2, label='Circle Boundary')
 
-    # grid lines
     subcell_width = 2.0 / n_subdivisions
     for i in range(n_subdivisions+1):
         coord = -1 + i * subcell_width
@@ -186,13 +180,99 @@ def save_subcell_nodes_plot(n_subdivisions, model, device='cpu', filename='subce
     plt.savefig(filename, dpi=300)
     plt.close()
 
+###############################################################################
+# Landscape Plot of All Refinement Levels
+###############################################################################
+def plot_all_subcell_nodes_landscape(refinement_levels, model, device='cpu', filename='all_subcell_nodes_landscape.png'):
+    n_levels = len(refinement_levels)
+    fig, axes = plt.subplots(1, n_levels, figsize=(5*n_levels, 5), squeeze=False)
+
+    # analytical circle boundary
+    theta = np.linspace(0, 2*np.pi, 200)
+    x_circle = 0.4 * np.cos(theta)
+    y_circle = 0.4 * np.sin(theta)
+
+    for ax, n in zip(axes[0], refinement_levels):
+        sub_half = 1.0 / n
+        centers = np.linspace(-1 + sub_half, 1 - sub_half, n)
+        partial_x_all, partial_y_all, partial_w_all = [], [], []
+
+        for ox in centers:
+            for oy in centers:
+                if n == 1:
+                    cell_case = 'partial'
+                else:
+                    corners = [
+                        (ox - sub_half, oy - sub_half), (ox - sub_half, oy + sub_half),
+                        (ox + sub_half, oy - sub_half), (ox + sub_half, oy + sub_half)
+                    ]
+                    flags = [is_inside_circle(xc, yc) for xc, yc in corners]
+                    cell_case = 'inside' if all(flags) else 'outside' if not any(flags) else 'partial'
+
+                if cell_case == 'inside':
+                    rect = plt.Rectangle((ox-sub_half, oy-sub_half), 2*sub_half, 2*sub_half,
+                                          facecolor='lightgreen', edgecolor='blue', alpha=0.5, linestyle='--')
+                    ax.add_patch(rect)
+                elif cell_case == 'outside':
+                    rect = plt.Rectangle((ox-sub_half, oy-sub_half), 2*sub_half, 2*sub_half,
+                                          facecolor='lightgray', edgecolor='blue', alpha=0.3, linestyle='--')
+                    ax.add_patch(rect)
+                else:
+                    exps_x, exps_y, coeffs = make_subcell_circle_polynomial(ox, oy, n, device)
+                    with torch.no_grad():
+                        xn, yn, w = model(exps_x, exps_y, coeffs)
+                    x_phys = (ox + sub_half * xn).cpu().numpy().ravel()
+                    y_phys = (oy + sub_half * yn).cpu().numpy().ravel()
+                    w_phys = w.cpu().numpy().ravel()
+                    partial_x_all.append(x_phys)
+                    partial_y_all.append(y_phys)
+                    partial_w_all.append(w_phys)
+
+        # plot predicted partial cells
+        if partial_x_all:
+            xs = np.concatenate(partial_x_all)
+            ys = np.concatenate(partial_y_all)
+            ws = np.concatenate(partial_w_all)
+            sc = ax.scatter(xs, ys, c=ws, cmap='viridis', s=10, edgecolors='k')
+
+        # draw circle
+        ax.plot(x_circle, y_circle, 'r-', linewidth=2)
+        ax.set_title(f"n = {n}")
+        ax.set_xlim(-1, 1)
+        ax.set_ylim(-1, 1)
+        ax.set_aspect('equal')
+        ax.grid(True, linestyle='--', linewidth=0.5)
+
+    # add colorbar above subplots and extend its length
+    if 'sc' in locals():
+        cbar = fig.colorbar(
+            sc,
+            ax=axes[0].tolist(),
+            orientation='horizontal',
+            fraction=0.04,      # slightly larger thickness
+            pad=0.12,           # extra padding under colorbar
+            location='top',     # place above plots
+            aspect=40           # make bar longer relative to thickness
+        )
+        cbar.ax.xaxis.set_ticks_position('top')      # ensure ticks on top
+        cbar.ax.xaxis.set_label_position('top')      # label on top
+        cbar.set_label("Predicted Weight")
+
+    # adjust margins to prevent clipping
+    plt.subplots_adjust(top=0.85, bottom=0.10)
+    # tight_layout within adjusted margins
+    plt.tight_layout(rect=[0, 0.10, 1, 0.85])
+
+    plt.savefig(filename, dpi=300)
+    plt.close()
+
 
 ###############################################################################
 # 6. Compute error_list and area_list as a function to allow importing
 ###############################################################################
 def compute_error_circle():
     analytical_area = math.pi * (0.4**2)
-    refinement_levels = [2, 4, 8,16]
+    refinement_levels = [1,2, 4, 8,16]
     error_list = []
     area_list = []
 
@@ -211,7 +291,7 @@ def compute_error_circle():
         save_subcell_nodes_plot(n, model, device=device, filename=plot_fn)
         print(f"Aggregate subcell plot saved as '{plot_fn}'")
 
-    # Plot Relative Error vs. Element Size (with log scale on both axes).
+    # Plot Relative Error vs. Element Size
     element_sizes = [2.0 / n for n in refinement_levels]
     plt.figure(figsize=(8,6))
     plt.plot(element_sizes, error_list, marker='o', linestyle='-')
@@ -226,7 +306,7 @@ def compute_error_circle():
     plt.close()
     print(f"Relative error vs. element size plot saved as '{err_plot_fn}'")
 
-    # Plot Integral Area vs. Refinement Level for reference.
+    # Plot Integral Area vs. Refinement Level
     plt.figure(figsize=(8,6))
     plt.plot(refinement_levels, area_list, marker='o', linestyle='-')
     plt.axhline(y=analytical_area, color='r', linestyle='--', label='Analytical Area')
@@ -246,7 +326,11 @@ def compute_error_circle():
 # 7. Main Script: Run everything if executed directly
 ###############################################################################
 def main():
-    compute_error_circle()
+    error_list, refinement_levels = compute_error_circle()
+    # Generate combined landscape plot
+    landscape_fn = os.path.join(output_folder, "all_subcell_nodes_landscape.png")
+    plot_all_subcell_nodes_landscape(refinement_levels, model, device=device, filename=landscape_fn)
+    print(f"Combined landscape plot saved as '{landscape_fn}'")
 
 if __name__ == "__main__":
     main()
