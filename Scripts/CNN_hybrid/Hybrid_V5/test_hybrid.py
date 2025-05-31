@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import os
 import shutil  # For copying files
+import sys
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -17,9 +18,15 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 torch.set_default_dtype(torch.float32)
 
 # Define directories for model and test results.
-model_dir = "/work/scratch/ng66sume/Models/CNN_hybrid/hybrid_V5/"
-results_dir = "/work/scratch/ng66sume/Test_Results/CNN_hybrid/Test_CNN_hybrid_V5/"
+model_dir =  r"C:\Git\MasterThesis\Models\Hybrid\Hybrid_V5"
+results_dir = r"C:\Git\RESULTS\Hybrid"
 os.makedirs(results_dir, exist_ok=True)
+
+# Redirect all console output to a log file
+log_path = os.path.join(results_dir, "console_output.txt")
+log_file = open(log_path, "w")
+sys.stdout = log_file
+sys.stderr = log_file
 
 node_x_str = """-0.9602898564975362,-0.9602898564975362,-0.9602898564975362,-0.9602898564975362,-0.9602898564975362,-0.9602898564975362,-0.9602898564975362,-0.9602898564975362,
     -0.7966664774136267,-0.7966664774136267,-0.7966664774136267,-0.7966664774136267,-0.7966664774136267,-0.7966664774136267,-0.7966664774136267,-0.7966664774136267,
@@ -53,11 +60,11 @@ def test_fn(x, y):
     return 1
 
 # Define the data directory.
-data_dir = "/work/scratch/ng66sume/Root/Data/"
+data_dir = r"C:\Git\Data"
 
 # Create dataset using the base directory.
 dataset = MultiChunkDataset(
-    index_file=os.path.join(data_dir, 'preprocessed_chunks_TestBernstein/index.txt'),
+    index_file=os.path.join(data_dir, 'combined_preprocessed_chunks_TestBernstein/index.txt'),
     base_dir=data_dir
 )
 
@@ -72,6 +79,10 @@ output_file = os.path.join(output_folder, "predicted_data_fnn.txt")
 with open(output_file, 'w') as f:
     # Write header.
     f.write("number;id;nodes_x;nodes_y;weights\n")
+
+# --- START OF ADDITIONS FOR MSE ---
+total_squared_difference = 0.0  # Sum of squared differences for MSE.
+# --- END OF ADDITIONS FOR MSE ---
 
 # Prepare accumulators for error computations and to store integrals.
 total_absolute_difference = 0.0  # Sum of absolute differences for MAE.
@@ -122,6 +133,12 @@ with torch.no_grad():
         # Compute the absolute difference (for MAE).
         absolute_difference = abs(pred_val - true_val)
         total_absolute_difference += absolute_difference
+
+        # --- START OF ADDITIONS FOR MSE ---
+        squared_difference = (pred_val - true_val) ** 2
+        total_squared_difference += squared_difference
+        # --- END OF ADDITIONS FOR MSE ---
+
         total_ids += 1
 
         # Compute the relative error if the true value is nonzero.
@@ -132,7 +149,7 @@ with torch.no_grad():
         relative_errors.append(rel_error)
         rel_error_info.append((id[0], rel_error))
 
-        # Print results to console.
+        # Print results to console (and to log file).
         print(f"Result of integration for {id}:")
         print(f"Algoim (True):  {true_val:.4e}")
         print(f"QuadNET (Pred): {pred_val:.4e}")
@@ -141,6 +158,23 @@ with torch.no_grad():
 
         # Plot the true and predicted nodes.
         plt.figure(figsize=(10, 6))
+
+        # === NEW: reconstruct & draw the implicit boundary ===
+        # build a grid over [-1,1]^2
+        grid = np.linspace(-1, 1, 400)
+        XX, YY = np.meshgrid(grid, grid)
+        # convert tensors to 1D arrays
+        exp_x_np = exp_x.cpu().numpy().reshape(-1)
+        exp_y_np = exp_y.cpu().numpy().reshape(-1)
+        coeff_np = coeff.cpu().numpy().reshape(-1)
+        # evaluate f(x,y) = sum coeff_i * x^exp_x_i * y^exp_y_i
+        ZZ = np.zeros_like(XX)
+        for ex, ey, c in zip(exp_x_np, exp_y_np, coeff_np):
+            ZZ += c * (XX**ex) * (YY**ey)
+        # plot zero‐level contour
+        plt.contour(XX, YY, ZZ, levels=[0], colors='k', linewidths=1.5)
+        # ======================================================
+
         plt.scatter(true_nodes_x, true_nodes_y, c=true_weights, cmap='viridis',
                     label='True Points', alpha=0.6, marker='x')
         plt.scatter(predicted_nodes_x, predicted_nodes_y, c=predicted_weights, cmap='plasma',
@@ -173,11 +207,15 @@ with torch.no_grad():
 
 # After processing all samples, compute overall metrics.
 overall_MAE = total_absolute_difference / total_ids if total_ids > 0 else 0
+# --- START OF MSE COMPUTATION ---
+overall_MSE = total_squared_difference / total_ids if total_ids > 0 else 0
+# --- END OF MSE COMPUTATION ---
 mean_relative_error = (sum(relative_errors) / total_ids * 100) if total_ids > 0 else 0
 median_relative_error = (np.median(relative_errors) * 100) if total_ids > 0 else 0
 
-# Print metrics to console.
+# Print metrics to console (and log file).
 print(f"Overall MAE: {overall_MAE:.4e}")
+print(f"Overall MSE: {overall_MSE:.4e}")      # <--- New MSE output
 print(f"Mean Relative Error: {mean_relative_error:.2f}%")
 print(f"Median Relative Error: {median_relative_error:.2f}%")
 
@@ -200,6 +238,9 @@ os.makedirs(metrics_folder, exist_ok=True)
 metrics_file = os.path.join(metrics_folder, "metrics.txt")
 with open(metrics_file, 'w') as mf:
     mf.write(f"Overall MAE: {overall_MAE:.4e}\n")
+    # --- ADD MSE TO METRICS FILE ---
+    mf.write(f"Overall MSE: {overall_MSE:.4e}\n")
+    # --- END ADDITION ---
     mf.write(f"Mean Relative Error: {mean_relative_error:.2f}%\n")
     mf.write(f"Median Relative Error: {median_relative_error:.2f}%\n")
     mf.write(f"Identified {len(outlier_indices)} outlier samples (relative error > {upper_bound*100:.2f}%):\n")
@@ -255,3 +296,5 @@ for i in range(len(patches)):
 plt.savefig(os.path.join(output_folder, "relative_error_histogram.png"))
 plt.close()
 
+# Close the log file
+log_file.close()

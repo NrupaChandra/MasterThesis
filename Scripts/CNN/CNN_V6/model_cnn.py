@@ -112,7 +112,9 @@ def load_shallow_cnn_model(weights_path=None,
                 dropout_rate=dropout_rate)
     model = model.float()
     if weights_path:
-        model.load_state_dict(torch.load(weights_path))
+        # force all tensors onto CPU
+        state = torch.load(weights_path, map_location=torch.device('cpu'))
+        model.load_state_dict(state)
     return model
 
 

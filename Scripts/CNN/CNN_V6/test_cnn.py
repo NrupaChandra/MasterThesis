@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import os
 import shutil  # For copying files
+import sys
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -17,9 +18,14 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 torch.set_default_dtype(torch.float32)
 
 # Define directories for model and test results.
-model_dir = "/work/scratch/ng66sume/MasterThesis/Models/CNN/CNN_V6/"
-results_dir = "/work/scratch/ng66sume/MasterThesis/Test_Results/CNN/CNN_V6/"
+model_dir = r"C:\Git\MasterThesis\Models\CNN\CNN_V6"
+results_dir = r"C:\Git\RESULTS\Cnn"
 os.makedirs(results_dir, exist_ok=True)
+
+# Redirect all print() output (and errors) into a log file
+log_path = os.path.join(results_dir, "console_output.txt")
+sys.stdout = open(log_path, "w")
+sys.stderr = sys.stdout
 
 # Load the model checkpoint and set to evaluation mode.
 model_path = os.path.join(model_dir, 'cnn_model_weights_v5.0.pth')
@@ -31,11 +37,11 @@ def test_fn(x, y):
     return 1  # constant function
 
 # Define data directory.
-data_dir = "/work/scratch/ng66sume/Root/Data/"
+data_dir = r"C:\Git\Data"
 
 # Create dataset using the base directory.
 dataset = MultiChunkDataset(
-    index_file=os.path.join(data_dir, 'preprocessed_chunks_TestBernstein/index.txt'),
+    index_file=os.path.join(data_dir, 'combined_preprocessed_chunks_TestBernstein/index.txt'),
     base_dir=data_dir
 )
 
@@ -53,6 +59,7 @@ with open(output_file, 'w') as f:
 
 # Accumulators for error metrics and integrals.
 total_absolute_difference = 0.0
+total_squared_error = 0.0       # <-- New accumulator for squared errors
 total_ids = 0
 predicted_integrals = []
 true_integrals = []
@@ -78,14 +85,12 @@ with torch.no_grad():
         true_weights_np = true_weights.numpy().astype(np.float32)
 
         # Model inference -> predicted weight grid.
-        predicted_weights_tensor = model(exp_x, exp_y, coeff)  # shape: (batch, 1, grid_size, grid_size)
+        predicted_weights_tensor = model(exp_x, exp_y, coeff)
         batch_size = predicted_weights_tensor.size(0)
-        grid_size = int(np.sqrt(model.nodal_preprocessor.num_nodes))
 
         # Obtain the fixed predicted nodes from the model's nodal preprocessor.
         predicted_nodes_x_tensor = model.nodal_preprocessor.X.unsqueeze(0).expand(batch_size, -1)
         predicted_nodes_y_tensor = model.nodal_preprocessor.Y.unsqueeze(0).expand(batch_size, -1)
-        # Flatten predicted weights to shape (batch, num_nodes).
         predicted_weights_tensor = predicted_weights_tensor.view(batch_size, -1)
 
         # Convert predictions to numpy for plotting.
@@ -93,87 +98,78 @@ with torch.no_grad():
         predicted_nodes_y = predicted_nodes_y_tensor.cpu().numpy().astype(np.float32)
         predicted_weights = predicted_weights_tensor.cpu().numpy().astype(np.float32)
 
-        # Compute predicted integral using utilities.compute_integration().
+        # Compute integrals.
         pred_integral_tensor = utilities.compute_integration(
             predicted_nodes_x_tensor, predicted_nodes_y_tensor, predicted_weights_tensor, test_fn
         )
-        # Compute true integral.
         true_integral_tensor = utilities.compute_integration(
             torch.tensor(true_nodes_x_np), torch.tensor(true_nodes_y_np), torch.tensor(true_weights_np), test_fn
         )
-
         pred_val = pred_integral_tensor[0].item()
         true_val = true_integral_tensor[0].item()
-
         predicted_integrals.append(pred_val)
         true_integrals.append(true_val)
 
-        # MAE and relative error calculations.
+        # MAE, MSE, and relative error calculations.
         absolute_difference = abs(pred_val - true_val)
+        squared_error = (pred_val - true_val) ** 2            # <-- compute squared error
         total_absolute_difference += absolute_difference
+        total_squared_error += squared_error                  # <-- accumulate squared error
         total_ids += 1
-
-        if abs(true_val) > 1e-10:
-            rel_error = absolute_difference / abs(true_val)
-        else:
-            rel_error = 0.0
+        rel_error = absolute_difference / abs(true_val) if abs(true_val) > 1e-10 else 0.0
         relative_errors.append(rel_error)
         rel_error_info.append((id[0], rel_error))
 
-        # Print results to console.
+        # Print results to console (now also into console_output.txt).
         print(f"Result of integration for {id}:")
         print(f"True Integral:         {true_val:.4e}")
         print(f"Predicted Integral:    {pred_val:.4e}")
         print(f"Absolute Difference:   {absolute_difference:.4e}")
         print(f"Relative Error:        {rel_error*100:.2f}%")
 
-        # -----------------------------
-        # Plot the true and predicted nodes in grayscale:
-        #   - 0 weight = black
-        #   - max weight = white
-        #   - omit predicted nodes with 0 weight
-        # -----------------------------
+        # Plot the true and predicted nodes with colormaps.
         plt.figure(figsize=(10, 6))
 
-        # Determine maximum weight for consistent scaling in this sample
-        max_val = max(true_weights_np.max(), predicted_weights[0].max())
+        # Reconstruct & draw the implicit boundary
+        grid = np.linspace(-1, 1, 400)
+        XX, YY = np.meshgrid(grid, grid)
+        exp_x_np = exp_x.cpu().numpy().reshape(-1)
+        exp_y_np = exp_y.cpu().numpy().reshape(-1)
+        coeff_np = coeff.cpu().numpy().reshape(-1)
+        ZZ = np.zeros_like(XX)
+        for ex, ey, c in zip(exp_x_np, exp_y_np, coeff_np):
+            ZZ += c * (XX**ex) * (YY**ey)
+        plt.contour(XX, YY, ZZ, levels=[0], colors='k', linewidths=1.5)
 
-        # Plot true nodes (no filtering):
+        # True points in viridis
         plt.scatter(
-            true_nodes_x_np, 
+            true_nodes_x_np,
             true_nodes_y_np,
             c=true_weights_np,
-            cmap='gray',
-            vmin=0.0,              # 0 -> black
-            vmax=max_val,          # max -> white
+            cmap='viridis',
             label='True Points',
             alpha=0.6,
             marker='x'
         )
 
-        # Create a mask to omit predicted nodes that have zero weight
-        pred_mask = (predicted_weights[0] != 0.0)
-
-        plt.scatter(
-            predicted_nodes_x[0][pred_mask],
-            predicted_nodes_y[0][pred_mask],
-            c=predicted_weights[0][pred_mask],
-            cmap='gray',
-            vmin=0.0,             # 0 -> black
-            vmax=max_val,         # max -> white
+        # Predicted points in plasma
+        sc = plt.scatter(
+            predicted_nodes_x[0],
+            predicted_nodes_y[0],
+            c=predicted_weights[0],
+            cmap='plasma',
             label='Predicted Points',
             alpha=0.6
         )
 
-        plt.title('True vs. Predicted Nodes (Grayscale)')
+        plt.title('True vs. Predicted Nodes')
         plt.xlabel('X-coordinate')
         plt.ylabel('Y-coordinate')
-        cb = plt.colorbar(label='Weight (Coefficient)')
+        plt.colorbar(sc, label='Weight (Coefficient)')
         plt.legend()
         plt.xlim(-1, 1)
         plt.ylim(-1, 1)
 
-        # Annotate with integration values.
         plt.text(
             0.05, 0.95,
             f"True Int: {true_val:.8f}\nPred Int: {pred_val:.8f}",
@@ -199,18 +195,19 @@ with torch.no_grad():
         number += 1
 
 # Compute overall metrics.
-overall_MAE = total_absolute_difference / total_ids if total_ids > 0 else 0
-mean_relative_error = (sum(relative_errors) / total_ids * 100) if total_ids > 0 else 0
-median_relative_error = (np.median(relative_errors) * 100) if total_ids > 0 else 0
+overall_MAE = total_absolute_difference / total_ids if total_ids > 0 else 0.0
+overall_MSE = total_squared_error / total_ids if total_ids > 0 else 0.0    # <-- compute MSE
+mean_relative_error = (sum(relative_errors) / total_ids * 100) if total_ids > 0 else 0.0
+median_relative_error = (np.median(relative_errors) * 100) if total_ids > 0 else 0.0
 
 print(f"Overall MAE: {overall_MAE:.4e}")
+print(f"Overall MSE: {overall_MSE:.4e}")                     # <-- print MSE
 print(f"Mean Relative Error: {mean_relative_error:.2f}%")
 print(f"Median Relative Error: {median_relative_error:.2f}%")
 
 # Identify outliers using the IQR method.
 rel_errors_array = np.array(relative_errors)
-Q1 = np.percentile(rel_errors_array, 25)
-Q3 = np.percentile(rel_errors_array, 75)
+Q1, Q3 = np.percentile(rel_errors_array, [25, 75])
 IQR = Q3 - Q1
 upper_bound = Q3 + 1.5 * IQR
 
@@ -226,6 +223,7 @@ os.makedirs(metrics_folder, exist_ok=True)
 metrics_file = os.path.join(metrics_folder, "metrics.txt")
 with open(metrics_file, 'w') as mf:
     mf.write(f"Overall MAE: {overall_MAE:.4e}\n")
+    mf.write(f"Overall MSE: {overall_MSE:.4e}\n")                   # <-- write MSE
     mf.write(f"Mean Relative Error: {mean_relative_error:.2f}%\n")
     mf.write(f"Median Relative Error: {median_relative_error:.2f}%\n")
     mf.write(f"Identified {len(outlier_indices)} outlier samples (relative error > {upper_bound*100:.2f}%):\n")
@@ -255,9 +253,8 @@ plt.title("Histogram of Relative Errors")
 for i in range(len(patches)):
     bin_lower = bins[i]
     bin_upper = bins[i + 1]
-    bin_data = [d for d in data if bin_lower <= d < bin_upper]
-    if i == len(patches) - 1:
-        bin_data = [d for d in data if d >= bin_lower and d <= bin_upper]
+    bin_data = [d for d in data if bin_lower <= d < bin_upper] + \
+               ([d for d in data if d == bin_upper] if i == len(patches) - 1 else [])
     if bin_data:
         bin_mean = np.mean(bin_data)
         bar_center = (bin_lower + bin_upper) / 2

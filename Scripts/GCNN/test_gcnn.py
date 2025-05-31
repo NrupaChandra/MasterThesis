@@ -18,9 +18,13 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 torch.set_default_dtype(torch.float32)
 
 # Define directories for model and test results.
-model_dir   = "/work/scratch/ng66sume/Models/GCNN/GCNN_v3/"
-results_dir = "/work/home/ng66sume/Test_Results/GCNN/GCNN_v3/"
+model_dir =  r"C:\Git\MasterThesis\Models\GCN\GCN_v3"
+results_dir = r"C:\Git\RESULTS\Gcnn"
 os.makedirs(results_dir, exist_ok=True)
+
+# Open a log file for all printed output
+log_file = os.path.join(results_dir, "results_log.txt")
+log_f = open(log_file, 'w')
 
 # Model hyperparams
 in_channels     = 3           # [x, y, nodal_value]
@@ -28,23 +32,24 @@ hidden_channels = 64
 num_layers      = 5
 dropout_rate    = 0.0014281973712297197
 
+
 node_x_str = """-0.9602898564975362,-0.9602898564975362,-0.9602898564975362,-0.9602898564975362,-0.9602898564975362,-0.9602898564975362,-0.9602898564975362,-0.9602898564975362,
--0.7966664774136267,-0.7966664774136267,-0.7966664774136267,-0.7966664774136267,-0.7966664774136267,-0.7966664774136267,-0.7966664774136267,-0.7966664774136267,
--0.5255324099163290,-0.5255324099163290,-0.5255324099163290,-0.5255324099163290,-0.5255324099163290,-0.5255324099163290,-0.5255324099163290,-0.5255324099163290,
--0.1834346424956498,-0.1834346424956498,-0.1834346424956498,-0.1834346424956498,-0.1834346424956498,-0.1834346424956498,-0.1834346424956498,-0.1834346424956498,
-0.1834346424956499,0.1834346424956499,0.1834346424956499,0.1834346424956499,0.1834346424956499,0.1834346424956499,0.1834346424956499,0.1834346424956499,
-0.5255324099163290,0.5255324099163290,0.5255324099163290,0.5255324099163290,0.5255324099163290,0.5255324099163290,0.5255324099163290,0.5255324099163290,
-0.7966664774136267,0.7966664774136267,0.7966664774136267,0.7966664774136267,0.7966664774136267,0.7966664774136267,0.7966664774136267,0.7966664774136267,
-0.9602898564975362,0.9602898564975362,0.9602898564975362,0.9602898564975362,0.9602898564975362,0.9602898564975362,0.9602898564975362,0.9602898564975362"""
+    -0.7966664774136267,-0.7966664774136267,-0.7966664774136267,-0.7966664774136267,-0.7966664774136267,-0.7966664774136267,-0.7966664774136267,-0.7966664774136267,
+    -0.5255324099163290,-0.5255324099163290,-0.5255324099163290,-0.5255324099163290,-0.5255324099163290,-0.5255324099163290,-0.5255324099163290,-0.5255324099163290,
+    -0.1834346424956498,-0.1834346424956498,-0.1834346424956498,-0.1834346424956498,-0.1834346424956498,-0.1834346424956498,-0.1834346424956498,-0.1834346424956498,
+    0.1834346424956499,0.1834346424956499,0.1834346424956499,0.1834346424956499,0.1834346424956499,0.1834346424956499,0.1834346424956499,0.1834346424956499,
+    0.5255324099163290,0.5255324099163290,0.5255324099163290,0.5255324099163290,0.5255324099163290,0.5255324099163290,0.5255324099163290,0.5255324099163290,
+    0.7966664774136267,0.7966664774136267,0.7966664774136267,0.7966664774136267,0.7966664774136267,0.7966664774136267,0.7966664774136267,0.7966664774136267,
+    0.9602898564975362,0.9602898564975362,0.9602898564975362,0.9602898564975362,0.9602898564975362,0.9602898564975362,0.9602898564975362,0.9602898564975362"""
 
 node_y_str = """-0.9602898564975362,-0.7966664774136267,-0.5255324099163290,-0.1834346424956498,0.1834346424956499,0.5255324099163290,0.7966664774136267,0.9602898564975362,
--0.9602898564975362,-0.7966664774136267,-0.5255324099163290,-0.1834346424956498,0.1834346424956499,0.5255324099163290,0.7966664774136267,0.9602898564975362,
--0.9602898564975362,-0.7966664774136267,-0.5255324099163290,-0.1834346424956498,0.1834346424956499,0.5255324099163290,0.7966664774136267,0.9602898564975362,
--0.9602898564975362,-0.7966664774136267,-0.5255324099163290,-0.1834346424956498,0.1834346424956499,0.5255324099163290,0.7966664774136267,0.9602898564975362,
--0.9602898564975362,-0.7966664774136267,-0.5255324099163290,-0.1834346424956498,0.1834346424956499,0.5255324099163290,0.7966664774136267,0.9602898564975362,
--0.9602898564975362,-0.7966664774136267,-0.5255324099163290,-0.1834346424956498,0.1834346424956499,0.5255324099163290,0.7966664774136267,0.9602898564975362,
--0.9602898564975362,-0.7966664774136267,-0.5255324099163290,-0.1834346424956498,0.1834346424956499,0.5255324099163290,0.7966664774136267,0.9602898564975362,
--0.9602898564975362,-0.7966664774136267,-0.5255324099163290,-0.1834346424956498,0.1834346424956499,0.5255324099163290,0.7966664774136267,0.9602898564975362"""
+    -0.9602898564975362,-0.7966664774136267,-0.5255324099163290,-0.1834346424956498,0.1834346424956499,0.5255324099163290,0.7966664774136267,0.9602898564975362,
+    -0.9602898564975362,-0.7966664774136267,-0.5255324099163290,-0.1834346424956498,0.1834346424956499,0.5255324099163290,0.7966664774136267,0.9602898564975362,
+    -0.9602898564975362,-0.7966664774136267,-0.5255324099163290,-0.1834346424956498,0.1834346424956499,0.5255324099163290,0.7966664774136267,0.9602898564975362,
+    -0.9602898564975362,-0.7966664774136267,-0.5255324099163290,-0.1834346424956498,0.1834346424956499,0.5255324099163290,0.7966664774136267,0.9602898564975362,
+    -0.9602898564975362,-0.7966664774136267,-0.5255324099163290,-0.1834346424956498,0.1834346424956499,0.5255324099163290,0.7966664774136267,0.9602898564975362,
+    -0.9602898564975362,-0.7966664774136267,-0.5255324099163290,-0.1834346424956498,0.1834346424956499,0.5255324099163290,0.7966664774136267,0.9602898564975362,
+    -0.9602898564975362,-0.7966664774136267,-0.5255324099163290,-0.1834346424956498,0.1834346424956499,0.5255324099163290,0.7966664774136267,0.9602898564975362"""
 
 # Load the model
 model_path = os.path.join(model_dir, 'gcnn_model_weights_v3.pth')
@@ -58,7 +63,7 @@ def test_fn(x, y):
     return 1
 
 # Prepare dataset
-data_dir = "/work/scratch/ng66sume/Root/Data/"
+data_dir = r"C:\Git\Data"
 dataset = MultiChunkDataset(
     index_file=os.path.join(data_dir, 'combined_preprocessed_chunks_TestBernstein/index.txt'),
     base_dir=data_dir
@@ -79,6 +84,11 @@ squared_errors      = []
 number              = 1
 domain              = (-1.0, 1.0)
 k_neighbors         = 4
+
+# — ADDED — precompute mesh for contour
+grid = np.linspace(domain[0], domain[1], 400)
+XX, YY = np.meshgrid(grid, grid)
+# — end ADDED —
 
 # Preprocessor & graph connectivity
 preprocessor = NodalPreprocessor(node_x_str, node_y_str).to(device)
@@ -135,16 +145,42 @@ with torch.no_grad():
         se     = absolute_difference**2
         squared_errors.append(se)
         
+        # Prints → also write to log file
+        line = f"Result for {id}:\n"
+        print(line, end='')
+        log_f.write(line)
 
-        # Prints
-        print(f"Result for {id}:")
-        print(f"  True Int:  {true_val:.4e}")
-        print(f"  Pred Int:  {pred_val:.4e}")
-        print(f"  Rel Error: {rel_err*100:.2f}%")
-        print(f"  Sample MSE:  {se:.4e}")
+        line = f"  True Int:  {true_val:.4e}\n"
+        print(line, end='')
+        log_f.write(line)
 
-        # Plotting (unchanged) …
+        line = f"  Pred Int:  {pred_val:.4e}\n"
+        print(line, end='')
+        log_f.write(line)
+
+        line = f"  Rel Error: {rel_err*100:.2f}%\n"
+        print(line, end='')
+        log_f.write(line)
+
+        line = f"  Sample MSE:  {se:.4e}\n"
+        print(line, end='')
+        log_f.write(line)
+
+        # Plotting (with contour overlay) …
         plt.figure(figsize=(10, 6))
+
+        # — ADDED — reconstruct implicit on mesh & plot its zero contour
+        exp_x_np = exp_x[0].cpu().numpy()
+        exp_y_np = exp_y[0].cpu().numpy()
+        coeff_np = coeff[0].cpu().numpy()
+
+        ZZ = np.zeros_like(XX)
+        for j in range(len(coeff_np)):
+            ZZ += coeff_np[j] * (XX**exp_x_np[j]) * (YY**exp_y_np[j])
+
+        plt.contour(XX, YY, ZZ, levels=[0], colors='k', linewidths=1.5)
+        # — end ADDED —
+
         plt.scatter(true_nodes_x, true_nodes_y, c=true_weights, cmap='viridis',
                     label='True Points', alpha=0.6, marker='x')
         plt.scatter(predicted_nodes_x, predicted_nodes_y, c=predicted_weights, cmap='plasma',
@@ -173,34 +209,47 @@ with torch.no_grad():
             )
         number += 1
 
-# --- After loop: overall metrics ---
+# --- After loop: overall metrics --- (also logged)
 overall_MSE        = np.mean(squared_errors) if squared_errors else 0.0
+overall_RMSE       = np.sqrt(overall_MSE)  # Added RMSE calculation
 mean_rel_error     = np.mean(relative_errors) * 100 if relative_errors else 0.0
 median_rel_error   = np.median(relative_errors) * 100 if relative_errors else 0.0
 
-print(f"Overall MSE:  {overall_MSE:.4e}")
-print(f"Mean Relative Error:   {mean_rel_error:.2f}%")
-print(f"Median Relative Error: {median_rel_error:.2f}%")
+for line in [
+    f"Overall MSE:  {overall_MSE:.4e}\n",
+    f"Overall RMSE: {overall_RMSE:.4e}\n",       # Added RMSE to printed/logged output
+    f"Mean Relative Error:   {mean_rel_error:.2f}%\n",
+    f"Median Relative Error: {median_rel_error:.2f}%\n"
+]:
+    print(line, end='')
+    log_f.write(line)
 
-# Identify outliers (unchanged)
+# Identify outliers (unchanged, but logged)
 rel_errors_array = np.array(relative_errors)
-Q1 = np.percentile(rel_errors_array, 25)
-Q3 = np.percentile(rel_errors_array, 75)
+Q1, Q3 = np.percentile(rel_errors_array, [25, 75])
 IQR = Q3 - Q1
 upper_bound = Q3 + 1.5 * IQR
 outlier_indices = np.where(rel_errors_array > upper_bound)[0]
 
-print(f"Identified {len(outlier_indices)} outlier samples (rel err > {upper_bound*100:.2f}%):")
+line = f"Identified {len(outlier_indices)} outlier samples (rel err > {upper_bound*100:.2f}%):\n"
+print(line, end='')
+log_f.write(line)
 for idx in outlier_indices:
     sample_id, rel_err = rel_error_info[idx]
-    print(f"Sample {sample_id}: Rel Error = {rel_err*100:.2f}%")
+    line = f"Sample {sample_id}: Rel Error = {rel_err*100:.2f}%\n"
+    print(line, end='')
+    log_f.write(line)
 
-# Save metrics
+# Close the log file when done
+log_f.close()
+
+
 metrics_folder = os.path.join(results_dir, "metrics")
 os.makedirs(metrics_folder, exist_ok=True)
 metrics_file = os.path.join(metrics_folder, "metrics.txt")
 with open(metrics_file, 'w') as mf:
     mf.write(f"Overall MSE:  {overall_MSE:.4e}\n")
+    mf.write(f"Overall RMSE: {overall_RMSE:.4e}\n")    # Added RMSE to metrics file
     mf.write(f"Mean Rel Error:   {mean_rel_error:.2f}%\n")
     mf.write(f"Median Rel Error: {median_rel_error:.2f}%\n")
     mf.write(f"Identified {len(outlier_indices)} outlier samples (rel err > {upper_bound*100:.2f}%):\n")
