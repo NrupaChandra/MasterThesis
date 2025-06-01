@@ -106,9 +106,8 @@ ub_rel     = Q3_rel + 1.5 * IQR_rel
 # ----------------------------
 # 5. Plot 1: Scatter Plot (Predicted vs. True) with Zoom Inset
 # ----------------------------
-fig1, ax1 = plt.subplots(figsize=(6, 6))
+fig1, ax1 = plt.subplots(figsize=(6, 4))  # Match histogram size
 
-# Main scatter
 ax1.scatter(
     df['True'], df['Pred'],
     s=20, alpha=0.6,
@@ -121,7 +120,6 @@ margin = (maxv - minv) * 0.02
 ax1.set_xlim(minv - margin, maxv + margin)
 ax1.set_ylim(minv - margin, maxv + margin)
 
-# Draw a thinner, gray dashed identity line (y = x)
 ax1.plot(
     [minv, maxv], [minv, maxv],
     color='dimgray',
@@ -130,23 +128,23 @@ ax1.plot(
     label='Ideal (y = x)'
 )
 
-ax1.set_xlabel('True Integral')
-ax1.set_ylabel('Predicted Integral')
-ax1.set_title('Predicted vs True Integrals - GCNN')
+ax1.set_xlabel('True Integral', fontsize=12)
+ax1.set_ylabel('Predicted Integral', fontsize=12)
+ax1.set_title('Predicted vs True Integrals - GCNN', fontsize=12)
 ax1.legend(loc='upper left', fontsize=10)
 ax1.grid(True, linestyle='--', linewidth=0.5)
 
 # Inset zoom (0–2.5)
 axins = inset_axes(
-    ax1, width="40%", height="40%", loc='lower right',
-    bbox_to_anchor=(0.05, 0.05, 0.5, 0.5), bbox_transform=ax1.transAxes
+    ax1, width="38%", height="38%", loc='lower right',
+    bbox_to_anchor=(0.05, 0.05, 0.5, 0.5),
+    bbox_transform=ax1.transAxes
 )
 axins.scatter(
     df['True'], df['Pred'],
     s=20, alpha=0.6,
     color='tab:blue', edgecolors='k', linewidth=0.3
 )
-# Thinner gray dashed inset line
 axins.plot(
     [0, 2.5], [0, 2.5],
     color='dimgray',
@@ -167,16 +165,12 @@ plt.close()
 # ----------------------------
 # 8. Plot 4: Histogram of Relative Errors (Log-Spaced Bins, 10^n Ticks, Blue Bars)
 # ----------------------------
-fig4, ax4 = plt.subplots(figsize=(6, 4))
+fig4, ax4 = plt.subplots(figsize=(6, 4))  # Match scatter size
 
-# Compute smallest nonzero relative error and the maximum
 min_nonzero = df.loc[df['RelErr'] > 0, 'RelErr'].min()
 max_rel     = df['RelErr'].max()
+bins_rel    = np.logspace(np.log10(min_nonzero), np.log10(max_rel), 50)
 
-# Build 50 log-spaced bins between those endpoints
-bins_rel = np.logspace(np.log10(min_nonzero), np.log10(max_rel), 50)
-
-# Plot histogram in blue
 ax4.hist(
     df['RelErr'],
     bins=bins_rel,
@@ -185,10 +179,7 @@ ax4.hist(
     alpha=0.7
 )
 
-# Switch x-axis to log scale
 ax4.set_xscale('log')
-
-# Thin vertical lines: median (red dashed) and IQR upper (mid-blue dotted)
 ax4.axvline(
     median_rel,
     color='red',
@@ -204,23 +195,16 @@ ax4.axvline(
     label=f'IQR Upper = {ub_rel:.2f}%'
 )
 
-# Axis labels & title
 ax4.set_xlabel('Relative Error (%)', fontsize=12)
 ax4.set_ylabel('Frequency', fontsize=12)
 ax4.set_title('Histogram of Relative Errors - GCNN', fontsize=12)
 
-# Use math-text formatter so x-ticks read as 10^n
 formatter = LogFormatterMathtext(base=10)
 ax4.xaxis.set_major_formatter(formatter)
-
-# Place ticks at explicit decades
 ax4.set_xticks([1e-2, 1e-1, 1e0, 1e1, 1e2, 1e3])
-
-# Reduce tick-label sizes
 ax4.tick_params(axis='x', labelsize=10)
 ax4.tick_params(axis='y', labelsize=10)
 
-# Legend + grid
 ax4.legend(loc='upper right', fontsize=10)
 ax4.grid(axis='y', linestyle='--', linewidth=0.5)
 
