@@ -176,7 +176,7 @@ with torch.no_grad():
         # ======================================================
 
         plt.scatter(true_nodes_x, true_nodes_y, c=true_weights, cmap='viridis',
-                    label='True Points', alpha=0.6, marker='x')
+                    label='Reference points (Algoim)', alpha=0.6, marker='x')
         plt.scatter(predicted_nodes_x, predicted_nodes_y, c=predicted_weights, cmap='plasma',
                     label='Predicted Points', alpha=0.6)
         plt.title('True vs Predicted Nodes')
@@ -187,7 +187,7 @@ with torch.no_grad():
         plt.xlim(-1, 1)
         plt.ylim(-1, 1)
         # Add an annotation in the top-left corner with integration values.
-        plt.text(0.05, 0.95, f"True Int: {true_val:.8f}\nPred Int: {pred_val:.8f}",
+        plt.text(0.05, 0.95, f"True int (Algoim): {true_val:.8f}\nPred Int: {pred_val:.8f}",
                  transform=plt.gca().transAxes, fontsize=10, verticalalignment='top',
                  bbox=dict(facecolor='white', alpha=0.5))
         sample_plot_path = os.path.join(output_folder, f'{id[0]}.png')

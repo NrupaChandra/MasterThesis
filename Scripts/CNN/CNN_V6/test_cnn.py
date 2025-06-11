@@ -147,7 +147,7 @@ with torch.no_grad():
             true_nodes_y_np,
             c=true_weights_np,
             cmap='viridis',
-            label='True Points',
+            label='Reference Points (Algoim)',
             alpha=0.6,
             marker='x'
         )
@@ -172,7 +172,7 @@ with torch.no_grad():
 
         plt.text(
             0.05, 0.95,
-            f"True Int: {true_val:.8f}\nPred Int: {pred_val:.8f}",
+            f"True int (Algoim): {true_val:.8f}\nPred Int: {pred_val:.8f}",
             transform=plt.gca().transAxes,
             fontsize=10,
             verticalalignment='top',

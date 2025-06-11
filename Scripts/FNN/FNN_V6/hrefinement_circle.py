@@ -185,7 +185,7 @@ def save_subcell_nodes_plot(n_subdivisions, model, device='cpu', filename='subce
 ###############################################################################
 def plot_all_subcell_nodes_landscape(refinement_levels, model, device='cpu', filename='all_subcell_nodes_landscape.png'):
     n_levels = len(refinement_levels)
-    fig, axes = plt.subplots(1, n_levels, figsize=(5*n_levels, 5), squeeze=False)
+    fig, axes = plt.subplots(1, n_levels, figsize=(6*n_levels, 6), squeeze=False)
 
     # analytical circle boundary
     theta = np.linspace(0, 2*np.pi, 200)
@@ -259,7 +259,7 @@ def plot_all_subcell_nodes_landscape(refinement_levels, model, device='cpu', fil
         cbar.set_label("Predicted Weight")
 
     # adjust margins to prevent clipping
-    plt.subplots_adjust(top=0.85, bottom=0.10)
+    plt.subplots_adjust(top=0.88, bottom=0.08, left=0.05, right=0.98, wspace=0.3)
     # tight_layout within adjusted margins
     plt.tight_layout(rect=[0, 0.10, 1, 0.85])
 
@@ -272,7 +272,7 @@ def plot_all_subcell_nodes_landscape(refinement_levels, model, device='cpu', fil
 ###############################################################################
 def compute_error_circle():
     analytical_area = math.pi * (0.4**2)
-    refinement_levels = [1,2, 4, 8,16]
+    refinement_levels = [1, 2, 4, 8,16]
     error_list = []
     area_list = []
 

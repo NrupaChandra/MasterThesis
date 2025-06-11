@@ -150,7 +150,7 @@ with torch.no_grad():
         print(line, end='')
         log_f.write(line)
 
-        line = f"  True Int:  {true_val:.4e}\n"
+        line = f"  True int (Algoim):  {true_val:.4e}\n"
         print(line, end='')
         log_f.write(line)
 
@@ -182,7 +182,7 @@ with torch.no_grad():
         # — end ADDED —
 
         plt.scatter(true_nodes_x, true_nodes_y, c=true_weights, cmap='viridis',
-                    label='True Points', alpha=0.6, marker='x')
+                    label='Reference points (Algoim)', alpha=0.6, marker='x')
         plt.scatter(predicted_nodes_x, predicted_nodes_y, c=predicted_weights, cmap='plasma',
                     label='Predicted Points', alpha=0.6)
         plt.title('True vs Predicted Nodes')
@@ -192,7 +192,7 @@ with torch.no_grad():
         plt.legend()
         plt.xlim(-1, 1)
         plt.ylim(-1, 1)
-        plt.text(0.05, 0.95, f"True Int: {true_val:.8f}\nPred Int: {pred_val:.8f}",
+        plt.text(0.05, 0.95, f"True int (Algoim): {true_val:.8f}\nPred Int: {pred_val:.8f}",
                  transform=plt.gca().transAxes, fontsize=10, verticalalignment='top',
                  bbox=dict(facecolor='white', alpha=0.5))
         sample_plot_path = os.path.join(results_dir, f'{id[0]}.png')
