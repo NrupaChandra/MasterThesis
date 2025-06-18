@@ -7,17 +7,6 @@ by **Nrupa Chandra Girish Chandra**
 TU Darmstadt · Institute of Fluid Dynamics (FDY)
 
 
-MasterThesis/
-├── FNN_V6/ # Final FNN model with Optuna tuning
-├── CNN/ # CNN architecture and evaluation
-├── CNN_FNN_Hybrid/ # CNN encoder + FNN decoder architecture
-├── GCNN/ # Graph Convolutional Neural Network (GCN layers)
-├── evaluation/ # Convergence studies and loss evaluation
-├── utilities/ # Common utilities for plotting, loss functions, etc.
-├── results/ # Logs, metrics, and result CSVs
-├── Scripts.zip # Archive submitted along with the thesis
-└── README.md # This fil
-
 ### Prerequisites
 
 - Python 3.10+
