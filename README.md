@@ -25,16 +25,16 @@ TU Darmstadt · Institute of Fluid Dynamics (FDY)
 
 *Training*
 
-# FNN
+-FNN
 python FNN/FNN_V6/train_fnn.py
 
-# CNN
+-CNN
 python CNN/train_cnn.py
 
-# CNN-FNN Hybrid
+-CNN-FNN Hybrid
 python CNN_FNN_Hybrid/train_hybrid.py
 
-# GCNN
+-GCNN
 python GCNN/train_gcnn.py
 
 *Testing*
