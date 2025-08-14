@@ -36,7 +36,7 @@ def test_fn(x, y):
     return 1
 
 # Data loading
-data_dir = r"C:\Git\Data"
+data_dir = r"C:\Git\olddatafiles\Data"
 dataset = MultiChunkDataset(
     index_file=os.path.join(data_dir, 'combined_preprocessed_chunks_TestBernstein/index.txt'),
     base_dir=data_dir
@@ -107,18 +107,18 @@ with torch.no_grad():
         for ex, ey, c in zip(exp_x.cpu().numpy().reshape(-1), exp_y.cpu().numpy().reshape(-1), coeff.cpu().numpy().reshape(-1)):
             ZZ += c * (XX**ex) * (YY**ey)
         plt.contour(XX, YY, ZZ, levels=[0], colors='k', linewidths=1.5)
-        plt.scatter(true_nodes_x, true_nodes_y, c=true_weights, cmap='viridis', label='Reference Points (Algoim)', alpha=0.6, marker='x')
+        #plt.scatter(true_nodes_x, true_nodes_y, c=true_weights, cmap='viridis', label='Reference Points (Algoim)', alpha=0.6, marker='x')
         plt.scatter(predicted_nodes_x, predicted_nodes_y, c=predicted_weights, cmap='plasma', label='Predicted Points', alpha=0.6)
-        plt.title('Reference(Algoim) vs Predicted Nodes')
+        #plt.title('Reference(Algoim) vs Predicted Nodes')
         plt.xlabel('X-coordinate')
         plt.ylabel('Y-coordinate')
         plt.colorbar(label='Weight (Coefficient)')
         plt.legend()
         plt.xlim(-1, 1)
         plt.ylim(-1, 1)
-        plt.text(0.05, 0.95, f"True Int (Algoim): {true_val:.8f}\nPred Int : {pred_val:.8f}",
+        '''plt.text(0.05, 0.95, f"True Int (Algoim): {true_val:.8f}\nPred Int : {pred_val:.8f}",
                  transform=plt.gca().transAxes, fontsize=10, verticalalignment='top',
-                 bbox=dict(facecolor='white', alpha=0.5))
+                 bbox=dict(facecolor='white', alpha=0.5))'''
         sample_plot_path = os.path.join(output_folder, f'{id[0]}.png')
         plt.savefig(sample_plot_path)
         plt.close()

@@ -15,12 +15,12 @@ import matplotlib.pyplot as plt
 torch.set_default_dtype(torch.float32)
 
 # Device setup
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-print(f"\nUsing device: {device}, GPU Name: {torch.cuda.get_device_name(0)}")
+device = torch.device('cpu')
+print(f"\nUsing device: {device}")
 
 # Define paths for data and saving model/checkpoints.
-data_dir = "/work/scratch/ng66sume/Root/Data/"
-model_dir = "/work/home/ng66sume/MasterThesis/Models/FNN_model_v6/"
+data_dir = r"C:\Git\olddatafiles\Data"
+model_dir = r"C:\Git\MasterThesis\Models\FNN\FNN_model_v6"
 os.makedirs(model_dir, exist_ok=True)
 
 #########################
@@ -81,7 +81,7 @@ def evaluate_levelset(exp_x, exp_y, coeff, pred_nodes_x, pred_nodes_y):
                                    torch.pow(pred_nodes_y.unsqueeze(2), exp_y.unsqueeze(1)))
     return values.sum(dim=2)
 
-def separation_loss_2d(pred_nodes_x, pred_nodes_y):
+'''def separation_loss_2d(pred_nodes_x, pred_nodes_y):
     # Check that there are at least 2 nodes per sample.
     if pred_nodes_x.shape[1] < 2:
         return torch.tensor(0.0, device=pred_nodes_x.device)
@@ -115,7 +115,7 @@ def separation_loss_2d(pred_nodes_x, pred_nodes_y):
     penalty = torch.clamp(thresholds - euclidean_distances, min=0)
     
     return penalty.mean()
-
+'''
 def masked_and_integration_loss(exp_x, exp_y, coeff, pred_nodes_x, pred_nodes_y, pred_weights, 
                                  true_nodes_x, true_nodes_y, true_weights, masks, 
                                  criterion, test_functions):
@@ -129,8 +129,9 @@ def masked_and_integration_loss(exp_x, exp_y, coeff, pred_nodes_x, pred_nodes_y,
     levelset_values = evaluate_levelset(exp_x, exp_y, coeff, pred_nodes_x, pred_nodes_y)
     penalty += torch.sum(torch.relu(levelset_values))
     penalty /= exp_x.size(0)
-    separation_penalty = separation_loss_2d(pred_nodes_x, pred_nodes_y)
-    total_loss =  integration_loss +  0.16637744138986665* separation_penalty +  0.18807797869620801*penalty
+    #separation_penalty = separation_loss_2d(pred_nodes_x, pred_nodes_y)
+    total_loss =  integration_loss +  0.18807797869620801*penalty
+    #total_loss =  integration_loss +  0.16637744138986665* separation_penalty +  0.18807797869620801*penalty
     return total_loss
 
 #########################
@@ -212,33 +213,44 @@ def train_fnn(model, train_dataloader, val_dataloader, optimizer, criterion, tes
     
     return epoch_list, train_losses, val_losses, epoch_times
 
-#########################
-# Main Training Execution
-#########################
 if __name__ == "__main__":
     seed = 6432
     torch.manual_seed(seed)
     random.seed(seed)
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-    # Create dataset using the base directory.
+    # 1) load full dataset
     dataset = MultiChunkDataset(
-        index_file=os.path.join(data_dir, 'combined_preprocessed_chunks_10kBernstein/index.txt'),
+        index_file=os.path.join(data_dir, r'combined_preprocessed_chunks_TestBernstein/index.txt'),
         base_dir=data_dir
     )
-    
-    # Debug print: ensure dataset is not empty.
-    print("Dataset length:", len(dataset))
-    if len(dataset) == 0:
+    total = len(dataset)
+    print("Dataset length:", total)
+    if total == 0:
         raise ValueError("The dataset is empty. Please verify your index file and data directory.")
-    
-    dataset_size = len(dataset)
-    train_size = int(0.8 * dataset_size)
-    val_size = dataset_size - train_size
-    train_dataset, val_dataset = random_split(dataset, [train_size, val_size])
-    
+
+    # 2) carve out 10% of it
+    subset_size = int(0.1 * total)
+    small_ds, _ = random_split(
+        dataset,
+        [subset_size, total - subset_size],
+        generator=torch.Generator().manual_seed(seed)
+    )
+    print(f"⚡️ Using only {subset_size}/{total} samples ({100*subset_size/total:.1f}%)")
+
+    # 3) split that small_ds into train/val
+    train_size = int(0.8 * subset_size)
+    val_size   = subset_size - train_size
+    train_ds, val_ds = random_split(
+        small_ds,
+        [train_size, val_size],
+        generator=torch.Generator().manual_seed(seed+1)
+    )
+    print(f"  • train: {train_size} samples\n  • valid: {val_size} samples")
+
+    # 4) DataLoaders remain unchanged
     train_dataloader = DataLoader(
-        train_dataset,
+        train_ds,
         batch_size=256,
         shuffle=True,
         collate_fn=custom_collate_fn,
@@ -247,7 +259,7 @@ if __name__ == "__main__":
         pin_memory=True
     )
     val_dataloader = DataLoader(
-        val_dataset,
+        val_ds,
         batch_size=256,
         shuffle=False,
         collate_fn=custom_collate_fn,

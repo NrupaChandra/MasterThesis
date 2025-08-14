@@ -63,7 +63,7 @@ def test_fn(x, y):
     return 1
 
 # Prepare dataset
-data_dir = r"C:\Git\Data"
+data_dir = r"C:\Git\olddatafiles\Data"
 dataset = MultiChunkDataset(
     index_file=os.path.join(data_dir, 'combined_preprocessed_chunks_TestBernstein/index.txt'),
     base_dir=data_dir
@@ -181,20 +181,16 @@ with torch.no_grad():
         plt.contour(XX, YY, ZZ, levels=[0], colors='k', linewidths=1.5)
         # — end ADDED —
 
-        plt.scatter(true_nodes_x, true_nodes_y, c=true_weights, cmap='viridis',
-                    label='Reference points (Algoim)', alpha=0.6, marker='x')
-        plt.scatter(predicted_nodes_x, predicted_nodes_y, c=predicted_weights, cmap='plasma',
-                    label='Predicted Points', alpha=0.6)
-        plt.title('True vs Predicted Nodes')
+        #plt.scatter(true_nodes_x, true_nodes_y, c=true_weights, cmap='viridis', label='Reference points (Algoim)', alpha=0.6, marker='x')
+        plt.scatter(predicted_nodes_x, predicted_nodes_y, c=predicted_weights, cmap='plasma', label='Predicted Points', alpha=0.6)
+        #plt.title('True vs Predicted Nodes')
         plt.xlabel('X-coordinate')
         plt.ylabel('Y-coordinate')
         plt.colorbar(label='Weight')
         plt.legend()
         plt.xlim(-1, 1)
         plt.ylim(-1, 1)
-        plt.text(0.05, 0.95, f"True int (Algoim): {true_val:.8f}\nPred Int: {pred_val:.8f}",
-                 transform=plt.gca().transAxes, fontsize=10, verticalalignment='top',
-                 bbox=dict(facecolor='white', alpha=0.5))
+        #plt.text(0.05, 0.95, f"True int (Algoim): {true_val:.8f}\nPred Int: {pred_val:.8f}", transform=plt.gca().transAxes, fontsize=10, verticalalignment='top', bbox=dict(facecolor='white', alpha=0.5))
         sample_plot_path = os.path.join(results_dir, f'{id[0]}.png')
         plt.savefig(sample_plot_path)
         plt.close()
