@@ -40,7 +40,6 @@ python GCNN/train_gcnn.py and GCNN/test_gcnn.py
 python FNN/FNN_V6/hyperparameter_optuna.py
 
 
-**Additional utilities**
 
 
 
